@@ -1,0 +1,13 @@
+<configuration>
+ <system.web.webPages.razor>
+  <pages>
+<namespaces>
+  <add namespace="Syncfusion.MVC.EJ" />
+   <add namespace="Syncfusion.JavaScript" />
+   <add namespace="Syncfusion.JavaScript.Mobile" />
+   <add namespace="Syncfusion.JavaScript.DataVisualization" />
+    <add namespace="Syncfusion.JavaScript.Olap" />
+</namespaces>
+  </pages>
+ </system.web.webPages.razor>
+</configuration>
