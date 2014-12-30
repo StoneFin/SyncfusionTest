@@ -19,7 +19,7 @@
       .AllowPaging()
       .AllowGrouping()
       .GroupSettings(gs => { gs.GroupedColumns(gc => { gc.Add("OrderId"); }); })
-      .ScrollSettings(scroll => { scroll.Height(300).Width(886); })
+      .ScrollSettings(scroll => { scroll.Width("100%"); })
       .Columns(col =>
       {
         col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
