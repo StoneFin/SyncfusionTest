@@ -6,6 +6,12 @@ namespace SyncfusionProof
   public class BundleConfig
   {
     // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
+
+    private static readonly string[] Syncfusion = 
+    {
+      "~/Scripts/Utility/Syncfusion*"
+    };
+    
     public static void RegisterBundles(BundleCollection bundles)
     {
       bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
@@ -27,9 +33,11 @@ namespace SyncfusionProof
                 "~/Content/bootstrap.css",
                 "~/Content/site.css"));
 
+      bundles.Add(new ScriptBundle("~/Bundles/Syncfusion").Include(Syncfusion));
+
       // Set EnableOptimizations to false for debugging. For more information,
       // visit http://go.microsoft.com/fwlink/?LinkId=301862
-      BundleTable.EnableOptimizations = true;
+      //BundleTable.EnableOptimizations = true;
     }
   }
 }

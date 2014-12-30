@@ -199,3 +199,5 @@ D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.csprojResolveAssemblyReference.cache
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.pdb
+D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.Export.dll
+D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.PivotAnalysis.Base.dll
