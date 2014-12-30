@@ -13,24 +13,30 @@
 <div class="row">
   <div class="cols-sample-area" style="width:100%">
     @(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("Grid")
-        .Datasource(Model)
-        .AllowSorting()
-        .AllowScrolling()
-        .AllowPaging()
-        .ScrollSettings(scroll => { scroll.Height(300).Width(886); })
-        .Columns(col =>
-        {
-          col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
-          col.Field("CustomerId").HeaderText("Customer ID").Width(80).Add();
-          col.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
-          col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
-          col.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Width(80).Format("{0:MM/dd/yyyy}").Add();
-          col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
-          col.Field("ShipState").HeaderText("Ship State").Width(110).Add();
-          col.Field("FavoriteBunny").HeaderText("Favorite Bunny").Width(110).Add();
-          col.Field("ShipCountry").HeaderText("ShipCountry").Width(110).Add();
-          col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Width(140).Add();
-          col.Field("Verified").HeaderText("Verified").Width(100).Add();
-        }))
+      .Datasource(Model)
+      .AllowSorting()
+      .AllowScrolling()
+      .AllowPaging()
+      .AllowGrouping()
+      .GroupSettings(gs => { gs.GroupedColumns(gc => { gc.Add("OrderId"); }); })
+      .ScrollSettings(scroll => { scroll.Height(300).Width(886); })
+      .Columns(col =>
+      {
+        col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
+        col.Field("CustomerId").HeaderText("Customer ID").Width(80).Add();
+        col.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
+        col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
+        col.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Width(80).Format("{0:MM/dd/yyyy}").Add();
+        col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
+        col.Field("ShipState").HeaderText("Ship State").Width(110).Add();
+        col.Field("FavoriteBunny").HeaderText("Favorite Bunny").Width(110).Add();
+        col.Field("ShipCountry").HeaderText("ShipCountry").Width(110).Add();
+        col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Width(140).Add();
+        col.Field("Verified").HeaderText("Verified").Width(100).Add();
+      }))
   </div>
 </div>
+
+@section scripts {
+  @Scripts.Render("~/Bundles/Syncfusion")
+}
