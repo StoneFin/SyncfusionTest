@@ -1,4 +1,7 @@
 ﻿$(function () {
+  //tab declaration
+  $("#TestTabs").ejTab();
+
   var gridObj = $("#Grid").ejGrid("instance");
 
   scrolWidth = gridObj.model.scrollSettings.width / $(".cols-sample-area").width();

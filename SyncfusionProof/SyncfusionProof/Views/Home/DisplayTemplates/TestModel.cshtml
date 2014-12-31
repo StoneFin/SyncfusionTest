@@ -1,0 +1,38 @@
+﻿@model IEnumerable<SyncfusionProof.Models.TestModel>
+
+@(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("Grid")
+  .Datasource(Model)
+  .AllowSorting()
+  .AllowScrolling()
+  .AllowPaging()
+  .AllowGrouping()
+  .GroupSettings(gs => { gs.GroupedColumns(gc => { gc.Add("OrderId"); }); })
+  .ScrollSettings(scroll => { scroll.Width("100%"); })
+  .Columns(col =>
+  {
+    ////columns with widths specified
+    //col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(75).Add();
+    //col.Field("CustomerId").HeaderText("Customer ID").Width(80).Add();
+    //col.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(75).Add();
+    //col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Width(75).Format("{0:C}").Add();
+    //col.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Width(80).Format("{0:MM/dd/yyyy}").Add();
+    //col.Field("ShipCity").HeaderText("Ship City").Width(110).Add();
+    //col.Field("ShipState").HeaderText("Ship State").Width(110).Add();
+    //col.Field("FavoriteBunny").HeaderText("Favorite Bunny").Width(110).Add();
+    //col.Field("ShipCountry").HeaderText("ShipCountry").Width(110).Add();
+    //col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Width(140).Add();
+    //col.Field("Verified").HeaderText("Verified").Width(100).Add();
+    
+    //colummns without widths specified
+    col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+    col.Field("CustomerId").HeaderText("Customer ID").Add();
+    col.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Format("{0:C}").Add();
+    col.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Format("{0:MM/dd/yyyy}").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Add();
+    col.Field("ShipState").HeaderText("Ship State").Add();
+    col.Field("FavoriteBunny").HeaderText("Favorite Bunny").Add();
+    col.Field("ShipCountry").HeaderText("ShipCountry").Add();
+    col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Add();
+    col.Field("Verified").HeaderText("Verified").Add();
+  }))
