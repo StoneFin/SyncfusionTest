@@ -5,25 +5,28 @@
   }
 
   <div class="well">
-    @*grid on the page*@
+    
+    @*grid on the top of the page*@
     <div class="row">
       <div class="cols-sample-area">
         @Html.DisplayForModel("TestModel")
       </div>
     </div>
 
-    @*grids inside tabs*@
+    @*grids inside tabs, sizing isn't correct, and horizontal scrollbar is missing*@
     <div class="row">
-      <div class="cols-sample-area">
-        <div id="TestTabs">
-          <ul>
-            <li><a href="#TabOne">Tab One</a></li>
-            <li><a href="#TabTwo">Tab Two</a></li>
-          </ul>
-          <div id="TabOne">
+      <div id="TestTabs">
+        <ul>
+          <li><a href="#TabOne">Tab One</a></li>
+          <li><a href="#TabTwo">Tab Two</a></li>
+        </ul>
+        <div id="TabOne">
+          <div class="cols-sample-area">
             @Html.DisplayForModel("TestModel")
           </div>
-          <div id="TabTwo">
+        </div>
+        <div id="TabTwo">
+          <div class="cols-sample-area">
             @Html.DisplayForModel("TestModel")
           </div>
         </div>
