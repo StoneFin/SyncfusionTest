@@ -16,7 +16,11 @@ namespace SyncfusionProof.Controllers
         OrderId = 2031532465,
         CustomerId = "5423115657865424ASFE",
         EmployeeId = int.MaxValue,
-        Freight = "$32.50",
+        Freight = (decimal)32.50,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)43.61
+        },
         ShipCity = "Chicago",
         ShipName = "USS Enterprise",
         OrderDate = DateTime.Now,

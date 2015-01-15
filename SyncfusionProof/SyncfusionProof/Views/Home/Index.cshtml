@@ -5,27 +5,8 @@
 }
 
 <div class="well">
-  @*grid on the top of the page*@
   <div class="cols-sample-area">
     @Html.DisplayForModel("TestModel")
-  </div>
-
-  @*grids inside tabs*@
-  <div id="TestTabs">
-    <ul>
-      <li><a href="#TabOne">Tab One</a></li>
-      <li><a href="#TabTwo">Tab Two</a></li>
-    </ul>
-    <div id="TabOne">
-      <div class="cols-sample-area">
-        @Html.DisplayForModel("TestModel")
-      </div>
-    </div>
-    <div id="TabTwo">
-      <div class="cols-sample-area">
-        @Html.DisplayForModel("TestModel")
-      </div>
-    </div>
   </div>
 </div>
 
