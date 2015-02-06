@@ -1,15 +1,30 @@
 ﻿@model IEnumerable<SyncfusionProof.Models.TestModel>
+@using Syncfusion.JavaScript.Models
 
 @(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("Grid")
   .Datasource(Model)
   .AllowSorting()
-  .AllowScrolling()
   .AllowPaging()
-  .AllowGrouping()
-  .GroupSettings(gs => { gs.GroupedColumns(gc => { gc.Add("OrderId"); }); })
-  .ScrollSettings(scroll => { scroll.Width(1100); })
+  .AllowResizing()
+  //.AllowScrolling()
+  //.ScrollSettings(scroll => { scroll.Width(1100); })
+  //.MinWidth(500)
+  //.IsResponsive()
+  .ToolbarSettings(tbs =>
+  {
+    tbs.ShowToolbar().ToolbarItems(tbi =>
+    {
+      tbi.AddTool(ToolBarItems.Search);
+    });
+  })
   .Columns(col =>
   {
+    col.HeaderText("Manage").Commands(com =>
+    {
+      com.Type("Edit").ButtonOptions(new ButtonProperties() { Text = "Edit", Click = "GetEdit", Width = "90" }).Add();
+      com.Type("Remove").ButtonOptions(new ButtonProperties() { Text = "Remove", Click = "GetRemove", Width = "90" }).Add();
+    }).IsUnbound(true).Width(200).Add();
+    
     col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
     col.Field("CustomerId").HeaderText("Customer ID").Add();
     col.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();
