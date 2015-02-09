@@ -1,0 +1,40 @@
+﻿@model IEnumerable<SyncfusionProof.Models.TestModel>
+@using Syncfusion.JavaScript.Models
+
+@(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("Grid")
+  .Datasource(Model)
+  .AllowSorting()
+  .AllowPaging()
+  .AllowResizing()
+  .AllowScrolling()
+  .ScrollSettings(scroll => { scroll.Width("900"); })
+  .MinWidth(500)
+  .IsResponsive(true)
+  .ToolbarSettings(tbs =>
+  {
+    tbs.ShowToolbar().ToolbarItems(tbi =>
+    {
+      tbi.AddTool(ToolBarItems.Search);
+    });
+  })
+  .Columns(col =>
+  {
+    col.HeaderText("Manage").Commands(com =>
+    {
+      com.Type("Edit").ButtonOptions(new ButtonProperties() { Text = "Edit", Click = "GetEdit", Width = "90" }).Add();
+      com.Type("Remove").ButtonOptions(new ButtonProperties() { Text = "Remove", Click = "GetRemove", Width = "90" }).Add();
+    }).IsUnbound(true).Width(225).Add();
+
+    col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Width(50).Add();
+    col.Field("CustomerId").HeaderText("Customer ID").Width(50).Add();
+    col.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Width(50).Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Format("{0:C}").Width(50).Add();
+    col.Field("FreightDetails.Freight2").HeaderText("Freight2").TextAlign(TextAlign.Right).Format("{0:C}").Width(50).Add();
+    col.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Format("{0:MM/dd/yyyy}").Width(50).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(50).Add();
+    col.Field("ShipState").HeaderText("Ship State").Width(50).Add();
+    col.Field("FavoriteBunny").HeaderText("Favorite Bunny").Width(50).Add();
+    col.Field("ShipCountry").HeaderText("ShipCountry").Width(50).Add();
+    col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Width(50).Add();
+    col.Field("Verified").HeaderText("Verified").Width(50).Add();
+  }))
