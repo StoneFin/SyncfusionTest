@@ -4,9 +4,17 @@
   ViewBag.Title = "Home Page";
 }
 
-<div id="GridContainer">
+@*Basic Grid*@
+@*<div id="GridContainer">
   @Html.DisplayFor(x => x, "ScrollResponsiveTest")
-</div>
+</div>*@
+
+@*Tabbed Grids*@
+@Html.EJ().Tab("TabTest").Items(items =>
+{
+  items.Add().ID("TabOne").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayFor(x => x, "TabOne")</div>);
+  items.Add().ID("TabTwo").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayFor(x => x, "TabTwo")</div>);
+})
 
 @section scripts {
   @Scripts.Render("~/Bundles/Syncfusion")

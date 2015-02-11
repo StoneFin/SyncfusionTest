@@ -991,6 +991,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ScrollResponsiveTest.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\TabOne.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\TabTwo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
