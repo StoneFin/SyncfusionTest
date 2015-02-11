@@ -993,6 +993,7 @@
     <Content Include="Views\Home\DisplayTemplates\ScrollResponsiveTest.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\TabOne.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\TabTwo.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\EnablePersistence.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

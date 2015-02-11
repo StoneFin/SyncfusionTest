@@ -10,11 +10,14 @@
 </div>*@
 
 @*Tabbed Grids*@
-@Html.EJ().Tab("TabTest").Items(items =>
+@*@Html.EJ().Tab("TabTest").Items(items =>
 {
   items.Add().ID("TabOne").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayFor(x => x, "TabOne")</div>);
   items.Add().ID("TabTwo").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayFor(x => x, "TabTwo")</div>);
-})
+})*@
+
+@*Enable Persistence*@
+@Html.DisplayFor(x => x, "EnablePersistence")
 
 @section scripts {
   @Scripts.Render("~/Bundles/Syncfusion")

@@ -3,13 +3,19 @@
 
 @(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("Grid")
   .Datasource(Model)
+  //.EnablePersistence()
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
   .AllowScrolling()
-  .ScrollSettings(scroll => { scroll.Width("100%"); })
+  .ScrollSettings(sob => { sob.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+    .AllowGrouping()
+    .GroupSettings(gob =>
+    {
+      gob.GroupedColumns(gcb => { gcb.Add("CustomerId"); });
+    })
   .ToolbarSettings(tbb =>
   {
     tbb.ShowToolbar().ToolbarItems(tbib => { tbib.AddTool(ToolBarItems.Search); });

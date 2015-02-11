@@ -9,32 +9,29 @@
   .AllowScrolling()
   .ScrollSettings(scroll => { scroll.Width("100%"); })
   .MinWidth(500)
-  .IsResponsive(true)
-  .ToolbarSettings(tbs =>
+  .IsResponsive()
+  .ToolbarSettings(tbb =>
   {
-    tbs.ShowToolbar().ToolbarItems(tbi =>
-    {
-      tbi.AddTool(ToolBarItems.Search);
-    });
+    tbb.ShowToolbar().ToolbarItems(tbib => { tbib.AddTool(ToolBarItems.Search); });
   })
-  .Columns(col =>
+  .Columns(colb =>
   {
-    col.HeaderText("Manage").Commands(com =>
+    colb.HeaderText("Manage").Commands(comb =>
     {
-      com.Type("Edit").ButtonOptions(new ButtonProperties() { Text = "Edit", Click = "GetEdit", Width = "90" }).Add();
-      com.Type("Remove").ButtonOptions(new ButtonProperties() { Text = "Remove", Click = "GetRemove", Width = "90" }).Add();
+      comb.Type("Edit").ButtonOptions(new ButtonProperties() { Text = "Edit", Click = "GetEdit", Width = "90" }).Add();
+      comb.Type("Remove").ButtonOptions(new ButtonProperties() { Text = "Remove", Click = "GetRemove", Width = "90" }).Add();
     }).IsUnbound(true).Width(225).Add();
 
-    col.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-    col.Field("CustomerId").HeaderText("Customer ID").Add();
-    col.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Format("{0:C}").Add();
-    col.Field("FreightDetails.Freight2").HeaderText("Freight2").TextAlign(TextAlign.Right).Format("{0:C}").Add();
-    col.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Format("{0:MM/dd/yyyy}").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Add();
-    col.Field("ShipState").HeaderText("Ship State").Add();
-    col.Field("FavoriteBunny").HeaderText("Favorite Bunny").Add();
-    col.Field("ShipCountry").HeaderText("ShipCountry").Add();
-    col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Add();
-    col.Field("Verified").HeaderText("Verified").Add();
+    colb.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+    colb.Field("CustomerId").HeaderText("Customer ID").Add();
+    colb.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();
+    colb.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Format("{0:C}").Add();
+    colb.Field("FreightDetails.Freight2").HeaderText("Freight2").TextAlign(TextAlign.Right).Format("{0:C}").Add();
+    colb.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Format("{0:MM/dd/yyyy}").Add();
+    colb.Field("ShipCity").HeaderText("Ship City").Add();
+    colb.Field("ShipState").HeaderText("Ship State").Add();
+    colb.Field("FavoriteBunny").HeaderText("Favorite Bunny").Add();
+    colb.Field("ShipCountry").HeaderText("ShipCountry").Add();
+    colb.Field("ShipPostalCode").HeaderText("Ship Postal Code").Add();
+    colb.Field("Verified").HeaderText("Verified").Add();
   }))
