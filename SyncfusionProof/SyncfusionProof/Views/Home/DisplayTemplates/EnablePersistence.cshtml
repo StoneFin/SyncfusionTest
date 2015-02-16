@@ -3,41 +3,36 @@
 
 @(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("Grid")
   .Datasource(Model)
-  //.EnablePersistence()
+  .EnablePersistence()
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
   .AllowScrolling()
-  .ScrollSettings(sob => { sob.Width("100%"); })
+  .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
-    .AllowGrouping()
-    .GroupSettings(gob =>
-    {
-      gob.GroupedColumns(gcb => { gcb.Add("CustomerId"); });
-    })
-  .ToolbarSettings(tbb =>
+  .AllowGrouping()
+  .GroupSettings(x =>
   {
-    tbb.ShowToolbar().ToolbarItems(tbib => { tbib.AddTool(ToolBarItems.Search); });
+    x.GroupedColumns(y => { y.Add("CustomerId"); });
   })
-  .Columns(colb =>
+  .ToolbarSettings(x =>
   {
-    colb.HeaderText("Manage").Commands(comb =>
-    {
-      comb.Type("Edit").ButtonOptions(new ButtonProperties() { Text = "Edit", Click = "GetEdit", Width = "90" }).Add();
-      comb.Type("Remove").ButtonOptions(new ButtonProperties() { Text = "Remove", Click = "GetRemove", Width = "90" }).Add();
-    }).IsUnbound(true).Width(225).Add();
-
-    colb.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
-    colb.Field("CustomerId").HeaderText("Customer ID").Add();
-    colb.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();
-    colb.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Format("{0:C}").Add();
-    colb.Field("FreightDetails.Freight2").HeaderText("Freight2").TextAlign(TextAlign.Right).Format("{0:C}").Add();
-    colb.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Format("{0:MM/dd/yyyy}").Add();
-    colb.Field("ShipCity").HeaderText("Ship City").Add();
-    colb.Field("ShipState").HeaderText("Ship State").Add();
-    colb.Field("FavoriteBunny").HeaderText("Favorite Bunny").Add();
-    colb.Field("ShipCountry").HeaderText("ShipCountry").Add();
-    colb.Field("ShipPostalCode").HeaderText("Ship Postal Code").Add();
-    colb.Field("Verified").HeaderText("Verified").Add();
-  }))
+    x.ShowToolbar().ToolbarItems(y => { y.AddTool(ToolBarItems.Search); });
+  })
+  .Columns(x =>
+  {
+    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+    x.Field("CustomerId").HeaderText("Customer ID").Add();
+    x.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();
+    x.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Format("{0:C}").Add();
+    x.Field("FreightDetails.Freight2").HeaderText("Freight2").TextAlign(TextAlign.Right).Format("{0:C}").Add();
+    x.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Format("{0:MM/dd/yyyy}").Add();
+    x.Field("ShipCity").HeaderText("Ship City").Add();
+    x.Field("ShipState").HeaderText("Ship State").Add();
+    x.Field("FavoriteBunny").HeaderText("Favorite Bunny").Add();
+    x.Field("ShipCountry").HeaderText("ShipCountry").Add();
+    x.Field("ShipPostalCode").HeaderText("Ship Postal Code").Add();
+    x.Field("Verified").HeaderText("Verified").Add();
+  })
+)

@@ -11,11 +11,11 @@ namespace SyncfusionProof.Controllers
   {
     public ActionResult Index()
     {
-      TestModel stuff = new TestModel()
+      TestModel testModel1 = new TestModel()
       {
         OrderId = 2031532465,
         CustomerId = "5423115657865424ASFE",
-        EmployeeId = int.MaxValue,
+        EmployeeId = 111,
         Freight = (decimal)32.50,
         FreightDetails = new FreightDetails
         {
@@ -27,12 +27,31 @@ namespace SyncfusionProof.Controllers
         ShipState = "Illinois",
         FavoriteBunny = "Reader Rabbit"
       };
-      var StuffList = new List<TestModel>();
-      StuffList.Add(stuff);
-      stuff.OrderId = 124;
-      StuffList.Add(stuff);
+      
+      var testModels = new List<TestModel>();
+      
+      testModels.Add(testModel1);
 
-      return View("Index", StuffList);
+      TestModel testModel2 = new TestModel()
+      {
+        OrderId = 2031532466,
+        CustomerId = "5423115657865424ABCD",
+        EmployeeId = 222,
+        Freight = (decimal)54.72,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)65.83
+        },
+        ShipCity = "Los Angeles",
+        ShipName = "USS Minnow",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "California",
+        FavoriteBunny = "Peter Cottontail"
+      };
+
+      testModels.Add(testModel2);
+
+      return View("Index", testModels);
     }
 
     public ActionResult About()
