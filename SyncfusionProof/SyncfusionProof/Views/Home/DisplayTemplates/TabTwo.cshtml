@@ -6,8 +6,8 @@
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
-  .AllowScrolling()
-  .ScrollSettings(scroll => { scroll.Width("100%"); })
+  //.AllowScrolling()
+  //.ScrollSettings(scroll => { scroll.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
   .ToolbarSettings(tbb =>
@@ -34,4 +34,5 @@
     colb.Field("ShipCountry").HeaderText("ShipCountry").Add();
     colb.Field("ShipPostalCode").HeaderText("Ship Postal Code").Add();
     colb.Field("Verified").HeaderText("Verified").Add();
-  }))
+  })  
+)
