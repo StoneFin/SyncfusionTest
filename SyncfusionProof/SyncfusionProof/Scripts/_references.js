@@ -16,3 +16,5 @@
 /// <reference path="npm.js" />
 /// <reference path="bootstrap.min.js" />
 /// <reference path="jquery.validate.unobtrusive.min.js" />
+/// <reference path="ej/ej.widgets.all.min.js" />
+/// <reference path="jquery.unobtrusive-ajax.min.js" />
