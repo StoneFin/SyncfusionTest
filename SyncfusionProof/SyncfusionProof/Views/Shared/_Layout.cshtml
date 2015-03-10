@@ -4,17 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@ViewBag.Title - My ASP.NET Application</title>
-  @Styles.Render("~/Content/css")
-  <link rel="stylesheet" type="text/css" href="~/Content/ej/web/default-theme/ej.web.all.min.css">
-  <link rel="stylesheet" type="text/css" href="~/Content/ej/web/responsive-css/ej.responsive.css">
-  @Scripts.Render("~/bundles/modernizr")
-  @Scripts.Render("~/bundles/jquery")
-  @Scripts.Render("~/bundles/bootstrap")
-  <script src="~/Scripts/jquery.easing.1.3.js"></script>
-  <script src="~/Scripts/globalize/globalize.js"></script>
-  <script src="~/Scripts/jsrender.min.js"></script>
-  <script src="~/Scripts/ej/ej.web.all.min.js"></script>
-  <script src="~/Scripts/ej/ej.unobtrusive.min.js"></script>
+  @Styles.Render("~/content/css")
+  @Scripts.Render("~/bundles/layout")
 </head>
 <body>
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -44,8 +35,7 @@
       <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
     </footer>
   </div>
-
-
+  @(Html.EJ().ScriptManager())
   @RenderSection("scripts", required: false)
 </body>
 </html>
