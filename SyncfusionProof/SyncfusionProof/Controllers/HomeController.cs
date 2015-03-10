@@ -51,6 +51,25 @@ namespace SyncfusionProof.Controllers
 
       testModels.Add(testModel2);
 
+      TestModel testModel3 = new TestModel()
+      {
+        OrderId = 2031532467,
+        CustomerId = "ABCD5423115657865424",
+        EmployeeId = 333,
+        Freight = (decimal)55.55,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)66.66
+        },
+        ShipCity = "Ft Lauderdale",
+        ShipName = "USS Ronald Reagan",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "Nebraska",
+        FavoriteBunny = "Nivens McTwisp"
+      };
+
+      testModels.Add(testModel3);
+
       return View("Index", testModels);
     }
 
