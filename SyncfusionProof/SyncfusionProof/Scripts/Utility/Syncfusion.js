@@ -23,15 +23,15 @@ var onItemActive = function (args) {
 }
 
 //multi select testing (not working)
-var getRecords = function (toolbarItem) {
-  if (toolbarItem.model.selectedRecords.length > 0) {
-    //console.log(toolbarItem.model.selectedRecords);
+var getRecords = function (toolbarItem, gridElement) {
+  if (gridElement.getSelectedRecords().length > 0) {
+    //console.log(gridElement.getSelectedRecords());
 
-    var sr = toolbarItem.model.selectedRecords;
+    var sr = gridElement.getSelectedRecords();
     var retVal = [];
 
     $.each(sr, function (i, r) {
-      retVal.push(r[0]);
+      retVal.push(r);
     });
 
     return retVal;
@@ -41,8 +41,10 @@ var getRecords = function (toolbarItem) {
 }
 
 var toolbarClick = function (toolbarItem) {
+  var self = this;
+
   if (toolbarItem.itemName === "Delete") {
-    var records = getRecords(toolbarItem);
+    var records = getRecords(toolbarItem, self);
 
     $.each(records, function (i, record) {
       console.log(record);
