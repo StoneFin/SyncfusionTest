@@ -26,15 +26,7 @@ var onItemActive = function (args) {
 var getRecords = function (toolbarItem, gridElement) {
   if (gridElement.getSelectedRecords().length > 0) {
     //console.log(gridElement.getSelectedRecords());
-
-    var sr = gridElement.getSelectedRecords();
-    var retVal = [];
-
-    $.each(sr, function (i, r) {
-      retVal.push(r);
-    });
-
-    return retVal;
+    return gridElement.getSelectedRecords();
   }
 
   return null;
