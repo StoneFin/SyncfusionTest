@@ -22,7 +22,7 @@ var onItemActive = function (args) {
   $(activeGrid).find(".e-grid").ejGrid("refreshContent");
 }
 
-//multi select testing (not working)
+//multi select testing (working)
 var getRecords = function (toolbarItem, gridElement) {
   if (gridElement.getSelectedRecords().length > 0) {
     //console.log(gridElement.getSelectedRecords());
