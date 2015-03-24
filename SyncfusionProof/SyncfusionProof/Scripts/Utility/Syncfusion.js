@@ -4,7 +4,7 @@
 
 //tab rendering fix (working)
 var onItemActive = function (args) {
-  //skip the action for the first tab item
+  //skip the action for the active tab item
   if (args.activeIndex == args.prevActiveIndex) {
     return;
   }
