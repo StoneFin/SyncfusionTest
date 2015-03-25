@@ -1,8 +1,8 @@
 ﻿$(function () {
- 
+
 });
 
-//tab rendering fix (working)
+//tab rendering fix (working, except where EnablePersistence is on)
 var onItemActive = function (args) {
   //skip the action for the active tab item
   if (args.activeIndex == args.prevActiveIndex) {
@@ -22,12 +22,24 @@ var onItemActive = function (args) {
   $(activeGrid).find(".e-grid").ejGrid("refreshContent");
 }
 
+//single select testing (working)
+var getRecord = function (toolbarItem, gridElement) {
+  if (gridElement.getSelectedRecords().length === 1) {
+    return gridElement.getSelectedRecords()[0];
+  }
+
+  alert("Please select a single record.");
+
+  return null;
+}
+
 //multi select testing (working)
 var getRecords = function (toolbarItem, gridElement) {
   if (gridElement.getSelectedRecords().length > 0) {
-    //console.log(gridElement.getSelectedRecords());
     return gridElement.getSelectedRecords();
   }
+
+  alert("Please select one or more records.");
 
   return null;
 }
@@ -36,10 +48,8 @@ var toolbarClick = function (toolbarItem) {
   var self = this;
 
   if (toolbarItem.itemName === "Delete") {
-    var records = getRecords(toolbarItem, self);
+    var record = getRecord(toolbarItem, self);
 
-    $.each(records, function (i, record) {
-      console.log(record);
-    });
+    console.log(record);
   }
 }
