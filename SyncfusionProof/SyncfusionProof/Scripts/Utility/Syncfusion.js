@@ -4,6 +4,7 @@
 
 //tab rendering fix (working, except where EnablePersistence is on)
 var onItemActive = function (args) {
+  //Do not add this to tabs where EnablePersistence is turned on
   ////skip the action for the active tab item
   //if (args.activeIndex == args.prevActiveIndex) {
   //  return;
