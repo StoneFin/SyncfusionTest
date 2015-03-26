@@ -4,10 +4,10 @@
 
 //tab rendering fix (working, except where EnablePersistence is on)
 var onItemActive = function (args) {
-  //skip the action for the active tab item
-  if (args.activeIndex == args.prevActiveIndex) {
-    return;
-  }
+  ////skip the action for the active tab item
+  //if (args.activeIndex == args.prevActiveIndex) {
+  //  return;
+  //}
 
   //get the current tab
   var activeGrid = $(args.activeHeader).find("a").attr("href");
