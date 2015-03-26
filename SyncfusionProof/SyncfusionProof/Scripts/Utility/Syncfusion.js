@@ -2,13 +2,13 @@
 
 });
 
-//tab rendering fix (working, except where EnablePersistence is on)
+//tab rendering fix (working)
 var onItemActive = function (args) {
-  //Do not add this to tabs where EnablePersistence is turned on
-  ////skip the action for the active tab item
-  //if (args.activeIndex == args.prevActiveIndex) {
-  //  return;
-  //}
+  //if EnablePersistence = false, skip this action for the active tab item
+  if (!args.model.enablePersistence &&
+    args.activeIndex == args.prevActiveIndex) {
+    return;
+  }
 
   //get the current tab
   var activeGrid = $(args.activeHeader).find("a").attr("href");
