@@ -56,7 +56,7 @@
     </Reference>
     <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -111,60 +111,60 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Compression.Base, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Compression.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.Compression.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Core, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Core, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.Core.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.DocIO.Base, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.DocIO.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.DocIO.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.DocIO.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.EJ.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ.Export, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ.Export, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.EJ.Export.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.Export.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ.MVC, Version=12.4500.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ.MVC, Version=13.1500.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.EJ.MVC.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ.Olap, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ.Olap, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.EJ.Olap.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.Olap.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Linq.Base, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Linq.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.Linq.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Olap.Base, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Olap.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.Olap.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Olap.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Pdf.Base, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Pdf.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.Pdf.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.PivotAnalysis.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.PivotAnalysis.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.XlsIO.Base, Version=12.4450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.XlsIO.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\Syncfusion.XlsIO.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\SyncfusionASPNETMVC5.12.4.0.30\lib\net451\System.Data.SqlServerCe.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
@@ -279,7 +279,6 @@
     <Content Include="Content\ej\mobile\windows-theme-default\ej.mobile.windows-default.min.css" />
     <Content Include="Content\ej\mobile\windows-theme-light\ej.mobile.core.min.css" />
     <Content Include="Content\ej\mobile\windows-theme-light\ej.mobile.windows-light.min.css" />
-    <Content Include="Content\ej\web\bootstrap-theme\ej.olappager.css" />
     <Content Include="Content\ej\web\bootstrap-theme\ej.theme.min.css" />
     <Content Include="Content\ej\web\bootstrap-theme\ej.web.all.css" />
     <Content Include="Content\ej\web\bootstrap-theme\ej.web.all.min.css" />
@@ -338,7 +337,6 @@
     <Content Include="Content\ej\web\common-images\reports\up.png" />
     <Content Include="Content\ej\web\common-images\reports\updown.png" />
     <Content Include="Content\ej\web\common-images\Rotate.cur" />
-    <Content Include="Content\ej\web\default-theme\ej.olappager.css" />
     <Content Include="Content\ej\web\default-theme\ej.theme.min.css" />
     <Content Include="Content\ej\web\default-theme\ej.web.all.css" />
     <Content Include="Content\ej\web\default-theme\ej.web.all.min.css" />
@@ -357,7 +355,6 @@
     <Content Include="Content\ej\web\default-theme\images\ui-icon.png" />
     <Content Include="Content\ej\web\default-theme\images\waitingpopup.gif" />
     <Content Include="Content\ej\web\ej.widgets.core.min.css" />
-    <Content Include="Content\ej\web\flat-azure-dark\ej.olappager.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.web.all.min.css" />
@@ -375,7 +372,6 @@
     <Content Include="Content\ej\web\flat-azure-dark\images\toolbar_icons.png" />
     <Content Include="Content\ej\web\flat-azure-dark\images\ui-icon.png" />
     <Content Include="Content\ej\web\flat-azure-dark\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\flat-lime-dark\ej.olappager.css" />
     <Content Include="Content\ej\web\flat-lime-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-lime-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-lime-dark\ej.web.all.min.css" />
@@ -394,7 +390,6 @@
     <Content Include="Content\ej\web\flat-lime-dark\images\transparent.png" />
     <Content Include="Content\ej\web\flat-lime-dark\images\ui-icon.png" />
     <Content Include="Content\ej\web\flat-lime-dark\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\flat-lime\ej.olappager.css" />
     <Content Include="Content\ej\web\flat-lime\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-lime\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-lime\ej.web.all.min.css" />
@@ -413,7 +408,6 @@
     <Content Include="Content\ej\web\flat-lime\images\transparent.png" />
     <Content Include="Content\ej\web\flat-lime\images\ui-icon.png" />
     <Content Include="Content\ej\web\flat-lime\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\flat-saffron-dark\ej.olappager.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\ej.web.all.min.css" />
@@ -432,7 +426,6 @@
     <Content Include="Content\ej\web\flat-saffron-dark\images\transparent.png" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\ui-icon.png" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\flat-saffron\ej.olappager.css" />
     <Content Include="Content\ej\web\flat-saffron\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-saffron\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-saffron\ej.web.all.min.css" />
@@ -451,7 +444,6 @@
     <Content Include="Content\ej\web\flat-saffron\images\transparent.png" />
     <Content Include="Content\ej\web\flat-saffron\images\ui-icon.png" />
     <Content Include="Content\ej\web\flat-saffron\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\gradient-azure-dark\ej.olappager.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\ej.web.all.min.css" />
@@ -469,7 +461,6 @@
     <Content Include="Content\ej\web\gradient-azure-dark\images\toolbar_icons.png" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\ui-icon.png" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\gradient-azure\ej.olappager.css" />
     <Content Include="Content\ej\web\gradient-azure\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-azure\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-azure\ej.web.all.min.css" />
@@ -487,7 +478,6 @@
     <Content Include="Content\ej\web\gradient-azure\images\toolbar_icons.png" />
     <Content Include="Content\ej\web\gradient-azure\images\ui-icon.png" />
     <Content Include="Content\ej\web\gradient-azure\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\gradient-lime-dark\ej.olappager.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\ej.web.all.min.css" />
@@ -504,7 +494,6 @@
     <Content Include="Content\ej\web\gradient-lime-dark\images\toolbar_icons.png" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\ui-icon.png" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\gradient-lime\ej.olappager.css" />
     <Content Include="Content\ej\web\gradient-lime\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-lime\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-lime\ej.web.all.min.css" />
@@ -522,7 +511,6 @@
     <Content Include="Content\ej\web\gradient-lime\images\toolbar_icons.png" />
     <Content Include="Content\ej\web\gradient-lime\images\ui-icon.png" />
     <Content Include="Content\ej\web\gradient-lime\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\gradient-saffron-dark\ej.olappager.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.web.all.min.css" />
@@ -540,7 +528,6 @@
     <Content Include="Content\ej\web\gradient-saffron-dark\images\toolbar_icons.png" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\ui-icon.png" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\waitingpopup.gif" />
-    <Content Include="Content\ej\web\gradient-saffron\ej.olappager.css" />
     <Content Include="Content\ej\web\gradient-saffron\ej.theme.min.css" />
     <Content Include="Content\ej\web\gradient-saffron\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-saffron\ej.web.all.min.css" />
@@ -572,19 +559,19 @@
     <Content Include="Scripts\ej\ej.unobtrusive.min.js" />
     <Content Include="Scripts\ej\ej.web.all.min.js" />
     <Content Include="Scripts\ej\ej.widget.all.min.js" />
-    <Content Include="Scripts\ej\ej.widget.angular.min.js" />
-    <Content Include="Scripts\ej\ej.widget.ko.min.js" />
-    <Content Include="Scripts\ej\ej.widgets.all.min.js" />
-    <Content Include="Content\ej\web\common-images\ejicons.woff" />
-    <Content Include="Content\ej\web\common-images\ejicons.ttf" />
-    <Content Include="Content\ej\web\common-images\ejicons.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\ej\web\common-images\ejicons.woff" />
+    <Content Include="Content\ej\web\common-images\ejicons.ttf" />
+    <Content Include="Content\ej\web\common-images\ejicons.eot" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="Scripts\ej\ej.widget.angular.min.js" />
+    <Content Include="Scripts\ej\ej.widget.ko.min.js" />
+    <Content Include="Scripts\ej\ej.widgets.all.min.js" />
     <Content Include="Scripts\globalize\cultures\globalize.culture.af-ZA.js" />
     <Content Include="Scripts\globalize\cultures\globalize.culture.af.js" />
     <Content Include="Scripts\globalize\cultures\globalize.culture.am-ET.js" />

@@ -4,6 +4,7 @@
 
 @(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("Grid")
   .Datasource(Model)
+  .EnablePersistence()
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
@@ -24,7 +25,8 @@
     {
       y.Type("Edit").ButtonOptions(new ButtonProperties() { Text = "Edit", Click = "GetEdit", Width = "90" }).Add();
       y.Type("Remove").ButtonOptions(new ButtonProperties() { Text = "Remove", Click = "GetRemove", Width = "90" }).Add();
-    }).IsUnbound(true).Width(225).Add();
+    //}).IsUnbound(true).Width(225).Add();
+    }).IsUnbound(true).Add();
 
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();

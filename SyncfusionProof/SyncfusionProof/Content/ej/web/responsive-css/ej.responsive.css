@@ -38,10 +38,7 @@
         white-space: nowrap;
         width: 40px;
     }
-	/*Pager*/
-	.e-pager .e-pagercontainer .e-numericcontainer {   
-         display:none;
-    }
+	
     .e-responsive-toolbar{
          width:250px !important;
     } 

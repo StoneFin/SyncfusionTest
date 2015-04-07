@@ -10,14 +10,14 @@
 </div>*@
 
 @*Tabbed Grids*@
-@Html.EJ().Tab("TabTest").Items(x =>
+@*@Html.EJ().Tab("TabTest").Items(x =>
 {
   x.Add().ID("TabOne").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayFor(y => y, "TabOne")</div>);
   x.Add().ID("TabTwo").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayFor(y => y, "TabTwo")</div>);
-}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))
+}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))*@
 
 @*Enable Persistence*@
-@*@Html.DisplayFor(x => x, "EnablePersistence")*@
+@Html.DisplayFor(x => x, "EnablePersistence")
 
 @*Multi-Select*@
 @*@Html.DisplayFor(x => x, "MultiSelect")*@
