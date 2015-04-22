@@ -56,19 +56,19 @@
     </Reference>
     <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -113,58 +113,58 @@
     </Reference>
     <Reference Include="Syncfusion.Compression.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Core, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Core.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.Core.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.DocIO.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.DocIO.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.DocIO.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.EJ, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.EJ.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.EJ.Export, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.Export.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.EJ.Export.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.EJ.MVC, Version=13.1500.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.EJ.MVC.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.EJ.Olap, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.EJ.Olap.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.EJ.Olap.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Linq.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.Linq.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Olap.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Olap.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.Olap.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Pdf.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.PivotAnalysis.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.PivotAnalysis.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.PivotAnalysis.Base.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.XlsIO.Base, Version=13.1450.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\Syncfusion.XlsIO.Base.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.21\lib\net45\System.Data.SqlServerCe.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC5451.13.1.0.21\lib\net451\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
@@ -998,7 +998,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
