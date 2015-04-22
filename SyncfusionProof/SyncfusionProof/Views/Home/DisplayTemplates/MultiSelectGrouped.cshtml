@@ -2,7 +2,7 @@
 
 @using Syncfusion.JavaScript.Models
 
-@(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("MultiSelectGrid")
+@(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("MultiSelectGroupedGrid")
   .Datasource(Model)
   .AllowSelection()
   .SelectionType(SelectionType.Multiple)
@@ -13,9 +13,16 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .AllowGrouping()
+  .GroupSettings(x => { x.GroupedColumns(y => { y.Add("EmployeeId"); }); })
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y => { y.AddTool(ToolBarItems.Delete); }))
   .Columns(x =>
   {
+    x.HeaderText("Manage").Commands(y =>
+    {
+      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "GetRemove" }).Add();
+    }).IsUnbound(true).Add();
+
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();
     x.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();

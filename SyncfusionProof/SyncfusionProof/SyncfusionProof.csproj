@@ -992,6 +992,7 @@
     <Content Include="Views\Home\DisplayTemplates\TabTwo.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\EnablePersistence.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\MultiSelect.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\MultiSelectGrouped.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -34,7 +34,7 @@ var getRecord = function (toolbarItem, gridElement) {
   return null;
 }
 
-//multi select testing (working)
+//multi select testing (not working when grouping is enabled)
 var getRecords = function (toolbarItem, gridElement) {
   if (gridElement.getSelectedRecords().length > 0) {
     return gridElement.getSelectedRecords();
@@ -45,12 +45,26 @@ var getRecords = function (toolbarItem, gridElement) {
   return null;
 }
 
+var deleteRecord = function () {
+  var self = this;
+
+  var record = getRecord("MultiSelectGrid", self.element);
+
+  alert("Selected Key: " + record.OrderId);
+}
+
 var toolbarClick = function (toolbarItem) {
   var self = this;
 
   if (toolbarItem.itemName === "Delete") {
-    var record = getRecord(toolbarItem, self);
+    var records = getRecords(toolbarItem, self);
 
-    console.log(record);
+    var keys = "";
+
+    $.each(records, function (i, record) {
+      keys = keys.concat(record.OrderId + ", ");
+    });
+
+    alert("Selected Keys: " + keys);
   }
 }

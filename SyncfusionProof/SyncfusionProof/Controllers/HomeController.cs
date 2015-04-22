@@ -13,7 +13,7 @@ namespace SyncfusionProof.Controllers
     {
       TestModel testModel1 = new TestModel()
       {
-        OrderId = 2031532465,
+        OrderId = 1,
         CustomerId = "5423115657865424ASFE",
         EmployeeId = 111,
         Freight = (decimal)32.50,
@@ -34,9 +34,9 @@ namespace SyncfusionProof.Controllers
 
       TestModel testModel2 = new TestModel()
       {
-        OrderId = 2031532466,
+        OrderId = 2,
         CustomerId = "5423115657865424ABCD",
-        EmployeeId = 222,
+        EmployeeId = 111,
         Freight = (decimal)54.72,
         FreightDetails = new FreightDetails
         {
@@ -53,9 +53,9 @@ namespace SyncfusionProof.Controllers
 
       TestModel testModel3 = new TestModel()
       {
-        OrderId = 2031532467,
+        OrderId = 3,
         CustomerId = "ABCD5423115657865424",
-        EmployeeId = 333,
+        EmployeeId = 222,
         Freight = (decimal)55.55,
         FreightDetails = new FreightDetails
         {
@@ -69,6 +69,25 @@ namespace SyncfusionProof.Controllers
       };
 
       testModels.Add(testModel3);
+
+      TestModel testModel4 = new TestModel()
+      {
+        OrderId = 4,
+        CustomerId = "ABCD5423115657865424",
+        EmployeeId = 222,
+        Freight = (decimal)55.55,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)66.66
+        },
+        ShipCity = "Ft Lauderdale",
+        ShipName = "USS Ronald Reagan",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "Nebraska",
+        FavoriteBunny = "Nivens McTwisp"
+      };
+
+      testModels.Add(testModel4);
 
       return View("Index", testModels);
     }

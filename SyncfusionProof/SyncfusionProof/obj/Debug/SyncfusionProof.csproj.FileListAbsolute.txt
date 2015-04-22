@@ -284,7 +284,6 @@ D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.DocIO.Base.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.Export.xml
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.MVC.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.Olap.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Linq.Base.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Olap.Base.xml
