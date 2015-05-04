@@ -53,18 +53,35 @@ var deleteRecord = function () {
   alert("Selected Key: " + record.OrderId);
 }
 
+var deleteRecords = function (gridId, gridKey, records) {
+  var self = this;
+
+  var grid = $("#" + gridId).ejGrid("instance");
+
+  $.each(records, function (i, record) {
+    grid.deleteRecord(gridKey, record);
+  });
+
+  $("#" + gridId).ejGrid("refreshContent");
+
+  return records;
+}
+
 var toolbarClick = function (toolbarItem) {
   var self = this;
 
   if (toolbarItem.itemName === "Delete") {
     var records = getRecords(toolbarItem, self);
 
-    var keys = "";
+    //use this to show the selected keys
+    //var keys = "";
 
-    $.each(records, function (i, record) {
-      keys = keys.concat(record.OrderId + ", ");
-    });
+    //$.each(records, function (i, record) {
+    //  keys = keys.concat(record.OrderId + ", ");
+    //});
 
-    alert("Selected Keys: " + keys);
+    //alert("Selected Keys: " + keys);
+
+    deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
   }
 }

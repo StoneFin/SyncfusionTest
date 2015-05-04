@@ -332,7 +332,7 @@
 }
 
 .e-respponsiveSortingAsc:before {
-    content: "\e74c";
+    content: "\e74f";
     margin-top: -5px;
 }
 
@@ -347,7 +347,7 @@
     content: "\e755";
 }
 .e-respponsiveSortingDesc:before {
-    content: "\e74f";
+    content: "\e74c";
     margin-top: -5px;
 }
 
