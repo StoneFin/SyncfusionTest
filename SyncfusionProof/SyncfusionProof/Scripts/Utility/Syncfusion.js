@@ -34,7 +34,7 @@ var getRecord = function (toolbarItem, gridElement) {
   return null;
 }
 
-//multi select testing (not working when grouping is enabled)
+//multi select testing (working)
 var getRecords = function (toolbarItem, gridElement) {
   if (gridElement.getSelectedRecords().length > 0) {
     return gridElement.getSelectedRecords();
@@ -62,7 +62,8 @@ var deleteRecords = function (gridId, gridKey, records) {
     grid.deleteRecord(gridKey, record);
   });
 
-  $("#" + gridId).ejGrid("refreshContent");
+  //not necessary for deleting records
+  //$("#" + gridId).ejGrid("refreshContent");
 
   return records;
 }

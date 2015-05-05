@@ -15,6 +15,7 @@
   .IsResponsive()
   .AllowGrouping()
   .GroupSettings(x => { x.GroupedColumns(y => { y.Add("EmployeeId"); }); })
+  .EditSettings(x => x.AllowDeleting())
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y => { y.AddTool(ToolBarItems.Delete); }))
   .Columns(x =>
   {
