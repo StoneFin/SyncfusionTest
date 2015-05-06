@@ -13,6 +13,7 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .EditSettings(x => { x.AllowDeleting(); })
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y => { y.AddTool(ToolBarItems.Delete); }))
   .Columns(x =>
   {
