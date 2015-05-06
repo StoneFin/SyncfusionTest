@@ -62,9 +62,6 @@ var deleteRecords = function (gridId, gridKey, records) {
     grid.deleteRecord(gridKey, record);
   });
 
-  //not necessary for deleting records
-  //$("#" + gridId).ejGrid("refreshContent");
-
   return records;
 }
 
@@ -74,14 +71,8 @@ var toolbarClick = function (toolbarItem) {
   if (toolbarItem.itemName === "Delete") {
     var records = getRecords(toolbarItem, self);
 
-    //use this to show the selected keys
-    //var keys = "";
-
-    //$.each(records, function (i, record) {
-    //  keys = keys.concat(record.OrderId + ", ");
-    //});
-
-    //alert("Selected Keys: " + keys);
+    //cancel the grid's default delete operation
+    toolbarItem.cancel = true;
 
     deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
   }
