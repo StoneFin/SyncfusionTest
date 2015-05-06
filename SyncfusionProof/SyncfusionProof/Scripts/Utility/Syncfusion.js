@@ -68,11 +68,11 @@ var deleteRecords = function (gridId, gridKey, records) {
 var toolbarClick = function (toolbarItem) {
   var self = this;
 
+  //cancel the grid's default operation
+  toolbarItem.cancel = true;
+
   if (toolbarItem.itemName === "Delete") {
     var records = getRecords(toolbarItem, self);
-
-    //cancel the grid's default delete operation
-    toolbarItem.cancel = true;
 
     deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
   }
