@@ -6,24 +6,24 @@
 
 @*Basic Grid*@
 @*<div id="GridContainer">
-  @Html.DisplayFor(x => x, "ScrollResponsiveTest")
+  @Html.DisplayForModel("ScrollResponsiveTest")
 </div>*@
 
 @*Tabbed Grids*@
 @*@Html.EJ().Tab("TabTest").Items(x =>
 {
-  x.Add().ID("TabOne").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayFor(y => y, "TabOne")</div>);
-  x.Add().ID("TabTwo").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayFor(y => y, "TabTwo")</div>);
+  x.Add().ID("TabOne").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOne")</div>);
+  x.Add().ID("TabTwo").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwo")</div>);
 }).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))*@
 
 @*Enable Persistence*@
-@*@Html.DisplayFor(x => x, "EnablePersistence")*@
+@*@Html.DisplayForModel("EnablePersistence")*@
 
 @*Multi-Select*@
-@*@Html.DisplayFor(x => x, "MultiSelect")*@
+@*@Html.DisplayForModel("MultiSelect")*@
 
 @*Multi-Select Grouped*@
-@*@Html.DisplayFor(x => x, "MultiSelectGrouped")*@
+@*@Html.DisplayForModel("MultiSelectGrouped")*@
 
 @*Inline Editable Grid*@
 @Html.DisplayForModel("InlineEditing")

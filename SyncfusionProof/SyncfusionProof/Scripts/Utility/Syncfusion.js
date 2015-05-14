@@ -52,17 +52,18 @@ var getRecords = function (toolbarItem, gridElement) {
   return null;
 }
 
-var deleteRecord = function () {
+var deleteRecord = function (gridId, gridKey, record) {
   var self = this;
+  var grid = $("#" + gridId).ejGrid("instance");
 
-  var record = getRecord("MultiSelectGrid", self.element);
+  grid.deleteRecord(gridKey, record);
+  //alert("Selected Key: " + gridKey);
 
-  alert("Selected Key: " + record.OrderId);
+  return record;
 }
 
 var deleteRecords = function (gridId, gridKey, records) {
   var self = this;
-
   var grid = $("#" + gridId).ejGrid("instance");
 
   $.each(records, function (i, record) {
@@ -83,7 +84,9 @@ var toolbarClick = function (toolbarItem) {
   if (toolbarItem.itemName === "Delete") {
     var records = getRecords(toolbarItem, self);
 
-    deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
+    //change based on which grid you're testing
+    //deleteRecords("MultiSelectGrid", "OrderId", records);
+    //deleteRecords("MultiSelectGrouped", "OrderId", records);
   }
 }
 
