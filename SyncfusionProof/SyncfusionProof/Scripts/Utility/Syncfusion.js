@@ -1,5 +1,12 @@
 ﻿$(function () {
+  //is there a better way to get the selected value from the drop down editor than this?
+  //change event for inline edit dropdown grid editor
+  $(document).on("click", "#InlineEditingGridManufacturer_popup ul[role='listbox']", function () {
+    //get the selected funding source and set the variable
+    var manufacturerId = $("#InlineEditingGridManufacturer_popup ul[role='listbox'] .e-active").data("value");
 
+    currentManufactuerId = manufacturerId;
+  }).change();
 });
 
 //tab rendering fix (working)
@@ -78,4 +85,19 @@ var toolbarClick = function (toolbarItem) {
 
     deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
   }
+}
+
+//is there a better way to get the selected value from the drop down editor than this?
+var currentManufactuerId = 0;
+
+var inlineEditActionComplete = function (args) {
+  var self = this;
+
+  if (args.requestType === "save") {
+    //cancel the grid's default operation
+    args.cancel = true;
+  }
+
+  //is there a better way to get the selected value from the drop down editor than this?
+  console.log(currentManufactuerId);
 }

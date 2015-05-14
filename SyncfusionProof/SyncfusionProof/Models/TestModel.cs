@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace SyncfusionProof.Models
 {
@@ -15,7 +12,7 @@ namespace SyncfusionProof.Models
     public string ShipName { get; set; }
     public string ShipState { get; set; }
     public DateTime OrderDate { get; set; }
-    public string FavoriteBunny { get; set; }
     public FreightDetails FreightDetails { get; set; }
+    public int ManufacturerId { get; set; }
   }
 }
