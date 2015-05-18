@@ -30,7 +30,8 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Enterprise",
         OrderDate = DateTime.Now,
         ShipState = "Illinois",
-        ManufacturerId = 1
+        ManufacturerId = 1,
+        Manufacturer = "Honda"
       };
       
       var testModels = new List<TestModel>();
@@ -51,7 +52,8 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Minnow",
         OrderDate = DateTime.Now.AddDays(-1),
         ShipState = "California",
-        ManufacturerId = 2
+        ManufacturerId = 2,
+        Manufacturer = "Husqvarna"
       };
 
       testModels.Add(testModel2);
@@ -70,7 +72,8 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Ronald Reagan",
         OrderDate = DateTime.Now.AddDays(-1),
         ShipState = "Nebraska",
-        ManufacturerId = 3
+        ManufacturerId = 3,
+        Manufacturer = "Kawasaki"
       };
 
       testModels.Add(testModel3);
@@ -89,7 +92,8 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Ronald Reagan",
         OrderDate = DateTime.Now.AddDays(-1),
         ShipState = "Nebraska",
-        ManufacturerId = 4
+        ManufacturerId = 4,
+        Manufacturer = "Yamaha"
       };
 
       testModels.Add(testModel4);

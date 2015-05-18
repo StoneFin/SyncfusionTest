@@ -103,6 +103,13 @@ var inlineEditActionComplete = function (args) {
     console.log(args.data.ManufacturerId);
   }
 
+  if (args.requestType === "beginedit") {
+    //when editing a dropdown, set the selected text to match the current value
+    var ele = $("#" + this._id + "Manufacturer");
+
+    ele.ejDropDownList("setSelectedText", args.model.currentViewData[args.rowIndex].Manufacturer);
+  }
+
   ////is there a better way to get the selected value from the drop down editor than this?
   //console.log(currentManufacturerId);
 }

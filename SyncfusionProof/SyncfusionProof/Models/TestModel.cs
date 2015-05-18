@@ -14,5 +14,6 @@ namespace SyncfusionProof.Models
     public DateTime OrderDate { get; set; }
     public FreightDetails FreightDetails { get; set; }
     public int ManufacturerId { get; set; }
+    public string Manufacturer { get; set; }
   }
 }
