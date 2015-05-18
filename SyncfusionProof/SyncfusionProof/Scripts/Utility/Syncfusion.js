@@ -99,13 +99,14 @@ var inlineEditActionComplete = function (args) {
   if (args.requestType === "save") {
     //cancel the grid's default operation
     args.cancel = true;
-
+    
+    //just showing that we got the correct manufacturer id
     console.log(args.data.ManufacturerId);
   }
 
   if (args.requestType === "beginedit") {
     //when editing a dropdown, set the selected text to match the current value
-    var ele = $("#" + this._id + "Manufacturer");
+    var ele = $("#" + self._id + "Manufacturer");
 
     ele.ejDropDownList("setSelectedText", args.model.currentViewData[args.rowIndex].Manufacturer);
   }
