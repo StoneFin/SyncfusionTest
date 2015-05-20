@@ -17,12 +17,12 @@
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y => { y.AddTool(ToolBarItems.Delete); }))
   .Columns(x =>
   {
-    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(TextAlign.Right).Add();
+    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();
-    x.Field("EmployeeId").HeaderText("Employee ID").TextAlign(TextAlign.Right).Add();
-    x.Field("Freight").HeaderText("Freight").TextAlign(TextAlign.Right).Format("{0:C}").Add();
-    x.Field("FreightDetails.Freight2").HeaderText("Freight2").TextAlign(TextAlign.Right).Format("{0:C}").Add();
-    x.Field("OrderDate").HeaderText("Order Date").TextAlign(TextAlign.Right).Format("{0:MM/dd/yyyy}").Add();
+    x.Field("EmployeeId").HeaderText("Employee ID").Add();
+    x.Field("Freight").HeaderText("Freight").Format("{0:C}").Add();
+    x.Field("FreightDetails.Freight2").HeaderText("Freight2").Format("{0:C}").Add();
+    x.Field("OrderDate").HeaderText("Order Date").Format("{0:MM/dd/yyyy}").Add();
     x.Field("ShipCity").HeaderText("Ship City").Add();
     x.Field("ShipState").HeaderText("Ship State").Add();
     x.Field("FavoriteBunny").HeaderText("Favorite Bunny").Add();
