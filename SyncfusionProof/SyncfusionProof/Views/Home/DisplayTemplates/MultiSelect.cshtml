@@ -1,9 +1,9 @@
-﻿@model IEnumerable<SyncfusionProof.Models.TestModel>
+﻿@model SyncfusionProof.Models.HomeModel
 
 @using Syncfusion.JavaScript.Models
 
-@(Html.EJ().Grid<IEnumerable<SyncfusionProof.Models.TestModel>>("MultiSelectGrid")
-  .Datasource(Model)
+@(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("MultiSelectGrid")
+  .Datasource(Model.TestModels)
   .AllowSelection()
   .SelectionType(SelectionType.Multiple)
   .AllowSorting()
@@ -25,10 +25,6 @@
     x.Field("OrderDate").HeaderText("Order Date").Format("{0:MM/dd/yyyy}").Add();
     x.Field("ShipCity").HeaderText("Ship City").Add();
     x.Field("ShipState").HeaderText("Ship State").Add();
-    x.Field("FavoriteBunny").HeaderText("Favorite Bunny").Add();
-    x.Field("ShipCountry").HeaderText("ShipCountry").Add();
-    x.Field("ShipPostalCode").HeaderText("Ship Postal Code").Add();
-    x.Field("Verified").HeaderText("Verified").Add();
   })
   .ClientSideEvents(x => { x.ToolbarClick("toolbarClick"); })
 )

@@ -1,8 +1,6 @@
 ﻿using SyncfusionProof.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace SyncfusionProof.Controllers
@@ -11,6 +9,13 @@ namespace SyncfusionProof.Controllers
   {
     public ActionResult Index()
     {
+      var manufacturers = new List<object>();
+
+      manufacturers.Add(new { text = "Honda", value = 1 });
+      manufacturers.Add(new { text = "Husqvarna", value = 2 });
+      manufacturers.Add(new { text = "Kawasaki", value = 3 });
+      manufacturers.Add(new { text = "Yamaha", value = 4 });
+      
       TestModel testModel1 = new TestModel()
       {
         OrderId = 1,
@@ -25,7 +30,8 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Enterprise",
         OrderDate = DateTime.Now,
         ShipState = "Illinois",
-        FavoriteBunny = "Reader Rabbit"
+        ManufacturerId = 1,
+        Manufacturer = "Honda"
       };
       
       var testModels = new List<TestModel>();
@@ -46,7 +52,8 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Minnow",
         OrderDate = DateTime.Now.AddDays(-1),
         ShipState = "California",
-        FavoriteBunny = "Peter Cottontail"
+        ManufacturerId = 2,
+        Manufacturer = "Husqvarna"
       };
 
       testModels.Add(testModel2);
@@ -65,7 +72,8 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Ronald Reagan",
         OrderDate = DateTime.Now.AddDays(-1),
         ShipState = "Nebraska",
-        FavoriteBunny = "Nivens McTwisp"
+        ManufacturerId = 3,
+        Manufacturer = "Kawasaki"
       };
 
       testModels.Add(testModel3);
@@ -84,12 +92,19 @@ namespace SyncfusionProof.Controllers
         ShipName = "USS Ronald Reagan",
         OrderDate = DateTime.Now.AddDays(-1),
         ShipState = "Nebraska",
-        FavoriteBunny = "Nivens McTwisp"
+        ManufacturerId = 4,
+        Manufacturer = "Yamaha"
       };
 
       testModels.Add(testModel4);
 
-      return View("Index", testModels);
+      var homeModel = new HomeModel
+      {
+        TestModels = testModels,
+        Manufacturers = manufacturers
+      };
+
+      return View("Index", homeModel);
     }
 
     public ActionResult About()

@@ -1,5 +1,12 @@
 ﻿$(function () {
+  ////is there a better way to get the selected value from the drop down editor than this?
+  ////change event for inline edit dropdown grid editor
+  //$(document).on("click", "#InlineEditingGridManufacturer_popup ul[role='listbox']", function () {
+  //  //get the selected funding source and set the variable
+  //  var manufacturerId = $("#InlineEditingGridManufacturer_popup ul[role='listbox'] .e-active").data("value");
 
+  //  currentManufacturerId = manufacturerId;
+  //}).change();
 });
 
 //tab rendering fix (working)
@@ -45,17 +52,18 @@ var getRecords = function (toolbarItem, gridElement) {
   return null;
 }
 
-var deleteRecord = function () {
+var deleteRecord = function (gridId, gridKey, record) {
   var self = this;
+  var grid = $("#" + gridId).ejGrid("instance");
 
-  var record = getRecord("MultiSelectGrid", self.element);
+  grid.deleteRecord(gridKey, record);
+  //alert("Selected Key: " + gridKey);
 
-  alert("Selected Key: " + record.OrderId);
+  return record;
 }
 
 var deleteRecords = function (gridId, gridKey, records) {
   var self = this;
-
   var grid = $("#" + gridId).ejGrid("instance");
 
   $.each(records, function (i, record) {
@@ -76,6 +84,47 @@ var toolbarClick = function (toolbarItem) {
   if (toolbarItem.itemName === "Delete") {
     var records = getRecords(toolbarItem, self);
 
-    deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
+    //change based on which grid you're testing
+    //deleteRecords("MultiSelectGrid", "OrderId", records);
+    //deleteRecords("MultiSelectGrouped", "OrderId", records);
+  }
+}
+
+////is there a better way to get the selected value from the drop down editor than this?
+//var currentManufacturerId = 0;
+
+var inlineEditActionComplete = function (args) {
+  var self = this;
+
+  if (args.requestType === "save") {
+    //cancel the grid's default operation
+    args.cancel = true;
+    
+    //just showing that we got the correct manufacturer id
+    console.log(args.data.ManufacturerId);
+  }
+
+  if (args.requestType === "beginedit") {
+    //when editing a dropdown, set the selected text to match the current value
+    var ele = $("#" + self._id + "Manufacturer");
+
+    ele.ejDropDownList("setSelectedText", args.model.currentViewData[args.rowIndex].Manufacturer);
+  }
+
+  ////is there a better way to get the selected value from the drop down editor than this?
+  //console.log(currentManufacturerId);
+}
+
+var inlineEditActionBegin = function (args) {
+  var self = this;
+
+  //this is working to fetch the selected dropdown id at edit time
+  //no more variable needed
+  if (args.requestType === "save") {
+    //currentManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
+
+    //console.log(currentManufacturerId);
+
+    args.data.ManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
   }
 }
