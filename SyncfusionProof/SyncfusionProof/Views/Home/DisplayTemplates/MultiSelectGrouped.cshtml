@@ -13,12 +13,31 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .SummaryRow(x =>
+  {
+    x.Title("Total").SummaryColumns(y => { y.SummaryType(SummaryType.Sum).Format("{0:C2}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
+  })
   .AllowGrouping()
   .GroupSettings(x => { x.GroupedColumns(y => { y.Add("EmployeeId"); }); })
   .EditSettings(x => { x.AllowDeleting(); })
-  .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y => { y.AddTool(ToolBarItems.Delete); }))
+  .ToolbarSettings(x =>
+  {
+    x.ShowToolbar().ToolbarItems(y =>
+    {
+      y.AddTool(ToolBarItems.Search);
+      y.AddTool(ToolBarItems.Add);
+      y.AddTool(ToolBarItems.Edit);
+      y.AddTool(ToolBarItems.Delete);
+    });
+  })
   .Columns(x =>
   {
+    x.HeaderText("Manage").Commands(y =>
+    {
+      y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-edit", Click = "editRow" }).Add();
+      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "removeRow" }).Add();
+    }).IsUnbound(true).Add();
+    
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();
     x.Field("EmployeeId").HeaderText("Employee ID").Add();
