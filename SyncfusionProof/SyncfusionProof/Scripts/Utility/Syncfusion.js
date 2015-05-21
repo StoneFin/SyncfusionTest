@@ -53,7 +53,6 @@ var getRecords = function (toolbarItem, gridElement) {
 }
 
 var deleteRecord = function (gridId, gridKey, record) {
-  var self = this;
   var grid = $("#" + gridId).ejGrid("instance");
 
   grid.deleteRecord(gridKey, record);
@@ -63,7 +62,6 @@ var deleteRecord = function (gridId, gridKey, record) {
 }
 
 var deleteRecords = function (gridId, gridKey, records) {
-  var self = this;
   var grid = $("#" + gridId).ejGrid("instance");
 
   $.each(records, function (i, record) {
@@ -71,6 +69,17 @@ var deleteRecords = function (gridId, gridKey, records) {
   });
 
   return records;
+}
+
+var removeRow = function () {
+  //change based on which grid you're testing
+  var grid = $("#MultiSelectGrid").ejGrid("instance");
+
+  var i = grid.model.selectedRowIndex;
+  var record = grid.getCurrentViewData()[i];
+
+  //change based on which grid you're testing
+  deleteRecord("MultiSelectGrid", "OrderId", record);
 }
 
 var toolbarClick = function (toolbarItem) {
@@ -85,7 +94,7 @@ var toolbarClick = function (toolbarItem) {
     var records = getRecords(toolbarItem, self);
 
     //change based on which grid you're testing
-    //deleteRecords("MultiSelectGrid", "OrderId", records);
+    deleteRecords("MultiSelectGrid", "OrderId", records);
     //deleteRecords("MultiSelectGrouped", "OrderId", records);
   }
 }
@@ -127,4 +136,8 @@ var inlineEditActionBegin = function (args) {
 
     args.data.ManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
   }
+}
+
+var editRow = function (args) {
+  console.log(args);
 }
