@@ -13,6 +13,7 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .ShowSummary()
   .SummaryRow(x =>
   {
     x.Title("Total").SummaryColumns(y => { y.SummaryType(SummaryType.Sum).Format("{0:C2}").DisplayColumn("Freight").DataMember("Freight").Add(); }).Add();
