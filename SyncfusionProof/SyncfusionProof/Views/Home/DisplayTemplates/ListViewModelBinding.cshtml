@@ -1,0 +1,14 @@
+﻿@model SyncfusionProof.Models.HomeModel
+
+@(Html.EJ().ListView("TestModelListView")
+  .DataSource(Model.TestModels)
+  .ShowHeader(true)
+  .HeaderTitle("TestModels")
+  .EnableCheckMark(true)
+  .AllowScrolling(true)
+  .FieldSettings(x =>
+  {
+    x.PrimaryKey("OrderId");
+    x.Text("Freight");
+  })
+)

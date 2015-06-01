@@ -17,7 +17,7 @@
 }).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))*@
 
 @*Enable Persistence*@
-@Html.DisplayForModel("EnablePersistence")
+@*@Html.DisplayForModel("EnablePersistence")*@
 
 @*Multi-Select*@
 @*@Html.DisplayForModel("MultiSelect")*@
@@ -27,3 +27,9 @@
 
 @*Inline Editable Grid*@
 @*@Html.DisplayForModel("InlineEditing")*@
+
+@*ListView bound to a view model*@
+@Html.DisplayForModel("ListViewModelBinding")
+
+@*ListView done manually*@
+@Html.Partial("./DisplayTemplates/ListViewManual")

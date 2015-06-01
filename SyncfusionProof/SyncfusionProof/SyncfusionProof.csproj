@@ -664,6 +664,8 @@
     <Content Include="Views\Home\DisplayTemplates\MultiSelect.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\MultiSelectGrouped.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\InlineEditing.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ListViewModelBinding.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ListViewManual.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

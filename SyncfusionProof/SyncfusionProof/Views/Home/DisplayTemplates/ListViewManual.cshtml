@@ -1,0 +1,17 @@
+﻿@(Html.EJ().ListView("TestModelListView")
+  .ShowHeader(true)
+  .HeaderTitle("TestModels")
+  .EnableCheckMark(true)
+  .AllowScrolling(true)
+  .Items(x =>
+  {
+    x.Add().Text("Artwork");
+    x.Add().Text("Abstract");
+    x.Add().Text("2 Acrylic Mediums");
+    x.Add().Text("Creative Acrylic");
+    x.Add().Text("Modern Painting");
+    x.Add().Text("Canvas Art");
+    x.Add().Text("Black white");
+    x.Add().Text("Children");
+  })
+)
