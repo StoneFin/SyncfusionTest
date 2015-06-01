@@ -56,7 +56,7 @@
     </Reference>
     <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Microsoft.AnalysisServices.AdomdClient.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -111,60 +111,60 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Compression.Base, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Compression.Base, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Core, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Core, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.Core.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.DocIO.Base, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.DocIO.Base, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.DocIO.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.DocIO.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.EJ.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.EJ.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ.Export, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ.Export, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.EJ.Export.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.EJ.Export.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ.MVC, Version=13.1500.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ.MVC, Version=13.1500.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.EJ.Olap, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.EJ.Olap, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.EJ.Olap.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.EJ.Olap.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Linq.Base, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Linq.Base, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Olap.Base, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Olap.Base, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.Olap.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.Olap.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Pdf.Base, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.Pdf.Base, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.PivotAnalysis.Base, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.PivotAnalysis.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.PivotAnalysis.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.XlsIO.Base, Version=13.1450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+    <Reference Include="Syncfusion.XlsIO.Base, Version=13.1450.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.26\lib\net45\System.Data.SqlServerCe.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.ASPNETMVC545.13.1.0.30\lib\net45\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
@@ -339,6 +339,9 @@
     <Content Include="Content\ej\web\common-images\reports\plus.jpg" />
     <Content Include="Content\ej\web\common-images\reports\up.png" />
     <Content Include="Content\ej\web\common-images\reports\updown.png" />
+    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.svg" />
+    <Content Include="Content\ej\web\common-images\ribbon\gallery.png" />
+    <Content Include="Content\ej\web\common-images\ribbon\paste.png" />
     <Content Include="Content\ej\web\common-images\Rotate.cur" />
     <Content Include="Content\ej\web\common-images\schedule_priority.png" />
     <Content Include="Content\ej\web\default-theme\ej.theme.min.css" />
@@ -552,6 +555,7 @@
     <Content Include="Content\ej\web\gradient-saffron\images\waitingpopup.gif" />
     <Content Include="Content\ej\web\responsive-css\ej.responsive.css" />
     <Content Include="Content\ej\web\responsive-css\ejgrid.responsive.css" />
+    <Content Include="Content\ej\web\ribbon-css\ej.icons.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -573,9 +577,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\ej\web\common-images\ejicons.woff" />
-    <Content Include="Content\ej\web\common-images\ejicons.ttf" />
-    <Content Include="Content\ej\web\common-images\ejicons.eot" />
     <Content Include="Scripts\ej\ej.widget.angular.min.js" />
     <Content Include="Scripts\ej\ej.widget.ko.min.js" />
     <Content Include="Scripts\ej\ej.widgets.all.min.js" />
@@ -586,6 +587,12 @@
     <Content Include="Scripts\globalize\number.js" />
     <Content Include="Scripts\globalize\plural.js" />
     <Content Include="Scripts\globalize\relative-time.js" />
+    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.woff" />
+    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.ttf" />
+    <Content Include="Content\ej\web\common-images\ribbon\ejrbnicons.eot" />
+    <Content Include="Content\ej\web\common-images\ejicons.woff" />
+    <Content Include="Content\ej\web\common-images\ejicons.ttf" />
+    <Content Include="Content\ej\web\common-images\ejicons.eot" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
