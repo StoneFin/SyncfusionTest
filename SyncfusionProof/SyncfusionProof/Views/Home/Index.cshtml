@@ -29,7 +29,14 @@
 @*@Html.DisplayForModel("InlineEditing")*@
 
 @*ListView bound to a view model*@
-@Html.DisplayForModel("ListViewModelBinding")
+@*@Html.DisplayForModel("ListViewModelBinding")*@
 
 @*ListView done manually*@
-@Html.Partial("./DisplayTemplates/ListViewManual")
+@*@Html.Partial("./DisplayTemplates/ListViewManual")*@
+
+@*Grids that share Ids demonstrate some layout and caching problems*@
+
+<ul>
+  <li>@Html.ActionLink("GridCache1", "GridCache1", "Home")</li>
+  <li>@Html.ActionLink("GridCache2", "GridCache2", "Home")</li>
+</ul>

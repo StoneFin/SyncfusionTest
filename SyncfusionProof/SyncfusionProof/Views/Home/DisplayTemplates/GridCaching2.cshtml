@@ -1,0 +1,34 @@
+﻿@* Notice the first column on this grid contains buttons. *@
+
+@model SyncfusionProof.Models.HomeModel
+
+@using Syncfusion.JavaScript.Models
+
+@(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("GridCache")
+  .Datasource(Model.TestModels)
+  .EnablePersistence()
+  .AllowSorting()
+  .AllowPaging()
+  .AllowResizing()
+  .AllowScrolling()
+  .ScrollSettings(x => { x.Width("100%"); })
+  .MinWidth(500)
+  .IsResponsive()
+  .Columns(x =>
+  {
+    x.HeaderText("Manage").Commands(y =>
+    {
+      y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-edit", Click = "editRecord" }).Add();
+      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "deleteRecord" }).Add();
+    }).IsUnbound(true).Add();
+        
+    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
+    x.Field("CustomerId").HeaderText("Customer ID").Add();
+    x.Field("EmployeeId").HeaderText("Employee ID").Add();
+    x.Field("Freight").HeaderText("Freight").Format("{0:C}").Add();
+    x.Field("FreightDetails.Freight2").HeaderText("Freight2").Format("{0:C}").Add();
+    x.Field("OrderDate").HeaderText("Order Date").Format("{0:MM/dd/yyyy}").Add();
+    x.Field("ShipCity").HeaderText("Ship City").Add();
+    x.Field("ShipState").HeaderText("Ship State").Add();
+  })
+)

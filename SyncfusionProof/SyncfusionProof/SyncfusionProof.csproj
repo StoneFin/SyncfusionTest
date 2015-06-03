@@ -666,6 +666,10 @@
     <Content Include="Views\Home\DisplayTemplates\InlineEditing.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ListViewModelBinding.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ListViewManual.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\GridCaching1.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\GridCaching2.cshtml" />
+    <Content Include="Views\Home\GridCache1.cshtml" />
+    <Content Include="Views\Home\GridCache2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

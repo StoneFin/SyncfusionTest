@@ -9,13 +9,48 @@ namespace SyncfusionProof.Controllers
   {
     public ActionResult Index()
     {
+      var model = GetModel();
+
+      return View("Index", model);
+    }
+
+    public ActionResult About()
+    {
+      ViewBag.Message = "Your application description page.";
+
+      return View();
+    }
+
+    public ActionResult Contact()
+    {
+      ViewBag.Message = "Your contact page.";
+
+      return View();
+    }
+
+    public ActionResult GridCache1()
+    {
+      var model = GetModel();
+
+      return View("GridCache1", model);
+    }
+
+    public ActionResult GridCache2()
+    {
+      var model = GetModel();
+
+      return View("GridCache2", model);
+    }
+
+    private HomeModel GetModel()
+    {
       var manufacturers = new List<object>();
 
       manufacturers.Add(new { text = "Honda", value = 1 });
       manufacturers.Add(new { text = "Husqvarna", value = 2 });
       manufacturers.Add(new { text = "Kawasaki", value = 3 });
       manufacturers.Add(new { text = "Yamaha", value = 4 });
-      
+
       TestModel testModel1 = new TestModel()
       {
         OrderId = 1,
@@ -33,9 +68,9 @@ namespace SyncfusionProof.Controllers
         ManufacturerId = 1,
         Manufacturer = "Honda"
       };
-      
+
       var testModels = new List<TestModel>();
-      
+
       testModels.Add(testModel1);
 
       TestModel testModel2 = new TestModel()
@@ -104,21 +139,7 @@ namespace SyncfusionProof.Controllers
         Manufacturers = manufacturers
       };
 
-      return View("Index", homeModel);
-    }
-
-    public ActionResult About()
-    {
-      ViewBag.Message = "Your application description page.";
-
-      return View();
-    }
-
-    public ActionResult Contact()
-    {
-      ViewBag.Message = "Your contact page.";
-
-      return View();
+      return homeModel;
     }
   }
 }
