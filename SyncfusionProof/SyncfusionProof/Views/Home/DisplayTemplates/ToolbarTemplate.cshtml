@@ -2,17 +2,28 @@
 
 @using Syncfusion.JavaScript.Models
 
-@(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("TabOneGrid")
+@(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("ToolbarTemplateGrid")
   .Datasource(Model.TestModels)
+  .EnablePersistence()
+  .AllowSelection()
+  .SelectionType(SelectionType.Multiple)
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
-  //if the grid is contained in tabs where EnablePersistence = true, do not add these settings
-  //if the grid is contained in tabs where EnablePersistence = false, only add these to grids contained in all but the first tab
-  //.AllowScrolling()
-  //.ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .ToolbarSettings(x =>
+    x.ShowToolbar()
+    .ToolbarItems(y =>
+    {
+      y.AddTool(ToolBarItems.Search);
+      y.AddTool(ToolBarItems.Add);
+      y.AddTool(ToolBarItems.Edit);
+      y.AddTool(ToolBarItems.Delete);
+    })
+    .CustomToolbarItems(new List<object>() { new CustomToolbarItem() { TemplateID = "#Refresh" } })
+  )
+  .EditSettings(x => { x.AllowAdding().AllowDeleting(); })
   .Columns(x =>
   {
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();

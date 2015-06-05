@@ -35,8 +35,17 @@
 @*@Html.Partial("./DisplayTemplates/ListViewManual")*@
 
 @*Grids that share Ids demonstrate some layout and caching problems*@
-
-<ul>
+@*<ul>
   <li>@Html.ActionLink("GridCache1", "GridCache1", "Home")</li>
   <li>@Html.ActionLink("GridCache2", "GridCache2", "Home")</li>
-</ul>
+</ul>*@
+
+@* Toolbar Template Grid *@
+@Html.DisplayForModel("ToolbarTemplate")
+
+@section scripts {
+  <script id="Refresh" type="text/x-jsrender">
+    <a href="#" class="e-toolbaricons refresh" />
+  </script>
+}
+
