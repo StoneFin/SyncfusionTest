@@ -301,6 +301,8 @@
     <Content Include="Content\ej\web\common-images\diagram_context.png" />
     <Content Include="Content\ej\web\common-images\diagram_context1.png" />
     <Content Include="Content\ej\web\common-images\ejicons.svg" />
+    <Content Include="Content\ej\web\common-images\icons-gray.png" />
+    <Content Include="Content\ej\web\common-images\icons-white.png" />
     <Content Include="Content\ej\web\common-images\maps\Arrow_Bootom.png" />
     <Content Include="Content\ej\web\common-images\maps\Arrow_Bootom_hover.png" />
     <Content Include="Content\ej\web\common-images\maps\Arrow_Left.png" />

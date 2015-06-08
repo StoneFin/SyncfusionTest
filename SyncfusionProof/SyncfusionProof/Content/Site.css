@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Refresh button for grids */
+.refresh {
+  background-position: -76px 3px;
+  background-image: url("ej/web/common-images/icons-gray.png");
+}
+
+.refresh:hover {
+  background-image: url("ej/web/common-images/icons-white.png");
+}

@@ -87,7 +87,8 @@ var removeRow = function () {
 var toolbarClick = function (toolbarItem) {
   var self = this;
 
-  if (toolbarItem.itemName === "Delete") {
+  if (toolbarItem.itemName === "Delete" ||
+      toolbarItem.itemName === "Refresh") {
     //cancel the grid's default operation
     toolbarItem.cancel = true;
   }
@@ -98,6 +99,9 @@ var toolbarClick = function (toolbarItem) {
     //change based on which grid you're testing
     //deleteRecords("MultiSelectGrid", "OrderId", records);
     deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
+  }
+  else if (toolbarItem.itemName === "Refresh") {
+    alert("refresh button clicked")
   }
 }
 
