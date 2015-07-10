@@ -1,12 +1,4 @@
 ﻿$(function () {
-  ////is there a better way to get the selected value from the drop down editor than this?
-  ////change event for inline edit dropdown grid editor
-  //$(document).on("click", "#InlineEditingGridManufacturer_popup ul[role='listbox']", function () {
-  //  //get the selected funding source and set the variable
-  //  var manufacturerId = $("#InlineEditingGridManufacturer_popup ul[role='listbox'] .e-active").data("value");
-
-  //  currentManufacturerId = manufacturerId;
-  //}).change();
 });
 
 //tab rendering fix (working)
@@ -105,9 +97,6 @@ var toolbarClick = function (toolbarItem) {
   }
 }
 
-////is there a better way to get the selected value from the drop down editor than this?
-//var currentManufacturerId = 0;
-
 var inlineEditActionComplete = function (args) {
   var self = this;
 
@@ -125,9 +114,6 @@ var inlineEditActionComplete = function (args) {
 
     ele.ejDropDownList("setSelectedText", args.model.currentViewData[args.rowIndex].Manufacturer);
   }
-
-  ////is there a better way to get the selected value from the drop down editor than this?
-  //console.log(currentManufacturerId);
 }
 
 var inlineEditActionBegin = function (args) {
@@ -136,10 +122,6 @@ var inlineEditActionBegin = function (args) {
   //this is working to fetch the selected dropdown id at edit time
   //no more variable needed
   if (args.requestType === "save") {
-    //currentManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
-
-    //console.log(currentManufacturerId);
-
     args.data.ManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
   }
 }
