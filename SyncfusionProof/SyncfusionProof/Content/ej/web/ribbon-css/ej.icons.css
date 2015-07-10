@@ -195,7 +195,7 @@
     font-size: 15px;
     position: relative;
     right: 0px; 
-    top: 5px;
+    top: -6px;
 }
 .e-ribbon .e-colorwidget .e-tool-icon .e-selected-color {
     bottom: 0;    
@@ -208,7 +208,7 @@
     font-size: 15px;
     position: relative;
     right: 0px; 
-    top: 5px;
+    top: -6px;
 }
 .e-ribbon .e-sort:before {
     font-family: 'ej-ribbonfont';
@@ -391,6 +391,8 @@
     height: 220px;
     border: 1px solid #c8c3c3;
     overflow: auto;
+	-moz-user-select: text;
+	-webkit-user-select:text;
 }
 
 .e-contenteditor p {
@@ -490,7 +492,15 @@
 .darktheme .e-contenteditor{
 	border-color: #464646;
 }
-
-.darktheme .e-contextualtab{
+.darktheme .e-contextualtabset{
 	background-color: #353332 !important;
+}
+.darktheme .e-author{
+    color:#6d6d6d;
+}
+.darktheme .e-ribbonbackstagepage{
+	color:#8e8e8e;
+}
+.darktheme .e-bsptitle{
+	color:#eaeaea;
 }
