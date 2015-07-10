@@ -1,4 +1,10 @@
 ﻿$(function () {
+  //click handler for inactivation undo
+  $("#UndoLink").on("click", function () {
+    undoUpdate();
+
+    return false;
+  });
 });
 
 //tab rendering fix (working)
@@ -53,6 +59,16 @@ var deleteRecord = function (gridId, gridKey, record) {
   return record;
 }
 
+var addRecords = function (gridId, records) {
+  var grid = $("#" + gridId).ejGrid("instance");
+
+  $.each(records, function (i, record) {
+    grid.addRecord(record);
+  });
+
+  return records;
+}
+
 var deleteRecords = function (gridId, gridKey, records) {
   var grid = $("#" + gridId).ejGrid("instance");
 
@@ -61,6 +77,55 @@ var deleteRecords = function (gridId, gridKey, records) {
   });
 
   return records;
+}
+
+var updateRows = function (gridId, gridKey, records) {
+  //alert and storage ttl
+  var ttl = 60000;
+
+  //store the records
+  amplify.store("StoredRecords", records, { expires: ttl });
+
+  //show undo alert
+  $("#UndoAlert").slideDown();
+
+  //set the alert timeout
+  setTimeout(function () {
+    $("#UndoAlert").slideUp();
+  }, ttl);
+
+  //remove the stale records
+  deleteRecords("InlineEditingGrid", "Id", records);
+
+  //update the records
+  $.each(records, function (i, record) {
+    record.ShipCity = "Updated City";
+  });
+
+  //add the updated records
+  addRecords("InlineEditingGrid", records);
+}
+
+var undoUpdate = function () {
+  //recover the stored records
+  var records = amplify.store("StoredRecords");
+
+  //update the records
+  $.each(records, function (i, record) {
+    record.ShipCity = "Undone City";
+  });
+
+  //clear records from storage
+  amplify.store("InlineEditingGrid", null);
+
+  //hide the alert
+  $("#UndoAlert").slideUp();
+
+  //remove the old records
+  deleteRecords("InlineEditingGrid", "Id", records);
+
+  //re-add the updated records
+  addRecords("InlineEditingGrid", records);
 }
 
 var removeRow = function () {
@@ -90,7 +155,8 @@ var toolbarClick = function (toolbarItem) {
 
     //change based on which grid you're testing
     //deleteRecords("MultiSelectGrid", "OrderId", records);
-    deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
+    //deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
+    updateRows("InlineEditingGrid", "OrderId", records);
   }
   else if (toolbarItem.itemName === "Refresh") {
     alert("refresh button clicked")

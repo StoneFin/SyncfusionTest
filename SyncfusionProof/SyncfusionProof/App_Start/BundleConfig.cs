@@ -29,6 +29,7 @@ namespace SyncfusionProof
         .Include("~/Scripts/ej/ej.web.all.min.js")
         .Include("~/Scripts/ej/ej.unobtrusive.min.js")
         .Include("~/Scripts/bootstrap*")
+        .Include("~/Scripts/amplify*")
         .Include("~/Scripts/respond*")
         .Include("~/Scripts/Utility/Syncfusion*")
         );

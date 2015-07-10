@@ -4,17 +4,24 @@
   ViewBag.Title = "Home Page";
 }
 
+@*undo delete alert*@
+<div id="UndoAlert" class="alert alert-danger" role="alert" style="display:none;">
+  <strong>Record(s) deleted.</strong>
+  <a id="UndoLink" href="#" class="alert-link btn btn-default">Undo</a>
+</div>
+
 @*Basic Grid*@
 @*<div id="GridContainer">
   @Html.DisplayForModel("ScrollResponsiveTest")
 </div>*@
 
 @*Tabbed Grids*@
-@*@Html.EJ().Tab("TabTest").Items(x =>
+@Html.EJ().Tab("TabTest").Items(x =>
 {
-  x.Add().ID("TabOne").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOne")</div>);
-  x.Add().ID("TabTwo").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwo")</div>);
-}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))*@
+  x.Add().ID("TabOneTab").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOne")</div>);
+  x.Add().ID("TabTwoTab").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwo")</div>);
+  x.Add().ID("InlineEditingTab").Text("Inline Editing").ContentTemplate(@<div class="row">@Html.DisplayForModel("InlineEditing")</div>);
+}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))
 
 @*Enable Persistence*@
 @*@Html.DisplayForModel("EnablePersistence")*@
@@ -41,11 +48,10 @@
 </ul>*@
 
 @* Toolbar Template Grid *@
-@Html.DisplayForModel("ToolbarTemplate")
+@*@Html.DisplayForModel("ToolbarTemplate")*@
 
 @section scripts {
   <script id="Refresh" type="text/x-jsrender">
     <a href="#" class="e-toolbaricons refresh" />
   </script>
 }
-
