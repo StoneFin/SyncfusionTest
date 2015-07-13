@@ -25,7 +25,7 @@ namespace SyncfusionProof
         .Include("~/Scripts/jquery.validate*")
         .Include("~/Scripts/jquery.easing.{version}.js")
         .Include("~/Scripts/jquery.globalize.min.js")
-        .Include("~/Scripts/jsrender*")
+        .Include("~/Scripts/jsrender.min.js")
         .Include("~/Scripts/ej/ej.web.all.min.js")
         .Include("~/Scripts/ej/ej.unobtrusive.min.js")
         .Include("~/Scripts/bootstrap*")
