@@ -16,12 +16,12 @@
 </div>*@
 
 @*Tabbed Grids*@
-@Html.EJ().Tab("TabTest").Items(x =>
+@*@Html.EJ().Tab("TabTest").Items(x =>
 {
   x.Add().ID("TabOneTab").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOne")</div>);
   x.Add().ID("TabTwoTab").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwo")</div>);
   x.Add().ID("InlineEditingTab").Text("Inline Editing").ContentTemplate(@<div class="row">@Html.DisplayForModel("InlineEditing")</div>);
-}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))
+}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))*@
 
 @*Enable Persistence*@
 @*@Html.DisplayForModel("EnablePersistence")*@
@@ -30,7 +30,7 @@
 @*@Html.DisplayForModel("MultiSelect")*@
 
 @*Multi-Select Grouped*@
-@*@Html.DisplayForModel("MultiSelectGrouped")*@
+@Html.DisplayForModel("MultiSelectGrouped")
 
 @*Inline Editable Grid*@
 @*@Html.DisplayForModel("InlineEditing")*@

@@ -193,5 +193,12 @@ var inlineEditActionBegin = function (args) {
 }
 
 var editRow = function (args) {
-  console.log(args);
+  var grid = $("#MultiSelectGroupedGrid").ejGrid("instance");
+  var i = grid.model.selectedRowIndex;
+  var record = grid.getCurrentViewData()[i];
+  
+  //here, the wrong rowindex is found, making it impossible to get the correct record with grid.getCurrentViewData()[i]
+  alert("i=" + i);
+
+  return record;
 }
