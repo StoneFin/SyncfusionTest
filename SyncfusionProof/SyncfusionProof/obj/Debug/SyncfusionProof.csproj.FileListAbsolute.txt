@@ -155,13 +155,10 @@ D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Newtonsoft.Json.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Owin.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Compression.Base.dll
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Core.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.DocIO.Base.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.MVC.dll
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.Olap.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Linq.Base.dll
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Olap.Base.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Pdf.Base.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.XlsIO.Base.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\System.Data.SqlServerCe.dll
@@ -200,7 +197,6 @@ D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.pdb
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.Export.dll
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.PivotAnalysis.Base.dll
 C:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.csprojResolveAssemblyReference.cache
 C:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\SyncfusionProof.dll.config
 C:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\SyncfusionProof.dll
@@ -277,12 +273,12 @@ D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.DocIO.Base.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.Export.xml
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.Olap.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Linq.Base.xml
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Olap.Base.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.Pdf.Base.xml
-D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.PivotAnalysis.Base.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.XlsIO.Base.xml
 C:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.OfficeChart.Base.dll
 C:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.MVC.xml
 C:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.OfficeChart.Base.xml
+D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.OfficeChart.Base.dll
+D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.MVC.xml
+D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.OfficeChart.Base.xml

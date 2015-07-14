@@ -108,7 +108,7 @@ var updateRows = function (gridId, gridKey, records) {
 
 var undoUpdate = function () {
   //recover the stored records
-  var records = amplify.store("StoredRecords");
+  var records = ej.parseJSON(amplify.store("StoredRecords"));
 
   //update the records
   $.each(records, function (i, record) {
