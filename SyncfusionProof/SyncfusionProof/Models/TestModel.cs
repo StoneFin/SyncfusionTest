@@ -15,5 +15,7 @@ namespace SyncfusionProof.Models
     public FreightDetails FreightDetails { get; set; }
     public int ManufacturerId { get; set; }
     public string Manufacturer { get; set; }
+    public bool IsTrue { get; set; }
+    public IsTrueModel IsTrueModel { get; set; }
   }
 }

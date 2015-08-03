@@ -1,0 +1,30 @@
+﻿@model SyncfusionProof.Models.HomeModel
+
+@using Syncfusion.JavaScript.Models
+
+@(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("TabOneGrid")
+  .Datasource(Model.TestModels)
+  .AllowSorting()
+  .AllowPaging()
+  .AllowResizing()
+  .MinWidth(500)
+  .IsResponsive()
+  .Columns(x =>
+  {
+    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
+    x.Field("CustomerId").HeaderText("Customer ID").Add();
+    x.Field("EmployeeId").HeaderText("Employee ID").Add();
+    
+    //this one works
+    x.Field("IsTrue").HeaderText("IsTrue").Add();
+    
+    //this one doesn't work
+    x.Field("IsTrueModel.IsTrue").HeaderText("IsTrueModel.IsTrue").Add();
+    
+    x.Field("Freight").HeaderText("Freight").Format("{0:C}").Add();
+    x.Field("FreightDetails.Freight2").HeaderText("Freight2").Format("{0:C}").Add();
+    x.Field("OrderDate").HeaderText("Order Date").Format("{0:MM/dd/yyyy}").Add();
+    x.Field("ShipCity").HeaderText("Ship City").Add();
+    x.Field("ShipState").HeaderText("Ship State").Add();
+  })
+)

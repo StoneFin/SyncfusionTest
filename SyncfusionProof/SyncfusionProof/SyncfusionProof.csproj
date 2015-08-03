@@ -228,6 +228,7 @@
     <Compile Include="Models\FreightDetails.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IsTrueModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\TestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -716,6 +717,7 @@
     <Content Include="Views\Home\GridCache1.cshtml" />
     <Content Include="Views\Home\GridCache2.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ToolbarTemplate.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\CheckboxColumn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

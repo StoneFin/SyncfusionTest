@@ -56,6 +56,8 @@ namespace SyncfusionProof.Controllers
         OrderId = 1,
         CustomerId = "5423115657865424ASFE",
         EmployeeId = 111,
+        IsTrue = true,
+        IsTrueModel = new IsTrueModel { IsTrue = true },
         Freight = (decimal)32.50,
         FreightDetails = new FreightDetails
         {
@@ -78,6 +80,8 @@ namespace SyncfusionProof.Controllers
         OrderId = 2,
         CustomerId = "5423115657865424ABCD",
         EmployeeId = 111,
+        IsTrue = false,
+        IsTrueModel = new IsTrueModel { IsTrue = false },
         Freight = (decimal)54.72,
         FreightDetails = new FreightDetails
         {
@@ -98,6 +102,8 @@ namespace SyncfusionProof.Controllers
         OrderId = 3,
         CustomerId = "ABCD5423115657865424",
         EmployeeId = 222,
+        IsTrue = true,
+        IsTrueModel = new IsTrueModel { IsTrue = true },
         Freight = (decimal)55.55,
         FreightDetails = new FreightDetails
         {
@@ -118,6 +124,8 @@ namespace SyncfusionProof.Controllers
         OrderId = 4,
         CustomerId = "ABCD5423115657865424",
         EmployeeId = 222,
+        IsTrue = false,
+        IsTrueModel = new IsTrueModel { IsTrue = false },
         Freight = (decimal)55.55,
         FreightDetails = new FreightDetails
         {
