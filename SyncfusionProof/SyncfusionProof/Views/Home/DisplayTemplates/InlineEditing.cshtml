@@ -25,7 +25,7 @@
   }))
   .Columns(x =>
   {
-    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
+    x.Field("OrderId").HeaderText("Order ID").IsIdentity(true).IsPrimaryKey(true).AllowEditing(false).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();
     x.Field("EmployeeId").HeaderText("Employee ID").Add();
     x.Field("Manufacturer").DataSource(Model.Manufacturers).HeaderText("Manufacturer Name").EditType(EditingType.Dropdown).Add();
