@@ -170,8 +170,9 @@ var inlineEditActionComplete = function (args) {
     //cancel the grid's default operation
     args.cancel = true;
     
-    //just showing that we got the correct manufacturer id
+    //just showing that we got the correct manufacturer id and text
     console.log(args.data.ManufacturerId);
+    console.log(args.data.Manufacturer);
   }
 
   if (args.requestType === "beginedit") {
@@ -182,6 +183,13 @@ var inlineEditActionComplete = function (args) {
   }
 }
 
+var getSelectedText = function (args, columnName, selectedValue) {
+  var columnData = _.findWhere(args.model.columns, { field: columnName }).dataSource;
+  var selectedText = _.findWhere(columnData, { value: parseInt(selectedValue) }).text;
+
+  return selectedText;
+}
+
 var inlineEditActionBegin = function (args) {
   var self = this;
 
@@ -189,6 +197,7 @@ var inlineEditActionBegin = function (args) {
   //no more variable needed
   if (args.requestType === "save") {
     args.data.ManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
+    args.data.Manufacturer = getSelectedText(args, "Manufacturer", args.data.ManufacturerId);
   }
 }
 

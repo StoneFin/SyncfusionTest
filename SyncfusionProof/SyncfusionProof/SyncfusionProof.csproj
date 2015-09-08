@@ -659,6 +659,8 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\Utility\Syncfusion.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
@@ -717,6 +719,7 @@
     <Content Include="Views\Home\GridCache2.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ToolbarTemplate.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\CheckboxColumn.cshtml" />
+    <Content Include="Scripts\underscore.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

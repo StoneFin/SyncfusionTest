@@ -31,6 +31,7 @@ namespace SyncfusionProof
         .Include("~/Scripts/bootstrap*")
         .Include("~/Scripts/amplify*")
         .Include("~/Scripts/respond*")
+        .Include("~/Scripts/underscore*")
         .Include("~/Scripts/Utility/Syncfusion*")
         );
 
