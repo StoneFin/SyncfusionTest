@@ -5,7 +5,47 @@
 
     return false;
   });
+
+  //custom validation rule on an editable grid
+  $.validator.addMethod("lessThanValue2", function (value, element) {
+    var value2 = getColumnValue("InlineEditingGrid", "Value 2");
+
+    return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
+  }, "Value 1 must be less than or equal to Value 2");
 });
+
+var getGrid = function (gridId) {
+  return $("#" + gridId).ejGrid("instance");
+}
+
+var onChange = function (args) {
+  var self = this;
+  var grid = getGrid("InlineEditingGrid");
+  var val1 = getColumnValue("InlineEditingGrid", "Value1");
+  var val2 = getColumnValue("InlineEditingGrid", "Value2");
+  
+  val1 = parseFloat(val1.replace(",", ""));
+  val2 = parseFloat(val2.replace(",", ""));
+  val1 = isNaN(val1) ? 0 : val1;
+  val2 = isNaN(val2) ? 0 : val2;
+  
+  var sum = val1 + val2;
+
+  return setColumnValue("InlineEditingGrid", "ValueSum", sum);
+}
+
+var getColumnValue = function (gridId, columnName) {
+  //gets a column value in an a grid row that is currently in edit mode
+  var grid = getGrid(gridId);
+
+  return grid.element.find(".gridform").find("input#" + gridId + columnName).val();
+}
+
+var setColumnValue = function (gridId, columnName, newValue) {
+  var grid = getGrid(gridId);
+
+  return grid.element.find(".gridform").find("input#" + gridId + columnName).val(newValue);
+}
 
 //tab rendering fix (working)
 var onItemActive = function (args) {
@@ -51,7 +91,7 @@ var getRecords = function (toolbarItem, gridElement) {
 }
 
 var deleteRecord = function (gridId, gridKey, record) {
-  var grid = $("#" + gridId).ejGrid("instance");
+  var grid = getGrid(gridId);
 
   grid.deleteRecord(gridKey, record);
   //alert("Selected Key: " + gridKey);
@@ -60,7 +100,7 @@ var deleteRecord = function (gridId, gridKey, record) {
 }
 
 var addRecords = function (gridId, records) {
-  var grid = $("#" + gridId).ejGrid("instance");
+  var grid = getGrid(gridId);
 
   $.each(records, function (i, record) {
     grid.addRecord(record);
@@ -70,7 +110,7 @@ var addRecords = function (gridId, records) {
 }
 
 var deleteRecords = function (gridId, gridKey, records) {
-  var grid = $("#" + gridId).ejGrid("instance");
+  var grid = getGrid(gridId);
 
   $.each(records, function (i, record) {
     grid.deleteRecord(gridKey, record);
@@ -130,8 +170,7 @@ var undoUpdate = function () {
 
 var removeRow = function () {
   //change based on which grid you're testing
-  //var grid = $("#MultiSelectGrid").ejGrid("instance");
-  var grid = $("#MultiSelectGroupedGrid").ejGrid("instance");
+  var grid = getGrid("MultiSelectGroupedGrid");
 
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
@@ -202,7 +241,7 @@ var inlineEditActionBegin = function (args) {
 }
 
 var editRow = function (args) {
-  var grid = $("#MultiSelectGroupedGrid").ejGrid("instance");
+  var grid = getGrid("MultiSelectGroupedGrid");
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
   

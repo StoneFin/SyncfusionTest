@@ -33,6 +33,15 @@
     x.Field("Manufacturer").DataSource(Model.Manufacturers).HeaderText("Manufacturer Name").EditType(EditingType.Dropdown).Add();
     x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Format("{0:C}").Add();
     x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
+    
+    //was having problems custom validating with this field
+    //x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).ValidationRules(y => y.AddRule("lessThanFreight", true)).Format("{0:C}").Add();
+
+    x.Field("Value1").HeaderText("Value 1").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").ValidationRules(y => y.AddRule("lessThanValue2", true)).Add();
+    x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").Add();
+    x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();
+      
+    
     x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").IsIdentity(true).AllowEditing(false).Add();
     x.Field("ShipCity").HeaderText("Ship City").EditType(EditingType.String).Add();
     x.Field("ShipState").HeaderText("Ship State").EditType(EditingType.String).Add();
