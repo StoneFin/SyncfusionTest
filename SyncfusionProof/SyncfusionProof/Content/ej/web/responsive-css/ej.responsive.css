@@ -102,10 +102,11 @@
         height: initial !important;
     }
     .e-menu.e-vertical>li.e-list >ul li.e-list > a, .e-menu.e-vertical>li.e-list>ul li.e-list > span {
-        line-height:28px;
+        line-height:27px;
        }
      .e-menu li.e-list>ul li.e-list > a, .e-menu li.e-list > ul li.e-list > span {
-        padding: 3px 18px 3px 30px;
+        padding: 0px 18px 0px 30px;
+        line-height: 27px;
       }
       .e-menu-res-wrap .e-icon.e-check-wrap:before{
 		content:"\e76b";
@@ -149,54 +150,41 @@
 }
 
 /*------------------------Schedule Start-----------------------------------*/
-
-    .e-scheduledrawer.e-scheduleresponsive .e-list-hdr > li > a > span {
-        top:0px !important;
-        font-size: 12px !important;
-        left: 0px !important;
-        display: block;
-        text-align: center;
-        font-family:'Segoe UI';
-        padding-bottom:5px;
+@media (min-width: 320px) and (max-width:480px) {
+    .e-schedule .e-datecolumn {
+        width: 85px;
     }
 
-    .navDrawerMenu.e-scheduleresponsive li > a {
-        padding:0px !important;
+    .e-schedule .e-timecolumn {
+        width: 85px;
     }
 
-    .navDrawerMenu.e-scheduleresponsive li {
-        padding:0px;        
+    .e-schedule .e-resourcecolumn {
+        width: 55px;
+    }
+}
+
+@media (max-width:320px) {
+    .e-schedule .e-datecolumn {
+        width: 85px;
     }
 
-    .e-schedule.e-scheduleresponsive .e-mobileNavigation {
-        float:right;
-        padding:12px 10px 0px 0px;
+    .e-schedule .e-timecolumn {
+        width: 70px;
     }
 
-    .e-schedule.e-scheduleresponsive .e-mobileNavigation,
-    .e-scheduledrawer.e-scheduleresponsive .e-mAddEvent,
-    .e-scheduledrawer.e-scheduleresponsive .e-mday,
-    .e-scheduledrawer.e-scheduleresponsive .e-mweek,
-    .e-scheduledrawer.e-scheduleresponsive .e-mworkweek,
-    .e-scheduledrawer.e-scheduleresponsive .e-mmonth,
-    .e-scheduledrawer.e-scheduleresponsive .e-mcustomview {
-        cursor:pointer;
+    .e-schedule .e-resourcecolumn {
+        width: auto;
     }
-
-    .e-scheduledrawer.e-scheduleresponsive .e-mAddEvent,
-    .e-scheduledrawer.e-scheduleresponsive .e-mday,
-    .e-scheduledrawer.e-scheduleresponsive .e-mweek,
-    .e-scheduledrawer.e-scheduleresponsive .e-mworkweek,
-    .e-scheduledrawer.e-scheduleresponsive .e-mmonth,
-    .e-scheduledrawer.e-scheduleresponsive .e-mcustomview {
-        height:100% !important;
-        width:100% !important;
-        margin-bottom:-3px;
-    }
-
-    .e-schedule.e-scheduleresponsive .e-mobileNavigation:before {
-        content:"\e75d";
-        font-size:20px;
+}
+    .e-schedule.e-scheduleresponsive .e-textwrapper {
+        margin: 0px;
+        padding: 2px;
+    }  
+    .e-schedule.e-scheduleresponsive .e-agendaappointment {
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .e-schedule.e-scheduleresponsive .e-navigateprevious {
@@ -205,52 +193,6 @@
 
     .e-schedule.e-rtl.e-scheduleresponsive .e-navigatenext {
         margin-right:15px;
-    }
-
-    .e-scheduledrawer.e-scheduleresponsive .e-mAddEvent:before {
-        content:"\e759";
-        font-size:35px;
-        width:35px;
-        height:35px;
-        margin:10px auto;
-    }
-
-    .e-scheduledrawer.e-scheduleresponsive .e-mday:before {
-        content:"\e75b";
-        font-size:35px;
-        width:35px;
-        height:35px;
-        margin:10px auto;
-    }
-
-    .e-scheduledrawer.e-scheduleresponsive .e-mcustomview:before {
-        content:"\e77c";
-        font-size:35px;
-        width:35px;
-        height:35px;
-        margin:10px auto;
-    }
-
-    .e-scheduledrawer.e-scheduleresponsive .e-mweek:before {
-        content:"\e760";
-        font-size:35px;
-        width:35px;
-        height:35px;
-        margin:10px auto;
-    }
-    .e-scheduledrawer.e-scheduleresponsive .e-mworkweek:before {
-        content:"\e762";
-        font-size:35px;
-        width:35px;
-        height:35px;
-        margin:10px auto;
-    }
-    .e-scheduledrawer.e-scheduleresponsive .e-mmonth:before {
-        content:"\e75e";
-        font-size:35px;
-        width:35px;
-        height:35px;
-        margin:10px auto;
     }
 
     .e-scheduledialog.e-scheduleresponsive {
@@ -326,10 +268,6 @@
         -webkit-user-select:none;
     }
 
-    .e-schedule.e-scheduleresponsive, .e-schedule.e-scheduleresponsive.e-scheduleouter {
-        border: none;
-    }
-
     .e-schedule.e-scheduleresponsive .e-schedulesettings {
         white-space: pre-wrap !important;
     }
@@ -354,7 +292,7 @@
         height: 40px !important;
     }
 
-    .e-schedule.e-scheduleresponsive .e-vscroll,.e-schedule.e-scheduleresponsive .e-mobileNavigation {
+    .e-schedule.e-scheduleresponsive .e-vscroll {
         position: absolute;
     }
 

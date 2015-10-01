@@ -214,7 +214,7 @@
 }
 
 .e-resFilterDialogHeaderDiv {
-    height: 8% !important;
+    height: 10% !important;
     width: 100%;
     border-bottom: 1px solid #c4c4c4;
     text-align: center;
@@ -222,24 +222,24 @@
 
 .e-resFIlterRigthIcon {
     float: right;
+	line-height: 2 !important;
     font-size: 21px;
     position: absolute;
     right: 0;
     top: 0;
     margin-right: 5%;
-    margin-top: 2%;
     cursor: pointer;
 }
 
 .e-resFilterleftIcon {
     float: left;
+	line-height: 2 !important;
     position: absolute;
     left: 0;
     top: 0;
     vertical-align: middle;
     font-size: 21px;
     cursor: pointer;
-    margin-top: 2%;
     margin-left: 2%;
 }
 
@@ -292,7 +292,7 @@
 
 .labelRes {
     vertical-align: middle;
-    line-height: 2;
+    line-height: 2 !important;
     font-weight: bold;
     font-size: 20px;
 }
