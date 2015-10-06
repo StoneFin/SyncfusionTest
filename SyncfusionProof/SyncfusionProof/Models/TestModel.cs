@@ -1,9 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SyncfusionProof.Models
 {
   public class TestModel
   {
+    //data annotation is required in order to prevent editable Id properties in grids
+    //the same doesn't seem to hold true for non Id properties
+    [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
     public int OrderId { get; set; }
     public string CustomerId { get; set; }
     public int EmployeeId { get; set; }
@@ -17,5 +21,6 @@ namespace SyncfusionProof.Models
     public string Manufacturer { get; set; }
     public bool IsTrue { get; set; }
     public IsTrueModel IsTrueModel { get; set; }
+    public decimal? ValueSum { get; set; }
   }
 }
