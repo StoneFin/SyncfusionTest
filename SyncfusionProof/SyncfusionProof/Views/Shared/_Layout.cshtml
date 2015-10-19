@@ -30,6 +30,9 @@
       </div>
     </div>
   </div>
+  @*various attempts at a container that works properly with a responsive scrolling grid*@
+
+  @*this is the container I need on my page*@
   <div class="container-fluid body-content">
     @RenderBody()
     <hr />
@@ -37,6 +40,34 @@
       <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
     </footer>
   </div>
+
+  @*container-fluid*@
+  @*<div class="container-fluid">
+    @RenderBody()
+    <hr />
+    <footer>
+      <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+  </div>*@
+
+  @*container*@
+  @*<div class="container">
+    @RenderBody()
+    <hr />
+    <footer>
+      <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+  </div>*@
+
+  @*no class*@
+  @*<div>
+    @RenderBody()
+    <hr />
+    <footer>
+      <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+  </div>*@
+
   @(Html.EJ().ScriptManager())
   @RenderSection("scripts", required: false)
 </body>

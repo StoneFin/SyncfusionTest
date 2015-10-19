@@ -282,7 +282,6 @@ C:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.OfficeChart.Base.dll
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.EJ.MVC.xml
 D:\Code\Stone Fin Technology\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\Syncfusion.OfficeChart.Base.xml
-D:\Code\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.csprojResolveAssemblyReference.cache
 D:\Code\SyncfusionTest\SyncfusionProof\SyncfusionProof\obj\Debug\SyncfusionProof.dll
 D:\Code\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\SyncfusionProof.dll.config
 D:\Code\SyncfusionTest\SyncfusionProof\SyncfusionProof\bin\SyncfusionProof.dll
