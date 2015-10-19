@@ -9,13 +9,13 @@
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
-  //.AllowScrolling()
-  //.ScrollSettings(x => { x.Width("100%"); })
+    .AllowScrolling()
+    .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
   //use ShowAddNewRow to automatically add a row whenever an edit finishes
-  //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing(); })
-  .EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
+  .EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing(); })
+  //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y =>
   {
     y.AddTool(ToolBarItems.Search);
@@ -27,10 +27,6 @@
   }))
   .Columns(x =>
   {
-    //trying to figure out why OrderId is still editable
-    //http://www.syncfusion.com/support/directtrac/incidents/143690
-    //https://trello.com/c/9DdTzlry
-    //x.Field("OrderId").HeaderText("Order ID").IsIdentity(true).IsPrimaryKey(true).AllowEditing(false).Add();
     x.Field("OrderId").HeaderText("Order ID").IsIdentity(true).IsPrimaryKey(true).Add();
 
     x.Field("CustomerId").HeaderText("Customer ID").EditType(EditingType.String).Add();
@@ -38,10 +34,6 @@
     x.Field("Manufacturer").DataSource(Model.Manufacturers).HeaderText("Manufacturer Name").EditType(EditingType.Dropdown).Add();
     x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Format("{0:C}").Add();
     x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
-    
-    //was having problems custom validating with this field
-    //x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).ValidationRules(y => y.AddRule("lessThanFreight", true)).Format("{0:C}").Add();
-
     x.Field("Value1").HeaderText("Value 1").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").ValidationRules(y => y.AddRule("lessThanValue2", true)).Add();
     x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").Add();
     x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();

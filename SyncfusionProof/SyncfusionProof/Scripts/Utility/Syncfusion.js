@@ -1,7 +1,8 @@
 ﻿$(function () {
-  //click handler for inactivation undo
+  //click handler for undoing an edit
   $("#UndoLink").on("click", function () {
-    undoUpdate();
+    //undoUpdate();
+    undoDelete();
 
     return false;
   });
@@ -119,6 +120,36 @@ var deleteRecords = function (gridId, gridKey, records) {
   return records;
 }
 
+var deleteRecordsWithUndo = function (gridId, gridKey, records) {
+  //alert and storage ttl
+  var ttl = 60000;
+
+  //store the records
+  amplify.store("StoredRecords", records, { expires: ttl });
+
+  //show undo alert
+  $("#UndoAlert").slideDown();
+
+  //set the alert timeout
+  setTimeout(function () {
+    $("#UndoAlert").slideUp();
+  }, ttl);
+
+  //remove the records
+  deleteRecords(gridId, gridKey, records);
+}
+
+var undoDelete = function () {
+  //recover the stored records
+  var records = ej.parseJSON(amplify.store("StoredRecords"));
+
+  //clear records from storage
+  amplify.store("StoredRecords", null);
+
+  //add the updated records
+  addRecords("InlineEditingGrid", records);
+}
+
 var updateRows = function (gridId, gridKey, records) {
   //alert and storage ttl
   var ttl = 60000;
@@ -156,7 +187,7 @@ var undoUpdate = function () {
   });
 
   //clear records from storage
-  amplify.store("InlineEditingGrid", null);
+  amplify.store("StoredRecords", null);
 
   //hide the alert
   $("#UndoAlert").slideUp();
@@ -195,7 +226,8 @@ var toolbarClick = function (toolbarItem) {
     //change based on which grid you're testing
     //deleteRecords("MultiSelectGrid", "OrderId", records);
     //deleteRecords("MultiSelectGroupedGrid", "OrderId", records);
-    updateRows("InlineEditingGrid", "OrderId", records);
+    //updateRows("InlineEditingGrid", "OrderId", records);
+    deleteRecordsWithUndo("InlineEditingGrid", "OrderId", records);
   }
   else if (toolbarItem.itemName === "Refresh") {
     alert("refresh button clicked")
@@ -212,6 +244,12 @@ var inlineEditActionComplete = function (args) {
     //just showing that we got the correct manufacturer id and text
     console.log(args.data.ManufacturerId);
     console.log(args.data.Manufacturer);
+
+    //refresh the grid so the id displays properly (not really applicable in this project)
+    $("#InlineEditingGrid").ejGrid("refreshContent");
+
+    //add a new record for editing
+    self.addRecord();
   }
 
   if (args.requestType === "beginedit") {
