@@ -248,8 +248,10 @@ var inlineEditActionComplete = function (args) {
     //refresh the grid so the id displays properly (not really applicable in this project)
     $("#InlineEditingGrid").ejGrid("refreshContent");
 
-    //add a new record for editing
-    self.addRecord();
+    //add a new record for editing if a new record was just added
+    if (!args.data.OrderId) {
+      self.addRecord();
+    }
   }
 
   if (args.requestType === "beginedit") {
