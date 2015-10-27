@@ -42,6 +42,16 @@ namespace SyncfusionProof.Controllers
       return View("GridCache2", model);
     }
 
+    public ActionResult GridEmpty()
+    {
+      var model = new HomeModel();
+
+      model.Manufacturers = new List<object>();
+      model.TestModels = new List<TestModel>();
+
+      return View(model);
+    }
+
     private HomeModel GetModel()
     {
       var manufacturers = new List<object>();
