@@ -17,16 +17,16 @@
 @default-bg-stcolor: #4d4d4d;
 @default-bg-endcolor: #212121;
 @default-gradient-color: #4d4d4d, #212121;
-@default-border-color: #494949;
+@default-border-color: #777777;
 @default-font-color: #dddddd;
 @default-icon-color: #cccccc;
 
 @hover-bg-stcolor: #4a5038;
 @hover-bg-endcolor: #404a22;
-@hover-gradient-color: #e0edba, #c0da71;
+@hover-gradient-color: #4a5038, #404a22;
 @hover-border-color: #494949;
-@hover-font-color: #aaaaaa;
-@hover-icon-color: #282827;
+@hover-font-color: #3333333;
+@hover-icon-color: #3333333;
 
 @active-bg-stcolor: #cee292;
 @active-bg-endcolor: #aecf49;
@@ -36,6 +36,7 @@
 @active-icon-color: #ffffff;
 
 @overlay-bg-color: #969696;
+@sort-filter-disable: #999999;
 
 @header-font-weight: normal;
 @header-font-size: 17px;
@@ -82,7 +83,7 @@
 @column-selection-bg-color: @default-bg-stcolor;
 @alt-row-bg-color: lighten( @content-bg-color, 7%);
 
-@pager-font-color: @content-font-color;
+@pager-font-color: @default-font-color;
 @pager-default-font-color: @default-font-color;
 @pager-default-border-color: @default-border-color;
 @pager-default-bg-color: @default-bg-stcolor;
@@ -240,47 +241,19 @@
 @radial-badge-color:#FFFFFF;
 
 .header-gradient() {
-    background: @header-bg-stcolor; /* Old browsers */
-    background: -moz-linear-gradient(top, @header-gradient-color); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@header-bg-stcolor), color-stop(100%,@header-bg-endcolor)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, @header-gradient-color); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, @header-gradient-color); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, @header-gradient-color); /* IE10+ */
-    background: linear-gradient(to bottom, @header-gradient-color); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{header-bg-stcolor}', endColorstr='@{header-bg-endcolor}',GradientType=0 ); /* IE6-9 */
+   .custom-gradient(@header-gradient-color, @header-bg-stcolor, @header-bg-endcolor, 0%, 0% );
 }
 
 .default-gradient() {
-    background: @default-bg-stcolor; /* Old browsers */
-    background: -moz-linear-gradient(top, @default-gradient-color); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@default-bg-stcolor), color-stop(100%,@default-bg-endcolor)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, @default-gradient-color); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, @default-gradient-color); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, @default-gradient-color); /* IE10+ */
-    background: linear-gradient(to bottom, @default-gradient-color); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{default-bg-stcolor}', endColorstr='@{default-bg-endcolor}',GradientType=0 ); /* IE6-9 */
+   .custom-gradient(@default-gradient-color, @default-bg-stcolor, @default-bg-endcolor, 0%, 0% );
 }
 
 .hover-gradient() {
-    background: @hover-bg-stcolor; /* Old browsers */
-    background: -moz-linear-gradient(top, @hover-gradient-color); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@hover-bg-stcolor), color-stop(100%,@hover-bg-endcolor)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, @hover-gradient-color); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, @hover-gradient-color); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, @hover-gradient-color); /* IE10+ */
-    background: linear-gradient(to bottom, @hover-gradient-color); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{hover-bg-stcolor}', endColorstr='@{hover-bg-endcolor}',GradientType=0 ); /* IE6-9 */
+    .custom-gradient(@hover-gradient-color, @hover-bg-stcolor, @hover-bg-endcolor, 0%, 0% );
 }
 
 .active-gradient() {
-    background: @active-bg-stcolor; /* Old browsers */
-    background: -moz-linear-gradient(top, @active-gradient-color); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@active-bg-stcolor), color-stop(100%,@active-bg-endcolor)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, @active-gradient-color); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, @active-gradient-color); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, @active-gradient-color); /* IE10+ */
-    background: linear-gradient(to bottom, @active-gradient-color); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{active-bg-stcolor}', endColorstr='@{active-bg-endcolor}',GradientType=0 ); /* IE6-9 */
+    .custom-gradient(@active-gradient-color, @active-bg-stcolor, @active-bg-endcolor, 0%, 0% );
 }
 
 @isDefault: true;
@@ -604,28 +577,15 @@
 @rbnbackstage-end-select-color:lighten(@active-bg-endcolor, 15%);
 @rbntoggle-start-color:lighten(@active-bg-stcolor, 10%);
 @rbntoggle-end-color:lighten(@active-bg-endcolor, 15%);
+@rbnhover-font-color: #FFFFFF;
 .ribbon-toggle-gradient(){
  .custom-gradient(@active-gradient-color, @rbntoggle-start-color, @rbntoggle-end-color, 15%, 0%);  
 }
 .ribbon-active-gradient(){
-background: @rbn-bg-color-start; /* Old browsers */
-background: -moz-linear-gradient(top,  @active-gradient-color); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@rbn-bg-color-start), color-stop(100%,@rbn-bg-color-end)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  @active-gradient-color); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, @active-gradient-color); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  @active-gradient-color); /* IE10+ */
-background: linear-gradient(to bottom,  @active-gradient-color); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{rbn-bg-color-start}', endColorstr='@{rbn-bg-color-end}',GradientType=0 ); /* IE6-9 */
+ .active-gradient();
 }
 .ribbon-hover-gradient(){
-background: @hover-bg-stcolor; /* Old browsers */
-background: -moz-linear-gradient(top,  @hover-gradient-color); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@hover-bg-stcolor), color-stop(100%,@hover-bg-endcolor)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  @hover-gradient-color); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  @hover-gradient-color); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  @hover-gradient-color); /* IE10+ */
-background: linear-gradient(to bottom,  @hover-gradient-color); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{hover-bg-stcolor}', endColorstr='@{hover-bg-endcolor}',GradientType=0 ); /* IE6-9 */
+ .hover-gradient();
 }
 .ribbon-backstage-hover-bg(){
  .custom-gradient(@active-gradient-color, @rbnbackstage-start-hover-color, @rbnbackstage-end-hover-color, 0%, 15%);  
@@ -633,6 +593,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{hover-bg-st
 .ribbon-backstage-select-bg(){
  .custom-gradient(@active-gradient-color, @rbnbackstage-start-select-color, @rbnbackstage-end-select-color, 15%, 0%);  
 }
+/*----------------------Spreadsheet Definition-----------------------*/
+@sscontent-color: #333333;
+@ssheader-content-color:#ffffff;
+@sscontent-border-color: #474747;
+@sscell-border-color: #c8c8c8;
+@ssrow-bgcolor: #ffffff;
+@sscopy-blur-bgcolor: darken( #ffffff, 4% );
+@ssfroze-border-color: #c8c8c8;
+@ssborder-bright: darken( desaturate( #179bd7, 8% ), 1% );
+@ssdialog-border: #c8c8c8;
+@sscopy-blank-bgcolor: #c8c8c8;
+@sspager-media-bordercolor: #c8c8c8;
+@sscomments-hdr-bgcolor: darken( #ffffff, 5% );
+@sscomments-focused-border: lighten( desaturate( #179bd7, 18% ), 14% );
+@sscomments-excel-border: darken( saturate( #c8c8c8, 1% ), 4% );
+@sscontainer-bgcolor: #000000;
+@ssborder-rright: #fc100c;
+@ssborder-vright: #6a13ad;
+@ssborder-gright: #62c435;
+@ssborder-pright: #f411b0;
+@ssborder-oright: #e59604;
+@sscopy-spfilter-bgcolor: #eeeeee;
+@sscopy-redft-bgcolor: #ffc7ce;
+@sscopy-redft-color: #9C0055;
+@sscopy-yellowft-bgcolor: #ffeb9c;
+@sscopy-yellowft-color: #9c6500;
+@sscopy-greenft-bgcolor: #c6efce;
+@sscopy-greenft-color: #006100;
+@sscopy-hlcell-bgcolor: #ffff00;
+@sscopy-hlcell-color: #ff0000;
+@sserror-valid-bgcolor: #fffe91;
+@sserror-valid-color: #cd0a0a;
+@sscomments-txt-bgcolor: #f7fbbd;
+@sscomments-arrow-color: #ff0000;
+@ssheader-hoverfont-color: #3d3d3d;
+@ssheader-select-bgcolor: #f5f9e8;
+@sspager-font-color: #ffffff;
+@ssheader-border-color: @header-border-color;
+@ssheader-bgcolor: @content-bg-color;
+@sshover-bg-color: @hover-bg-stcolor;
+@ssfroze-highlight-color: darken( desaturate( @active-bg-stcolor, 10% ), 20% );
+@sschart-darktheme-bgcolor: darken( @content-font-color, 13% );
+@ssdrpdwnbrdr: darken( @header-border-color, 7% );
+@ssselectall: lighten(@active-bg-stcolor, 12%);
+@ssselectallhover: lighten(@active-bg-stcolor, 2%);
+@ssselectselected: darken( desaturate( @active-bg-stcolor, 17% ), 4% );
+@sschart-select-bgcolor: lighten( desaturate( @active-bg-stcolor, 24% ), 20% );
+@sscontent-active-bgcolor: darken( desaturate( @active-bg-stcolor, 11% ), 2% );
+@sscontent-active-color: @active-font-color;
+@ssnumeric-icon-color: darken( @header-border-color, 31% );
+@ssactive-bg-color: @active-bg-stcolor;
+@ss-icon-color:@default-icon-color;
+@ssbtntgle-start-color:lighten(@active-bg-stcolor, 18%);
+@ssbtntgle-end-color:lighten(@active-bg-stcolor, 18%);
+@ss-chartmenu-bgcolor:lighten( @default-bg-endcolor, 1% );
+@ss-chartmenu-color:@default-font-color;
+.spread-toggle-gradient(){
+  .custom-gradient(@active-gradient-color,@ssbtntgle-start-color, @ssbtntgle-end-color, 18%, 0%);
+}
+/*----------------------Spreadsheet End-----------------------*/
+
 
 /*Theme Color*/
 .e-grid.e-rtl .e-indentcell{
@@ -651,12 +672,16 @@ border-bottom-color:@row-border-color;
 
 /*..........................Skin css...........................*/
 .e-grid{
+font-family: @font-family;
 border-color: @gdroparea-border-color;
 color: @gcontent-font-color;
 border-top: none;
 }
 .e-grid .e-icon{
  color: @default-icon-color;
+}
+.e-groupheadercell .e-icon {
+color: @header-icon-color;
 }
 .e-grid .e-gridheader .e-icon{
  color: @header-icon-color;
@@ -753,6 +778,7 @@ border-color: @row-border-color;
 
 .e-grid .e-groupcaption,
 .e-grid .e-groupcaptionsummary{
+color: @default-font-color;
 background-color: @gcaption-border-color;
 border-color: @row-border-color;
 border-top-color: @default-border-color;
@@ -800,6 +826,10 @@ border-top-color:@row-border-color;
 
 .e-grid .e-detailindentcell {
  border-right-color: @row-border-color;
+}
+
+ .e-grid .e-rowcell.e-updatedtd {
+    color: @gcontent-font-color;
 }
 
 .e-grid td.e-active,
@@ -1100,8 +1130,8 @@ e-schedule .e-datedisplay {
 }
 
 .e-schedule .e-commonviewbutton:hover,
-.e-schedule .e-next:hover,
-.e-schedule .e-prev:hover,
+.e-schedule .e-nextapp:hover,
+.e-schedule .e-prevapp:hover,
 .e-scheduledialog .e-scheduleclose:hover {
     .hover-gradient();
     border-color: @hover-border-color;
@@ -1233,8 +1263,8 @@ e-schedule .e-datedisplay {
     .default-gradient();
 }
 
-.e-schedule .e-next,
-.e-schedule .e-prev {
+.e-schedule .e-nextapp,
+.e-schedule .e-prevapp {
     .default-gradient();
     border: @border-size @border-type @default-border-color;
     border-bottom: transparent;
@@ -1467,6 +1497,7 @@ color: @hover-font-color;
 }
 
 .e-pager .e-numericitem{
+font-family: @font-family;
 background:@pager-default-bg-color;
 border-right-color: @pager-default-border-color;
 }
@@ -1510,7 +1541,7 @@ border-right-color: @pager-default-border-color;
 .e-pager .e-currentitem,
 .e-pager .e-currentitem:hover{
 .pager-selection-gradient();
-color: @pager-default-bg-color;
+color: @pager-active-font-color;
 /*background-color:#428BCA;*/
 }
 
@@ -2165,10 +2196,9 @@ color:#5c5c5c;
 
 
 /*------------DatePicker themes -------------*/
-.e-datepicker table td.e-disable
+.e-datepicker table td.e-hidedate
 {
-opacity:1;
-color:@disable-datepicker-text;
+    visibility: hidden;
 }
 .e-datewidget .e-in-wrap
 {
@@ -3136,7 +3166,7 @@ padding-left: 10px !important;
         background-position: 0 -174px;
 		float: left;
     }
-	.e-tooltip
+	.e-tooltipbox
     {
 		 .tooltip-colors(); 
 	}
@@ -3220,7 +3250,7 @@ background-image:url(images/rotator-icon.png);
     background-color: @content-bg-color;
     border-color: @content-border-color;
 }
-.e-tooltip 
+.e-tooltipbox
 {
     .tooltip-colors(); 
 }
@@ -4102,9 +4132,9 @@ vertical-align:baseline;
 	background:none;
 }
 
- .e-rte-table-picker
+ .e-rte-table-picker.e-dialog
 {
-	.default-gradient() !important;
+	.default-gradient();
 }
 
  .e-rte-tablecell
@@ -5353,7 +5383,9 @@ border-bottom:none !important;
   position: relative;
   right: 5px;
 }
-
+.e-olapclient .sortFilterDisable{
+  color:@sort-filter-disable;
+}
 .e-olapclient ul.sortfiltTab.e-box.e-addborderbottom.e-header {
 background: transparent;
 }
@@ -6776,22 +6808,22 @@ opacity: 1 !important;
 }
 .e-ribbon.e-js .e-btn.e-select:hover{
    .ribbon-hover-gradient();
-   color: @hover-font-color;
+   color: @rbnhover-font-color;
 }
 .e-ribbon .e-btn.e-select:active ,.e-ribbon .e-btn.e-disable.e-active.e-select:hover,.e-ribbon .e-tbtn.e-active
 {
     .ribbon-toggle-gradient();
-    color:  @hover-font-color;
+    color:  @rbnhover-font-color;
 }
-.e-ribbon .e-btn.e-select:active .e-icon,.e-ribbon .e-btn.e-active .e-icon{
-  color:  @hover-font-color;
+.e-ribbon .e-btn.e-select:active .e-icon,.e-ribbon .e-btn.e-active .e-icon,.e-ribbon .e-btn.e-select:hover .e-icon{
+  color:  @rbnhover-font-color;
 }
 .e-ribbon .e-tbtn.e-active.e-disable {
   background: none;
 }
 .e-ribbon.e-js .e-tbtn.e-active,.e-ribbon.e-js .e-btn.e-resizebtnselect{
     .ribbon-toggle-gradient();
-    color:  @hover-font-color;
+    color:  @rbnhover-font-color;
 }
 .e-ribbon.e-js .e-header .e-apptab .e-menu >.e-list:nth-child(1):not(.e-active) > a:hover,.e-ribbon.e-js .e-header .e-apptab .e-menu >li:nth-child(1):not(.e-active) > a:hover span{
     color:@rbn-menu-font-hover-color;
@@ -6840,7 +6872,7 @@ opacity: 1 !important;
   box-shadow:none;
   border-color:@rbngallery-select-color;
 }
-.e-ribbon .e-groupdiv .e-gallerybtn:hover,.e-ribbon .e-resizediv .e-gallerybtn:hover
+.e-ribbon.e-js .e-groupdiv .e-gallerybtn:hover,.e-ribbon.e-js .e-resizediv .e-gallerybtn:hover
 {
   border-color:@rbngallery-hover-color;
   color:@rbn-text-color;
@@ -6938,7 +6970,7 @@ background:none;
 .e-spreadsheet .e-headercontent,
 .e-spreadsheet .e-rowheader {
     border-color: @ssheader-border-color;
-    color: @sscontent-color;
+    color: @ssheader-content-color;
 }
 .e-spreadsheet .e-headercell:hover,
 .e-spreadsheet .e-rowheader:hover {
@@ -6964,7 +6996,7 @@ background:none;
 .e-spreadsheet .e-rowcell {
     color: @sscontent-color;
     background-color: @ssrow-bgcolor;
-    border-color: @sscontent-border-color;
+    border-color: @sscell-border-color;
 }
 .e-spreadsheet .e-spreadsheetcolumnheader,
 .e-spreadsheet .e-rowheader,
@@ -7198,7 +7230,7 @@ background:none;
 }
 /*-------------Pager-------------*/
 .e-spreadsheet .e-pager .e-numericitem {
-    color: @sscontent-color;
+    color: @sspager-font-color;
 }
 .e-spreadsheet .e-pager .e-currentitem,
 .e-spreadsheet .e-pager .e-currentitem:hover,
@@ -7228,14 +7260,14 @@ background:none;
     cursor: pointer;
 }
 .e-spreadsheet div.e-field-validation-error {
-    background-color: @sspager-valid-bgcolor;
-    color: @sspager-valid-color;
+    background-color: @sserror-valid-bgcolor;
+    color: @sserror-valid-color;
 }
 div.e-dlg-field-validation-error:before {
-    border-bottom-color: @sspager-valid-bgcolor;
+    border-bottom-color: @sserror-valid-bgcolor;
 }
 .e-spreadsheet div.e-error .e-errortail {
-    border-bottom-color: @sspager-valid-bgcolor;
+    border-bottom-color: @sserror-valid-bgcolor;
 }
 .e-spreadsheetfooter {
     border-color: @ssheader-border-color;
@@ -7251,7 +7283,7 @@ div.e-dlg-field-validation-error:before {
 }
 .e-ss-dialog .e-chartheader {
     background-color:@ssheader-bgcolor;
-    color:@sscontent-color;
+    color:@ss-chartmenu-color;
 }
 .e-ss-dialog .e-tab .e-header.e-addborderbottom .e-active {
     border-top-color:@ssheader-border-color;
@@ -7263,8 +7295,8 @@ div.e-dlg-field-validation-error:before {
     /*border-color: @ssheader-bgcolor;*/
 }
 .e-dlg-field-validation-error {
-    background-color: @sspager-valid-bgcolor;
-    color: @sspager-valid-color;
+    background-color: @sserror-valid-bgcolor;
+    color: @sserror-valid-color;
 }
 .e-dlgright,
 .e-dlgleft,
@@ -7291,12 +7323,12 @@ div.e-dlg-field-validation-error:before {
 }
 /*---------------------- Cell Styles--------------------*/
 .e-menu-wrap .e-cellstylecontent, .e-menu-wrap .e-formatastablecontent, .e-menu-wrap .e-chartcontent {
-    background-color: @ssrow-bgcolor;
-	color: @sscontent-color;
+    background-color: @ss-chartmenu-bgcolor;
+	color: @ss-chartmenu-color;
 }
 .e-menu-wrap .e-cellstyleheader, .e-menu-wrap .e-formatastableheader {
     background-color: @ssheader-bgcolor;
-	color: @sscontent-color;
+	color: @ss-chartmenu-color;
 	border-color: @ssheader-border-color;
 }
 .e-cellstylecell:hover, .e-formatastablecell:hover, .e-menu-wrap .e-chartcontent:hover {
@@ -7308,6 +7340,7 @@ div.e-dlg-field-validation-error:before {
 }
 .e-spreadsheet .e-comment-txtarea {
     background-color: @sscomments-txt-bgcolor;
+	 color: @sscontent-color;
 }
 .e-list.e-hdrcolor {
     background-color: @sscomments-hdr-bgcolor !important;
