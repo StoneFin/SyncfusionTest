@@ -3,10 +3,12 @@
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
+/* Set padding left/right to keep content from hitting the edges */
+/* Set padding top to stop nav bar from covering up the body for certain smaller screen sizes */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 70px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
