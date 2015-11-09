@@ -727,6 +727,7 @@
     <Content Include="Views\Home\GridEmpty.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\TabOneGrouping.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\TabThreeGrouping.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\TabTwoGrouping.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

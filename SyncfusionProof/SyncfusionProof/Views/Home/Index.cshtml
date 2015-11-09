@@ -27,6 +27,7 @@
 @Html.EJ().Tab("TabTest").Items(x =>
   {
     x.Add().ID("TabOneTab").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOneGrouping")</div>);
+    x.Add().ID("TabTwoTab").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwoGrouping")</div>);
     x.Add().ID("TabThreeTab").Text("Tab Three").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabThreeGrouping")</div>);
   }).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))
 
