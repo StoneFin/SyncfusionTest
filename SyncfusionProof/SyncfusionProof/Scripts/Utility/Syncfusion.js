@@ -290,3 +290,18 @@ var editRow = function (args) {
 
   return record;
 }
+
+var textAreaCreate = function () {
+  //return the textarea
+  return "<div class='e-field'><textarea rows='5'></textarea></div>";
+}
+
+var textAreaRead = function (args) {
+  //get the edited text value
+  return args.val();
+}
+
+var textAreaWrite = function (args) {
+  //write the edited text value
+  args.element.find("textarea").val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
+}
