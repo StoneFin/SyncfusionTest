@@ -23,6 +23,13 @@
   x.Add().ID("InlineEditingTab").Text("Inline Editing").ContentTemplate(@<div class="row">@Html.DisplayForModel("InlineEditing")</div>);
 }).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))*@
 
+@*Tabbed Grids with Grouping*@
+@Html.EJ().Tab("TabTest").Items(x =>
+  {
+    x.Add().ID("TabOneTab").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOneGrouping")</div>);
+    x.Add().ID("TabThreeTab").Text("Tab Three").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabThreeGrouping")</div>);
+  }).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))
+
 @*Enable Persistence*@
 @*@Html.DisplayForModel("EnablePersistence")*@
 
@@ -33,7 +40,7 @@
 @*@Html.DisplayForModel("MultiSelectGrouped")*@
 
 @*Inline Editable Grid*@
-@Html.DisplayForModel("InlineEditing")
+@*@Html.DisplayForModel("InlineEditing")*@
 
 @*ListView bound to a view model*@
 @*@Html.DisplayForModel("ListViewModelBinding")*@

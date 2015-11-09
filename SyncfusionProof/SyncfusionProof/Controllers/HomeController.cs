@@ -129,11 +129,33 @@ namespace SyncfusionProof.Controllers
 
       testModels.Add(testModel3);
 
+      TestModel testModel5 = new TestModel()
+      {
+        OrderId = 3,
+        CustomerId = "ABCD5423115657865424",
+        EmployeeId = 222,
+        IsTrue = true,
+        IsTrueModel = new IsTrueModel { IsTrue = true },
+        Freight = (decimal)55.55,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)66.66
+        },
+        ShipCity = "Ft Lauderdale",
+        ShipName = "USS Ronald Reagan",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "Nebraska",
+        ManufacturerId = 3,
+        Manufacturer = "Kawasaki"
+      };
+
+      testModels.Add(testModel5);
+
       TestModel testModel4 = new TestModel()
       {
         OrderId = 4,
         CustomerId = "ABCD5423115657865424",
-        EmployeeId = 222,
+        EmployeeId = 333,
         IsTrue = false,
         IsTrueModel = new IsTrueModel { IsTrue = false },
         Freight = (decimal)55.55,
@@ -150,6 +172,72 @@ namespace SyncfusionProof.Controllers
       };
 
       testModels.Add(testModel4);
+
+      TestModel testModel6 = new TestModel()
+      {
+        OrderId = 4,
+        CustomerId = "ABCD5423115657865424",
+        EmployeeId = 333,
+        IsTrue = false,
+        IsTrueModel = new IsTrueModel { IsTrue = false },
+        Freight = (decimal)55.55,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)66.66
+        },
+        ShipCity = "Omaha",
+        ShipName = "USS Ronald Reagan",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "Nebraska",
+        ManufacturerId = 4,
+        Manufacturer = "Yamaha"
+      };
+
+      testModels.Add(testModel6);
+
+      TestModel testModel7 = new TestModel()
+      {
+        OrderId = 4,
+        CustomerId = "ABCD5423115657865424",
+        EmployeeId = 222,
+        IsTrue = false,
+        IsTrueModel = new IsTrueModel { IsTrue = false },
+        Freight = (decimal)55.55,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)66.66
+        },
+        ShipCity = "San Francisco",
+        ShipName = "USS Ronald Reagan",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "California",
+        ManufacturerId = 4,
+        Manufacturer = "Yamaha"
+      };
+
+      testModels.Add(testModel7);
+
+      TestModel testModel8 = new TestModel()
+      {
+        OrderId = 8,
+        CustomerId = "ABCD5423115657865424",
+        EmployeeId = 333,
+        IsTrue = false,
+        IsTrueModel = new IsTrueModel { IsTrue = false },
+        Freight = (decimal)55.55,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)66.66
+        },
+        ShipCity = "Lincoln",
+        ShipName = "USS Ronald Reagan",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "Nebraska",
+        ManufacturerId = 4,
+        Manufacturer = "Yamaha"
+      };
+
+      testModels.Add(testModel8);
 
       var homeModel = new HomeModel
       {
