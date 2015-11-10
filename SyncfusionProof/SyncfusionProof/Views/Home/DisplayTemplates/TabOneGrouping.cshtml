@@ -20,12 +20,12 @@
     {
       y.SummaryType(SummaryType.Sum).Format("{0:C2}").DisplayColumn("Freight").DataMember("Freight").Add();
       y.SummaryType(SummaryType.Sum).Format("{0:C2}").DisplayColumn("FreightDetails.Freight2").DataMember("FreightDetails.Freight2").Add();
-      }).Add();
+    }).Add();
     x.Title("Average").SummaryColumns(y =>
     {
       y.SummaryType(SummaryType.Average).Format("{0:C2}").DisplayColumn("Freight").DataMember("Freight").Add();
       y.SummaryType(SummaryType.Average).Format("{0:C2}").DisplayColumn("FreightDetails.Freight2").DataMember("FreightDetails.Freight2").Add();
-     }).Add();
+    }).Add();
   })
     .ToolbarSettings(x =>
   {
