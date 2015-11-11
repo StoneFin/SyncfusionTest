@@ -48,26 +48,27 @@ var setColumnValue = function (gridId, columnName, newValue) {
   return grid.element.find(".gridform").find("input#" + gridId + columnName).val(newValue);
 }
 
+//this may not be needed since version 13.3.0.12
 //tab rendering fix (working)
-var onItemActive = function (args) {
-  //if EnablePersistence = false, skip this action for the active tab item
-  if (!args.model.enablePersistence &&
-    args.activeIndex == args.prevActiveIndex) {
-    return;
-  }
+//var onItemActive = function (args) {
+//  //if EnablePersistence = false, skip this action for the active tab item
+//  if (!args.model.enablePersistence &&
+//    args.activeIndex == args.prevActiveIndex) {
+//    return;
+//  }
 
-  //get the current tab
-  var activeGrid = $(args.activeHeader).find("a").attr("href");
+//  //get the current tab
+//  var activeGrid = $(args.activeHeader).find("a").attr("href");
 
-  //find the grid inside the current tab and apply scrolling
-  $(activeGrid).find(".e-grid").ejGrid({
-    allowScrolling: true,
-    scrollSettings: { width: "100%" }
-  });
+//  //find the grid inside the current tab and apply scrolling
+//  $(activeGrid).find(".e-grid").ejGrid({
+//    allowScrolling: true,
+//    scrollSettings: { width: "100%" }
+//  });
 
-  //refresh the grid content
-  $(activeGrid).find(".e-grid").ejGrid("refreshContent");
-}
+//  //refresh the grid content
+//  $(activeGrid).find(".e-grid").ejGrid("refreshContent");
+//}
 
 //single select testing (working)
 var getRecord = function (toolbarItem, gridElement) {

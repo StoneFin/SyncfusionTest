@@ -16,12 +16,20 @@
 </div>*@
 
 @*Tabbed Grids*@
-@*@Html.EJ().Tab("TabTest").Items(x =>
-{
-  x.Add().ID("TabOneTab").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOne")</div>);
-  x.Add().ID("TabTwoTab").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwo")</div>);
-  x.Add().ID("InlineEditingTab").Text("Inline Editing").ContentTemplate(@<div class="row">@Html.DisplayForModel("InlineEditing")</div>);
-}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))*@
+@*
+  This may not be a thing any more as of 13.3.0.12
+  if the grid is contained in tabs where EnablePersistence = true, do not add these settings
+  if the grid is contained in tabs where EnablePersistence = false, only add these to grids contained in all but the first tab
+*@
+<div id="TabTestContainer">
+  @Html.EJ().Tab("TabTest").Items(x =>
+  {
+    x.Add().ID("TabOneTab").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOne")</div>);
+    x.Add().ID("TabTwoTab").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwo")</div>);
+    x.Add().ID("InlineEditingTab").Text("Inline Editing").ContentTemplate(@<div class="row">@Html.DisplayForModel("InlineEditing")</div>);
+    //}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))//onItemActive hack may not be needed since version 13.3.0.12
+  }).EnablePersistence()
+</div>
 
 @*Enable Persistence*@
 @*@Html.DisplayForModel("EnablePersistence")*@
@@ -33,7 +41,7 @@
 @*@Html.DisplayForModel("MultiSelectGrouped")*@
 
 @*Inline Editable Grid*@
-@Html.DisplayForModel("InlineEditing")
+@*@Html.DisplayForModel("InlineEditing")*@
 
 @*ListView bound to a view model*@
 @*@Html.DisplayForModel("ListViewModelBinding")*@
