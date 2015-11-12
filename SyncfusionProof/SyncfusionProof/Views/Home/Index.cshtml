@@ -27,8 +27,8 @@
     x.Add().ID("TabOneTab").Text("Tab One").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabOne")</div>);
     x.Add().ID("TabTwoTab").Text("Tab Two").ContentTemplate(@<div class="row">@Html.DisplayForModel("TabTwo")</div>);
     x.Add().ID("InlineEditingTab").Text("Inline Editing").ContentTemplate(@<div class="row">@Html.DisplayForModel("InlineEditing")</div>);
-    //}).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))//onItemActive hack may not be needed since version 13.3.0.12
-  }).EnablePersistence()
+  }).EnablePersistence().ClientSideEvents(x => x.ItemActive("onItemActive"))
+  //}).EnablePersistence()
 </div>
 
 @*Enable Persistence*@

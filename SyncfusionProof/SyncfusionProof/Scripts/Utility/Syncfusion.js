@@ -49,26 +49,22 @@ var setColumnValue = function (gridId, columnName, newValue) {
 }
 
 //this may not be needed since version 13.3.0.12
-//tab rendering fix (working)
-//var onItemActive = function (args) {
-//  //if EnablePersistence = false, skip this action for the active tab item
-//  if (!args.model.enablePersistence &&
-//    args.activeIndex == args.prevActiveIndex) {
-//    return;
-//  }
+//tab rendering fix
+var onItemActive = function (args) {
+  //This is no longer working. It breaks the grid layout when the page is refreshed.
+  //Without this, you can no longer resize grid columns on anything except the 
+  //initially loaded tab. I'm working with Syncfusion on a fix. - JDT
+  //https://www.syncfusion.com/support/directtrac/incidents/146968
 
-//  //get the current tab
-//  var activeGrid = $(args.activeHeader).find("a").attr("href");
+  ////get the current tab
+  //var activeGrid = $(args.activeHeader).find("a").attr("href");
 
-//  //find the grid inside the current tab and apply scrolling
-//  $(activeGrid).find(".e-grid").ejGrid({
-//    allowScrolling: true,
-//    scrollSettings: { width: "100%" }
-//  });
-
-//  //refresh the grid content
-//  $(activeGrid).find(".e-grid").ejGrid("refreshContent");
-//}
+  ////find the grid inside the current tab and apply scrolling
+  //$(activeGrid).find(".e-grid").ejGrid({
+  //  allowScrolling: true,
+  //  scrollSettings: { width: "100%" }
+  //});
+}
 
 //single select testing (working)
 var getRecord = function (toolbarItem, gridElement) {
