@@ -40,7 +40,19 @@
     //x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();
     
     x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").IsIdentity(true).AllowEditing(false).Add();
-    x.Field("ShipCity").HeaderText("Ship City").EditType(EditingType.String).Add();
+    
+    x.Field("ShipCity")
+      .HeaderText("Ship City")
+      .EditType(EditingType.String)
+      .Width(500)
+      .EditTemplate(y =>
+      {
+        y.Create("textAreaCreate")
+          .Read("textAreaRead")
+          .Write("textAreaWrite");
+      })
+      .Add();
+    
     x.Field("ShipState").HeaderText("Ship State").EditType(EditingType.String).Add();
   })
   .ClientSideEvents(x =>
