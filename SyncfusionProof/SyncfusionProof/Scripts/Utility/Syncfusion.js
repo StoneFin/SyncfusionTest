@@ -305,3 +305,19 @@ var textAreaWrite = function (args) {
   //write the edited text value
   args.element.find("textarea").val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
 }
+
+
+var onItemActiveGroupedGridTabs = function (args) {
+  var self = this;
+  var id = self.element.find(".e-active-content .e-grid").attr("id");
+  var obj = $("#" + id).ejGrid("instance");
+
+  //obj._columnsWidthCollection = [];
+  //obj.setWidthToColumns();
+
+  //if (id == "") {
+
+  //}
+
+  console.log("boom goes the dynamite");
+}
