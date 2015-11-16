@@ -293,7 +293,7 @@ var editRow = function (args) {
 
 var textAreaCreate = function () {
   //return the textarea
-  return "<div class='e-field'><textarea rows='5' style='width:100%;'></textarea></div>";
+  return $("<div class='e-field'><textarea rows='5'></textarea></div>");
 }
 
 var textAreaRead = function (args) {
