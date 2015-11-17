@@ -38,3 +38,8 @@ div.e-field > textarea {
 .refresh:hover {
   background-image: url("ej/web/common-images/icons-white.png");
 }
+
+/*force all grids to use width: auto; this fixes rendering problems in bootstrap tabs*/
+.e-grid {
+  width: auto !important;
+}
