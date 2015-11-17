@@ -9,10 +9,11 @@
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
-  .AllowScrolling()
-  .ScrollSettings(x => { x.Width("100%"); })
+  //.AllowScrolling()
+  //.ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .EnablePersistence()
   //use ShowAddNewRow to automatically add a row whenever an edit finishes
   .EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing(); })
   //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })

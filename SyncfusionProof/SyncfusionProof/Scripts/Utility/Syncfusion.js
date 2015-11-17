@@ -56,14 +56,14 @@ var onItemActive = function (args) {
   //initially loaded tab. I'm working with Syncfusion on a fix. - JDT
   //https://www.syncfusion.com/support/directtrac/incidents/146968
 
-  ////get the current tab
-  //var activeGrid = $(args.activeHeader).find("a").attr("href");
+  //get the current tab
+  var activeGrid = $(args.activeHeader).find("a").attr("href");
 
-  ////find the grid inside the current tab and apply scrolling
-  //$(activeGrid).find(".e-grid").ejGrid({
-  //  allowScrolling: true,
-  //  scrollSettings: { width: "100%" }
-  //});
+  //find the grid inside the current tab and apply scrolling
+  $(activeGrid).find(".e-grid").ejGrid({
+    allowScrolling: true,
+    scrollSettings: { width: "100%" }
+  });
 }
 
 //single select testing (working)

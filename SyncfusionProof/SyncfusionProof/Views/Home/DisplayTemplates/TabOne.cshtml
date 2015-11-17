@@ -7,10 +7,11 @@
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
-  .AllowScrolling()
-  .ScrollSettings(x => { x.Width("100%"); })
+  //.AllowScrolling()
+  //.ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .EnablePersistence()
   .Columns(x =>
   {
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
