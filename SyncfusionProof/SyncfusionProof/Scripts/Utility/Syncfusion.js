@@ -1,4 +1,68 @@
-﻿$(function () {
+﻿window.Utility = window.Utility || {};
+
+//a function for extending the namespace
+function extend(ns, ns_string, ns_o) {
+  var parts = ns_string.split('.'),
+    parent = ns,
+    ns_o = ns_o || {},
+    pl,
+    i;
+
+  if (parts[0] == 'Utility') {
+    parts = parts.slice(1);
+  }
+  pl = parts.length;
+  for (i = 0; i < pl; i++) {
+    if (typeof parent[parts[i]] == 'undefined') {
+      if (i == pl - 1)
+        parent[parts[i]] = ns_o;
+      else
+        parent[parts[i]] = {};
+    }
+    parent = parent[parts[i]];
+  }
+}
+
+extend(window.Utility, "Syncfusion", {
+  Tab: {
+    hideAllTabs: function () {
+      //remove "active" from the tab li elements
+      $("ul.nav.nav-tabs").children().removeClass("active");
+
+      //remove "in active" from the tab content div elements
+      $("div.tab-content").children().removeClass("in active");
+    },
+    showTab: function (tabId) {
+      //add "active" to the tab's li parent element
+      $("a[href='" + tabId + "'").parent().addClass("active");
+
+      //add "in active" to the associated div
+      $(tabId).addClass("in active");
+    },
+    loadActiveTab: function () {
+      //initially hide all the tabs
+      Utility.Syncfusion.Tab.hideAllTabs();
+
+      var lastActiveTab = amplify.store("BootstrapActiveTab");
+
+      if (lastActiveTab) {
+        //there's a stored active tab, activate it instead of the default
+        Utility.Syncfusion.Tab.showTab(lastActiveTab);
+      }
+      else {
+        //there's no stored active tab, activate the first one
+        Utility.Syncfusion.Tab.showTab("#tabone");
+      }
+    },
+    saveActiveTab: function () {
+      var currentActiveTab = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
+
+      amplify.store("BootstrapActiveTab", currentActiveTab);
+    }
+  }
+});
+
+$(function () {
   //click handler for undoing an edit
   $("#UndoLink").on("click", function () {
     //undoUpdate();
@@ -13,6 +77,14 @@
 
     return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
   }, "Value 1 must be less than or equal to Value 2");
+
+  //set the last remembered tab active when the page loads
+  Utility.Syncfusion.Tab.loadActiveTab();
+
+  //remember the last selected tab when we leave the page
+  $(window).on("beforeunload", function () {
+    Utility.Syncfusion.Tab.saveActiveTab();
+  });
 });
 
 var getGrid = function (gridId) {
