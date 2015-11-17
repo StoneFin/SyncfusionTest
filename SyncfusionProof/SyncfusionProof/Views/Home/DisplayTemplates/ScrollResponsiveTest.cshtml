@@ -10,7 +10,12 @@
   .AllowScrolling()
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
+  .EnablePersistence()
   .IsResponsive()
+  .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y =>
+  {
+    y.AddTool(ToolBarItems.Search);
+  }))
   .Columns(x =>
   {
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
