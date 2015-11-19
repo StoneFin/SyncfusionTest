@@ -29,12 +29,14 @@ extend(window.Utility, "Syncfusion", {
       return $("#" + gridId).ejGrid("instance");
     },
     applyScrolling: function (gridId) {
-      var grid = Utility.Syncfusion.Grid.getGrid(gridId);
+      if (gridId) {
+        var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
-      $(grid).find(".e-grid").ejGrid({
-        allowScrolling: true,
-        scrollSettings: { width: "100%" }
-      });
+        $(grid).find(".e-grid").ejGrid({
+          allowScrolling: true,
+          scrollSettings: { width: "100%" }
+        });
+      }
     },
   },
   Tab: {
@@ -52,11 +54,10 @@ extend(window.Utility, "Syncfusion", {
       //add "in active" to the associated div
       $(tabId).addClass("in active");
 
-      //find the grid
+      //get the grid and apply scrolling
       var gridId = $(tabId).find(".e-grid")[0].id;
 
-      //update scroll settings, required to fix broken scroll bars
-      //this is not fixing the phantom vertical scroll bar problem
+      //fix scrolling
       Utility.Syncfusion.Grid.applyScrolling(gridId);
     },
     loadActiveTab: function () {
@@ -98,6 +99,24 @@ $(function () {
     return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
   }, "Value 1 must be less than or equal to Value 2");
 
+  ////set up the scrolling properties on the grids
+  //$.each($("div[data-role='ejgrid']"), function (i, element) {
+  //  Utility.Syncfusion.Grid.applyScrolling(element.id);
+  //});
+
+  //fix scrolling properties on the grids when a tab div gets focus
+
+  //when the tab selection changes
+  $("a[data-toggle='tab']").on("click", function (args) {
+    //find the tab's grid
+    var self = this;
+    var tabId = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
+    var gridId = $(tabId).find(".e-grid")[0].id;
+
+    //fix scrolling
+    Utility.Syncfusion.Grid.applyScrolling(gridId);
+  });
+
   //set the last remembered tab active when the page loads
   Utility.Syncfusion.Tab.loadActiveTab();
 
@@ -112,12 +131,12 @@ var onChange = function (args) {
   var grid = Utility.Syncfusion.Grid.getGrid("InlineEditingGrid");
   var val1 = getColumnValue("InlineEditingGrid", "Value1");
   var val2 = getColumnValue("InlineEditingGrid", "Value2");
-  
+
   val1 = parseFloat(val1.replace(",", ""));
   val2 = parseFloat(val2.replace(",", ""));
   val1 = isNaN(val1) ? 0 : val1;
   val2 = isNaN(val2) ? 0 : val2;
-  
+
   var sum = val1 + val2;
 
   return setColumnValue("InlineEditingGrid", "ValueSum", sum);
@@ -328,7 +347,7 @@ var inlineEditActionComplete = function (args) {
   if (args.requestType === "save") {
     //cancel the grid's default operation
     args.cancel = true;
-    
+
     //just showing that we got the correct manufacturer id and text
     console.log(args.data.ManufacturerId);
     console.log(args.data.Manufacturer);
@@ -373,7 +392,7 @@ var editRow = function (args) {
 
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
-  
+
   //here, the wrong rowindex is found, making it impossible to get the correct record with grid.getCurrentViewData()[i]
   alert("i=" + i);
 
