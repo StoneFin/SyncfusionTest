@@ -99,14 +99,7 @@ $(function () {
     return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
   }, "Value 1 must be less than or equal to Value 2");
 
-  ////set up the scrolling properties on the grids
-  //$.each($("div[data-role='ejgrid']"), function (i, element) {
-  //  Utility.Syncfusion.Grid.applyScrolling(element.id);
-  //});
-
-  //fix scrolling properties on the grids when a tab div gets focus
-
-  //when the tab selection changes
+  //when the tab selection changes, fix the scrolling
   $("a[data-toggle='tab']").on("click", function (args) {
     //find the tab's grid
     var self = this;
