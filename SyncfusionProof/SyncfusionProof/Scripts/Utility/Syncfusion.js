@@ -24,6 +24,19 @@ function extend(ns, ns_string, ns_o) {
 }
 
 extend(window.Utility, "Syncfusion", {
+  Grid: {
+    getGrid: function (gridId) {
+      return $("#" + gridId).ejGrid("instance");
+    },
+    applyScrolling: function (gridId) {
+      var grid = Utility.Syncfusion.Grid.getGrid(gridId);
+
+      $(grid).find(".e-grid").ejGrid({
+        allowScrolling: true,
+        scrollSettings: { width: "100%" }
+      });
+    },
+  },
   Tab: {
     hideAllTabs: function () {
       //remove "active" from the tab li elements
@@ -38,6 +51,13 @@ extend(window.Utility, "Syncfusion", {
 
       //add "in active" to the associated div
       $(tabId).addClass("in active");
+
+      //find the grid
+      var gridId = $(tabId).find(".e-grid")[0].id;
+
+      //update scroll settings, required to fix broken scroll bars
+      //this is not fixing the phantom vertical scroll bar problem
+      Utility.Syncfusion.Grid.applyScrolling(gridId);
     },
     loadActiveTab: function () {
       //initially hide all the tabs
@@ -87,13 +107,9 @@ $(function () {
   });
 });
 
-var getGrid = function (gridId) {
-  return $("#" + gridId).ejGrid("instance");
-}
-
 var onChange = function (args) {
   var self = this;
-  var grid = getGrid("InlineEditingGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("InlineEditingGrid");
   var val1 = getColumnValue("InlineEditingGrid", "Value1");
   var val2 = getColumnValue("InlineEditingGrid", "Value2");
   
@@ -109,13 +125,13 @@ var onChange = function (args) {
 
 var getColumnValue = function (gridId, columnName) {
   //gets a column value in an a grid row that is currently in edit mode
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   return grid.element.find(".gridform").find("input#" + gridId + columnName).val();
 }
 
 var setColumnValue = function (gridId, columnName, newValue) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   return grid.element.find(".gridform").find("input#" + gridId + columnName).val(newValue);
 }
@@ -164,7 +180,7 @@ var getRecords = function (toolbarItem, gridElement) {
 }
 
 var deleteRecord = function (gridId, gridKey, record) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   grid.deleteRecord(gridKey, record);
   //alert("Selected Key: " + gridKey);
@@ -173,7 +189,7 @@ var deleteRecord = function (gridId, gridKey, record) {
 }
 
 var addRecords = function (gridId, records) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   $.each(records, function (i, record) {
     grid.addRecord(record);
@@ -183,7 +199,7 @@ var addRecords = function (gridId, records) {
 }
 
 var deleteRecords = function (gridId, gridKey, records) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   $.each(records, function (i, record) {
     grid.deleteRecord(gridKey, record);
@@ -273,7 +289,7 @@ var undoUpdate = function () {
 
 var removeRow = function () {
   //change based on which grid you're testing
-  var grid = getGrid("MultiSelectGroupedGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("MultiSelectGroupedGrid");
 
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
@@ -353,7 +369,8 @@ var inlineEditActionBegin = function (args) {
 }
 
 var editRow = function (args) {
-  var grid = getGrid("MultiSelectGroupedGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("MultiSelectGroupedGrid");
+
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
   
