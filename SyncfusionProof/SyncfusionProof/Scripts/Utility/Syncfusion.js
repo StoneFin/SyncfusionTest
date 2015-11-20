@@ -1,4 +1,4 @@
-﻿window.Utility = window.Utility || {};
+window.Utility = window.Utility || {};
 
 //a function for extending the namespace
 function extend(ns, ns_string, ns_o) {
@@ -32,7 +32,8 @@ extend(window.Utility, "Syncfusion", {
       if (gridId) {
         var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
-        $(grid).find(".e-grid").ejGrid({
+        //$(grid).find(".e-grid").ejGrid({
+        $('#'+gridId).ejGrid({
           allowScrolling: true,
           scrollSettings: { width: "100%" }
         });
@@ -100,10 +101,12 @@ $(function () {
   }, "Value 1 must be less than or equal to Value 2");
 
   //when the tab selection changes, fix the scrolling
-  $("a[data-toggle='tab']").on("click", function (args) {
+    //$("a[data-toggle='tab']").on("click", function (args) {
+  $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
     //find the tab's grid
-    var self = this;
-    var tabId = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
+      var self = this;
+      var tabId = $(e.target).attr('href');
+    //var tabId = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
     var gridId = $(tabId).find(".e-grid")[0].id;
 
     //fix scrolling
