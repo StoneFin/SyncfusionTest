@@ -31,11 +31,11 @@ extend(window.Utility, "Syncfusion", {
     applyScrolling: function (gridId) {
       if (gridId) {
         var grid = Utility.Syncfusion.Grid.getGrid(gridId);
+        var scrollWidth = grid.element.width();
 
-        //$(grid).find(".e-grid").ejGrid({
         $("#" + gridId).ejGrid({
           allowScrolling: true,
-          scrollSettings: { width: "100%" }
+          scrollSettings: { width: scrollWidth }
         });
       }
     },
