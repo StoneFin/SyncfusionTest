@@ -52,6 +52,23 @@ namespace SyncfusionProof.Controllers
       return View(model);
     }
 
+    [HttpGet]
+    public JsonResult GetIndexSearchResult(string searchTerm) 
+    {
+      HomeModel newModel = null;
+
+      if (searchTerm == "")
+      {
+        newModel = GetModel();
+      }
+      else
+      {
+        newModel = GetSearchModel();
+      }
+  
+      return Json(new { Data = newModel }, JsonRequestBehavior.AllowGet);
+    }
+
     private HomeModel GetModel()
     {
       var manufacturers = new List<object>();
@@ -150,6 +167,68 @@ namespace SyncfusionProof.Controllers
       };
 
       testModels.Add(testModel4);
+
+      var homeModel = new HomeModel
+      {
+        TestModels = testModels,
+        Manufacturers = manufacturers
+      };
+
+      return homeModel;
+    }
+
+    private HomeModel GetSearchModel() 
+    {
+      var manufacturers = new List<object>();
+
+      manufacturers.Add(new { text = "Honda", value = 1 });
+      manufacturers.Add(new { text = "Jusqvarna", value = 2 });
+
+      TestModel testModel1 = new TestModel()
+      {
+        OrderId = 1,
+        CustomerId = "879865489PFGE",
+        EmployeeId = 111,
+        IsTrue = true,
+        IsTrueModel = new IsTrueModel { IsTrue = true },
+        Freight = (decimal)99.50,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)1056.61
+        },
+        ShipCity = "Los Angeles",
+        ShipName = "Merriman",
+        OrderDate = DateTime.Now,
+        ShipState = "California",
+        ManufacturerId = 39,
+        Manufacturer = "Honda"
+      };
+
+      var testModels = new List<TestModel>();
+
+      testModels.Add(testModel1);
+
+      TestModel testModel2 = new TestModel()
+      {
+        OrderId = 2,
+        CustomerId = "6598765485FDWS8798",
+        EmployeeId = 111,
+        IsTrue = false,
+        IsTrueModel = new IsTrueModel { IsTrue = false },
+        Freight = (decimal)6865.66,
+        FreightDetails = new FreightDetails
+        {
+          Freight2 = (decimal)8757.6
+        },
+        ShipCity = "Seattle",
+        ShipName = "USS Gabrielle Giffords",
+        OrderDate = DateTime.Now.AddDays(-1),
+        ShipState = "Washington",
+        ManufacturerId = 40,
+        Manufacturer = "Jusqvarna"
+      };
+
+      testModels.Add(testModel2);
 
       var homeModel = new HomeModel
       {

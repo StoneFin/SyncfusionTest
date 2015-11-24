@@ -215,7 +215,8 @@ var toolbarClick = function (toolbarItem) {
   var self = this;
 
   if (toolbarItem.itemName === "Delete" ||
-      toolbarItem.itemName === "Refresh") {
+      toolbarItem.itemName === "Refresh" ||
+      toolbarItem.itemName === "Search") {
     //cancel the grid's default operation
     toolbarItem.cancel = true;
   }
@@ -231,6 +232,10 @@ var toolbarClick = function (toolbarItem) {
   }
   else if (toolbarItem.itemName === "Refresh") {
     alert("refresh button clicked")
+  }
+  else if (toolbarItem.itemName === "Search") {
+    console.log("toolbar click function");
+    customSearch("ToolbarCustomSearchGrid");
   }
 }
 
@@ -304,4 +309,40 @@ var textAreaRead = function (args) {
 var textAreaWrite = function (args) {
   //write the edited text value
   args.element.find("textarea").val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
+}
+
+var actionBegin = function (args) {
+  if (args.requestType == "searching") {
+    args.cancel = true;
+    console.log("canceled");
+    customSearch("ToolbarCustomSearchGrid");
+  }
+}
+
+var customSearch = function (gridId) {
+  var grid = getGrid(gridId);
+
+  var searchTerm = $("#" + gridId + " .e-ejinputtext")[0].value;
+
+  console.log("going to controller");
+
+  $.get("/Home/GetIndexSearchResult?" +
+        "searchTerm=" + searchTerm)
+      .done(function (response) {
+        var newData = response.Data.TestModels;
+
+        //method 1 - nothing is displayed
+        $("#" + gridId).ejGrid("dataSource", newData);
+
+        //method 2 - returns built in search result
+        //grid.model.dataSource = newData;
+        //$("#" + gridId).ejGrid("refreshContent");
+
+        // method 3
+        //var oldDataSource = grid.model.dataSource;
+        //deleteRecords(gridId, "Order ID", oldDataSource);
+        //addRecords("LoanIndexGrid", newData);
+
+        console.log("data refresh");
+      });
 }
