@@ -1,4 +1,90 @@
-﻿$(function () {
+window.Utility = window.Utility || {};
+
+//a function for extending the namespace
+function extend(ns, ns_string, ns_o) {
+  var parts = ns_string.split('.'),
+    parent = ns,
+    ns_o = ns_o || {},
+    pl,
+    i;
+
+  if (parts[0] == 'Utility') {
+    parts = parts.slice(1);
+  }
+  pl = parts.length;
+  for (i = 0; i < pl; i++) {
+    if (typeof parent[parts[i]] == 'undefined') {
+      if (i == pl - 1)
+        parent[parts[i]] = ns_o;
+      else
+        parent[parts[i]] = {};
+    }
+    parent = parent[parts[i]];
+  }
+}
+
+extend(window.Utility, "Syncfusion", {
+  Grid: {
+    getGrid: function (gridId) {
+      return $("#" + gridId).ejGrid("instance");
+    },
+    applyScrolling: function (gridId) {
+      if (gridId) {
+        var grid = Utility.Syncfusion.Grid.getGrid(gridId);
+        var scrollWidth = grid.element.width();
+
+        $("#" + gridId).ejGrid({
+          allowScrolling: true,
+          scrollSettings: { width: scrollWidth }
+        });
+      }
+    },
+  },
+  Tab: {
+    hideAllTabs: function () {
+      //remove "active" from the tab li elements
+      $("ul.nav.nav-tabs").children().removeClass("active");
+
+      //remove "in active" from the tab content div elements
+      $("div.tab-content").children().removeClass("in active");
+    },
+    showTab: function (tabId) {
+      //add "active" to the tab's li parent element
+      $("a[href='" + tabId + "'").parent().addClass("active");
+
+      //add "in active" to the associated div
+      $(tabId).addClass("in active");
+
+      //get the grid and apply scrolling
+      var gridId = $(tabId).find(".e-grid")[0].id;
+
+      //fix scrolling
+      Utility.Syncfusion.Grid.applyScrolling(gridId);
+    },
+    loadActiveTab: function () {
+      //initially hide all the tabs
+      Utility.Syncfusion.Tab.hideAllTabs();
+
+      var lastActiveTab = amplify.store("BootstrapActiveTab");
+
+      if (lastActiveTab) {
+        //there's a stored active tab, activate it instead of the default
+        Utility.Syncfusion.Tab.showTab(lastActiveTab);
+      }
+      else {
+        //there's no stored active tab, activate the first one
+        Utility.Syncfusion.Tab.showTab("#tabone");
+      }
+    },
+    saveActiveTab: function () {
+      var currentActiveTab = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
+
+      amplify.store("BootstrapActiveTab", currentActiveTab);
+    }
+  }
+});
+
+$(function () {
   //click handler for undoing an edit
   $("#UndoLink").on("click", function () {
     //undoUpdate();
@@ -13,23 +99,38 @@
 
     return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
   }, "Value 1 must be less than or equal to Value 2");
-});
 
-var getGrid = function (gridId) {
-  return $("#" + gridId).ejGrid("instance");
-}
+  //when the tab selection changes, fix the scrolling
+  $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
+    //find the tab's grid
+    var self = this;
+    var tabId = $(e.target).attr("href");
+    var gridId = $(tabId).find(".e-grid")[0].id;
+
+    //fix scrolling
+    Utility.Syncfusion.Grid.applyScrolling(gridId);
+  });
+
+  //set the last remembered tab active when the page loads
+  Utility.Syncfusion.Tab.loadActiveTab();
+
+  //remember the last selected tab when we leave the page
+  $(window).on("beforeunload", function () {
+    Utility.Syncfusion.Tab.saveActiveTab();
+  });
+});
 
 var onChange = function (args) {
   var self = this;
-  var grid = getGrid("InlineEditingGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("InlineEditingGrid");
   var val1 = getColumnValue("InlineEditingGrid", "Value1");
   var val2 = getColumnValue("InlineEditingGrid", "Value2");
-  
+
   val1 = parseFloat(val1.replace(",", ""));
   val2 = parseFloat(val2.replace(",", ""));
   val1 = isNaN(val1) ? 0 : val1;
   val2 = isNaN(val2) ? 0 : val2;
-  
+
   var sum = val1 + val2;
 
   return setColumnValue("InlineEditingGrid", "ValueSum", sum);
@@ -37,13 +138,13 @@ var onChange = function (args) {
 
 var getColumnValue = function (gridId, columnName) {
   //gets a column value in an a grid row that is currently in edit mode
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   return grid.element.find(".gridform").find("input#" + gridId + columnName).val();
 }
 
 var setColumnValue = function (gridId, columnName, newValue) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   return grid.element.find(".gridform").find("input#" + gridId + columnName).val(newValue);
 }
@@ -92,7 +193,7 @@ var getRecords = function (toolbarItem, gridElement) {
 }
 
 var deleteRecord = function (gridId, gridKey, record) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   grid.deleteRecord(gridKey, record);
   //alert("Selected Key: " + gridKey);
@@ -101,7 +202,7 @@ var deleteRecord = function (gridId, gridKey, record) {
 }
 
 var addRecords = function (gridId, records) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   $.each(records, function (i, record) {
     grid.addRecord(record);
@@ -111,7 +212,7 @@ var addRecords = function (gridId, records) {
 }
 
 var deleteRecords = function (gridId, gridKey, records) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   $.each(records, function (i, record) {
     grid.deleteRecord(gridKey, record);
@@ -201,7 +302,7 @@ var undoUpdate = function () {
 
 var removeRow = function () {
   //change based on which grid you're testing
-  var grid = getGrid("MultiSelectGroupedGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("MultiSelectGroupedGrid");
 
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
@@ -245,7 +346,7 @@ var inlineEditActionComplete = function (args) {
   if (args.requestType === "save") {
     //cancel the grid's default operation
     args.cancel = true;
-    
+
     //just showing that we got the correct manufacturer id and text
     console.log(args.data.ManufacturerId);
     console.log(args.data.Manufacturer);
@@ -286,10 +387,11 @@ var inlineEditActionBegin = function (args) {
 }
 
 var editRow = function (args) {
-  var grid = getGrid("MultiSelectGroupedGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("MultiSelectGroupedGrid");
+
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
-  
+
   //here, the wrong rowindex is found, making it impossible to get the correct record with grid.getCurrentViewData()[i]
   alert("i=" + i);
 

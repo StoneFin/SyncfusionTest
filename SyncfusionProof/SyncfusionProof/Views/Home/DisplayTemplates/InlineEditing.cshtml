@@ -2,20 +2,22 @@
 
 @using Syncfusion.JavaScript.Models
 
-@(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("InlineEditingGrid")
+<div class="well">
+  @(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("InlineEditingGrid")
+  .EnablePersistence()
   .Datasource(Model.TestModels)
   .AllowSelection()
   .SelectionType(SelectionType.Multiple)
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
-    .AllowScrolling()
-    .ScrollSettings(x => { x.Width("100%"); })
+  .AllowScrolling()
+  .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
-  //use ShowAddNewRow to automatically add a row whenever an edit finishes
+      //use ShowAddNewRow to automatically add a row whenever an edit finishes
   .EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing(); })
-  //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
+      //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y =>
   {
     y.AddTool(ToolBarItems.Search);
@@ -34,13 +36,13 @@
     x.Field("Manufacturer").DataSource(Model.Manufacturers).HeaderText("Manufacturer Name").EditType(EditingType.Dropdown).Add();
     x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Format("{0:C}").Add();
     x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
-    
+
     //x.Field("Value1").HeaderText("Value 1").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").ValidationRules(y => y.AddRule("lessThanValue2", true)).Add();
     //x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").Add();
     //x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();
-    
+
     x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").IsIdentity(true).AllowEditing(false).Add();
-    
+
     x.Field("ShipCity")
       .HeaderText("Ship City")
       .EditType(EditingType.String)
@@ -52,7 +54,7 @@
           .Write("textAreaWrite");
       })
       .Add();
-    
+
     x.Field("ShipState").HeaderText("Ship State").EditType(EditingType.String).Add();
   })
   .ClientSideEvents(x =>
@@ -61,4 +63,5 @@
     x.ActionBegin("inlineEditActionBegin");
     x.ToolbarClick("toolbarClick");
   })
-)
+  )
+</div>

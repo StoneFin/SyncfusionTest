@@ -2,15 +2,17 @@
 
 @using Syncfusion.JavaScript.Models
 
-@(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("TabOneGrid")
+<div class="well">
+  @(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("TabOneGrid")
+  .EnablePersistence()
   .Datasource(Model.TestModels)
   .AllowSorting()
   .AllowPaging()
   .AllowResizing()
-  //if the grid is contained in tabs where EnablePersistence = true, do not add these settings
-  //if the grid is contained in tabs where EnablePersistence = false, only add these to grids contained in all but the first tab
-  //.AllowScrolling()
-  //.ScrollSettings(x => { x.Width("100%"); })
+      //if the grid is contained in tabs where EnablePersistence = true, do not add these settings
+      //if the grid is contained in tabs where EnablePersistence = false, only add these to grids contained in all but the first tab
+  .AllowScrolling()
+  .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
   .Columns(x =>
@@ -24,4 +26,5 @@
     x.Field("ShipCity").HeaderText("Ship City").Add();
     x.Field("ShipState").HeaderText("Ship State").Add();
   })
-)
+  )
+</div>
