@@ -1,4 +1,4 @@
-window.Utility = window.Utility || {};
+﻿window.Utility = window.Utility || {};
 
 //a function for extending the namespace
 function extend(ns, ns_string, ns_o) {
@@ -111,13 +111,13 @@ $(function () {
     Utility.Syncfusion.Grid.applyScrolling(gridId);
   });
 
-  //set the last remembered tab active when the page loads
-  Utility.Syncfusion.Tab.loadActiveTab();
+  ////set the last remembered tab active when the page loads
+  //Utility.Syncfusion.Tab.loadActiveTab();
 
-  //remember the last selected tab when we leave the page
-  $(window).on("beforeunload", function () {
-    Utility.Syncfusion.Tab.saveActiveTab();
-  });
+  ////remember the last selected tab when we leave the page
+  //$(window).on("beforeunload", function () {
+  //  Utility.Syncfusion.Tab.saveActiveTab();
+  //});
 });
 
 var onChange = function (args) {
@@ -134,20 +134,20 @@ var onChange = function (args) {
   var sum = val1 + val2;
 
   return setColumnValue("InlineEditingGrid", "ValueSum", sum);
-}
+};
 
 var getColumnValue = function (gridId, columnName) {
   //gets a column value in an a grid row that is currently in edit mode
   var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   return grid.element.find(".gridform").find("input#" + gridId + columnName).val();
-}
+};
 
 var setColumnValue = function (gridId, columnName, newValue) {
   var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   return grid.element.find(".gridform").find("input#" + gridId + columnName).val(newValue);
-}
+};
 
 //tab rendering fix (working)
 var onItemActive = function (args) {
@@ -168,7 +168,7 @@ var onItemActive = function (args) {
 
   //refresh the grid content
   $(activeGrid).find(".e-grid").ejGrid("refreshContent");
-}
+};
 
 //single select testing (working)
 var getRecord = function (toolbarItem, gridElement) {
@@ -179,7 +179,7 @@ var getRecord = function (toolbarItem, gridElement) {
   alert("Please select a single record.");
 
   return null;
-}
+};
 
 //multi select testing (working)
 var getRecords = function (toolbarItem, gridElement) {
@@ -190,7 +190,7 @@ var getRecords = function (toolbarItem, gridElement) {
   alert("Please select one or more records.");
 
   return null;
-}
+};
 
 var deleteRecord = function (gridId, gridKey, record) {
   var grid = Utility.Syncfusion.Grid.getGrid(gridId);
@@ -199,7 +199,7 @@ var deleteRecord = function (gridId, gridKey, record) {
   //alert("Selected Key: " + gridKey);
 
   return record;
-}
+};
 
 var addRecords = function (gridId, records) {
   var grid = Utility.Syncfusion.Grid.getGrid(gridId);
@@ -209,7 +209,7 @@ var addRecords = function (gridId, records) {
   });
 
   return records;
-}
+};
 
 var deleteRecords = function (gridId, gridKey, records) {
   var grid = Utility.Syncfusion.Grid.getGrid(gridId);
@@ -219,7 +219,7 @@ var deleteRecords = function (gridId, gridKey, records) {
   });
 
   return records;
-}
+};
 
 var deleteRecordsWithUndo = function (gridId, gridKey, records) {
   //alert and storage ttl
@@ -238,7 +238,7 @@ var deleteRecordsWithUndo = function (gridId, gridKey, records) {
 
   //remove the records
   deleteRecords(gridId, gridKey, records);
-}
+};
 
 var undoDelete = function () {
   //recover the stored records
@@ -249,7 +249,7 @@ var undoDelete = function () {
 
   //add the updated records
   addRecords("InlineEditingGrid", records);
-}
+};
 
 var updateRows = function (gridId, gridKey, records) {
   //alert and storage ttl
@@ -276,7 +276,7 @@ var updateRows = function (gridId, gridKey, records) {
 
   //add the updated records
   addRecords("InlineEditingGrid", records);
-}
+};
 
 var undoUpdate = function () {
   //recover the stored records
@@ -298,7 +298,7 @@ var undoUpdate = function () {
 
   //re-add the updated records
   addRecords("InlineEditingGrid", records);
-}
+};
 
 var removeRow = function () {
   //change based on which grid you're testing
@@ -310,7 +310,7 @@ var removeRow = function () {
   //change based on which grid you're testing
   //deleteRecord("MultiSelectGrid", "OrderId", record);
   deleteRecord("MultiSelectGroupedGrid", "OrderId", record);
-}
+};
 
 var toolbarClick = function (toolbarItem) {
   var self = this;
@@ -338,7 +338,7 @@ var toolbarClick = function (toolbarItem) {
     console.log("toolbar click function");
     customSearch("ToolbarCustomSearchGrid");
   }
-}
+};
 
 var inlineEditActionComplete = function (args) {
   var self = this;
@@ -366,14 +366,14 @@ var inlineEditActionComplete = function (args) {
 
     ele.ejDropDownList("setSelectedText", args.model.currentViewData[args.rowIndex].Manufacturer);
   }
-}
+};
 
 var getSelectedText = function (args, columnName, selectedValue) {
   var columnData = _.findWhere(args.model.columns, { field: columnName }).dataSource;
   var selectedText = _.findWhere(columnData, { value: parseInt(selectedValue) }).text;
 
   return selectedText;
-}
+};
 
 var inlineEditActionBegin = function (args) {
   var self = this;
@@ -384,7 +384,7 @@ var inlineEditActionBegin = function (args) {
     args.data.ManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
     args.data.Manufacturer = getSelectedText(args, "Manufacturer", args.data.ManufacturerId);
   }
-}
+};
 
 var editRow = function (args) {
   var grid = Utility.Syncfusion.Grid.getGrid("MultiSelectGroupedGrid");
@@ -396,22 +396,22 @@ var editRow = function (args) {
   alert("i=" + i);
 
   return record;
-}
+};
 
 var textAreaCreate = function () {
   //return the textarea
   return $("<div class='e-field'><textarea rows='5'></textarea></div>");
-}
+};
 
 var textAreaRead = function (args) {
   //get the edited text value
   return args.val();
-}
+};
 
 var textAreaWrite = function (args) {
   //write the edited text value
   args.element.find("textarea").val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
-}
+};
 
 var actionBegin = function (args) {
   if (args.requestType == "searching") {
@@ -419,10 +419,10 @@ var actionBegin = function (args) {
     console.log("canceled");
     customSearch("ToolbarCustomSearchGrid");
   }
-}
+};
 
 var customSearch = function (gridId) {
-  var grid = getGrid(gridId);
+  var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
   var searchTerm = $("#" + gridId + " .e-ejinputtext")[0].value;
 
@@ -447,4 +447,4 @@ var customSearch = function (gridId) {
 
         console.log("data refresh");
       });
-}
+};
