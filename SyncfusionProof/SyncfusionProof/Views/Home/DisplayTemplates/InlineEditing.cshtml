@@ -37,6 +37,11 @@
     x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Format("{0:C}").Add();
     x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
 
+    x.Field("MyBooleanEditor")
+      .HeaderText("True or False")
+      .EditType(EditingType.Boolean)
+      .Add();
+
     //x.Field("Value1").HeaderText("Value 1").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").ValidationRules(y => y.AddRule("lessThanValue2", true)).Add();
     //x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").Add();
     //x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();
