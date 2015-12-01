@@ -4219,14 +4219,13 @@ background-image: url(../common-images/icons-white.png);
         bottom: 0;
     }
 
-    .e-scroller > .e-content,
-    .e-scroller.e-rtl .e-vscrollbar,
-    .e-scroller.e-rtl .e-vscroll {
+    .e-scroller > .e-content, .e-scroller.e-rtl .e-vscrollbar, .e-scroller.e-rtl .e-vscroll, 
+    .e-scroller .e-hscroll, .e-scroller .e-hscroll .e-hhandle {
         float: left;
     }
 
-    .e-scroller.e-rtl .e-content,
-    .e-scroller.e-rtl .e-hscrollbar {
+    .e-scroller.e-rtl .e-content, .e-scroller.e-rtl .e-hscrollbar,
+    .e-scroller.e-rtl .e-hscroll, .e-scroller.e-rtl .e-hscroll .e-hhandle {
         float: right;
     }
 
@@ -4408,6 +4407,204 @@ background-image: url(../common-images/icons-white.png);
     .e-dt-responsive.e-datetime-popup .e-dt-button.e-dt-done {
         width: 31px;
     }
+
+    .e-drill-down.e-datetime-popup {
+        border: 0px;
+    }
+
+    .e-drill-down.e-datetime-popup .e-popup-container {
+        padding: 0px;
+    }
+
+    .e-drill-down.e-datetime-popup .e-datecontainer {
+        margin: 0px;
+    }
+
+    .e-datetime-popup .e-dp-viewhours .e-timepicker-hours .e-state-default,
+    .e-datetime-popup .e-dp-viewmins .e-timepicker-mins .e-state-default {
+        height: 26px;
+        border: 0 none;
+    }
+
+    .e-drillDowncontainer .e-timepicker table {
+        box-sizing: content-box;
+        border-collapse: collapse;
+        border-style: none;
+        position: relative;
+        table-layout: fixed;
+        *table-layout: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .e-drillDowncontainer .e-timepicker table td {
+        cursor: pointer;
+        border: medium none;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .e-drillDowncontainer .e-dp-viewhours td,
+    .e-drillDowncontainer .e-dp-viewmins td {
+        text-align: right;
+        padding: 3px;
+    }
+
+    .e-drillDowncontainer .e-dp-viewhours .e-timepicker-hours,
+    .e-drillDowncontainer .e-dp-viewmins .e-timepicker-mins {
+        width: 100%;
+    }
+
+    .e-timepicker.e-time-hours, .e-timepicker.e-time-minitues {
+        font-family: @font-family;
+        font-size: @font-size;
+        width: 18em;
+        position: absolute;
+        overflow: hidden;
+        border: 1px solid;
+    }
+
+    .e-timepicker table,
+    .e-timepicker table th,
+    .e-timepicker table td {
+        margin: 0;
+        padding: 0;
+        outline: 0 none;
+        line-height: normal;
+    }
+
+    .e-datetime-popup .e-drillDowncontainer .e-timepicker.e-popup {
+        display: inline-block;
+        z-index: 10000;
+        position: static;
+        display: block;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-pm {
+        margin-top: 10px;
+    }
+    /*Footer design*/
+    .e-drillDowncontainer .e-timepicker.e-popup .e-footer {
+        text-align: center;
+        cursor: pointer;
+        padding: 3px;
+        margin: 4px 0 0;
+    }
+    /*Prev, Next icon style*/
+    .e-drillDowncontainer .e-timepicker.e-popup .e-icon.e-left-arrow {
+        float: left;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-icon.e-right-arrow {
+        float: right;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-icon {
+        height: 18px;
+        width: 18px;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-icon:before {
+        top: 2px;
+        left: 2px;
+        position: absolute;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-next,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-prev {
+        cursor: pointer;
+        position: relative;
+        top: 2px;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-icon.e-right-arrow:before {
+        left: 4px;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-prev {
+        left: 5px;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-next {
+        right: 5px;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-next,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-prev,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-text,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-am .e-text,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-pm .e-text,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-mins-header .e-text {
+        display: inline-block;
+    }
+    /*Header Text style*/
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-text,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-am .e-text,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-pm .e-text,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-mins-header .e-text {
+        cursor: pointer;
+        text-align: center;
+        width: 83%;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-text .e-hours-headertext,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header .e-text .e-minitues-headertext,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-am .e-text .e-hours-meridiantxt-am,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-pm .e-text .e-hours-meridiantxt-pm,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-mins-header .e-text .e-minitues-meridiantxt {
+        padding: 2px 7px 3px 8px;
+        border-radius: 4px;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-am,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header-pm,
+    .e-drillDowncontainer .e-timepicker.e-popup .e-mins-header {
+        text-align: center;
+        height: 30px;
+        line-height: 29px;
+    }
+
+    .e-drillDowncontainer .e-timepicker.e-popup .e-header {
+        margin-bottom: 4px;
+    }
+    /*disable hours and minutes*/
+    .e-timepicker table td.e-disable {
+        opacity: 1;
+    }
+
+    .e-timepicker.e-popup.e-disable table td,
+    .e-timepicker.e-popup.e-disable .e-footer,
+    .e-timepicker.e-popup.e-disable .e-header .e-text,
+    .e-timepicker.e-popup.e-disable .e-header .e-next,
+    .e-timepicker.e-popup.e-disable .e-header .e-prev {
+        cursor: default;
+    }
+
+    .e-timepicker .e-disable.e-left-arrow:hover,
+    .e-timepicker .e-disable.e-right-arrow:hover {
+        background: none;
+        border-radius: 0px;
+        cursor: default;
+    }
+
+    .e-timepicker.e-popup.e-disable table td:hover,
+    .e-timepicker.e-popup.e-disable td.e-state-hover {
+        background: none;
+        font-weight: normal;
+        border-radius: 0px;
+    }
+
+    .e-timepicker.e-popup.e-disable .e-left-arrow:hover,
+    .e-timepicker.e-popup.e-disable .e-right-arrow:hover {
+        background: none;
+        border-radius: 0px;
+    }
+
+    .e-time-minitues .e-hide-mins.e-disable, .e-time-hours .e-hide-hour.e-disable {
+        visibility:hidden;
+    }
+
 }
 
 .mixin(@widget) when (@widget = grid), (@widget = none) {
@@ -4452,7 +4649,10 @@ background-image: url(../common-images/icons-white.png);
     .e-grid .e-tabletd {
         border-collapse: collapse;
     }
-
+    .e-grid .e-tableLastCell {
+            border-right: 1px solid !important;
+            border-style: solid !important;
+    }
     .e-grid .e-gridcontent, .e-grid .e-groupdroparea, .e-grid .e-headercell, .e-grid .e-headercell-hover, .e-grid .e-headercelldiv,
     .e-grid .e-groupheadercell, .e-grid .e-groupheadercell:hover, .e-grid .e-rowcell, .e-grid .e-indentcell, .e-grid .e-recordpluscollapse,
     .e-grid .e-recordplusexpand, .e-grid .e-filterbarcell, .e-grid .e-filterbarcelldisabled, .e-grid .e-summaryrow,
@@ -4491,7 +4691,7 @@ background-image: url(../common-images/icons-white.png);
         box-sizing: border-box;
     }
 
-    .e-grid .e-dialog.e-widget .e-dialog-icon, .e-grid .e-widget .e-pagercontainer > .e-icon {
+    .e-grid .e-dialog.e-widget .e-dialog-icon, .e-grid .e-widget .e-pagercontainer > .e-icon, .e-grid .e-widget .e-pagercontainer .e-numericitem {
         box-sizing: content-box;
     }
 
@@ -4673,7 +4873,6 @@ background-image: url(../common-images/icons-white.png);
         display: inline-block;
         margin-bottom: 0px;
         font-weight: inherit;
-        font-family: Segoe UI;
     }
 
     .e-columnMenuListDiv {
@@ -4694,7 +4893,7 @@ background-image: url(../common-images/icons-white.png);
 
     .e-columnChooser .e-hhandlespace {
         width: 221px !important;
-        margin-top: -4.6px;
+        margin-top: 0px;
     }
 
     .e-columnChooser .e-content {
@@ -4710,7 +4909,9 @@ background-image: url(../common-images/icons-white.png);
     .e-columnChooser .e-hscrollbar {
         height: 11px !important;
     }
-
+    .e-grid.e-columnChooser .e-hscroll, .e-grid.e-columnChooser .e-vscroll{
+		border:0px;
+	}
     .e-columnChooser .e-vhandle {
         width: 8px;
         margin-left: -3px;
@@ -4720,6 +4921,10 @@ background-image: url(../common-images/icons-white.png);
     .e-columnChooser .e-scrollbar .e-hscroll .e-icon,
     .e-columnChooser .e-scrollbar .e-vscroll .e-icon {
         display: none;
+    }
+
+    .e-grid .e-gridellipsis {
+        text-overflow: ellipsis;
     }
 
     .e-grid .e-groupcaption,
@@ -4971,6 +5176,7 @@ background-image: url(../common-images/icons-white.png);
         border-style: @border-type;
         text-indent: @border-size;
         font-family: @font-family;
+        font-weight:normal;
         font-size: @font-size;
         padding-right: 10%;
     }
@@ -4982,8 +5188,8 @@ background-image: url(../common-images/icons-white.png);
         padding: 0px;
         border-style: @border-type;
         cursor: default;
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 7px;
+        padding-right: 9px;
     }
 
     .e-grid-filterstatusbar .e-msgdiv,
@@ -5425,7 +5631,12 @@ background-image: url(../common-images/icons-white.png);
     .e-grid .e-editedbatchcell {
         padding: 1px 3px;
     }
-
+    .e-grid  td.e-editedbatchcell.e-boolrowcell{
+         padding-bottom: 0px;
+         padding-top: 0px;
+         padding-left: 0px;
+         padding-right:0.7em;
+}
     .e-grid .e-detailrowcollapse, .e-grid .e-detailcell, .e-grid tr.e-editedrow td.e-rowcell {
         border-top-width: @border-size;
         border-top-style: @border-type;
@@ -5454,9 +5665,6 @@ background-image: url(../common-images/icons-white.png);
         border-left: none;
     }
 
-    .e-grid .e-pager:not(.e-rtl) .e-lastpage.e-icon {
-        margin-right: -1px;
-    }
 
     .e-grid .e-pagermsgdiv {
         padding-left: 9px;
@@ -5548,6 +5756,15 @@ background-image: url(../common-images/icons-white.png);
         font-family: 'ej-webfont';
         color: red;
     }
+    .e-grid .e-boolrowcell.e-updatedtd:before {
+      float: left;
+      margin-left: -1px;
+      margin-top: -12px;
+      text-align: left;
+      width:0px;
+      font-family: 'ej-webfont';
+      color: red;
+}
 
     .e-grid form .e-icon:before {
         display: block;
@@ -5684,6 +5901,12 @@ background-image: url(../common-images/icons-white.png);
         border-width: @border-size @border-size 0 0;
     }
 
+    .e-grid.e-rtl .e-filterbarcell,
+    .e-grid.e-rtl .e-filterbarcelldisabled {
+        padding-left: 9px;
+        padding-right: 7px;
+    }
+
     .e-grid.e-rtl tr td:first-child, .e-grid.e-rtl tr th:first-child {
         border-right: 0 none;
     }
@@ -5743,12 +5966,7 @@ background-image: url(../common-images/icons-white.png);
         padding-right: 0px;
         padding-left: 18px;
     }
-
-    .e-grid .e-pager.e-rtl {
-        display: block;
-        height: 30px;
-    }
-
+    
     .e-grid.e-rtl .e-grid-filterstatusbar .e-msgdiv, .e-grid.e-rtl .e-grid-filterstatusbarbottom .e-msgdiv {
         margin-right: 5px;
     }
@@ -5858,13 +6076,16 @@ background-image: url(../common-images/icons-white.png);
     }
 
     .e-pager .e-icon {
-        display: inline-block;
         font-size: 10px;
     }
 
     .e-pager .e-numericitem {
         border-right-width: @border-size;
         border-right-style: @border-type;
+        display: inline-block;
+        min-width: 22px;
+        text-align:center;
+        line-height:1;
     }
 
     .e-pager .e-NP {
@@ -5895,11 +6116,11 @@ background-image: url(../common-images/icons-white.png);
 
     .e-pager .e-spacing,
     .e-pager .e-numericitem:hover,
-    .e-pager .e-currentitem {
-        cursor: pointer;
-        padding: 9px;
-        text-decoration: none;
-    }
+.e-pager .e-currentitem{
+cursor: pointer;
+padding: 6px 1px 7px 2px;
+text-decoration: none;
+}
 
     .e-pager .e-currentitem {
         border-width: @border-size;
@@ -5923,13 +6144,14 @@ background-image: url(../common-images/icons-white.png);
     .e-pager .e-firstpagedisabled,
     .e-pager .e-prevpagedisabled,
     .e-pager .e-nextpage,
-    .e-pager .e-lastpage,
-    .e-pager .e-nextpagedisabled,
-    .e-pager .e-lastpagedisabled {
-        padding: 7px 4px 2px 8px;
-        border-right-width: @border-size;
-        border-right-style: @border-type;
-    }
+.e-pager .e-lastpage,
+.e-pager .e-nextpagedisabled,
+.e-pager .e-lastpagedisabled{
+padding: 9px 3px 8px 8px;
+min-width:17px;
+border-right-width: @border-size;
+border-right-style:@border-type;
+}
 
     .e-pager .e-pagercontainer {
         overflow: hidden;
@@ -5960,13 +6182,13 @@ background-image: url(../common-images/icons-white.png);
     }
 
     .e-pager .e-pagercontainer {
-        border-width: @border-size;
-        border-style: @border-type;
-        border-radius: 4px 4px 4px 4px;
-        margin-left: 6px;
-    }
+border-width:  @border-size;
+border-style:  @border-type;
+border-radius: 4px 4px 4px 4px;
+margin: 0 6px 0 6px;
+}
 
-    .e-pager .e-nextpage:hover,
+.e-pager .e-nextpage:hover,
     .e-pager .e-lastpage:hover,
     .e-pager .e-firstpage:hover,
     .e-pager .e-prevpage:hover {
@@ -5995,8 +6217,9 @@ background-image: url(../common-images/icons-white.png);
         margin: 6px;
     }
 
-    .e-pager.e-rtl .e-pagercontainer {
-        margin-right: 6px;
+.e-pager.e-rtl .e-pagercontainer{
+float:none;
+margin-right: 6px;
         padding: 0px;
     }
 
@@ -6008,7 +6231,7 @@ background-image: url(../common-images/icons-white.png);
     .e-pager.e-rtl .e-lastpage,
     .e-pager.e-rtl .e-nextpagedisabled,
     .e-pager.e-rtl .e-lastpagedisabled {
-        padding: 7px 9px 3px 8px;
+        padding: 8px 8px 2px 2px;
         -webkit-padding-after: 2px;
     }
 
@@ -6033,17 +6256,30 @@ background-image: url(../common-images/icons-white.png);
     .e-pager.e-rtl .e-lastpage:before,
     .e-pager.e-rtl .e-lastpage:hover,
     .e-pager.e-rtl .e-lastpagedisabled:before {
-        content: "\e65f";
-    }
+  content: "\e65f";
+}
 
-    .e-pager.e-rtl .e-nextpage, .e-pager.e-rtl .e-nextpagedisabled {
-        border-left-width: @border-size;
-        border-left-style: @border-type;
-    }
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-nextpagedisabled, 
+.e-pager.e-rtl .e-prevpage, 
+.e-pager.e-rtl .e-prevpagedisabled, 
+.e-pager.e-rtl .e-firstpage,
+.e-pager.e-rtl .e-firstpagedisabled{
+border-left-width: @border-size;
+border-left-style: @border-type;
+}
 
-    .e-pager.e-rtl .e-firstpage, .e-pager.e-rtl .e-firstpagedisabled {
-        border-right: medium none;
-    }
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-nextpagedisabled,
+.e-pager.e-rtl .e-prevpage,
+.e-pager.e-rtl .e-prevpagedisabled  {
+  border-right-width: 0px;
+  border-right-style: none;
+}
+
+.e-pager.e-rtl .e-firstpage, .e-pager.e-rtl .e-firstpagedisabled {
+border-right: medium none;
+}
 
     .e-pager.e-rtl .e-firstpage:hover {
         border-radius: 0px 4px 4px 0px;
@@ -6053,10 +6289,23 @@ background-image: url(../common-images/icons-white.png);
         border-radius: 4px 0px 0px 4px;
     }
 
+    .e-pager.e-rtl .e-numericcontainer{
+    float:none;
+}
+.e-pager.e-rtl .e-numericitem {
+    border-right-width: 0px;
+    border-right-style: none;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+.e-pager.e-rtl .e-numericitem {
+  min-width: 25px;
+}
+
     .e-pager.e-rtl .e-spacing,
     .e-pager.e-rtl .e-numericitem:hover,
     .e-pager.e-rtl .e-currentitem {
-        padding: 3px 12px 4px 7px;
+        padding: 6px 1px 7px;
     }
 }
 
@@ -7764,7 +8013,6 @@ background-image: url(../common-images/icons-white.png);
 
     .e-addpre.e-icon {
         display: inline-block;
-        font-family: Segoe UI;
         width: 80px;
     }
 
@@ -7776,10 +8024,6 @@ background-image: url(../common-images/icons-white.png);
         content: "\e693";
         display: inline;
         font-family: 'ej-webfont';
-    }
-
-    .e-deletepre.e-icon {
-        font-family: Segoe UI;
     }
 
     .e-gantt .e-editValue .e-treegrid .e-headercell {
@@ -7879,7 +8123,6 @@ background-image: url(../common-images/icons-white.png);
 .mixin(@widget) when (@widget = treegrid), (@widget = none) {
     .e-treegrid-core {
         border-collapse: collapse;
-        font-family: @font-family;
         font-size: @gantt-content-font-size;
         height: auto;
         outline: 0 none;
@@ -8182,7 +8425,6 @@ background-image: url(../common-images/icons-white.png);
     .e-treegrid .e-headercelldiv {
         font-weight: 600;
         font-size: @gantt-header-font-size;
-        font-family: @gantt-header-font-family;
         display: block;
         border: 0 none;
         height: 29px;
@@ -8549,7 +8791,6 @@ background-image: url(../common-images/icons-white.png);
     .e-ganttchart .e-schedule-week-headercell {
         font-weight: @gantt-schedule-font-weight;
         font-size: @gantt-schedule-font-size;
-        font-family: @font-family;
         text-align: center;
         border-spacing: 0;
         border-style: solid;
@@ -8668,17 +8909,6 @@ background-image: url(../common-images/icons-white.png);
         height: 0;
         position: absolute;
         z-index: 3;
-        border: 12px solid transparent;
-    }
-
-    .e-ganttchart .milestone-top,
-    .e-ganttchart .baseline-milestone-top {
-        border-top: none;
-    }
-
-    .e-ganttchart .milestone-bottom,
-    .e-ganttchart .baseline-milestone-bottom {
-        border-bottom: none;
     }
 
     .e-ganttchart .taskbarresizer-left {
@@ -8710,13 +8940,11 @@ background-image: url(../common-images/icons-white.png);
     .e-ganttchart .e-connectorpoint-left {
         position: absolute;
         z-index: 5;
-        border-radius: 5px;
     }
 
     .e-ganttchart .e-connectorpoint-right {
         position: absolute;
         z-index: 5;
-        border-radius: 5px;
     }
 
     .e-ganttchart .e-connectorpoint-hover {
@@ -8731,14 +8959,12 @@ background-image: url(../common-images/icons-white.png);
     .e-ganttchart .e-tasklabel {
         font-size: 11px;
         vertical-align: middle;
-        font-family: @gantt-tasklable-font-family;
         margin-right: 10px;
         margin-left: 5px;
         z-index: -1;
         color: #FFFFFF;
         display: block;
         font-weight: normal;
-        line-height: 19px;
     }
 
     .e-ganttchart .e-gantt-childtaskbar-progress,
@@ -8825,11 +9051,9 @@ background-image: url(../common-images/icons-white.png);
         display: block;
         overflow: hidden;
         z-index: 6;
-        font-family: @font-family;
         font-size: @gantt-tooltip-font-size;
         border-width: thin;
         border-style: solid;
-        font-size: @gantt-tooltip-font-size;
         .gantt-user-select();
         padding: 5px;
     }
@@ -8852,7 +9076,6 @@ background-image: url(../common-images/icons-white.png);
 
     .e-ganttchart .e-taskbarname,
     .e-ganttchart .e-resourceinfo {
-        font-family: @font-family;
         font-size: @gantt-tasklable-font-size;
         .gantt-user-select();
         font-style: @gantt-tasklable-font-style;
@@ -11216,6 +11439,12 @@ background-image: url(../common-images/icons-white.png);
         z-index: 1;
     }
 
+    .e-radialmenu .e-radialslider {
+        border-radius:50%;
+        top:29px;
+        left:29px;
+    }
+
     .e-radialmenu .e-radialimage {
         background-image: url(common-images/radialmenu/radial.png);
     }
@@ -11255,7 +11484,7 @@ background-image: url(../common-images/icons-white.png);
         user-select: none;
     }
 
-    .e-radialmenu .e-abs {
+    .e-radialmenu.e-abs, .e-radialmenu .e-abs {
         position: absolute;
     }
 
@@ -12414,6 +12643,9 @@ slideRight Animate
 
 .mixin(@widget) when (@widget = ribbon), (@widget = none) {
     /*------------------------------Ribbon Start-------------------------------*/
+	.e-ribbon.e-js.e-widget{
+       position: relative;
+	}
     .e-ribbon.e-js > .e-header {
         position: relative;
         border: 1px solid;
@@ -12823,7 +13055,7 @@ slideRight Animate
         padding-top: 17px;
     }
 
-    .e-ribbon .e-header .e-active:not(.e-list) a {
+    .e-ribbon.e-js .e-header .e-active.e-tab a,.e-ribbon.e-js .e-header .e-active.e-contextualtabset a {
         border: 1px solid;
         border-bottom-color: transparent;
         border-bottom-width: 4px;
@@ -13049,10 +13281,6 @@ slideRight Animate
         cursor: pointer;
     }
 
-    .e-fileexplorer .e-scroller .e-vscroll, .e-fileexplorer .e-scroller .e-hscroll {
-        width: 8px;
-    }
-
     .e-fileexplorer .e-scroller .e-vscroll .e-icon, .e-fileexplorer .e-scroller .e-hscroll .e-icon {
         color: transparent;
     }
@@ -13079,9 +13307,17 @@ slideRight Animate
     }
 
     .e-fileexplorer .e-splitter .e-splitbar.e-h-bar {
-        width: 0px;
-        border-width: 0 1px 0px 0px;
+        width: 9px;
+        border-width: 0px 0px 0px 1px;
     }
+	
+    .e-fileexplorer .e-splitter .e-splitbar .e-icon{
+	    visibility: hidden;
+	}	
+
+	.e-fileexplorer .e-splitbar.e-split-divider{
+	    position: absolute;
+	}
 
     .e-imageViewer > img {
         width: 100%;
@@ -13138,10 +13374,8 @@ slideRight Animate
         margin-top: 4px;
     }
 
-    .e-fileexplorer .e-scrollbar.e-hscrollbar {
-        position: relative;
-        top: -11px;
-        background: transparent;
+    .e-fileexplorer .e-treeview-wrap > .e-ul {
+        overflow: visible;
     }
 
     .e-fileexplorer .e-tree-wrapper .e-widget.e-scrollbar, .e-fileexplorer .e-tree-wrapper .e-widget.e-scrollbar [class^="e-"] {
@@ -13401,13 +13635,12 @@ slideRight Animate
 
     .e-rtl.e-fileexplorer .e-toolbar > .e-horizontal.e-ul, .e-rtl.e-fileexplorer .e-statusbar .e-itemStaus,
     .e-fileexplorer .e-statusbar .e-switchView, .e-rtl.e-fileexplorer .e-toolbar > .e-horizontal.e-ul > li,
-    .e-rtl.e-fileexplorer .e-splitter .e-cont1, .e-rtl.e-fileexplorer .e-splitbar.e-split-divider.e-h-bar,
     .e-fileexplorer .e-toolbar .e-ul-searchBar {
         float: right;
     }
 
     .e-fileexplorer .e-statusbar .e-itemStaus, .e-rtl.e-fileexplorer .e-statusbar .e-switchView,
-    .e-rtl.e-fileexplorer .e-toolbar .e-horizontal.e-ul.e-ul-searchBar, .e-rtl.e-fileexplorer .e-splitter .e-cont2 {
+    .e-rtl.e-fileexplorer .e-toolbar .e-horizontal.e-ul.e-ul-searchBar {
         float: left;
     }
 
@@ -14135,9 +14368,25 @@ slideRight Animate
         border-bottom: solid;
     }
 
+    .e-spreadsheet .e-pager .e-icon{
+        display:inline-block;
+    }
+
     .e-spreadsheet .e-pager .e-numericitem {
-        padding-bottom: 3px;
-        padding-top: 0px;
+        padding-right:9px;
+        padding-left:9px;
+        padding-bottom: 4px;
+        padding-top: 3px;
+    }
+    .e-spreadsheet .e-pager .e-firstpage,
+    .e-spreadsheet .e-pager .e-prevpage,
+    .e-spreadsheet .e-pager .e-firstpagedisabled,
+    .e-spreadsheet .e-pager .e-prevpagedisabled,
+    .e-spreadsheet .e-pager .e-nextpage,
+    .e-spreadsheet .e-pager .e-lastpage,
+    .e-spreadsheet .e-pager .e-nextpagedisabled,
+    .e-spreadsheet .e-pager .e-lastpagedisabled {
+        padding: 8px 3px 1px 8px;
     }
 
     .e-spreadsheet .e-pager .e-pagercontainer {
@@ -17627,9 +17876,11 @@ slideRight Animate
         -ms-animation: clock 2s;
         -o-animation: clock 2s;
         animation: clock 2s;
+    }
+    .e-radialslider .e-rs-svg
+    {
         border-radius: 50%;
     }
-
     .e-radialslider-svg-hide {
         -webkit-animation: anticlock 2s;
         -moz-animation: anticlock 2s;

@@ -186,7 +186,7 @@
 @gantt-tooltip-border-color: @content-border-color;
 @gantt-parent-taskbar-border-color: @gantt-parent-progress-stbg-color;
 @gantt-child-taskbar-border-color: @gantt-child-progress-stbg-color;
-@gantt-chart-border-color: lighten(@content-border-color,12%); /*@content-border-color),12%*/
+@gantt-chart-border-color: @content-border-color;
 
 @gantt-editDialog-font-color: @content-font-color;
 @gantt-content-font-color: @content-font-color;
@@ -381,36 +381,17 @@
 }
 
 .gantt-row-selection() {
-    background: @gantt-row-stbg-color; /* Old browsers */
-    background: -moz-linear-gradient(top, @gantt-row-stbg-color 0%, @gantt-row-endbg-color 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@gantt-row-stbg-color), color-stop(100%,@gantt-row-endbg-color)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, @gantt-row-stbg-color 0%,@gantt-row-endbg-color 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, @gantt-row-stbg-color 0%,@gantt-row-endbg-color 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, @gantt-row-stbg-color 0%,@gantt-row-endbg-color 100%); /* IE10+ */
-    background: linear-gradient(to bottom, @gantt-row-stbg-color 0%,@gantt-row-endbg-color 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{gantt-row-stbg-color}', endColorstr='@{gantt-row-endbg-color}',GradientType=0 ); /* IE6-9 */
+    @temp-gradient: @gantt-row-stbg-color, @gantt-row-endbg-color;
+    .custom-gradient(@temp-gradient, @gantt-row-stbg-color, @gantt-row-endbg-color, 0%, 0% );
 }
 
 .gantt-parent-progress-background() {
-    background: @gantt-parent-progress-stbg-color; /* Old browsers */
-    background: -moz-linear-gradient(top, @gantt-parent-progress-stbg-color 0,@gantt-parent-progress-enbg-color 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@gantt-parent-progress-stbg-color), color-stop(100%,@gantt-parent-progress-enbg-color)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, @gantt-parent-progress-stbg-color 0,@gantt-parent-progress-enbg-color 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, @gantt-parent-progress-stbg-color 0,@gantt-parent-progress-enbg-color 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, @gantt-parent-progress-stbg-color 0,@gantt-parent-progress-enbg-color 100%); /* IE10+ */
-    background: linear-gradient(to bottom, @gantt-parent-progress-stbg-color 0,@gantt-parent-progress-enbg-color 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{gantt-parent-progress-stbg-color}', endColorstr='@{gantt-parent-progress-enbg-color}',GradientType=0 ); /* IE6-9 */
+    @temp-gradient:@gantt-parent-progress-stbg-color, @gantt-parent-progress-enbg-color;
+    .custom-gradient(@temp-gradient, @gantt-parent-progress-stbg-color, @gantt-parent-progress-enbg-color, 0%, 0% );
 }
 
 .gantt-child-progress-background() {
-    background: @gantt-child-progress-stbg-color; /* Old browsers */
-    background: -moz-linear-gradient(top, @gantt-child-progress-stbg-color 0,@gantt-child-progress-enbg-color 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@gantt-child-progress-stbg-color), color-stop(100%,@gantt-child-progress-enbg-color)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, @gantt-child-progress-stbg-color 0,@gantt-child-progress-enbg-color 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, @gantt-child-progress-stbg-color 0,@gantt-child-progress-enbg-color 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, @gantt-child-progress-stbg-color 0,@gantt-child-progress-enbg-color 100%); /* IE10+ */
-    background: linear-gradient(to bottom, @gantt-child-progress-stbg-color 0,@gantt-child-progress-enbg-color 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{gantt-child-progress-stbg-color}', endColorstr='@{gantt-child-progress-enbg-color}',GradientType=0 ); /* IE6-9 */
+   .active-gradient();
 }
 
 /*-----------------------Map------------------*/
@@ -715,6 +696,9 @@ color: @header-icon-color;
 .e-grid .e-number  {
   background-color: @grid-uisupport-background-color; 
   color: @grid-uisupport-number-color;
+}
+.e-grid .e-tableLastCell {
+   border-right-color: @row-border-color !important;
 }
  .e-stackedHeaderRow th {
 	border-bottom: 1px solid @row-border-color !important;
@@ -1526,6 +1510,10 @@ background-color: @pager-default-bg-color;
 border-color: @pager-default-border-color;
 }
 
+.e-pager.e-rtl .e-numericitem{
+border-left-color: @pager-default-border-color;
+}
+
 .e-pager .e-firstpage,
 .e-pager .e-prevpage,
 .e-pager .e-firstpagedisabled,
@@ -1535,6 +1523,17 @@ border-color: @pager-default-border-color;
 .e-pager .e-nextpagedisabled,
 .e-pager .e-lastpagedisabled{
 border-right-color: @pager-default-border-color;
+}
+
+.e-pager.e-rtl .e-firstpage,
+.e-pager.e-rtl .e-prevpage,
+.e-pager.e-rtl .e-firstpagedisabled,
+.e-pager.e-rtl .e-prevpagedisabled,
+.e-pager.e-rtl .e-nextpage,
+.e-pager.e-rtl .e-lastpage,
+.e-pager.e-rtl .e-nextpagedisabled,
+.e-pager.e-rtl .e-lastpagedisabled{
+border-left-color: @pager-default-border-color;
 }
 
 .e-pager .e-currentitem,
@@ -2189,6 +2188,11 @@ color:#5c5c5c;
     border-color:@content-border-color;
 }
 
+.e-fileexplorer .e-splitter .e-splitbar.e-shadowbar, .e-fileexplorer .e-splitter .e-splitbar.e-split-divider, 
+.e-fileexplorer .e-splitter .e-splitbar.e-split-divider:hover, .e-fileexplorer .e-splitter .e-hover.e-splitbar.e-split-divider{
+	background-color: transparent;
+}
+
 /*------------------------------------------------------------------*/
 
 
@@ -2409,46 +2413,164 @@ color:#5c5c5c;
 
 /*------------------------------------- DateTimePicker -------------------------------------------*/
 .e-datetime-wrap .e-input, .e-datetime-popup {
-  background-color: @content-bg-color;
-  font-family: @font-family;
-  font-weight: @content-font-weight;
-  color: @content-font-color;
+    background-color: @content-bg-color;
+    font-family: @font-family;
+    font-weight: @content-font-weight;
+    color: @content-font-color;
 }
+
 .e-datetime-wrap .e-in-wrap, .e-datetime-popup,
 .e-datetime-popup .e-timecontainer .e-header {
-  border-color: @content-border-color;
+    border-color: @content-border-color;
 }
+
 .e-datetime-wrap.e-focus .e-in-wrap, .e-datetime-popup .e-focus {
-  box-shadow: 0 0 @shadow-bg-size @bs-shadow-bg-color;
+    box-shadow: 0 0 @shadow-bg-size @bs-shadow-bg-color;
 }
+
 .e-datetime-wrap.e-focus .e-in-wrap, .e-datetime-popup .e-focus .e-in-wrap {
-  .focus-border-color();
+    .focus-border-color();
 }
+
 .e-datetime-wrap .e-select, .e-datetime-wrap.e-rtl .e-select,
 .e-datetime-wrap .e-disable.e-select:hover {
-  .bs-default-gradient();
-  border-color: @content-border-color; 
-  color: @default-icon-color;
+    .bs-default-gradient();
+    border-color: @content-border-color;
+    color: @default-icon-color;
 }
+
 .e-datetime-wrap .e-select:hover {
-  .hover-gradient();
-  color: @hover-icon-color;
+    .hover-gradient();
+    color: @hover-icon-color;
 }
+
 .e-datetime-popup .e-dt-button {
-  .bs-default-gradient();
-  border: @border-size @border-type @content-border-color; 
-  color: @content-font-color;
+    .bs-default-gradient();
+    border: @border-size @border-type @content-border-color;
+    color: @content-font-color;
 }
+
 .e-datetime-popup .e-dt-button:active {
-   .active-gradient();
+    .active-gradient();
     border-color: @active-border-color;
-    color:  @content-font-color;
+    color: @content-font-color;
     border-color: @active-border-color;
 }
-.e-datetime-popup .e-dt-button:hover{
-  .hover-gradient();
-  color: @hover-font-color;
-  border-color: @hover-border-color;
+
+.e-datetime-popup .e-dt-button:hover {
+    .hover-gradient();
+    color: @hover-font-color;
+    border-color: @hover-border-color;
+}
+
+.e-timepicker.e-time-hours,
+.e-timepicker.e-time-minitues {
+    border-color: @content-border-color;
+    background-color: @content-bg-color;
+}
+
+.e-drillDowncontainer .e-timepicker.e-popup .e-header,
+.e-drillDowncontainer .e-timepicker.e-popup .e-mins-header,
+.e-drillDowncontainer .e-timepicker.e-popup .e-header-am,
+.e-drillDowncontainer .e-timepicker.e-popup .e-header-pm {
+    color: @header-font-color;
+    font-size: @header-font-size;
+    font-weight: @header-font-weight;
+}
+
+.e-drillDowncontainer .e-timepicker.e-popup .e-header {
+    .header-gradient();
+    border-bottom: @border-size @border-type @header-border-color;
+}
+
+.e-drillDowncontainer .e-timepicker.e-popup .e-header-pm > .e-text {
+    border-top: @border-size @border-type @header-border-color;
+}
+
+.e-drillDowncontainer .e-timepicker.e-popup .e-header .e-icon {
+    color: @hover-icon-color;
+}
+
+.e-timepicker table td.e-active,
+.e-timepicker table td.e-active.e-state-hover {
+    .active-gradient();
+    border-radius: 4px;
+    box-shadow: 0 0 0 transparent inset; /*For flicker issue */
+    color: @active-font-color;
+    border-color: @active-border-color;
+}
+
+.e-timepicker .e-state-default {
+    color: @content-font-color;
+    font-weight: @content-font-weight;
+}
+
+.e-timepicker table td:hover,
+.e-timepicker table td.e-state-hover {
+    .hover-gradient();
+    color: @hover-font-color;
+    border-color: @hover-border-color;
+    border-radius: 4px;
+    box-shadow: 0 0 0 transparent inset;
+}
+
+.e-timepicker .e-hours-headertext:hover,
+.e-timepicker .e-minitues-headertext:hover {
+    background: @hover-bg-stcolor;
+}
+
+.e-timepicker .e-footer {
+    color: @default-font-color;
+    border: @border-size @border-type transparent;
+}
+
+.e-timepicker .e-footer:hover {
+    .hover-gradient();
+    color: @hover-font-color;
+    border: @border-size @border-type @hover-border-color;
+    .transparent-border();
+}
+
+.e-timepicker table td.e-disable {
+    color: @disable-datepicker-text;
+}
+
+.e-timepicker table td.e-disable:hover {
+    background: none;
+    border-color: none;
+    color: @disable-datepicker-text;
+}
+
+.e-timepicker .e-left-arrow:hover,
+.e-timepicker .e-right-arrow:hover {
+    background-color: @hover-bg-stcolor;
+    border-radius: 4px 4px 4px 4px;
+    border-color: @hover-border-color;
+}
+
+.e-timepicker .e-disable.e-left-arrow:hover,
+.e-timepicker .e-disable.e-right-arrow:hover {
+    border-color: @hover-border-color;
+}
+
+.e-timepicker.e-popup.e-disable table td:hover,
+.e-timepicker.e-popup.e-disable td.e-state-hover {
+    background: none;
+    color: @content-font-color;
+    font-weight: @content-font-weight;
+    border-radius: 0px;
+    border-color: @hover-border-color;
+}
+
+.e-timepicker.e-popup.e-disable .e-left-arrow:hover,
+.e-timepicker.e-popup.e-disable .e-right-arrow:hover {
+    border-color: @hover-border-color;
+}
+
+.e-timepicker.e-popup.e-disable .e-footer:hover {
+    background: none;
+    color: @default-font-color;
+    border: @border-size @border-type transparent;
 }
 
 
@@ -5631,7 +5753,7 @@ background:@toolbar-bgcolor;
 }
 
 .e-olapclient .targetAxis {
-  .summary-gradient() !important;
+  .summary-gradient();
 }
 .e-olapclient .reportToolbar .e-active {
   color: @active-font-color;
@@ -6472,6 +6594,10 @@ opacity: 1 !important;
     color: @content-font-color;
     vertical-align: baseline;
 }
+.e-deletepre.e-icon,
+.e-addpre.e-icon {
+    font-family: @font-family;
+}
 
 
 
@@ -6481,9 +6607,12 @@ opacity: 1 !important;
 
 .e-treegrid .e-headercelldiv{
     color:@gantt-header-font-color;
+    font-family: @font-family;
 }
 
-
+.e-treegrid-core {
+    font-family: @font-family;
+}
 .e-treegrid {
    border-color: @gantt-content-border-color;
    color: @gantt-content-font-color;
@@ -6635,6 +6764,7 @@ opacity: 1 !important;
    .tgPopUp-gradient();
    border-color:@gantt-columnchooser-border-color !important;
    color:@gantt-menuitem-font-color;
+   font-family:@font-family;
 }
 
 
@@ -6655,6 +6785,9 @@ opacity: 1 !important;
    border:1px solid;
    border-color:@gantt-columnchooser-border-color !important;
    color:@gantt-menuitem-font-color !important;
+}
+.e-columnMenuListDiv label{
+    font-family:@font-family;
 }
 .e-columnmenuselection{
    .treegrid-hover-gradient();
@@ -6680,6 +6813,7 @@ opacity: 1 !important;
    .tgPopUp-gradient();
    border-color:@gantt-columnchooser-border-color !important;
    color:@gantt-menuitem-font-color;
+   font-family:@font-family;
 }
 
 .e-contextmenu-mouseover{
@@ -6788,7 +6922,7 @@ opacity: 1 !important;
     background:transparent;
 	border:none;
 }
-.e-ribbon.e-js .e-header .e-active:not(.e-list) a {
+.e-ribbon.e-js .e-header .e-active.e-tab  a,.e-ribbon.e-js .e-header .e-active.e-contextualtabset a {
     border-color:@rbn-act-a-border-color @rbn-act-a-border-color transparent ;
     color:@rbn-bg-color;
     background:@rbncontent-content-bg-color;
@@ -7503,6 +7637,7 @@ div.e-dlg-field-validation-error:before {
 .e-ganttchart .e-schedule-week-headercell {  
     color: @gantt-schedule-font-color;    
     border-color: @gantt-schedule-border-color !important;    
+    font-family:@font-family;
 }
 
 
@@ -7524,8 +7659,11 @@ div.e-dlg-field-validation-error:before {
 
 .e-ganttchart .e-taskbarname {
     color: @gantt-content-font-color;
+    font-family: @font-family;
 }
-
+.e-ganttchart .e-resourceinfo {
+      font-family: @font-family;
+}
 .e-ganttchart .connectorline-rightarrow {
     border-left-color:  @gantt-connectorline-arrow-bg-color !important;
 }
@@ -7543,10 +7681,19 @@ div.e-dlg-field-validation-error:before {
     border-color: @gantt-tooltip-border-color;
 }
 
-.e-ganttchart .e-tooltiptaskname {
+.e-tooltiptaskname {
     color: @gantt-tooltip-font-color;
+	font-family: @font-family;
 }
-
+.e-tooltipgantt,
+.e-progressbartooltip,
+.e-editingtooltip,
+.e-tooltipganttpredecessor {
+    font-family: @font-family;
+}
+.e-ganttchart .e-tasklabel {
+    font-family: @font-family;
+}
 .e-ganttchart .e-gantt-mouseclick {
     .gantt-row-selection();
 }
@@ -7575,7 +7722,8 @@ div.e-dlg-field-validation-error:before {
 
 .e-ganttchart .e-gantt-mouseclick .e-chartcell .e-resourceinfo,
 .e-ganttchart .e-gantt-mouseclick .e-chartcell .e-tasknameContainer .e-taskbarname {
-    color:@gantt-selection-font-color;
+    color: @gantt-selection-font-color;
+    font-family: @font-family;
 }
 
 .e-ganttchart .e-gantt-parenttaskbar-progress {
@@ -7633,7 +7781,7 @@ div.e-dlg-field-validation-error:before {
 .e-radialmenu .e-childdefault{
     fill: @active-bg-stcolor;
 }
-.e-radialmenu .e-default{
+.e-radialmenu .e-default, .e-radialmenu .e-outerdefault{
     fill: @default-bg-stcolor;
 }
 .e-radialmenu .e-active{
@@ -7655,6 +7803,9 @@ div.e-dlg-field-validation-error:before {
 }
 .e-radialmenu .e-badgecircle{
     fill: @hover-bg-stcolor;    
+}
+.e-radialmenu .e-radialslider {
+    background-color:@content-bg-color;
 }
 
 
