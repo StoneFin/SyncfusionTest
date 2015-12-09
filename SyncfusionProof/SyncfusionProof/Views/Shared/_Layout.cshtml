@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@ViewBag.Title - My ASP.NET Application</title>
   @Styles.Render("~/content/css")
+  @Styles.Render("~/content/ejwidgetsall")
   @Scripts.Render("~/bundles/layout")
 </head>
 <body>
@@ -44,30 +45,30 @@
 
   @*container-fluid*@
   @*<div class="container-fluid">
-    @RenderBody()
-    <hr />
-    <footer>
-      <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-    </footer>
-  </div>*@
+      @RenderBody()
+      <hr />
+      <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+      </footer>
+    </div>*@
 
   @*container*@
   @*<div class="container">
-    @RenderBody()
-    <hr />
-    <footer>
-      <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-    </footer>
-  </div>*@
+      @RenderBody()
+      <hr />
+      <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+      </footer>
+    </div>*@
 
   @*no class*@
   @*<div>
-    @RenderBody()
-    <hr />
-    <footer>
-      <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-    </footer>
-  </div>*@
+      @RenderBody()
+      <hr />
+      <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+      </footer>
+    </div>*@
 
   @(Html.EJ().ScriptManager())
   @RenderSection("scripts", required: false)
