@@ -732,6 +732,7 @@
     <Content Include="Scripts\underscore.min.map" />
     <Content Include="Views\Home\DisplayTemplates\EmptyGrid.cshtml" />
     <Content Include="Views\Home\GridEmpty.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\InlineEditingDropdownEvent.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

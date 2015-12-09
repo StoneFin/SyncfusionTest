@@ -1,0 +1,54 @@
+﻿@model SyncfusionProof.Models.HomeModel
+
+@using Syncfusion.JavaScript.Models
+
+<div class="well">
+  @(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("InlineEditingDropdownEventGrid")
+  .EnablePersistence()
+  .Datasource(Model.TestModels)
+  .AllowSelection()
+  .SelectionType(SelectionType.Multiple)
+  .AllowSorting()
+  .AllowPaging()
+  .AllowResizing()
+  .AllowScrolling()
+  .ScrollSettings(x => { x.Width("100%"); })
+  .MinWidth(500)
+  .IsResponsive()
+      //use ShowAddNewRow to automatically add a row whenever an edit finishes
+  .EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing(); })
+      //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
+  .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y =>
+  {
+    y.AddTool(ToolBarItems.Search);
+    y.AddTool(ToolBarItems.Add);
+    y.AddTool(ToolBarItems.Edit);
+    y.AddTool(ToolBarItems.Delete);
+    y.AddTool(ToolBarItems.Update);
+    y.AddTool(ToolBarItems.Cancel);
+  }))
+  .Columns(x =>
+  {
+    x.Field("OrderId").HeaderText("Order ID").IsIdentity(true).IsPrimaryKey(true).Add();
+
+    x.Field("CustomerId").HeaderText("Customer ID").EditType(EditingType.String).Add();
+    x.Field("EmployeeId").HeaderText("Employee ID").EditType(EditingType.Numeric).Add();
+    x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").IsIdentity(true).AllowEditing(false).Add();
+
+    //x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Format("{0:C}").Add();
+    //x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
+    //x.Field("Value1").HeaderText("Value 1").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").ValidationRules(y => y.AddRule("lessThanValue2", true)).Add();
+    //x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").Add();
+    //x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();
+
+    x.Field("Manufacturer").DataSource(Model.Manufacturers).HeaderText("Manufacturer Name").EditType(EditingType.Dropdown).Add();
+    x.Field("ShipState").HeaderText("Ship State").EditType(EditingType.String).Add();
+  })
+  .ClientSideEvents(x =>
+  {
+    x.ActionComplete("inlineEditActionComplete");
+    x.ActionBegin("inlineEditActionBegin");
+    x.ToolbarClick("toolbarClick");
+  })
+  )
+</div>

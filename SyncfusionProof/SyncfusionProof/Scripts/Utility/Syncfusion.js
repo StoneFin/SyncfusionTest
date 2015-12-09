@@ -93,31 +93,10 @@ $(function () {
     return false;
   });
 
-  //custom validation rule on an editable grid
-  $.validator.addMethod("lessThanValue2", function (value, element) {
-    var value2 = getColumnValue("InlineEditingGrid", "Value 2");
-
-    return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
-  }, "Value 1 must be less than or equal to Value 2");
-
-  //when the tab selection changes, fix the scrolling
-  $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
-    //find the tab's grid
-    var self = this;
-    var tabId = $(e.target).attr("href");
-    var gridId = $(tabId).find(".e-grid")[0].id;
-
-    //fix scrolling
-    Utility.Syncfusion.Grid.applyScrolling(gridId);
-  });
-
-  //set the last remembered tab active when the page loads
-  Utility.Syncfusion.Tab.loadActiveTab();
-
-  //remember the last selected tab when we leave the page
-  $(window).on("beforeunload", function () {
-    Utility.Syncfusion.Tab.saveActiveTab();
-  });
+  // inline editing dropdownlist change event
+  $(document).on("change", "#InlineEditingDropdownEventGridManufacturer_input", function (e) {
+    $("#InlineEditingDropdownEventGridShipState").val("#InlineEditingDropdownEventGridManufacturer_input".val());
+  })
 });
 
 var onChange = function (args) {
@@ -360,6 +339,11 @@ var inlineEditActionComplete = function (args) {
     var ele = $("#" + self._id + "Manufacturer");
 
     ele.ejDropDownList("setSelectedText", args.model.currentViewData[args.rowIndex].Manufacturer);
+
+    // try to set another column's value based on dropdownlist change event
+    $("#InlineEditingDropdownEventGridManufacturer_input").on("change", function () {
+      $("#InlineEditingDropdownEventGridShipState").val("#InlineEditingDropdownEventGridManufacturer_input".val());
+    });
   }
 }
 
@@ -378,6 +362,12 @@ var inlineEditActionBegin = function (args) {
   if (args.requestType === "save") {
     args.data.ManufacturerId = self.element.find("select#InlineEditingGridManufacturer").ejDropDownList("getSelectedValue");
     args.data.Manufacturer = getSelectedText(args, "Manufacturer", args.data.ManufacturerId);
+  }
+  else if (args.requestType === "beginedit") {
+    // try to set another column's value based on dropdownlist change event
+    $("#InlineEditingDropdownEventGridManufacturer_input").on("change", function () {
+      $("#InlineEditingDropdownEventGridShipState").val("#InlineEditingDropdownEventGridManufacturer_input".val());
+    });
   }
 }
 
