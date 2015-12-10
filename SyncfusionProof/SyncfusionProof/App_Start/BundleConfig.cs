@@ -9,12 +9,21 @@ namespace SyncfusionProof
 
     public static void RegisterBundles(BundleCollection bundles)
     {
+      //manually enable minification
+      //running in debug sets this to false and release sets it to true
+      //you don't have to manually set this unless you're troubleshooting something
+      //or if you want to publish minified code in debug mode for dev deployments
+      //BundleTable.EnableOptimizations = true;
+
       bundles.Add(new StyleBundle("~/content/css")
         .Include("~/Content/bootstrap.css")
         .Include("~/Content/bootstrap-theme.css")
         .Include("~/Content/site.css")
-        .Include("~/Content/ej/web/ej.widgets.core.min.css")
-        .Include("~/Content/ej/web/default-theme/ej.web.all.min.css")
+        );
+      
+      //we must include ej.widgets.all.min.css in a separate bundle for optimizations to work properly
+      bundles.Add(new StyleBundle("~/content/ejwidgetsall")
+        .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
         );
 
       //Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -35,9 +44,7 @@ namespace SyncfusionProof
         .Include("~/Scripts/Utility/Syncfusion*")
         );
 
-      // Set EnableOptimizations to false for debugging. For more information,
-      // visit http://go.microsoft.com/fwlink/?LinkId=301862
-      //BundleTable.EnableOptimizations = true;
+      
     }
   }
 }
