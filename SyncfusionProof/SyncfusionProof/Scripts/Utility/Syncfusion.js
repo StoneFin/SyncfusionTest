@@ -421,6 +421,11 @@ var actionBegin = function (args) {
   }
 };
 
+var load = function (args) {
+  //stop search settings from persisting
+  ej.Grid.prototype._ignoreOnPersist.push("searchSettings");
+};
+
 var customSearch = function (gridId) {
   var grid = Utility.Syncfusion.Grid.getGrid(gridId);
 
@@ -431,20 +436,23 @@ var customSearch = function (gridId) {
   $.get("/Home/GetIndexSearchResult?" +
         "searchTerm=" + searchTerm)
       .done(function (response) {
-        var newData = response.Data.TestModels;
+        //var newData = response.Data.TestModels;
+        
+        ////method 1 - nothing is displayed
+        //$("#" + gridId).ejGrid("dataSource", newData);
 
-        //method 1 - nothing is displayed
-        $("#" + gridId).ejGrid("dataSource", newData);
+        ////method 2 - returns built in search result
+        ////grid.model.dataSource = newData;
+        ////$("#" + gridId).ejGrid("refreshContent");
 
-        //method 2 - returns built in search result
-        //grid.model.dataSource = newData;
-        //$("#" + gridId).ejGrid("refreshContent");
+        //// method 3
+        ////var oldDataSource = grid.model.dataSource;
+        ////deleteRecords(gridId, "Order ID", oldDataSource);
+        ////addRecords("LoanIndexGrid", newData);
 
-        // method 3
-        //var oldDataSource = grid.model.dataSource;
-        //deleteRecords(gridId, "Order ID", oldDataSource);
-        //addRecords("LoanIndexGrid", newData);
+        //console.log("data refresh");
 
-        console.log("data refresh");
+        grid.model.allowSearching = false;
+        grid.dataSource(response.Data.TestModels);
       });
 };
