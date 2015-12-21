@@ -40,48 +40,48 @@ extend(window.Utility, "Syncfusion", {
       }
     },
   },
-  Tab: {
-    hideAllTabs: function () {
-      //remove "active" from the tab li elements
-      $("ul.nav.nav-tabs").children().removeClass("active");
+  //Tab: {
+  //  hideAllTabs: function () {
+  //    //remove "active" from the tab li elements
+  //    $("ul.nav.nav-tabs").children().removeClass("active");
 
-      //remove "in active" from the tab content div elements
-      $("div.tab-content").children().removeClass("in active");
-    },
-    showTab: function (tabId) {
-      //add "active" to the tab's li parent element
-      $("a[href='" + tabId + "'").parent().addClass("active");
+  //    //remove "in active" from the tab content div elements
+  //    $("div.tab-content").children().removeClass("in active");
+  //  },
+  //  showTab: function (tabId) {
+  //    //add "active" to the tab's li parent element
+  //    $("a[href='" + tabId + "'").parent().addClass("active");
 
-      //add "in active" to the associated div
-      $(tabId).addClass("in active");
+  //    //add "in active" to the associated div
+  //    $(tabId).addClass("in active");
 
-      //get the grid and apply scrolling
-      var gridId = $(tabId).find(".e-grid")[0].id;
+  //    //get the grid and apply scrolling
+  //    var gridId = $(tabId).find(".e-grid")[0].id;
 
-      //fix scrolling
-      Utility.Syncfusion.Grid.applyScrolling(gridId);
-    },
-    loadActiveTab: function () {
-      //initially hide all the tabs
-      Utility.Syncfusion.Tab.hideAllTabs();
+  //    //fix scrolling
+  //    Utility.Syncfusion.Grid.applyScrolling(gridId);
+  //  },
+  //  loadActiveTab: function () {
+  //    //initially hide all the tabs
+  //    Utility.Syncfusion.Tab.hideAllTabs();
 
-      var lastActiveTab = amplify.store("BootstrapActiveTab");
+  //    var lastActiveTab = amplify.store("BootstrapActiveTab");
 
-      if (lastActiveTab) {
-        //there's a stored active tab, activate it instead of the default
-        Utility.Syncfusion.Tab.showTab(lastActiveTab);
-      }
-      else {
-        //there's no stored active tab, activate the first one
-        Utility.Syncfusion.Tab.showTab("#tabone");
-      }
-    },
-    saveActiveTab: function () {
-      var currentActiveTab = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
+  //    if (lastActiveTab) {
+  //      //there's a stored active tab, activate it instead of the default
+  //      Utility.Syncfusion.Tab.showTab(lastActiveTab);
+  //    }
+  //    else {
+  //      //there's no stored active tab, activate the first one
+  //      Utility.Syncfusion.Tab.showTab("#tabone");
+  //    }
+  //  },
+  //  saveActiveTab: function () {
+  //    var currentActiveTab = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
 
-      amplify.store("BootstrapActiveTab", currentActiveTab);
-    }
-  }
+  //    amplify.store("BootstrapActiveTab", currentActiveTab);
+  //  }
+  //}
 });
 
 $(function () {
@@ -112,12 +112,12 @@ $(function () {
   });
 
   //set the last remembered tab active when the page loads
-  Utility.Syncfusion.Tab.loadActiveTab();
+  //Utility.Syncfusion.Tab.loadActiveTab();
 
   //remember the last selected tab when we leave the page
-  $(window).on("beforeunload", function () {
-    Utility.Syncfusion.Tab.saveActiveTab();
-  });
+  //$(window).on("beforeunload", function () {
+  //  Utility.Syncfusion.Tab.saveActiveTab();
+  //});
 });
 
 var onChange = function (args) {
@@ -406,4 +406,15 @@ var textAreaRead = function (args) {
 var textAreaWrite = function (args) {
   //write the edited text value
   args.element.find("textarea").val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
+}
+
+var load = function (args) {
+  var colIndex = this.getColumnIndexByField("Freight");
+
+  this.model.columns[colIndex].editParams = { change: "setFreightTwo" };
+}
+
+var setFreightTwo = function (e) {
+  var freightTwo = $("#InlineEditingGridFreightDetailsFreight2").data("ejNumericTextbox");
+  freightTwo.option("value", e.value);
 }
