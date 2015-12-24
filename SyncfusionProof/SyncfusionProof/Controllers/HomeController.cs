@@ -1,4 +1,4 @@
-﻿using SyncfusionProof.Models;
+﻿using SyncfusionProof.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;

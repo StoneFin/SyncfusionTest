@@ -1,9 +1,9 @@
-﻿@model SyncfusionProof.Models.HomeModel
+﻿@model SyncfusionProof.Data.Models.HomeModel
 
 @using Syncfusion.JavaScript.Models
 
 <div class="well">
-  @(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("InlineEditingGrid")
+  @(Html.EJ().Grid<SyncfusionProof.Data.Models.TestModel>("InlineEditingGrid")
   .EnablePersistence()
   .Datasource(Model.TestModels)
   .AllowSelection()

@@ -224,13 +224,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\FreightDetails.cs" />
-    <Compile Include="Models\HomeModel.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\IsTrueModel.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\TestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -733,7 +726,16 @@
     <Content Include="Views\Home\DisplayTemplates\EmptyGrid.cshtml" />
     <Content Include="Views\Home\GridEmpty.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SyncfusionProof.Data\SyncfusionProof.Data.csproj">
+      <Project>{35322377-bd42-450a-ab29-22b9e9ba69b0}</Project>
+      <Name>SyncfusionProof.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SyncfusionProof.Reports\SyncfusionProof.Reports.csproj">
+      <Project>{421be663-7675-468d-93d3-ebff1ff59d68}</Project>
+      <Name>SyncfusionProof.Reports</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
       <SubType>Designer</SubType>
