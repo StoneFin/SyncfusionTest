@@ -1,6 +1,7 @@
 ﻿using SyncfusionProof.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace SyncfusionProof.Controllers
@@ -50,6 +51,15 @@ namespace SyncfusionProof.Controllers
       model.TestModels = new List<TestModel>();
 
       return View(model);
+    }
+
+    public ActionResult ReportModelBound(string customerId)
+    {
+      var homeModel = GetModel();
+
+      var testModel = homeModel.TestModels.Where(x => x.CustomerId.Equals(customerId)).First();
+
+      return View("./DisplayTemplates/ReportModelBoundViewer", testModel);
     }
 
     private HomeModel GetModel()

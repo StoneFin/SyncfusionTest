@@ -1,0 +1,23 @@
+﻿@model SyncfusionProof.Data.Models.TestModel
+
+@using SyncfusionProof.Data.Models;
+
+@using Syncfusion.JavaScript;
+
+@{
+  ViewBag.Title = string.Format("Report for Customer Id: {0}", Model.CustomerId);
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+  @(Html.EJ().ReportViewer("ReportModelBound")
+    .ProcessingMode(Syncfusion.JavaScript.ReportViewerEnums.ProcessingMode.Local)
+    .DataSources(x =>
+      {
+        x.Name("TestModel").Value(Model as IList<TestModel>).Add();
+      })
+    .ReportPath("~/Reports/ReportModelBound.rdlc")
+    .ReportServiceUrl(VirtualPathUtility.ToAbsolute("~/api/ReportModelBound"))
+  )
+</div>

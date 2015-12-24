@@ -115,6 +115,10 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Syncfusion.Chart.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.Chart.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Syncfusion.Compression.Base, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.13.3.0.18\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
       <Private>True</Private>
@@ -135,6 +139,22 @@
       <HintPath>..\packages\Syncfusion.AspNet.Mvc5.13.3.0.18\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Syncfusion.EJ.ReportViewer, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.EJ.ReportViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Gauge.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.Gauge.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.Grid.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.GridCommon.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Syncfusion.Linq.Base, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Web.Base45.13.3.0.18\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
       <Private>True</Private>
@@ -147,6 +167,26 @@
       <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.13.3.0.18\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Syncfusion.ReportControls.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.ReportControls.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.ReportWriter.Base, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.ReportWriter.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.RichTextBoxAdv.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.RichTextBoxAdv.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfMaps.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.SfMaps.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\Syncfusion.Shared.WPF.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Syncfusion.XlsIO.Base, Version=13.3450.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.13.3.0.18\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
       <Private>True</Private>
@@ -155,10 +195,14 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.13.3.0.18\lib\net45\System.Data.SqlServerCe.dll</HintPath>
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.13.3.0.18\lib\net45\System.Data.SqlServerCe.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -167,6 +211,14 @@
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -218,9 +270,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ReportModelBoundController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -228,10 +282,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\aspnet-SyncfusionProof-20141219043613.mdf" />
-    <Content Include="App_Data\aspnet-SyncfusionProof-20141219043613_log.ldf">
-      <DependentUpon>aspnet-SyncfusionProof-20141219043613.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -725,6 +775,7 @@
     <Content Include="Scripts\underscore.min.map" />
     <Content Include="Views\Home\DisplayTemplates\EmptyGrid.cshtml" />
     <Content Include="Views\Home\GridEmpty.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ReportModelBoundViewer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SyncfusionProof.Data\SyncfusionProof.Data.csproj">
@@ -741,6 +792,12 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ReportModelBound.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

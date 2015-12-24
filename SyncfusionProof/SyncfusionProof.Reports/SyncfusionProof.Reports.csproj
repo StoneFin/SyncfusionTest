@@ -42,6 +42,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SyncfusionProof.Data\SyncfusionProof.Data.csproj">
+      <Project>{35322377-bd42-450a-ab29-22b9e9ba69b0}</Project>
+      <Name>SyncfusionProof.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\SyncfusionProof.Data.Models.TestModel.datasource" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
