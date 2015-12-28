@@ -4,7 +4,7 @@ using System.Web.Http;
 
 namespace SyncfusionProof.Controllers
 {
-  public class ReportModelBoundController : ApiController, IReportController
+  public class ReportModelBoundNoParametersController : ApiController, IReportController
   {
     public object GetResource(string key, string resourcetype, bool isPrint)
     {

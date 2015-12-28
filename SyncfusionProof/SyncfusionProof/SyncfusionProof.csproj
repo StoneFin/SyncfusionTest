@@ -274,7 +274,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ReportModelBoundController.cs" />
+    <Compile Include="Controllers\ReportModelBoundNoParametersController.cs" />
+    <Compile Include="Controllers\ReportModelBoundWithParametersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -714,6 +715,7 @@
     <Content Include="Scripts\rgbcolor.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
+    <Content Include="Scripts\Utility\ReportViewer.js" />
     <Content Include="Scripts\Utility\Syncfusion.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
@@ -775,7 +777,8 @@
     <Content Include="Scripts\underscore.min.map" />
     <Content Include="Views\Home\DisplayTemplates\EmptyGrid.cshtml" />
     <Content Include="Views\Home\GridEmpty.cshtml" />
-    <Content Include="Views\Home\DisplayTemplates\ReportModelBoundViewer.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ReportModelBoundNoParametersViewer.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ReportModelBoundWithParametersViewer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SyncfusionProof.Data\SyncfusionProof.Data.csproj">
@@ -797,7 +800,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Reports\ReportModelBound.rdlc" />
+    <EmbeddedResource Include="Reports\ReportModelBoundNoParameters.rdlc" />
+    <EmbeddedResource Include="Reports\ReportModelBoundWithParameters.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
