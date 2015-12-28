@@ -1,6 +1,8 @@
-﻿
+﻿using System;
+
 namespace SyncfusionProof.Data.Models
 {
+  [Serializable]
   public class CustomerDetailsModel
   {
     public string CustomerId { get; set; }

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SyncfusionProof.Data.Models
 {
+  [Serializable]
   public class TestModel
   {
     //data annotation is required in order to prevent editable Id properties in grids
