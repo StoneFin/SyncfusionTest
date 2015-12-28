@@ -277,6 +277,7 @@
     <Compile Include="Controllers\ReportModelBoundNoParametersController.cs" />
     <Compile Include="Controllers\ReportModelBoundWithParametersController.cs" />
     <Compile Include="Controllers\ReportNestedModelsController.cs" />
+    <Compile Include="Controllers\ReportWithSubreportController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -783,6 +784,7 @@
     <Content Include="Views\Home\DisplayTemplates\ReportModelBoundWithParametersViewer.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ReportNestedModelsViewer.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ReportMultiDatasetViewer.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ReportWithSubreportViewer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SyncfusionProof.Data\SyncfusionProof.Data.csproj">
@@ -802,12 +804,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\ReportWithSubreport\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Reports\ReportModelBoundNoParameters.rdlc" />
     <EmbeddedResource Include="Reports\ReportModelBoundWithParameters.rdlc" />
     <EmbeddedResource Include="Reports\ReportMultiDataset.rdlc" />
     <EmbeddedResource Include="Reports\ReportNestedModels.rdlc" />
+    <EmbeddedResource Include="Reports\ReportWithSubreport\ReportWithSubReport.rdlc" />
+    <EmbeddedResource Include="Reports\ReportWithSubreport\Subreport.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

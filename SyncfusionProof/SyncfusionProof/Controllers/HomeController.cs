@@ -87,5 +87,13 @@ namespace SyncfusionProof.Controllers
 
       return View("./DisplayTemplates/ReportMultiDatasetViewer", testModels);
     }
+
+    public ActionResult ReportWithSubreport(string customerId)
+    {
+      var homeModel = DataHelper.GetHomeModel();
+      var testModels = homeModel.TestModels.Where(x => x.CustomerId.Equals(customerId)).ToList();
+
+      return View("./DisplayTemplates/ReportWithSubreportViewer", testModels);
+    }
   }
 }
