@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SyncfusionProof.Models
+namespace SyncfusionProof.Data.Models
 {
   public class TestModel
   {

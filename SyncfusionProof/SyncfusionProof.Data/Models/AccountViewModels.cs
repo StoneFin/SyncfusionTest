@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace SyncfusionProof.Models
+namespace SyncfusionProof.Data.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

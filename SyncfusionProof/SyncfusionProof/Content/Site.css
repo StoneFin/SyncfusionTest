@@ -46,3 +46,7 @@ div.e-field > textarea {
 input.e-field.e-checkbox {
   width: 13px !important;
 }
+
+.e-reportviewer {
+  height: 1080px;
+}

@@ -1,9 +1,9 @@
-﻿@model SyncfusionProof.Models.HomeModel
+﻿@model SyncfusionProof.Data.Models.HomeModel
 
 @using Syncfusion.JavaScript.Models
 
 <div class="well">
-  @(Html.EJ().Grid<SyncfusionProof.Models.TestModel>("TabTwoGrid")
+  @(Html.EJ().Grid<SyncfusionProof.Data.Models.TestModel>("TabTwoGrid")
   .EnablePersistence()
   .Datasource(Model.TestModels)
   .AllowSorting()

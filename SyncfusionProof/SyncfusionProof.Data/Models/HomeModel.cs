@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SyncfusionProof.Models
+namespace SyncfusionProof.Data.Models
 {
   public class HomeModel
   {
