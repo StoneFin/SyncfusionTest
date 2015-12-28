@@ -55,6 +55,7 @@
   <ItemGroup>
     <EmbeddedResource Include="ReportModelBoundNoParameters.rdlc" />
     <EmbeddedResource Include="ReportModelBoundWithParameters.rdlc" />
+    <EmbeddedResource Include="ReportMultiDataset.rdlc" />
     <EmbeddedResource Include="ReportNestedModels.rdlc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

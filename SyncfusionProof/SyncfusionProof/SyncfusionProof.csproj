@@ -281,6 +281,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controllers\ReportMultiDatasetController.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -781,6 +782,7 @@
     <Content Include="Views\Home\DisplayTemplates\ReportModelBoundNoParametersViewer.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ReportModelBoundWithParametersViewer.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ReportNestedModelsViewer.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ReportMultiDatasetViewer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SyncfusionProof.Data\SyncfusionProof.Data.csproj">
@@ -804,6 +806,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Reports\ReportModelBoundNoParameters.rdlc" />
     <EmbeddedResource Include="Reports\ReportModelBoundWithParameters.rdlc" />
+    <EmbeddedResource Include="Reports\ReportMultiDataset.rdlc" />
     <EmbeddedResource Include="Reports\ReportNestedModels.rdlc" />
   </ItemGroup>
   <PropertyGroup>
