@@ -276,6 +276,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ReportModelBoundNoParametersController.cs" />
     <Compile Include="Controllers\ReportModelBoundWithParametersController.cs" />
+    <Compile Include="Controllers\ReportNestedModelsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -779,6 +780,7 @@
     <Content Include="Views\Home\GridEmpty.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ReportModelBoundNoParametersViewer.cshtml" />
     <Content Include="Views\Home\DisplayTemplates\ReportModelBoundWithParametersViewer.cshtml" />
+    <Content Include="Views\Home\DisplayTemplates\ReportNestedModelsViewer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SyncfusionProof.Data\SyncfusionProof.Data.csproj">
@@ -802,6 +804,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Reports\ReportModelBoundNoParameters.rdlc" />
     <EmbeddedResource Include="Reports\ReportModelBoundWithParameters.rdlc" />
+    <EmbeddedResource Include="Reports\ReportNestedModels.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

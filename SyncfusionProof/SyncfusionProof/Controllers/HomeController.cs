@@ -66,5 +66,13 @@ namespace SyncfusionProof.Controllers
     {
       return View("./DisplayTemplates/ReportModelBoundWithParametersViewer");
     }
+
+    public ActionResult ReportNestedModels(string customerId)
+    {
+      var homeModel = DataHelper.GetHomeModel();
+      var testModels = homeModel.TestModels.Where(x => x.CustomerId.Equals(customerId)).ToList();
+
+      return View("./DisplayTemplates/ReportNestedModelsViewer", testModels);
+    }
   }
 }

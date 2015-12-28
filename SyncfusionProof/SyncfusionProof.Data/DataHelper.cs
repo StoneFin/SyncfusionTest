@@ -26,6 +26,7 @@ namespace SyncfusionProof.Data
       TestModel testModel1 = new TestModel()
       {
         OrderId = 1,
+        CustomerDetailsModel = GetCustomerDetails("5423115657865424ASFE"),
         CustomerId = "5423115657865424ASFE",
         EmployeeId = 111,
         IsTrue = true,
@@ -43,6 +44,7 @@ namespace SyncfusionProof.Data
         Manufacturer = "Honda"
       };
 
+      
       var testModels = new List<TestModel>();
 
       testModels.Add(testModel1);
@@ -50,6 +52,7 @@ namespace SyncfusionProof.Data
       TestModel testModel2 = new TestModel()
       {
         OrderId = 2,
+        CustomerDetailsModel = GetCustomerDetails("5423115657865424ABCD"),
         CustomerId = "5423115657865424ABCD",
         EmployeeId = 111,
         IsTrue = false,
@@ -72,6 +75,7 @@ namespace SyncfusionProof.Data
       TestModel testModel3 = new TestModel()
       {
         OrderId = 3,
+        CustomerDetailsModel = GetCustomerDetails("ABCD5423115657865424"),
         CustomerId = "ABCD5423115657865424",
         EmployeeId = 222,
         IsTrue = true,
@@ -94,6 +98,7 @@ namespace SyncfusionProof.Data
       TestModel testModel4 = new TestModel()
       {
         OrderId = 4,
+        CustomerDetailsModel = GetCustomerDetails("ABCD5423115657865424"),
         CustomerId = "ABCD5423115657865424",
         EmployeeId = 222,
         IsTrue = false,
@@ -120,6 +125,20 @@ namespace SyncfusionProof.Data
       };
 
       return homeModel;
+    }
+
+    private static CustomerDetailsModel GetCustomerDetails(string customerId)
+    {
+      return new CustomerDetailsModel
+      {
+        Address1 = "123 Test St",
+        Address2 = "PO Box 123",
+        City = "Chattanooga",
+        CustomerId = customerId,
+        Name = "John " + customerId,
+        State = "TN",
+        ZipCode = "12345",
+      };
     }
   }
 }

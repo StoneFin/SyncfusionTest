@@ -11,7 +11,9 @@ namespace SyncfusionProof.Data.Models
     public int OrderId { get; set; }
 
     public string CustomerId { get; set; }
-    
+
+    public CustomerDetailsModel CustomerDetailsModel { get; set; }
+
     public int EmployeeId { get; set; }
     
     public decimal Freight { get; set; }
