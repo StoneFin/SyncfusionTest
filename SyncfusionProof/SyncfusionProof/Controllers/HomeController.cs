@@ -60,6 +60,11 @@ namespace SyncfusionProof.Controllers
       var testModels = homeModel.TestModels.Where(x => x.CustomerId.Equals(customerId)).ToList();
 
       return View("./DisplayTemplates/ReportModelBoundNoParametersViewer", testModels);
+
+      //var homeModel = DataHelper.GetHomeModel();
+      //var testModel = homeModel.TestModels.Where(x => x.CustomerId.Equals(customerId)).Single();
+
+      //return View("./DisplayTemplates/ReportModelBoundNoParametersViewer", testModel);
     }
 
     public ActionResult ReportModelBoundWithParameters()

@@ -1,7 +1,9 @@
 ﻿@model IList<SyncfusionProof.Data.Models.TestModel>
+@*@model SyncfusionProof.Data.Models.TestModel*@
 
 @{
   ViewBag.Title = string.Format("Report for Customer Id: {0}", Model.First().CustomerId);
+  //ViewBag.Title = string.Format("Report for Customer Id: {0}", Model.CustomerId);
 }
 
 <h2>@ViewBag.Title</h2>

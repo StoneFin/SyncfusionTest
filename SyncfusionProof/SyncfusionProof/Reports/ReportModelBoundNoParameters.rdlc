@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!CustomerId.Value, "TestModel")</Value>
+                <Value>=Fields!CustomerId.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -68,7 +68,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!EmployeeId.Value, "TestModel")</Value>
+                <Value>=Fields!EmployeeId.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
