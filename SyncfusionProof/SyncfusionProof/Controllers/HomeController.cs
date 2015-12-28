@@ -56,10 +56,9 @@ namespace SyncfusionProof.Controllers
     public ActionResult ReportModelBound(string customerId)
     {
       var homeModel = GetModel();
+      var testModels = homeModel.TestModels.Where(x => x.CustomerId.Equals(customerId)).ToList();
 
-      var testModel = homeModel.TestModels.Where(x => x.CustomerId.Equals(customerId)).First();
-
-      return View("./DisplayTemplates/ReportModelBoundViewer", testModel);
+      return View("./DisplayTemplates/ReportModelBoundViewer", testModels);
     }
 
     private HomeModel GetModel()
