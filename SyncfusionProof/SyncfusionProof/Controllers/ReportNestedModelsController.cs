@@ -1,4 +1,7 @@
-﻿using Syncfusion.EJ.ReportViewer;
+﻿//this is not officially supported in syncfusion reports
+//http://www.syncfusion.com/support/directtrac/incidents/149009
+
+using Syncfusion.EJ.ReportViewer;
 using System.Collections.Generic;
 using System.Web.Http;
 
