@@ -12,10 +12,10 @@
   @(Html.EJ().ReportViewer("ReportMultiDataset")
     .ProcessingMode(Syncfusion.JavaScript.ReportViewerEnums.ProcessingMode.Local)
     .DataSources(x =>
-      {
-        x.Name("CustomerDetailsModel").Value(Model.FirstOrDefault().FreightDetails as IList<CustomerDetailsModel>).Add();
-        x.Name("TestModel").Value(Model).Add();
-      })
+    {
+      x.Name("CustomerDetailsModel").Value(new List<CustomerDetailsModel> { Model.FirstOrDefault().CustomerDetailsModel }).Add();
+      x.Name("TestModel").Value(Model).Add();
+    })
     .ReportPath("~/Reports/ReportMultiDataset.rdlc")
     .ReportServiceUrl(VirtualPathUtility.ToAbsolute("~/api/ReportMultiDataset"))
   )
