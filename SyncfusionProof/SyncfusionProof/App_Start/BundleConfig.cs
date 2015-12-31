@@ -44,7 +44,9 @@ namespace SyncfusionProof
         .Include("~/Scripts/Utility/Syncfusion*")
         );
 
-      
+      bundles.Add(new ScriptBundle("~/bundles/report/withparameters")
+        .Include("~/Scripts/Utility/ReportViewer*")
+        );
     }
   }
 }

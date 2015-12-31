@@ -1,10 +1,13 @@
-﻿using Syncfusion.EJ.ReportViewer;
+﻿//this is not officially supported in syncfusion reports
+//http://www.syncfusion.com/support/directtrac/incidents/149009
+
+using Syncfusion.EJ.ReportViewer;
 using System.Collections.Generic;
 using System.Web.Http;
 
 namespace SyncfusionProof.Controllers
 {
-  public class ReportModelBoundController : ApiController, IReportController
+  public class ReportNestedModelsController : ApiController, IReportController
   {
     public object GetResource(string key, string resourcetype, bool isPrint)
     {

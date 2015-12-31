@@ -1,0 +1,22 @@
+﻿@model IList<SyncfusionProof.Data.Models.TestModel>
+
+@using SyncfusionProof.Data.Models;
+
+@{
+  ViewBag.Title = string.Format("Report for Customer Id: {0}", Model.First().CustomerId);
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+  @(Html.EJ().ReportViewer("ReportMultiDataset")
+    .ProcessingMode(Syncfusion.JavaScript.ReportViewerEnums.ProcessingMode.Local)
+    .DataSources(x =>
+    {
+      x.Name("CustomerDetailsModel").Value(new List<CustomerDetailsModel> { Model.FirstOrDefault().CustomerDetailsModel }).Add();
+      x.Name("TestModel").Value(Model).Add();
+    })
+    .ReportPath("~/Reports/ReportMultiDataset.rdlc")
+    .ReportServiceUrl(VirtualPathUtility.ToAbsolute("~/api/ReportMultiDataset"))
+  )
+</div>

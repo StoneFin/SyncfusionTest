@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SyncfusionProof.Data.Models
 {
+  [Serializable]
   public class TestModel
   {
     //data annotation is required in order to prevent editable Id properties in grids
@@ -11,7 +12,9 @@ namespace SyncfusionProof.Data.Models
     public int OrderId { get; set; }
 
     public string CustomerId { get; set; }
-    
+
+    public CustomerDetailsModel CustomerDetailsModel { get; set; }
+
     public int EmployeeId { get; set; }
     
     public decimal Freight { get; set; }
