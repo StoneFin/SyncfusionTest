@@ -804,7 +804,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ReportWithSubreport\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Reports\ReportModelBoundNoParameters.rdlc" />

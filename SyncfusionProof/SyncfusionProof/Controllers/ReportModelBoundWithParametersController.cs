@@ -20,32 +20,32 @@ namespace SyncfusionProof.Controllers
 
     public void OnReportLoaded(ReportViewerOptions reportOption)
     {
-      if (HttpContext.Current.Items.Contains("CustomerID"))
+      if (HttpContext.Current.Items.Contains("CustomerId"))
       {
         //clear the data sources
         reportOption.ReportModel.DataSources.Clear();
 
         //go get the data
-        var testModels = DataHelper.GetTestModels(HttpContext.Current.Items["CustomerID"].ToString());
+        var testModels = DataHelper.GetTestModels(HttpContext.Current.Items["CustomerId"].ToString());
 
         //set the data sources
         reportOption.ReportModel.DataSources.Add(new ReportDataSource
         {
-          Name = "TestModels",
+          Name = "TestModel",
           Value = testModels
         });
 
         //remove the parameters so we don't query again
-        HttpContext.Current.Items.Remove("CustomerID");
+        HttpContext.Current.Items.Remove("CustomerId");
       }
     }
 
     public object PostReportAction(Dictionary<string, object> jsonResult)
     {
       if (jsonResult.ContainsValue("GetDataSourceCredential") &&
-        jsonResult.ContainsKey("CustomerID"))
+        jsonResult.ContainsKey("CustomerId"))
       {
-        HttpContext.Current.Items.Add("CustomerID", jsonResult["CustomerID"]);
+        HttpContext.Current.Items.Add("CustomerId", jsonResult["CustomerId"]);
       }
 
       return ReportHelper.ProcessReport(jsonResult, this);
