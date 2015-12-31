@@ -1,6 +1,7 @@
 ﻿using Syncfusion.EJ.ReportViewer;
 using Syncfusion.Reports.EJ;
 using SyncfusionProof.Data;
+using SyncfusionProof.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,20 +26,33 @@ namespace SyncfusionProof.Controllers
     {
       if (reportOption.SubReportModel != null)
       {
-        //Why must I do this when the data already exists on the main report?
-        //Why doesn't my subreport display any data?
-
         //get the data for the subreport
         reportOption.SubReportModel.DataSources.Clear();
 
-        var customerId = reportOption.SubReportModel.Parameters.Single(x => x.Name.Equals("CustomerId")).Values.First();
-        var customerDetailsModel = DataHelper.GetTestModels(customerId).First().CustomerDetailsModel;
+        ////Not ideal, here, we're running a db query for every subreport involved. Slow!
+        
+        //var customerId = reportOption.SubReportModel.Parameters.Single(x => x.Name.Equals("CustomerId")).Values.First();
+        //var customerDetailsModel = new List<CustomerDetailsModel> { DataHelper.GetTestModels(customerId).First().CustomerDetailsModel };
+        
+        //reportOption.SubReportModel.DataSources.Add(new ReportDataSource
+        //{
+        //  Name = "CustomerDetailsModel",
+        //  Value = customerDetailsModel
+        //});
 
-        reportOption.SubReportModel.DataSources.Add(new ReportDataSource
-        {
-          Name = "CustomerDetailsModel",
-          Value = customerDetailsModel
-        });
+        //This is better. We can load all the subreport data up front and extract it from the DataSources and hook it to a SubReport.
+
+        //get the TestModel
+        var testModel = ((reportOption.ReportModel.DataSources.Single(x => x.Name.Equals("TestModel")).Value as Object[]).First() as Dictionary<string, object>);
+
+        //extract the CustomerDetailsModel out of the TestModel as an object array
+        var customerDetailsModel = new Object[] { testModel["CustomerDetailsModel"] };
+
+        //intantiate the ReportDataSource for the subreport
+        var customerDetailsDataSource = new ReportDataSource("CustomerDetailsModel", customerDetailsModel);
+
+        //add the DataSource to the SubReportModel
+        reportOption.SubReportModel.DataSources.Add(customerDetailsDataSource);
       }
     }
 
