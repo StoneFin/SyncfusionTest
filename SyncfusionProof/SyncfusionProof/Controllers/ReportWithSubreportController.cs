@@ -26,6 +26,10 @@ namespace SyncfusionProof.Controllers
     {
       if (reportOption.SubReportModel != null)
       {
+        //NOTE: Subreport DataSouces must have unique names, even if you're using multiple subreports, 
+        //since the SubReportModel is just one thing, and not a collection of SubReportModels when there 
+        //are multiple subreports in a single report.
+
         //get the data for the subreport
         reportOption.SubReportModel.DataSources.Clear();
 
