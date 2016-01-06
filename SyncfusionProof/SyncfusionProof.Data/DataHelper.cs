@@ -129,16 +129,24 @@ namespace SyncfusionProof.Data
 
     private static CustomerDetailsModel GetCustomerDetails(string customerId)
     {
-      return new CustomerDetailsModel
+      var customerDetailsModel = new CustomerDetailsModel
+      {
+        CustomerId = customerId,
+        Name = "John " + customerId,
+      };
+
+      var addressModel = new AddressModel
       {
         Address1 = "123 Test St",
         Address2 = "PO Box 123",
         City = "Chattanooga",
-        CustomerId = customerId,
-        Name = "John " + customerId,
         State = "TN",
         ZipCode = "12345",
       };
+
+      customerDetailsModel.AddressModel = addressModel;
+
+      return customerDetailsModel;
     }
   }
 }

@@ -123,11 +123,6 @@
       </Textbox>
       <Subreport Name="Subreport1">
         <ReportName>Subreport</ReportName>
-        <Parameters>
-          <Parameter Name="CustomerId">
-            <Value>=First(Fields!CustomerId.Value, "TestModel")</Value>
-          </Parameter>
-        </Parameters>
         <Top>1.39458in</Top>
         <Left>0.27083in</Left>
         <Height>3in</Height>

@@ -49,16 +49,23 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\SyncfusionProof.Data.Models.AddressModel.datasource" />
     <None Include="Properties\DataSources\SyncfusionProof.Data.Models.CustomerDetailsModel.datasource" />
     <None Include="Properties\DataSources\SyncfusionProof.Data.Models.TestModel.datasource" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ReportWithNestedSubreports\CustomerDetailsNestedOne.rdlc" />
     <EmbeddedResource Include="ReportModelBoundNoParameters.rdlc" />
     <EmbeddedResource Include="ReportModelBoundWithParameters.rdlc" />
     <EmbeddedResource Include="ReportMultiDataset.rdlc" />
     <EmbeddedResource Include="ReportNestedModels.rdlc" />
+    <EmbeddedResource Include="ReportWithNestedSubreports\CustomerDetailsNestedThree.rdlc" />
+    <EmbeddedResource Include="ReportWithNestedSubreports\CustomerDetailsNestedTwo.rdlc" />
+    <EmbeddedResource Include="ReportWithNestedSubreports\ReportWithNestedSubReports.rdlc" />
     <EmbeddedResource Include="ReportWithSubreport\ReportWithSubreport.rdlc" />
     <EmbeddedResource Include="ReportWithSubreport\Subreport.rdlc" />
+    <EmbeddedResource Include="Shared\Address.rdlc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

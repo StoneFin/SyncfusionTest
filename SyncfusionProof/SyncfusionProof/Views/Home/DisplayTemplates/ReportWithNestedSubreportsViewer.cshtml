@@ -1,0 +1,37 @@
+﻿@model IList<SyncfusionProof.Data.Models.TestModel>
+
+@using SyncfusionProof.Data.Models;
+
+@{
+  ViewBag.Title = string.Format("Report for Customer Id: {0}", Model.First().CustomerId);
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+  @(Html.EJ().ReportViewer("ReportWithNestedSubreports")
+    .ProcessingMode(Syncfusion.JavaScript.ReportViewerEnums.ProcessingMode.Local)
+    .DataSources(x =>
+    {
+      x.Name("TestModel")
+        .Value(Model)
+        .Add();
+
+      x.Name("CustomerDetailsModel")
+        .Value(new List<CustomerDetailsModel>
+        {
+          Model.First().CustomerDetailsModel
+        })
+        .Add();
+
+      x.Name("AddressModel")
+        .Value(new List<AddressModel>
+        {
+          Model.First().CustomerDetailsModel.AddressModel
+        })
+        .Add();
+    })
+    .ReportPath("~/Reports/ReportWithNestedSubreports/ReportWithNestedSubreports.rdlc")
+    .ReportServiceUrl(VirtualPathUtility.ToAbsolute("~/api/ReportWithNestedSubreports"))
+  )
+</div>
