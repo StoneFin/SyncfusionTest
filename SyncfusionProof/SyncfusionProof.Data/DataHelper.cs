@@ -9,12 +9,7 @@ namespace SyncfusionProof.Data
 {
   public static class DataHelper
   {
-    public static List<TestModel> GetTestModels(string customerId)
-    {
-      return GetHomeModel().TestModels.Where(x => x.CustomerId.Equals(customerId)).ToList();
-    }
-
-    public static HomeModel GetHomeModel()
+    public static List<object> GetManufacturers()
     {
       var manufacturers = new List<object>();
 
@@ -22,6 +17,18 @@ namespace SyncfusionProof.Data
       manufacturers.Add(new { text = "Husqvarna", value = 2 });
       manufacturers.Add(new { text = "Kawasaki", value = 3 });
       manufacturers.Add(new { text = "Yamaha", value = 4 });
+
+      return manufacturers;
+    }
+
+    public static List<TestModel> GetTestModels(string customerId)
+    {
+      return GetHomeModel().TestModels.Where(x => x.CustomerId.Equals(customerId)).ToList();
+    }
+
+    public static HomeModel GetHomeModel()
+    {
+      var manufacturers = GetManufacturers();
 
       TestModel testModel1 = new TestModel()
       {

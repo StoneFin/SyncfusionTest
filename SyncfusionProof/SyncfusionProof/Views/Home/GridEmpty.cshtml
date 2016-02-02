@@ -4,7 +4,12 @@
   ViewBag.Title = "Empty Grid";
 }
 
-@*Empty Grid*@
+<h2>Inline Editable Grid Without Data at Load Time</h2>
+<ul>
+  <li>Loading the grid initially full screen appears to work.</li>
+  <li>Make the window smaller and add a row. The new row cannot be seen until you make the window full screen again, or refresh the page.</li>
+</ul>
+
 <div id="GridContainer">
   @Html.DisplayForModel("EmptyGrid")
 </div>
