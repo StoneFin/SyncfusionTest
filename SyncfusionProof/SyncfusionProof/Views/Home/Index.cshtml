@@ -33,6 +33,7 @@
 @*@Html.DisplayForModel("MultiSelectGrouped")*@
 
 @*Inline Editable Grid*@
+<h2>Grid. Where is it?</h2>
 @Html.DisplayForModel("InlineEditing")
 
 @*ListView bound to a view model*@
@@ -67,6 +68,24 @@
   <div id="tabtwo" role="tabpanel" class="tab-pane fade in active">@Html.DisplayForModel("TabTwo")</div>
   <div id="tabthree" role="tabpanel" class="tab-pane fade in active">@Html.DisplayForModel("InlineEditing")</div>
 </div>*@
+
+@*upload box*@
+<h2>Uploadbox. Where is it?</h2>
+<div class="file-upload-control">
+  @(Html.EJ().Uploadbox("attachment")
+  .AllowDragAndDrop(true)
+  .ExtensionsDeny(".exe,.vbs,.wsh")
+  .AutoUpload(true)
+  .UploadBoxDialogAction(x => x.CloseOnComplete(true))
+  .FileSize(524288000)
+  .ClientSideEvents(x =>
+    {
+      x.Success("success");
+      x.Error("error");
+    })
+    .SaveUrl("Upload")
+  )
+</div>
 
 @*report buttons*@
 @Html.ActionLink("Report Model Bound (no parameters)", "ReportModelBoundNoParameters", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
