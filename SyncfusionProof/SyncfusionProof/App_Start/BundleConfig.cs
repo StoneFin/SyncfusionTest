@@ -20,16 +20,19 @@ namespace SyncfusionProof
         .Include("~/Content/bootstrap-theme.css")
         .Include("~/Content/site.css")
         );
-      
-      //we must include ej.widgets.all.min.css in a separate bundle for optimizations to work properly
-      bundles.Add(new StyleBundle("~/content/ejwidgetsall")
-        .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
-        );
 
-      //generated a single custom file, now there's no visible grids or uploadbox
+      //we must include Syncfusion css in a separate bundle for optimizations to work properly
+      
+      //original
       //bundles.Add(new StyleBundle("~/content/ejwidgetsall")
-      //   .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
-      //   );
+      //  .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
+      //  );
+
+      //custom generated css
+      //http://csg.syncfusion.com/combine
+      bundles.Add(new StyleBundle("~/content/ejwidgetsall")
+        .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
+        );
 
       //Use the development version of Modernizr to develop with and learn from. Then, when you're
       //ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -42,12 +45,13 @@ namespace SyncfusionProof
         .Include("~/Scripts/jsrender.min.js")
         
         //original
-        .Include("~/Scripts/ej/ej.web.all.min.js")
-        .Include("~/Scripts/ej/ej.unobtrusive.min.js")
+        //.Include("~/Scripts/ej/ej.web.all.min.js")
+        //.Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
-        //generated a single custom file, now there's no visible grids or uploadbox
-        //.Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
-        //.Include("~/Scripts/SyncfusionCustom/ej.unobtrusive.min.js")
+        //custom generated js
+        //http://csg.syncfusion.com/combine
+        .Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
+        .Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
         .Include("~/Scripts/bootstrap*")
         .Include("~/Scripts/amplify*")
