@@ -47,7 +47,7 @@ namespace SyncfusionProof
 
         //generated a single custom file, now there's no visible grids or uploadbox
         .Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
-        .Include("~/Scripts/SyncfusionCustom/ej.unobtrusive.min.js")
+        .Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
         .Include("~/Scripts/bootstrap*")
         .Include("~/Scripts/amplify*")
