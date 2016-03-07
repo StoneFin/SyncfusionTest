@@ -382,13 +382,12 @@ var inlineEditActionBegin = function (args) {
 }
 
 var editRow = function (args) {
-  var grid = Utility.Syncfusion.Grid.getGrid("MultiSelectGroupedGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("MultiSelectGrid");
 
   var i = grid.model.selectedRowIndex;
   var record = grid.getCurrentViewData()[i];
 
-  //here, the wrong rowindex is found, making it impossible to get the correct record with grid.getCurrentViewData()[i]
-  alert("i=" + i);
+  alert("selectedRowIndex = " + i + "; OrderId = " + record.OrderId);
 
   return record;
 }

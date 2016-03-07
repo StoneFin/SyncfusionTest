@@ -27,14 +27,13 @@
 @*@Html.DisplayForModel("EnablePersistence")*@
 
 @*Multi-Select*@
-@*@Html.DisplayForModel("MultiSelect")*@
+@Html.DisplayForModel("MultiSelect")
 
 @*Multi-Select Grouped*@
 @*@Html.DisplayForModel("MultiSelectGrouped")*@
 
 @*Inline Editable Grid*@
-<h2>Grid</h2>
-@Html.DisplayForModel("InlineEditing")
+@*@Html.DisplayForModel("InlineEditing")*@
 
 @*ListView bound to a view model*@
 @*@Html.DisplayForModel("ListViewModelBinding")*@
@@ -70,8 +69,7 @@
 </div>*@
 
 @*upload box*@
-<h2>Uploadbox</h2>
-<div class="file-upload-control">
+@*<div class="file-upload-control">
   @(Html.EJ().Uploadbox("attachment")
   .AllowDragAndDrop(true)
   .ExtensionsDeny(".exe,.vbs,.wsh")
@@ -85,7 +83,7 @@
     })
     .SaveUrl("Upload")
   )
-</div>
+</div>*@
 
 @*report buttons*@
 @Html.ActionLink("Report Model Bound (no parameters)", "ReportModelBoundNoParameters", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
