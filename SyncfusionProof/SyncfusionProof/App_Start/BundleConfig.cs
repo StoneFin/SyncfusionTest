@@ -24,15 +24,15 @@ namespace SyncfusionProof
       //we must include Syncfusion css in a separate bundle for optimizations to work properly
       
       //original
-      //bundles.Add(new StyleBundle("~/content/ejwidgetsall")
-      //  .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
-      //  );
-
-      //custom generated css
-      //http://csg.syncfusion.com/combine
       bundles.Add(new StyleBundle("~/content/ejwidgetsall")
-        .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
+        .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
         );
+
+      //custom generated css for 13.0.3.18
+      //http://csg.syncfusion.com/combine
+      //bundles.Add(new StyleBundle("~/content/ejwidgetsall")
+      //  .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
+      //  );
 
       //Use the development version of Modernizr to develop with and learn from. Then, when you're
       //ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -47,11 +47,13 @@ namespace SyncfusionProof
         //original
         //.Include("~/Scripts/ej/ej.web.all.min.js")
         //.Include("~/Scripts/ej/ej.unobtrusive.min.js")
+        .Include("~/Scripts/ej/web/ej.web.all.min.js")
+        .Include("~/Scripts/ej/common/ej.unobtrusive.min.js")
 
-        //custom generated js
+        //custom generated js for 13.0.3.18
         //http://csg.syncfusion.com/combine
-        .Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
-        .Include("~/Scripts/ej/ej.unobtrusive.min.js")
+        //.Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
+        //.Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
         .Include("~/Scripts/bootstrap*")
         .Include("~/Scripts/amplify*")

@@ -49,6 +49,12 @@ namespace SyncfusionProof.Controllers
       var model = new HomeModel();
 
       model.Manufacturers = new List<object>();
+
+      model.Manufacturers.Add(new { text = "Honda", value = 1 });
+      model.Manufacturers.Add(new { text = "Husqvarna", value = 2 });
+      model.Manufacturers.Add(new { text = "Kawasaki", value = 3 });
+      model.Manufacturers.Add(new { text = "Yamaha", value = 4 });
+
       model.TestModels = new List<TestModel>();
 
       return View(model);
