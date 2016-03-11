@@ -778,6 +778,7 @@
     <Content Include="Scripts\cldr\supplemental.js" />
     <Content Include="Scripts\cldr\unresolved.js" />
     <Content Include="Scripts\ej\ej.mobile.all.min.js" />
+    <Content Include="Scripts\ej\ej.touch.min.js" />
     <Content Include="Scripts\ej\ej.unobtrusive.min.js" />
     <Content Include="Scripts\ej\ej.web.all.min.js" />
     <Content Include="Scripts\ej\ej.widget.all.min.js" />

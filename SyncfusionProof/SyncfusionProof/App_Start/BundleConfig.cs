@@ -51,6 +51,7 @@ namespace SyncfusionProof
         //custom generated js
         //http://csg.syncfusion.com/combine
         .Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
+        .Include("~/Scripts/ej/ej.touch.min.js")
         .Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
         .Include("~/Scripts/bootstrap*")
