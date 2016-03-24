@@ -345,6 +345,7 @@ var inlineEditActionComplete = function (args) {
     //just showing that we got the correct manufacturer id and text
     console.log(args.data.ManufacturerId);
     console.log(args.data.Manufacturer);
+    alert("Freight = " + args.data.Freight);
 
     //refresh the grid so the id displays properly (not really applicable in this project)
     $("#InlineEditingGrid").ejGrid("refreshContent");

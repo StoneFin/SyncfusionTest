@@ -34,8 +34,20 @@
     x.Field("CustomerId").HeaderText("Customer ID").EditType(EditingType.String).Add();
     x.Field("EmployeeId").HeaderText("Employee ID").EditType(EditingType.Numeric).Add();
     x.Field("Manufacturer").DataSource(Model.Manufacturers).HeaderText("Manufacturer Name").EditType(EditingType.Dropdown).Add();
-    x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Format("{0:C}").Add();
-    x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
+
+    x.Field("Freight")
+      .HeaderText("Freight")
+      .EditType(EditingType.Numeric)
+      .Format("{0:C2}")
+      .NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 })
+      .Add();
+
+    x.Field("FreightDetails.Freight2")
+      .HeaderText("Freight2")
+      .EditType(EditingType.Numeric)
+      .Format("{0:C}")
+      .NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 })
+      .Add();
 
     x.Field("MyBooleanEditor")
       .HeaderText("True or False")

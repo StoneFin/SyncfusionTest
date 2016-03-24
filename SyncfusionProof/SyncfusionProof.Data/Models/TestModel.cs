@@ -16,7 +16,7 @@ namespace SyncfusionProof.Data.Models
 
     public int EmployeeId { get; set; }
     
-    public decimal Freight { get; set; }
+    public decimal? Freight { get; set; }
     
     public string ShipCity { get; set; }
     
