@@ -714,8 +714,6 @@
     <Content Include="Content\SyncfusionCustom\default-theme\images\ui-icon.png" />
     <Content Include="Content\SyncfusionCustom\default-theme\images\waitingpopup.gif" />
     <Content Include="Content\SyncfusionCustom\ej.widgets.core.css" />
-    <Content Include="Content\SyncfusionCustom\responsive-css\ej.responsive.css" />
-    <Content Include="Content\SyncfusionCustom\responsive-css\ejgrid.responsive.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
