@@ -48,7 +48,7 @@ namespace SyncfusionProof.Controllers
     {
       var model = new HomeModel();
 
-      model.Manufacturers = new List<object>();
+      model.Manufacturers = DataHelper.GetManufacturers();
       model.TestModels = new List<TestModel>();
 
       return View(model);
