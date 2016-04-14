@@ -408,12 +408,12 @@ var textAreaWrite = function (args) {
 }
 
 var tabOneRowSelected = function (row) {
-  var grid = NEO.Syncfusion.Grid.getGrid("TabTwoGrid");
+  var grid = Utility.Syncfusion.Grid.getGrid("TabTwoGrid");
 
   //current data 
   var currData = grid.getCurrentViewData();
 
-  currData.push(row);
+  currData.push(row.data);
 
   grid.dataSource(currData);
 }
