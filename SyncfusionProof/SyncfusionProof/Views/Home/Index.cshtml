@@ -27,7 +27,8 @@
 @*@Html.DisplayForModel("EnablePersistence")*@
 
 @*Multi-Select*@
-@Html.DisplayForModel("MultiSelect")
+@Html.DisplayForModel("TabOne")
+@Html.DisplayForModel("TabTwo")
 
 @*Multi-Select Grouped*@
 @*@Html.DisplayForModel("MultiSelectGrouped")*@
@@ -86,16 +87,16 @@
 </div>*@
 
 @*report buttons*@
-@Html.ActionLink("Report Model Bound (no parameters)", "ReportModelBoundNoParameters", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
-@Html.ActionLink("Report Model Bound (with parameters)", "ReportModelBoundWithParameters", "Home", null, new { @class = "btn btn-default" })
+@*@Html.ActionLink("Report Model Bound (no parameters)", "ReportModelBoundNoParameters", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
+@Html.ActionLink("Report Model Bound (with parameters)", "ReportModelBoundWithParameters", "Home", null, new { @class = "btn btn-default" })*@
 
 @*this is not officially supported in syncfusion reports*@
 @*http://www.syncfusion.com/support/directtrac/incidents/149009*@
 @*@Html.ActionLink("Report Nested Models", "ReportNestedModels", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })*@
 
-@Html.ActionLink("Report Multi Dataset", "ReportMultiDataset", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
+@*@Html.ActionLink("Report Multi Dataset", "ReportMultiDataset", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
 @Html.ActionLink("Report With Subreport", "ReportWithSubreport", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
-@Html.ActionLink("Report With Nested Subreports", "ReportWithNestedSubreports", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })
+@Html.ActionLink("Report With Nested Subreports", "ReportWithNestedSubreports", "Home", new { @customerId = "5423115657865424ABCD" }, new { @class = "btn btn-default" })*@
 
 @section scripts {
   <script id="Refresh" type="text/x-jsrender">

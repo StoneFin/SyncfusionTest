@@ -15,16 +15,33 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .EditSettings(x => { x.AllowDeleting().AllowEditing(); })
+  .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y =>
+  {
+    y.AddTool(ToolBarItems.Edit);
+    y.AddTool(ToolBarItems.Delete);
+    y.AddTool(ToolBarItems.Update);
+    y.AddTool(ToolBarItems.Cancel);
+  }))
   .Columns(x =>
   {
-    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
-    x.Field("CustomerId").HeaderText("Customer ID").Add();
-    x.Field("EmployeeId").HeaderText("Employee ID").Add();
-    x.Field("Freight").HeaderText("Freight").Format("{0:C}").Add();
+    x.HeaderText("Manage").Commands(y =>
+    {
+      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "deleteRecord" }).Add();
+    }).IsUnbound(true).Add();
+    
+    x.Field("OrderId").HeaderText("Order ID").AllowEditing(false).IsPrimaryKey(true).Add();
+    x.Field("CustomerId").HeaderText("Customer ID").AllowEditing(false).Add();
+    x.Field("EmployeeId").HeaderText("Employee ID").AllowEditing(false).Add();
+    x.Field("Freight").HeaderText("Freight").Format("{0:C}").AllowEditing(false).Add();
     x.Field("FreightDetails.Freight2").HeaderText("Freight2").Format("{0:C}").Add();
     x.Field("OrderDate").HeaderText("Order Date").Format("{0:MM/dd/yyyy}").Add();
     x.Field("ShipCity").HeaderText("Ship City").Add();
     x.Field("ShipState").HeaderText("Ship State").Add();
+  })
+  .ClientSideEvents(x =>
+  {
+    x.ToolbarClick("toolbarClick");
   })
   )
 </div>

@@ -26,5 +26,9 @@
     x.Field("ShipCity").HeaderText("Ship City").Add();
     x.Field("ShipState").HeaderText("Ship State").Add();
   })
+  .ClientSideEvents(x =>
+  {
+    x.RowSelected("tabOneRowSelected");
+  })
   )
 </div>

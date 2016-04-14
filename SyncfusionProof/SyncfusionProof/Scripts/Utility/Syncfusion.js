@@ -38,7 +38,7 @@ extend(window.Utility, "Syncfusion", {
           scrollSettings: { width: scrollWidth }
         });
       }
-    },
+    }
   },
   Tab: {
     hideAllTabs: function () {
@@ -405,4 +405,15 @@ var textAreaRead = function (args) {
 var textAreaWrite = function (args) {
   //write the edited text value
   args.element.find("textarea").val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
+}
+
+var tabOneRowSelected = function (row) {
+  var grid = NEO.Syncfusion.Grid.getGrid("TabTwoGrid");
+
+  //current data 
+  var currData = grid.getCurrentViewData();
+
+  currData.push(row);
+
+  grid.dataSource(currData);
 }
