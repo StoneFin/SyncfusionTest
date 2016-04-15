@@ -7,5 +7,7 @@ namespace SyncfusionProof.Data.Models
     public List<object> Manufacturers { get; set; }
 
     public List<TestModel> TestModels { get; set; }
+
+    public List<TestModel> TestModelsDuplicate { get; set; }
   }
 }

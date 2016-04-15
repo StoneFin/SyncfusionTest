@@ -121,7 +121,8 @@ namespace SyncfusionProof.Data
       var homeModel = new HomeModel
       {
         TestModels = testModels,
-        Manufacturers = manufacturers
+        Manufacturers = manufacturers,
+        TestModelsDuplicate = new List<TestModel>()
       };
 
       return homeModel;
