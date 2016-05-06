@@ -1287,6 +1287,8 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\rgbcolor.js" />
     <Content Include="Scripts\SyncfusionCustom\ej.gridupload.all.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\Utility\ReportViewer.js" />
     <Content Include="Scripts\Utility\Syncfusion.js" />
     <Content Include="Scripts\web\ej.accordion.min.js" />
@@ -1434,6 +1436,7 @@
     <Content Include="Scripts\mobile\ej.mobile.application.min.map" />
     <Content Include="Scripts\mobile\ej.mobile.angular.min.map" />
     <Content Include="Scripts\mobile\ej.mobile.all.min.map" />
+    <Content Include="Scripts\underscore.min.map" />
     <None Include="Scripts\web\ej.web.all.intellisense.js" />
     <None Include="Scripts\web\ej.web.all-vsdoc.js" />
     <Content Include="Scripts\web\ej.web.all.min.js" />
