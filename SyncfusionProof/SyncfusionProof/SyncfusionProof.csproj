@@ -1291,6 +1291,7 @@
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\Utility\ReportViewer.js" />
     <Content Include="Scripts\Utility\Syncfusion.js" />
+    <Content Include="Scripts\underscore.min.map" />
     <Content Include="Scripts\web\ej.accordion.min.js" />
     <Content Include="Scripts\web\ej.autocomplete.min.js" />
     <Content Include="Scripts\web\ej.button.min.js" />
@@ -1436,7 +1437,6 @@
     <Content Include="Scripts\mobile\ej.mobile.application.min.map" />
     <Content Include="Scripts\mobile\ej.mobile.angular.min.map" />
     <Content Include="Scripts\mobile\ej.mobile.all.min.map" />
-    <Content Include="Scripts\underscore.min.map" />
     <None Include="Scripts\web\ej.web.all.intellisense.js" />
     <None Include="Scripts\web\ej.web.all-vsdoc.js" />
     <Content Include="Scripts\web\ej.web.all.min.js" />
@@ -1541,10 +1541,10 @@
     <EmbeddedResource Include="Reports\Shared\Address.rdlc" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\common\ej.angular2.d.ts" />
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <TypeScriptCompile Include="Scripts\common\ej.angular2.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
