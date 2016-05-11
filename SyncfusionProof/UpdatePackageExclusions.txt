@@ -1,0 +1,2 @@
+$packages = get-package -updates
+for ($i = 0; $i -lt $packages.Length; $i++) { if ($packages[$i].Id -ne "Syncfusion.AspNet.Mvc5") { if ($packages[$i].Id -ne "Syncfusion.AspNet.Mvc5.ReportViewer") { if ($packages[$i].Id -ne "Syncfusion.JavaScript") { if ($packages[$i].Id -ne "Syncfusion.Web.Base45") { if ($packages[$i].Id -ne "Syncfusion.Web.FileFormatsBase45") { update-package $packages[$i].Id } } } } } }
