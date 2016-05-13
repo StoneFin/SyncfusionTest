@@ -23,16 +23,21 @@ namespace SyncfusionProof
 
       //we must include Syncfusion css in a separate bundle for optimizations to work properly
       
-      //original
+      ////original
       //bundles.Add(new StyleBundle("~/content/ejwidgetsall")
       //  .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
       //  );
 
-      //custom generated css
-      //http://csg.syncfusion.com/combine
+      //original w/new path
       bundles.Add(new StyleBundle("~/content/ejwidgetsall")
-        .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
+        .Include("~/Content/ejthemes/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
         );
+
+      ////custom generated css
+      ////http://csg.syncfusion.com/combine
+      //bundles.Add(new StyleBundle("~/content/ejwidgetsall")
+      //  .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
+      //  );
 
       //Use the development version of Modernizr to develop with and learn from. Then, when you're
       //ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -44,17 +49,21 @@ namespace SyncfusionProof
         .Include("~/Scripts/jquery.globalize.min.js")
         .Include("~/Scripts/jsrender.min.js")
         
-        //original
+        ////original
         //.Include("~/Scripts/ej/ej.web.all.min.js")
         //.Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
-        //custom generated js
-        //http://csg.syncfusion.com/combine
-        .Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
-        //ej.touch.min.js is a temp fix for row selection problem
-        //http://www.syncfusion.com/support/directtrac/incidents/153193
-        .Include("~/Scripts/ej/ej.touch.min.js")
-        .Include("~/Scripts/ej/ej.unobtrusive.min.js")
+        //original w/new path
+        .Include("~/Scripts/web/ej.web.all.min.js")
+        .Include("~/Scripts/common/ej.unobtrusive.min.js")
+
+        ////custom generated js
+        ////http://csg.syncfusion.com/combine
+        //.Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
+        ////ej.touch.min.js is a temp fix for row selection problem
+        ////http://www.syncfusion.com/support/directtrac/incidents/153193
+        //.Include("~/Scripts/ej/ej.touch.min.js")
+        //.Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
         .Include("~/Scripts/bootstrap*")
         .Include("~/Scripts/amplify*")
