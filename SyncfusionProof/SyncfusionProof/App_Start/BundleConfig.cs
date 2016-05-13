@@ -54,7 +54,7 @@ namespace SyncfusionProof
 
         //original w/new path
         .Include("~/Scripts/web/ej.web.all.min.js")
-        .Include("~/Scripts/web/ej.unobtrusive.min.js")
+        .Include("~/Scripts/common/ej.unobtrusive.min.js")
 
         ////custom generated js
         ////http://csg.syncfusion.com/combine
