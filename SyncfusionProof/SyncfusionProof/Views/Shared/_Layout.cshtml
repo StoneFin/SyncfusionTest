@@ -4,9 +4,51 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@ViewBag.Title - My ASP.NET Application</title>
-  @Styles.Render("~/content/css")
-  @Styles.Render("~/content/ejwidgetsall")
-  @Scripts.Render("~/bundles/layout")
+  @*@Styles.Render("~/content/css")
+    @Styles.Render("~/content/ejwidgetsall")
+    @Scripts.Render("~/bundles/layout")*@
+
+  @*
+    removing dependencies:
+
+    Microsoft.AspNet.Web.Optimization
+    WebGrease
+    Antlr
+
+    1. uninstall packages
+    2. reference scripts manually, without bundles
+    3. test
+    3. install Web Essentials and generate new bundles
+    4. reference newly generated bundles (can we do #IF DEBUG here?)
+
+    http://stackoverflow.com/questions/4696175/razor-view-engine-how-to-enter-preprocessorif-debug
+  *@
+  @if (HttpContext.Current.IsDebuggingEnabled)
+  {
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    <link rel="stylesheet" href="~/Content/ejthemes/web/default-theme/ej.widgets.all.min.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery-2.2.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.easing.1.3.js"></script>
+    @*<script src="~/Scripts/jquery.globalize.min.js"></script>*@
+    <script src="~/Scripts/jsrender.min.js"></script>
+    <script src="~/Scripts/web/ej.web.all.min.js"></script>
+    <script src="~/Scripts/common/ej.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/amplify.js"></script>
+    <script src="~/Scripts/respond.js"></script>
+    <script src="~/Scripts/underscore.js"></script>
+    <script src="~/Scripts/Utility/Syncfusion.js"></script>
+  }
+  else
+  {
+    //use generated bundles
+  }
 </head>
 <body>
   <div class="navbar navbar-inverse navbar-fixed-top">

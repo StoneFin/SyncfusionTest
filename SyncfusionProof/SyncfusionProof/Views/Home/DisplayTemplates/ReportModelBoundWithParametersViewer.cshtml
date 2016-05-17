@@ -20,5 +20,14 @@
 </div>
 
 @section scripts {
-  @Scripts.Render("~/bundles/report/withparameters")
+  @*@Scripts.Render("~/bundles/report/withparameters")*@
+
+  @if (HttpContext.Current.IsDebuggingEnabled)
+  {
+    <script src="~/Scripts/Utility/ReportViewer.js"></script>
+  }
+  else
+  {
+    //use generated bundles
+  }
 }
