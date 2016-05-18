@@ -13,9 +13,9 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
-    //use ShowAddNewRow to automatically add a row whenever an edit finishes
+  //use ShowAddNewRow to automatically add a row whenever an edit finishes
   .EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing(); })
-    //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
+  //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y =>
   {
     y.AddTool(ToolBarItems.Search);
@@ -32,7 +32,7 @@
     x.Field("CustomerId").HeaderText("Customer ID").EditType(EditingType.String).Add();
     x.Field("EmployeeId").HeaderText("Employee ID").EditType(EditingType.Numeric).Add();
     x.Field("Manufacturer").DataSource(Model.Manufacturers).HeaderText("Manufacturer Name").EditType(EditingType.Dropdown).Add();
-    x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).Format("{0:C}").Add();
+    x.Field("Freight").HeaderText("Freight").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties() { DecimalPlaces = 2 }).Format("{0:C}").Add();
     x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
     x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").IsIdentity(true).AllowEditing(false).Add();
     x.Field("ShipCity").HeaderText("Ship City").EditType(EditingType.String).Add();
