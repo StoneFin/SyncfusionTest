@@ -1,0 +1,10 @@
+[
+  {
+    "outputFileName": "Content/BootstrapSiteBundle.css",
+    "inputFiles": [
+      "Content/bootstrap-theme.css",
+      "Content/bootstrap.css",
+      "Content/Site.css"
+    ]
+  }
+]

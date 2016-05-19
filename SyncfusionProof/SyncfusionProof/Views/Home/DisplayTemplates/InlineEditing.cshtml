@@ -15,9 +15,9 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
-      //use ShowAddNewRow to automatically add a row whenever an edit finishes
+  //use ShowAddNewRow to automatically add a row whenever an edit finishes
   .EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing(); })
-      //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
+  //.EditSettings(x => { x.AllowAdding().AllowDeleting().AllowEditing().ShowAddNewRow(); })
   .ToolbarSettings(x => x.ShowToolbar().ToolbarItems(y =>
   {
     y.AddTool(ToolBarItems.Search);

@@ -283,6 +283,10 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\BootstrapSiteBundle.css" />
+    <Content Include="Content\BootstrapSiteBundle.min.css">
+      <DependentUpon>BootstrapSiteBundle.css</DependentUpon>
+    </Content>
     <Content Include="Content\ejthemes\mobile\android-theme\ej.mobile.android-core.min.css" />
     <Content Include="Content\ejthemes\mobile\android-theme\ej.mobile.android.min.css" />
     <Content Include="Content\ejthemes\mobile\ej.mobile.all.min.css" />
@@ -768,6 +772,7 @@
     <Content Include="Content\ejthemes\mobile\images\ejmmobilefonts.woff" />
     <Content Include="Content\ejthemes\mobile\images\ejmmobilefonts.ttf" />
     <Content Include="Content\ejthemes\mobile\images\ejmmobilefonts.eot" />
+    <None Include="bundleconfig.json" />
     <None Include="Scripts\amplify-vsdoc.js" />
     <Content Include="Scripts\amplify.js" />
     <Content Include="Scripts\amplify.min.js" />
