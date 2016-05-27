@@ -28,7 +28,12 @@ namespace SyncfusionProof
         );
 
       ////custom generated css
-      //http://csg.syncfusion.com/combine
+      ////http://csg.syncfusion.com/combine
+      ////theme: default-theme
+      ////non-minified
+      ////version: 14.1.0.46
+      ////select ejGrid, ejUploadBox
+      ////name: ej.gridupload.all.js
       //bundles.Add(new StyleBundle("~/content/ejwidgetsall")
       //  .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
       //  );
@@ -43,21 +48,24 @@ namespace SyncfusionProof
         .Include("~/Scripts/jquery.globalize.min.js")
         .Include("~/Scripts/jsrender.min.js")
 
-        ////original
+        ////original for 13.3.0.18
         //.Include("~/Scripts/ej/ej.web.all.min.js")
         //.Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
-        //original w/new path
+        //original w/new path for 14.1.0.46
         .Include("~/Scripts/ej/web/ej.web.all.min.js")
         .Include("~/Scripts/ej/common/ej.unobtrusive.min.js")
 
         ////custom generated js
         ////http://csg.syncfusion.com/combine
+        ////theme: default-theme
+        ////non-minified
+        ////version: 14.1.0.46
+        ////select ejGrid, ejUploadBox
+        ////name: ej.gridupload.all.js
         //.Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
-        ////ej.touch.min.js is a temp fix for row selection problem
-        ////http://www.syncfusion.com/support/directtrac/incidents/153193
-        //.Include("~/Scripts/ej/ej.touch.min.js")
-        //.Include("~/Scripts/ej/ej.unobtrusive.min.js")
+        ////is this still required when using the script generator?
+        ////.Include("~/Scripts/ej/ej.unobtrusive.min.js")
 
         .Include("~/Scripts/bootstrap*")
         .Include("~/Scripts/amplify*")

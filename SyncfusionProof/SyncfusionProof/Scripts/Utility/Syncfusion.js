@@ -111,13 +111,13 @@ $(function () {
     Utility.Syncfusion.Grid.applyScrolling(gridId);
   });
 
-  ////set the last remembered tab active when the page loads
-  //Utility.Syncfusion.Tab.loadActiveTab();
+  //set the last remembered tab active when the page loads
+  Utility.Syncfusion.Tab.loadActiveTab();
 
-  ////remember the last selected tab when we leave the page
-  //$(window).on("beforeunload", function () {
-  //  Utility.Syncfusion.Tab.saveActiveTab();
-  //});
+  //remember the last selected tab when we leave the page
+  $(window).on("beforeunload", function () {
+    Utility.Syncfusion.Tab.saveActiveTab();
+  });
 });
 
 var onChange = function (args) {

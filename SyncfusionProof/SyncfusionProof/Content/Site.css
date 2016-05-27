@@ -39,14 +39,6 @@ div.e-field > textarea {
   background-image: url("ej/web/common-images/icons-white.png");
 }
 
-/*
-  fix for Syncfusion grid checkbox editors being only 1px wide
-  http://www.syncfusion.com/support/directtrac/incidents/147702
-*/
-input.e-field.e-checkbox {
-  width: 13px !important;
-}
-
 .e-reportviewer {
   height: 1080px;
 }

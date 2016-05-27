@@ -1,6 +1,6 @@
 /*!
 *  filename: ej.theme.css
-*  version : 13.3.0.18
+*  version : 14.1.0.46
 *  Copyright Syncfusion Inc. 2001 - 2016. All rights reserved.
 *  Use of this code is subject to the terms of our license.
 *  A copy of the current license can be obtained at any time by e-mailing
@@ -17,6 +17,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -184,11 +187,23 @@
 .e-grid tr.e-editedrow td.e-rowcell {
   border-top-color: #c8c8c8;
 }
+.e-grid .e-detailrowcollapse.e-lastrowcell {
+  border-bottom-color: #c8c8c8;
+}
 .e-grid .e-detailindentcell {
   border-right-color: #c8c8c8;
 }
 .e-grid .e-rowcell.e-updatedtd {
   color: #333333;
+}
+.e-grid .e-rowcell.e-updatedtd.e-active {
+  color: white;
+}
+.e-activefocusout.e-grid .e-numericitem.e-active,
+.e-activefocusout.e-grid .e-groupdroparea,
+.e-activefocusout.e-grid td.e-active,
+.e-activefocusout.e-grid td.e-cellselectionbackground {
+  background: #767778;
 }
 .e-grid td.e-active,
 .e-grid .e-form-titlebar {
@@ -211,7 +226,7 @@
 .e-grid .e-recordpluscollapse > div,
 .e-grid .e-detailrowcollapse > div {
   background-color: transparent;
-  cursor: default;
+  cursor: pointer;
 }
 .e-grid .e-headercell,
 .e-grid .e-grouptopleftcell {
@@ -232,7 +247,7 @@
 }
 .e-grid .e-gridheader {
   color: #282827;
-  border-bottom-color: #179bd7;
+  border-bottom-color: #c8c8c8;
   border-top-color: #c8c8c8;
 }
 .e-grid .e-headercontent,
@@ -293,6 +308,9 @@
 .e-grid .e-reorderindicate {
   border-right-color: #179bd7;
 }
+.e-grid.e-rtl .e-reorderindicate {
+  border-left-color: #179bd7;
+}
 .e-grid div.e-field-validation-error {
   background-color: #fffe91;
   color: #cd0a0a;
@@ -308,13 +326,16 @@
   color: #333333;
   vertical-align: baseline;
 }
-.e-ejinputtext:focus {
+.e-grid .e-ejinputtext:focus {
   box-shadow: 0 0 5px #cbcbcb;
 }
 .e-grid .e-summaryrow {
   background-color: #f6f6f6;
   border-color: #c8c8c8;
   border-left-color: #c8c8c8 !important;
+}
+.e-grid .e-detailcell tr:first-child td.e-summaryrow {
+  border-top: 1px solid #c8c8c8;
 }
 .e-grid .e-gridSummaryRows {
   color: #333333;
@@ -381,6 +402,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -403,6 +427,9 @@
 .e-pager .e-spacing {
   color: #333333;
 }
+.e-pager .e-spacing.e-NP {
+  color: #686969;
+}
 .e-pager .e-numericitem:hover {
   color: #282827;
 }
@@ -423,7 +450,11 @@
 .e-pager .e-firstpage,
 .e-pager .e-firstpagedisabled {
   background-color: #ececec;
-  color: #333333;
+  color: #686969;
+}
+.e-pager .e-lastpage,
+.e-pager .e-firstpage {
+  background-color: transparent;
 }
 .e-pager .e-nextpage:Hover,
 .e-pager .e-lastpage:Hover,
@@ -478,6 +509,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -585,6 +619,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -612,12 +649,16 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
 /*------------------------------------- dropdownlist -------------------------------------------*/
 
 .e-ddl .e-input,
+.e-ddl .e-input[readonly],
 .e-ddl-popup,
 .e-ddl .e-options {
   background-color: white;
@@ -625,6 +666,7 @@
   font-family: Segoe UI;
   font-size: 14px;
   font-weight: normal;
+  cursor: default;
 }
 .e-ddl .e-in-wrap,
 .e-ddl-popup,
@@ -664,7 +706,8 @@
 }
 .e-ddl-popup .e-active {
   color: white;
-  border-color: #179bd7;
+  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .e-ddl-popup .e-active {
   background: #179bd7;
@@ -693,29 +736,49 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
-.e-ddl-popup .e-resize-handle:before {
+.e-ddl-popup .e-resize-handle {
   cursor: se-resize;
   float: right;
   padding: 4px 3px 0 0;
   margin-right: 2px;
 }
-.e-ddl-popup .e-resize-handle.e-rtl-resize:before {
+.e-ddl-popup .e-resize-handle.e-rtl-resize {
   float: left;
   cursor: sw-resize;
   transform: rotate(90deg);
   padding: 3px 0 0 3px;
 }
-.e-ddl-popup .e-icon.e-resize-handle {
+.e-ddl-popup .e-resizebar {
   border-top: 1px solid white;
   height: 20px;
   width: auto;
   display: block;
 }
-.e-ddl-popup .e-icon.e-resize-handle {
+.e-ddl-popup .e-resizebar {
   background: #ececec;
 }
-.e-ddl-popup .e-atc.e-search .e-isearch:before {
+.e-ddl-popup .e-atc.e-search .e-isearch:before,
+.e-ddl-popup .e-atc.e-search .e-iclose:before {
   color: #c8c8c8;
+}
+.e-ddl-popup .e-checkwrap {
+  border: 1px solid #c8c8c8;
+  background-color: white;
+}
+.e-ddl-popup .e-check-act:before {
+  color: #179bd7;
+}
+::-webkit-input-placeholder {
+  color: #333333;
+}
+:-ms-input-placeholder {
+  color: #333333;
+}
+::-moz-placeholder {
+  color: #333333;
+}
+:-moz-placeholder {
+  color: #333333;
 }
 
 /*-----------------------Map------------------*/
@@ -727,6 +790,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -749,6 +815,7 @@
 .e-radiobtn-wrap .e-text {
   font-family: Segoe UI;
   font-size: 12px;
+  color: #333333;
 }
 
 /*-----------------------Map------------------*/
@@ -760,6 +827,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -847,11 +917,16 @@
 }
 /*------------------------------------- Common -------------------------------------------*/
 
-.ejinputtext {
+.ejinputtext,
+.e-textbox {
   background-color: white;
   border: 1px solid #c8c8c8;
   color: #333333;
   outline: medium none;
+}
+.ejinputtext:focus,
+.e-textbox:focus {
+  box-shadow: 0 0 2px #cbcbcb;
 }
 
 /*-----------------------Map------------------*/
@@ -863,6 +938,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -879,6 +957,9 @@
 }
 .e-dialog.e-disable .e-dialog-icon:hover {
   background: transparent;
+}
+.e-dialog .e-dialog-icon:before {
+  line-height: 1.5;
 }
 .e-dialog > .e-header {
   color: #282827;
@@ -923,6 +1004,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -992,6 +1076,18 @@
 .e-atc .e-input.e-load {
   background-image: url(images/ajax-loader.gif);
 }
+::-webkit-input-placeholder {
+  color: #333333;
+}
+:-ms-input-placeholder {
+  color: #333333;
+}
+::-moz-placeholder {
+  color: #333333;
+}
+:-moz-placeholder {
+  color: #333333;
+}
 
 /*-----------------------Map------------------*/
 /*-----------------------OLAP Definition-----------------*/
@@ -1002,11 +1098,20 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
 /*------------DatePicker themes -------------*/
 
+.e-datepicker table td.e-disable,
+.e-datepicker.e-dp-restrict-show table td.e-hidedate {
+  opacity: 1;
+  color: #bfbfbf;
+  visibility: visible;
+}
 .e-datepicker table td.e-hidedate {
   visibility: hidden;
 }
@@ -1108,7 +1213,8 @@
 .e-datepicker .current-month.e-state-default.e-special-day:hover {
   background: #86cbea;
 }
-.e-datepicker table td.e-disable:hover {
+.e-datepicker table td.e-disable:hover,
+.e-datepicker table td.e-hidedate:hover {
   background: none;
   border-color: none;
   color: #bfbfbf;
@@ -1201,7 +1307,9 @@
   border-color: #c8c8c8;
 }
 .e-datepicker.e-popup.e-disable table td.e-disable:hover,
-.e-datepicker.e-popup.e-disable .e-disable.e-select:hover {
+.e-datepicker.e-popup.e-disable table td.e-hidedate:hover,
+.e-datepicker.e-popup.e-disable .e-disable.e-select:hover,
+.e-datepicker.e-popup.e-disable .e-hidedate.e-select:hover {
   background: none;
   border-color: none;
   color: #bfbfbf;
@@ -1216,6 +1324,18 @@
 .e-datepicker .e-datepicker-headertext:hover {
   background: #86cbea;
 }
+::-webkit-input-placeholder {
+  color: #333333;
+}
+:-ms-input-placeholder {
+  color: #333333;
+}
+::-moz-placeholder {
+  color: #333333;
+}
+:-moz-placeholder {
+  color: #333333;
+}
 
 /*-----------------------Map------------------*/
 /*-----------------------OLAP Definition-----------------*/
@@ -1226,6 +1346,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -1397,6 +1520,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -1502,6 +1628,18 @@
 .e-currency .e-icon .e-arrow {
   border: 0 none transparent;
 }
+::-webkit-input-placeholder {
+  color: #333333;
+}
+:-ms-input-placeholder {
+  color: #333333;
+}
+::-moz-placeholder {
+  color: #333333;
+}
+:-moz-placeholder {
+  color: #333333;
+}
 
 /*-----------------------Map------------------*/
 /*-----------------------OLAP Definition-----------------*/
@@ -1512,6 +1650,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -1529,6 +1670,7 @@
 .e-chkbox-wrap .e-text {
   font-family: Segoe UI;
   font-size: 12px;
+  color: #333333;
 }
 
 /*-----------------------Map------------------*/
@@ -1540,6 +1682,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -1667,6 +1812,9 @@
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
@@ -1728,7 +1876,9 @@
 .e-excelfilter .e-menu .e-list.e-fghdrcolor,
 .e-excelfilter .e-menu .e-list.e-bghdrcolor,
 e-excelfilter .e-menu .e-list.e-fghdrcolor.e-mhover.e-mfocused,
-.e-excelfilter .e-menu .e-list.e-bghdrcolor.e-mhover.e-mfocused {
+.e-excelfilter .e-menu .e-list.e-bghdrcolor.e-mhover.e-mfocused,
+.e-excelfilter .e-menu.e-vertical .e-list.e-fghdrcolor:hover,
+.e-excelfilter .e-menu.e-vertical .e-list.e-bghdrcolor:hover {
   background: white;
 }
 .e-excelfilter .e-menu .e-list.e-valcolor {
@@ -1755,18 +1905,38 @@ e-excelfilter .e-menu .e-list.e-fghdrcolor.e-mhover.e-mfocused,
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
 /* ------- menu less ----------- */
 
 .e-menu.e-separator.e-horizontal > .e-list,
-.e-menu.e-separator.e-horizontal > .e-list:hover {
+.e-menu.e-separator.e-horizontal > .e-list:hover,
+.e-menu.e-horizontal > .e-separator.e-list,
+.e-menu.e-horizontal > .e-separator.e-list:hover {
   border-right-color: #c8c8c8;
 }
+.e-menu.e-horizontal .e-list > ul .e-list.e-separator,
+.e-menu.e-horizontal .e-list > ul .e-list.e-separator:hover,
+.e-menu.e-vertical .e-list > ul .e-list.e-separator,
+.e-menu.e-vertical .e-list > ul .e-list.e-separator:hover,
+.e-menu.e-context .e-list > ul .e-list.e-separator,
+.e-menu.e-context .e-list > ul .e-list.e-separator:hover,
 .e-menu.e-separator.e-vertical > .e-list,
-.e-menu.e-separator.e-vertical > .e-list:hover {
+.e-menu.e-vertical > .e-separator.e-list,
+.e-menu.e-separator.e-vertical > .e-list:hover,
+.e-menu.e-vertical > .e-separator.e-list:hover,
+.e-menu.e-context > .e-separator.e-list,
+.e-menu.e-context > .e-separator.e-list:hover {
   border-bottom-color: #c8c8c8;
+}
+.e-menu.e-separator.e-rtl.e-horizontal > .e-list,
+.e-menu.e-rtl.e-horizontal > .e-separator.e-list,
+.e-menu.e-rtl.e-horizontal > .e-separator.e-list:hover {
+  border-left-color: #c8c8c8;
 }
 /*---------------------theming----------------------------------*/
 
@@ -1788,9 +1958,6 @@ e-excelfilter .e-menu .e-list.e-fghdrcolor.e-mhover.e-mfocused,
 .e-menu.e-context .e-list > ul {
   background: white;
   border-color: #c8c8c8;
-}
-.e-menu.e-vertical > li.e-separator:hover {
-  border: 0px none transparent;
 }
 .e-menu.e-horizontal .e-list > ul {
   background: white;
@@ -1863,24 +2030,6 @@ e-excelfilter .e-menu .e-list.e-fghdrcolor.e-mhover.e-mfocused,
 .e-menu.e-context .e-list.e-active:hover {
   color: white;
 }
-.e-menu.e-horizontal .e-list > ul li.e-separator,
-.e-menu.e-vertical .e-list > ul li.e-separator,
-.e-menu.e-context .e-list > ul li.e-separator,
-.e-menu.e-vertical > li.e-separator,
-.e-menu.e-context > li.e-separator {
-  background-color: #c8c8c8;
-  /* border background color is for separator */
-
-}
-.e-menu.e-horizontal .e-list > ul li.e-separator:hover,
-.e-menu.e-vertical .e-list > ul li.e-separator:hover,
-.e-menu.e-context .e-list > ul li.e-separator:hover,
-.e-menu.e-context > li.e-separator:hover {
-  border: 0px solid transparent;
-}
-.e-menu.e-separator.e-rtl.e-horizontal > .e-list {
-  border-left-color: #c8c8c8;
-}
 .e-menu .e-list > a .e-icon,
 .e-menu .e-list > span > .e-icon {
   color: #686969;
@@ -1907,9 +2056,9 @@ e-excelfilter .e-menu .e-list.e-fghdrcolor.e-mhover.e-mfocused,
 .e-menu.e-context .e-list.e-disable-item .e-icon {
   color: #686969;
 }
-.e-menu.e-horizontal .e-list.e-disable-item > *,
-.e-menu.e-vertical .e-list.e-disable-item > *,
-.e-menu.e-context .e-list.e-disable-item > * {
+.e-menu.e-horizontal .e-list.e-disable-item *,
+.e-menu.e-vertical .e-list.e-disable-item *,
+.e-menu.e-context .e-list.e-disable-item * {
   filter: alpha(opacity=40);
   opacity: 0.4;
 }
@@ -2005,6 +2154,9 @@ e-excelfilter .e-menu .e-list.e-fghdrcolor.e-mhover.e-mfocused,
 /*-----------------------Datepicker Definition-----------------*/
 /*-----------------------Bootstrap support-----------------*/
 /*----------------------Ribbon Definition-----------------------*/
+/*----------------------Ribbon End-----------------------*/
+/*----------------------Kanban Definition-----------------------*/
+/*----------------------Kanban End-----------------------*/
 /*----------------------Spreadsheet Definition-----------------------*/
 /*----------------------Spreadsheet End-----------------------*/
 
