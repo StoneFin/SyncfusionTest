@@ -171,12 +171,12 @@ namespace SyncfusionProof
       //custom generated css
       //http://csg.syncfusion.com/combine
       //theme: default-theme
-      //non-minified
+      //minified
       //version: 14.1.0.46
       //select ejGrid, ejUploadBox
       //name: ej.gridupload.all.js
       bundles.Add(new StyleBundle("~/content/ejwidgetsall")
-        .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.css", new CssRewriteUrlTransform())
+        .Include("~/Content/SyncfusionCustom/default-theme/ej.web.all.min.css", new CssRewriteUrlTransform())
         );
 
       //Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -192,11 +192,11 @@ namespace SyncfusionProof
         //custom generated js
         //http://csg.syncfusion.com/combine
         //theme: default-theme
-        //non-minified
+        //minified
         //version: 14.1.0.46
         //select ejGrid, ejUploadBox
         //name: ej.gridupload.all.js
-        .Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.js")
+        .Include("~/Scripts/SyncfusionCustom/ej.gridupload.all.min.js")
         .Include("~/Scripts/ej/common/ej.unobtrusive.min.js")
 
         .Include("~/Scripts/bootstrap*")
