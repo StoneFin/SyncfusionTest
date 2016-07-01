@@ -145,6 +145,7 @@
     .e-grid.e-responsive td.e-rowcell {
         border-bottom-width: 1px;
         border-bottom-style: solid;
+        min-height: 27px;
     }
 
     .e-grid .e-gridcontent .e-normaledit td.e-rowcell {
@@ -164,7 +165,15 @@
        width: 97px !important;
     }
 }
-
+@media (max-width: 321px) {
+    .e-grid:not(.e-responsive) .e-table-priority-6,
+    .e-grid:not(.e-responsive) .e-table-priority-5,
+    .e-grid:not(.e-responsive) .e-table-priority-4,
+    .e-grid:not(.e-responsive) .e-table-priority-3,
+    .e-grid:not(.e-responsive) .e-table-priority-2 {
+        display: none !important;
+    }
+}
 @media (min-width: 321px) and (max-width:479px) {
     .e-grid .e-table-priority-6,
     .e-grid .e-table-priority-5,
