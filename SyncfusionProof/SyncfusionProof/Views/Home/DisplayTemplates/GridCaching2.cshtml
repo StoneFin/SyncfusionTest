@@ -20,7 +20,7 @@
     {
       y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-edit", Click = "editRecord" }).Add();
       y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "deleteRecord" }).Add();
-    }).IsUnbound(true).Add();
+    }).Add();
         
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();

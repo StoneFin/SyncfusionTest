@@ -13,6 +13,7 @@
   .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
+  .EnablePersistence()
   .ShowSummary()
   .SummaryRow(x =>
   {
@@ -37,7 +38,7 @@
     {
       y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-edit", Click = "editRow" }).Add();
       y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "removeRow" }).Add();
-    }).IsUnbound(true).Add();
+    }).Add();
     
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();
