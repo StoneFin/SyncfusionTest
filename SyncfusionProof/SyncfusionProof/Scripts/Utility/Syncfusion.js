@@ -100,24 +100,24 @@ $(function () {
     return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
   }, "Value 1 must be less than or equal to Value 2");
 
-  //when the tab selection changes, fix the scrolling
-  $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
-    //find the tab's grid
-    var self = this;
-    var tabId = $(e.target).attr("href");
-    var gridId = $(tabId).find(".e-grid")[0].id;
+  ////when the tab selection changes, fix the scrolling
+  //$(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
+  //  //find the tab's grid
+  //  var self = this;
+  //  var tabId = $(e.target).attr("href");
+  //  var gridId = $(tabId).find(".e-grid")[0].id;
 
-    //fix scrolling
-    Utility.Syncfusion.Grid.applyScrolling(gridId);
-  });
+  //  //fix scrolling
+  //  Utility.Syncfusion.Grid.applyScrolling(gridId);
+  //});
 
-  //set the last remembered tab active when the page loads
-  Utility.Syncfusion.Tab.loadActiveTab();
+  ////set the last remembered tab active when the page loads
+  //Utility.Syncfusion.Tab.loadActiveTab();
 
-  //remember the last selected tab when we leave the page
-  $(window).on("beforeunload", function () {
-    Utility.Syncfusion.Tab.saveActiveTab();
-  });
+  ////remember the last selected tab when we leave the page
+  //$(window).on("beforeunload", function () {
+  //  Utility.Syncfusion.Tab.saveActiveTab();
+  //});
 });
 
 var onChange = function (args) {

@@ -33,7 +33,7 @@
 @*@Html.DisplayForModel("MultiSelectGrouped")*@
 
 @*Inline Editable Grid*@
-@*@Html.DisplayForModel("InlineEditing")*@
+@Html.DisplayForModel("InlineEditing")
 
 @*ListView bound to a view model*@
 @*@Html.DisplayForModel("ListViewModelBinding")*@
@@ -54,19 +54,19 @@
 @*@Html.DisplayForModel("CheckboxColumn")*@
 
 @*Bootstrap Tabs*@
-<ul class="nav nav-tabs">
+@*<ul class="nav nav-tabs">
   <li class="active"><a data-toggle="tab" href="#tabone">Tab One</a></li>
   <li><a data-toggle="tab" href="#tabtwo">Tab Two</a></li>
   <li><a data-toggle="tab" href="#tabthree">Tab Three</a></li>
-</ul>
+</ul>*@
 
 @*note: all tab content divs are active (class="in active") initially because Syncfusion grids don't render properly if they're hidden at load time.
   The javascript handles which tab becomes visible after the page loads.*@
-<div class="tab-content">
+@*<div class="tab-content">
   <div id="tabone" role="tabpanel" class="tab-pane fade in active">@Html.DisplayForModel("TabOne")</div>
   <div id="tabtwo" role="tabpanel" class="tab-pane fade in active">@Html.DisplayForModel("TabTwo")</div>
   <div id="tabthree" role="tabpanel" class="tab-pane fade in active">@Html.DisplayForModel("InlineEditing")</div>
-</div>
+</div>*@
 
 @*upload box*@
 @*<div class="file-upload-control">
