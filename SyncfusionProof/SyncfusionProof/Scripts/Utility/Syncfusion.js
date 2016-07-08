@@ -39,6 +39,9 @@ extend(window.Utility, "Syncfusion", {
         });
       }
     },
+    applySizing: function (e) {
+      $($(e.target).attr("data-target")).find(".e-grid").ejGrid("windowonresize");
+    }
   },
   Tab: {
     hideAllTabs: function () {
@@ -100,7 +103,7 @@ $(function () {
     return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
   }, "Value 1 must be less than or equal to Value 2");
 
-  //when the tab selection changes, fix the scrolling
+  //when the tab selection changes, fix the scrolling and sizing
   $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
     //find the tab's grid
     var self = this;
@@ -109,6 +112,9 @@ $(function () {
 
     //fix scrolling
     Utility.Syncfusion.Grid.applyScrolling(gridId);
+
+    //fix sizing
+    Utility.Syncfusion.Grid.applySizing(e);
   });
 
   //set the last remembered tab active when the page loads
