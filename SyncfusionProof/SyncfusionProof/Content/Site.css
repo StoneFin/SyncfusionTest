@@ -42,3 +42,10 @@ div.e-field > textarea {
 .e-reportviewer {
   height: 1080px;
 }
+
+/* temporary fix for grids shrinking with each page load while contained in a well element */
+/*https://www.syncfusion.com/support/directtrac/incidents/150517*/
+/*https://www.syncfusion.com/support/directtrac/incidents/157276*/
+.well { 
+  margin-bottom : 0px !important; 
+} 
