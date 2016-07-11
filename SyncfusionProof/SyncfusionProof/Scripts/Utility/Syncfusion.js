@@ -39,8 +39,8 @@ extend(window.Utility, "Syncfusion", {
         });
       }
     },
-    applySizing: function (e) {
-      $($(e.target).attr("data-target")).find(".e-grid").ejGrid("windowonresize");
+    applySizing: function (gridId) {
+      $("#" + gridId).ejGrid("windowonresize");
     }
   },
   Tab: {
@@ -114,7 +114,7 @@ $(function () {
     Utility.Syncfusion.Grid.applyScrolling(gridId);
 
     //fix sizing
-    Utility.Syncfusion.Grid.applySizing(e);
+    Utility.Syncfusion.Grid.applySizing(gridId);
   });
 
   //set the last remembered tab active when the page loads
