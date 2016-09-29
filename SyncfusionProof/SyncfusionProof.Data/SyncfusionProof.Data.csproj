@@ -77,84 +77,84 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Chart.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.Chart.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.Chart.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.Chart.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Compression.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.2.0.32\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
+    <Reference Include="Syncfusion.Compression.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.3.0.49\lib\net45\Syncfusion.Compression.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.DocIO.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.2.0.32\lib\net45\Syncfusion.DocIO.Base.dll</HintPath>
+    <Reference Include="Syncfusion.DocIO.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.3.0.49\lib\net45\Syncfusion.DocIO.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.EJ, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.Base45.14.2.0.32\lib\net45\Syncfusion.EJ.dll</HintPath>
+    <Reference Include="Syncfusion.EJ, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.Base45.14.3.0.49\lib\net45\Syncfusion.EJ.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.EJ.Export, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.Base45.14.2.0.32\lib\net45\Syncfusion.EJ.Export.dll</HintPath>
+    <Reference Include="Syncfusion.EJ.Export, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.Base45.14.3.0.49\lib\net45\Syncfusion.EJ.Export.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.EJ.MVC, Version=14.2500.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.14.2.0.32\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
+    <Reference Include="Syncfusion.EJ.MVC, Version=14.3500.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.14.3.0.49\lib\net45\Syncfusion.EJ.MVC.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.EJ.ReportViewer, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.EJ.ReportViewer.dll</HintPath>
+    <Reference Include="Syncfusion.EJ.ReportViewer, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.EJ.ReportViewer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Gauge.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.Gauge.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.Gauge.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.Gauge.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Grid.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.Grid.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.Grid.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.Grid.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.GridCommon.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.GridCommon.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.GridCommon.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.GridCommon.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Linq.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.Base45.14.2.0.32\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
+    <Reference Include="Syncfusion.Linq.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.Base45.14.3.0.49\lib\net45\Syncfusion.Linq.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.OfficeChart.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.2.0.32\lib\net45\Syncfusion.OfficeChart.Base.dll</HintPath>
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.3.0.49\lib\net45\Syncfusion.OfficeChart.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Pdf.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.2.0.32\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
+    <Reference Include="Syncfusion.Pdf.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.3.0.49\lib\net45\Syncfusion.Pdf.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Presentation.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.2.0.32\lib\net45\Syncfusion.Presentation.Base.dll</HintPath>
+    <Reference Include="Syncfusion.Presentation.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.3.0.49\lib\net45\Syncfusion.Presentation.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.ReportControls.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.ReportControls.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.ReportControls.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.ReportControls.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.ReportWriter.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.ReportWriter.Base.dll</HintPath>
+    <Reference Include="Syncfusion.ReportWriter.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.ReportWriter.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.RichTextBoxAdv.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.RichTextBoxAdv.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.RichTextBoxAdv.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.RichTextBoxAdv.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.SfMaps.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.SfMaps.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.SfMaps.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.SfMaps.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.Shared.WPF, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.2.0.32\lib\net45\Syncfusion.Shared.WPF.dll</HintPath>
+    <Reference Include="Syncfusion.Shared.WPF, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.AspNet.Mvc5.ReportViewer.14.3.0.49\lib\net45\Syncfusion.Shared.WPF.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Syncfusion.XlsIO.Base, Version=14.2450.0.32, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.2.0.32\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=14.3450.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Web.FileFormatsBase45.14.3.0.49\lib\net45\Syncfusion.XlsIO.Base.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -199,6 +199,8 @@
     <None Include="Content\ej\web\default-theme\ej.theme.less" />
     <None Include="Content\ej\web\ej.widgets.core.bootstrap.less" />
     <None Include="Content\ej\web\ej.widgets.core.less" />
+    <None Include="Content\ej\web\ej.widgets.core.material.less" />
+    <None Include="Content\ej\web\ej.widgets.core.office-365.less" />
     <None Include="Content\ej\web\flat-azure-dark\ej.theme.less" />
     <None Include="Content\ej\web\flat-lime-dark\ej.theme.less" />
     <None Include="Content\ej\web\flat-lime\ej.theme.less" />
@@ -210,6 +212,10 @@
     <None Include="Content\ej\web\gradient-lime\ej.theme.less" />
     <None Include="Content\ej\web\gradient-saffron-dark\ej.theme.less" />
     <None Include="Content\ej\web\gradient-saffron\ej.theme.less" />
+    <None Include="Content\ej\web\high-contrast-01\ej.theme.less" />
+    <None Include="Content\ej\web\high-contrast-02\ej.theme.less" />
+    <None Include="Content\ej\web\material\ej.theme.less" />
+    <None Include="Content\ej\web\office-365\ej.theme.less" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -326,7 +332,8 @@
     <None Include="Scripts\ej\web\ej.uploadbox.min.map" />
     <None Include="Scripts\ej\web\ej.waitingpopup.min.map" />
     <None Include="Scripts\ej\web\ej.web.all.min.map" />
-    <None Include="Scripts\jquery-2.2.4.min.map" />
+    <None Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Scripts\jquery-3.1.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\ej\mobile\android-theme\ej.mobile.android-core.min.css" />
@@ -364,7 +371,6 @@
     <Content Include="Content\ej\web\bootstrap-theme\ej.web.all.css" />
     <Content Include="Content\ej\web\bootstrap-theme\ej.web.all.min.css" />
     <Content Include="Content\ej\web\bootstrap-theme\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\bootstrap-theme\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\bootstrap-theme\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\bootstrap-theme\images\checkedtick.png" />
     <Content Include="Content\ej\web\bootstrap-theme\images\dot.png" />
@@ -412,6 +418,7 @@
     <Content Include="Content\ej\web\common-images\olapkpi\three-color.png" />
     <Content Include="Content\ej\web\common-images\olapkpi\triangle.png" />
     <Content Include="Content\ej\web\common-images\olapkpi\up-arrow.png" />
+    <Content Include="Content\ej\web\common-images\pdfviewer\preloader-pdfviewer.gif" />
     <Content Include="Content\ej\web\common-images\radialmenu\back.png" />
     <Content Include="Content\ej\web\common-images\radialmenu\radial.png" />
     <Content Include="Content\ej\web\common-images\reports\down.png" />
@@ -440,6 +447,7 @@
     <Content Include="Content\ej\web\common-images\ribbon\Version.png" />
     <Content Include="Content\ej\web\common-images\Rotate.cur" />
     <Content Include="Content\ej\web\common-images\schedule_priority.png" />
+    <Content Include="Content\ej\web\common-images\spellcheck\highlight.png" />
     <Content Include="Content\ej\web\common-images\spreadsheet\blank.png" />
     <Content Include="Content\ej\web\common-images\spreadsheet\chart-sprites.png" />
     <Content Include="Content\ej\web\common-images\spreadsheet\charttab-sprites.png" />
@@ -468,7 +476,6 @@
     <Content Include="Content\ej\web\default-theme\ej.web.all.css" />
     <Content Include="Content\ej\web\default-theme\ej.web.all.min.css" />
     <Content Include="Content\ej\web\default-theme\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\default-theme\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\default-theme\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\default-theme\images\checkedtick.png" />
     <Content Include="Content\ej\web\default-theme\images\dot.png" />
@@ -482,13 +489,14 @@
     <Content Include="Content\ej\web\default-theme\images\ui-icon.png" />
     <Content Include="Content\ej\web\default-theme\images\waitingpopup.gif" />
     <Content Include="Content\ej\web\ej.widgets.core.bootstrap.min.css" />
+    <Content Include="Content\ej\web\ej.widgets.core.material.min.css" />
     <Content Include="Content\ej\web\ej.widgets.core.min.css" />
+    <Content Include="Content\ej\web\ej.widgets.core.office-365.min.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.theme.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.theme.min.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-azure-dark\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\flat-azure-dark\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\flat-azure-dark\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\flat-azure-dark\images\checkedtick.png" />
     <Content Include="Content\ej\web\flat-azure-dark\images\dot.png" />
@@ -506,7 +514,6 @@
     <Content Include="Content\ej\web\flat-lime-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-lime-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-lime-dark\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\flat-lime-dark\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\flat-lime-dark\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\flat-lime-dark\images\checkedtick.png" />
     <Content Include="Content\ej\web\flat-lime-dark\images\dot.png" />
@@ -525,7 +532,6 @@
     <Content Include="Content\ej\web\flat-lime\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-lime\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-lime\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\flat-lime\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\flat-lime\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\flat-lime\images\checkedtick.png" />
     <Content Include="Content\ej\web\flat-lime\images\dot.png" />
@@ -544,7 +550,6 @@
     <Content Include="Content\ej\web\flat-saffron-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\flat-saffron-dark\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\checkedtick.png" />
     <Content Include="Content\ej\web\flat-saffron-dark\images\dot.png" />
@@ -563,7 +568,6 @@
     <Content Include="Content\ej\web\flat-saffron\ej.web.all.css" />
     <Content Include="Content\ej\web\flat-saffron\ej.web.all.min.css" />
     <Content Include="Content\ej\web\flat-saffron\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\flat-saffron\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\flat-saffron\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\flat-saffron\images\checkedtick.png" />
     <Content Include="Content\ej\web\flat-saffron\images\dot.png" />
@@ -582,7 +586,6 @@
     <Content Include="Content\ej\web\gradient-azure-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\gradient-azure-dark\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\checkedtick.png" />
     <Content Include="Content\ej\web\gradient-azure-dark\images\dot.png" />
@@ -600,7 +603,6 @@
     <Content Include="Content\ej\web\gradient-azure\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-azure\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-azure\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\gradient-azure\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\gradient-azure\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\gradient-azure\images\checkedtick.png" />
     <Content Include="Content\ej\web\gradient-azure\images\dot.png" />
@@ -618,7 +620,6 @@
     <Content Include="Content\ej\web\gradient-lime-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\gradient-lime-dark\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\checkedtick.png" />
     <Content Include="Content\ej\web\gradient-lime-dark\images\dot.png" />
@@ -636,7 +637,6 @@
     <Content Include="Content\ej\web\gradient-lime\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-lime\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-lime\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\gradient-lime\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\gradient-lime\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\gradient-lime\images\checkedtick.png" />
     <Content Include="Content\ej\web\gradient-lime\images\dot.png" />
@@ -654,7 +654,6 @@
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\gradient-saffron-dark\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\checkedtick.png" />
     <Content Include="Content\ej\web\gradient-saffron-dark\images\dot.png" />
@@ -672,7 +671,6 @@
     <Content Include="Content\ej\web\gradient-saffron\ej.web.all.css" />
     <Content Include="Content\ej\web\gradient-saffron\ej.web.all.min.css" />
     <Content Include="Content\ej\web\gradient-saffron\ej.widgets.all.css" />
-    <Content Include="Content\ej\web\gradient-saffron\ej.widgets.all.min.css" />
     <Content Include="Content\ej\web\gradient-saffron\images\ajax-loader.gif" />
     <Content Include="Content\ej\web\gradient-saffron\images\checkedtick.png" />
     <Content Include="Content\ej\web\gradient-saffron\images\dot.png" />
@@ -685,6 +683,64 @@
     <Content Include="Content\ej\web\gradient-saffron\images\toolbar_icons.png" />
     <Content Include="Content\ej\web\gradient-saffron\images\ui-icon.png" />
     <Content Include="Content\ej\web\gradient-saffron\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\high-contrast-01\ej.theme.min.css" />
+    <Content Include="Content\ej\web\high-contrast-01\ej.web.all.min.css" />
+    <Content Include="Content\ej\web\high-contrast-01\images\ajax-loader.gif" />
+    <Content Include="Content\ej\web\high-contrast-01\images\checkedtick.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\dot.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\drop-sibling.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\gradient.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\palette-arrow.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\rating-star.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\rotator-icon.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\toggle-text.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\toolbar_icons.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\transparent.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\ui-icon.png" />
+    <Content Include="Content\ej\web\high-contrast-01\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\high-contrast-02\ej.theme.min.css" />
+    <Content Include="Content\ej\web\high-contrast-02\ej.web.all.min.css" />
+    <Content Include="Content\ej\web\high-contrast-02\images\ajax-loader.gif" />
+    <Content Include="Content\ej\web\high-contrast-02\images\checkedtick.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\dot.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\drop-sibling.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\gradient.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\palette-arrow.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\rating-star.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\rotator-icon.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\toggle-text.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\toolbar_icons.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\transparent.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\ui-icon.png" />
+    <Content Include="Content\ej\web\high-contrast-02\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\material\ej.theme.min.css" />
+    <Content Include="Content\ej\web\material\ej.web.all.min.css" />
+    <Content Include="Content\ej\web\material\images\ajax-loader.gif" />
+    <Content Include="Content\ej\web\material\images\checkedtick.png" />
+    <Content Include="Content\ej\web\material\images\dot.png" />
+    <Content Include="Content\ej\web\material\images\drop-sibling.png" />
+    <Content Include="Content\ej\web\material\images\gradient.png" />
+    <Content Include="Content\ej\web\material\images\palette-arrow.png" />
+    <Content Include="Content\ej\web\material\images\rating-star.png" />
+    <Content Include="Content\ej\web\material\images\rotator-icon.png" />
+    <Content Include="Content\ej\web\material\images\toggle-text.png" />
+    <Content Include="Content\ej\web\material\images\toolbar_icons.png" />
+    <Content Include="Content\ej\web\material\images\ui-icon.png" />
+    <Content Include="Content\ej\web\material\images\waitingpopup.gif" />
+    <Content Include="Content\ej\web\office-365\ej.theme.min.css" />
+    <Content Include="Content\ej\web\office-365\ej.web.all.min.css" />
+    <Content Include="Content\ej\web\office-365\images\ajax-loader.gif" />
+    <Content Include="Content\ej\web\office-365\images\checkedtick.png" />
+    <Content Include="Content\ej\web\office-365\images\dot.png" />
+    <Content Include="Content\ej\web\office-365\images\drop-sibling.png" />
+    <Content Include="Content\ej\web\office-365\images\gradient.png" />
+    <Content Include="Content\ej\web\office-365\images\palette-arrow.png" />
+    <Content Include="Content\ej\web\office-365\images\rating-star.png" />
+    <Content Include="Content\ej\web\office-365\images\rotator-icon.png" />
+    <Content Include="Content\ej\web\office-365\images\toggle-text.png" />
+    <Content Include="Content\ej\web\office-365\images\toolbar_icons.png" />
+    <Content Include="Content\ej\web\office-365\images\ui-icon.png" />
+    <Content Include="Content\ej\web\office-365\images\waitingpopup.gif" />
     <Content Include="Content\ej\web\responsive-css\ej.responsive.css" />
     <Content Include="Content\ej\web\responsive-css\ejgrid.responsive.css" />
     <Content Include="Content\ej\web\ribbon-css\ej.icons.css" />
@@ -702,6 +758,7 @@
     <Content Include="Scripts\ej\common\ej.scroller.min.js" />
     <Content Include="Scripts\ej\common\ej.touch.min.js" />
     <Content Include="Scripts\ej\common\ej.unobtrusive.min.js" />
+    <Content Include="Scripts\ej\common\ej.web.react.min.js" />
     <Content Include="Scripts\ej\common\ej.widget.angular.min.js" />
     <Content Include="Scripts\ej\common\ej.widget.ko.min.js" />
     <Content Include="Scripts\ej\datavisualization\ej.barcode.min.js" />
@@ -719,384 +776,13 @@
     <Content Include="Scripts\ej\datavisualization\ej.treemap.min.js" />
     <Content Include="Scripts\ej\ej.widgets.all-vsdoc.js" />
     <Content Include="Scripts\ej\ej.widgets.all.intellisense.js" />
-    <Content Include="Scripts\ej\ej.widgets.all.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.af-ZA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.af.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.am-ET.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.am.min.js" />
     <Content Include="Scripts\ej\i18n\ej.culture.ar-AE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-BH.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-DZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-EG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-IQ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-JO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-KW.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-LB.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-LY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-MA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-OM.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-QA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-SA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-SY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-TN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar-YE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ar.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.arn-CL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.arn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.as-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.as.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.az-Cyrl-AZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.az-Cyrl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.az-Latn-AZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.az-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.az.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ba-RU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ba.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.be-BY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.be.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bg-BG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bg.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bn-BD.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bn-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bo-CN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bo.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.br-FR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.br.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bs-Cyrl-BA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bs-Cyrl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bs-Latn-BA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bs-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.bs.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ca-ES-valencia.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ca-ES.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ca.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.chr-Cher-US.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.chr-Cher.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.chr.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.co-FR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.co.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.cs-CZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.cs.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.cy-GB.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.cy.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.da-DK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.da.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.de-AT.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.de-CH.min.js" />
     <Content Include="Scripts\ej\i18n\ej.culture.de-DE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.de-LI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.de-LU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.de.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.dsb-DE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.dsb.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.dv-MV.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.dv.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.el-GR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.el.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-029.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-AU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-BZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-CA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-GB.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-IE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-JM.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-MY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-NZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-PH.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-SG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-TT.min.js" />
     <Content Include="Scripts\ej\i18n\ej.culture.en-US.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-ZA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.en-ZW.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-AR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-BO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-CL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-CO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-CR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-DO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-EC.min.js" />
     <Content Include="Scripts\ej\i18n\ej.culture.es-ES.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-GT.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-HN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-MX.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-NI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-PA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-PE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-PR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-PY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-SV.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-US.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-UY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es-VE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.es.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.et-EE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.et.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.eu-ES.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.eu.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fa-IR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fa.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ff-Latn-SN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ff-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ff.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fi-FI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fi.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fil-PH.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fil.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fo-FO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fo.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fr-BE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fr-CA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fr-CH.min.js" />
     <Content Include="Scripts\ej\i18n\ej.culture.fr-FR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fr-LU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fr-MC.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fr.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fy-NL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.fy.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ga-IE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ga.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gd-GB.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gd.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gl-ES.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gsw-FR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gsw.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gu-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.gu.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ha-Latn-NG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ha-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ha.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.haw-US.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.haw.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.he-IL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.he.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hi-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hi.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hr-BA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hr-HR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hr.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hsb-DE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hsb.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hu-HU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hu.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hy-AM.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.hy.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.id-ID.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.id.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ig-NG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ig.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ii-CN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ii.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.is-IS.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.is.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.it-CH.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.it-IT.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.it.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.iu-Cans-CA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.iu-Cans.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.iu-Latn-CA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.iu-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.iu.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ja-JP.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ja.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ka-GE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ka.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kk-KZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kk.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kl-GL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.km-KH.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.km.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kn-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ko-KR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ko.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kok-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.kok.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ku-Arab-IQ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ku-Arab.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ku.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ky-KG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ky.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lb-LU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lb.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lo-LA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lo.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lt-LT.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lt.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lv-LV.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.lv.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mi-NZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mi.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mk-MK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mk.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ml-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ml.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mn-Cyrl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mn-MN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mn-Mong-CN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mn-Mong.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.moh-CA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.moh.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mr-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mr.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ms-BN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ms-MY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ms.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mt-MT.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.mt.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nb-NO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nb.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ne-NP.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ne.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nl-BE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nl-NL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nn-NO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.no.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nso-ZA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.nso.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.oc-FR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.oc.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.or-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.or.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pa-Arab-PK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pa-Arab.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pa-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pa.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pl-PL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.prs-AF.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.prs.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ps-AF.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ps.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pt-BR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pt-PT.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.pt.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.qut-GT.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.qut.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.quz-BO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.quz-EC.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.quz-PE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.quz.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.rm-CH.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.rm.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ro-RO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ro.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ru-RU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ru.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.rw-RW.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.rw.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sa-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sa.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sah-RU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sah.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sd-Arab-PK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sd-Arab.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sd.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.se-FI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.se-NO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.se-SE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.se.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.si-LK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.si.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sk-SK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sk.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sl-SI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sma-NO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sma-SE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sma.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.smj-NO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.smj-SE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.smj.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.smn-FI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.smn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sms-FI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sms.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sq-AL.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sq.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Cyrl-BA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Cyrl-CS.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Cyrl-ME.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Cyrl-RS.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Cyrl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Latn-BA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Latn-CS.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Latn-ME.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Latn-RS.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sr.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sv-FI.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sv-SE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sv.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sw-KE.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.sw.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.syr-SY.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.syr.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ta-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ta-LK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ta.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.te-IN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.te.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tg-Cyrl-TJ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tg-Cyrl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tg.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.th-TH.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.th.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ti-ER.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ti-ET.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ti.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tk-TM.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tk.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tn-BW.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tn-ZA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tr-TR.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tr.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tt-RU.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tt.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tzm-Latn-DZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tzm-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tzm-Tfng-MA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tzm-Tfng.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.tzm.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ug-CN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ug.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.uk-UA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.uk.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ur-PK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.ur.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.uz-Cyrl-UZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.uz-Cyrl.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.uz-Latn-UZ.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.uz-Latn.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.uz.min.js" />
     <Content Include="Scripts\ej\i18n\ej.culture.vi-VN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.vi.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.wo-SN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.wo.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.xh-ZA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.xh.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.yo-NG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.yo.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-CHS.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-CHT.min.js" />
     <Content Include="Scripts\ej\i18n\ej.culture.zh-CN.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-Hans.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-Hant.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-HK.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-MO.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-SG.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh-TW.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zh.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zu-ZA.min.js" />
-    <Content Include="Scripts\ej\i18n\ej.culture.zu.min.js" />
-    <Content Include="Scripts\ej\localetexts\ej.localetexts.en-US.min.js" />
     <Content Include="Scripts\ej\mobile\ej.mobile.accordion.min.js" />
     <Content Include="Scripts\ej\mobile\ej.mobile.all-vsdoc.js" />
     <Content Include="Scripts\ej\mobile\ej.mobile.all.intellisense.js" />
@@ -1137,6 +823,7 @@
     <Content Include="Scripts\ej\web\ej.datepicker.min.js" />
     <Content Include="Scripts\ej\web\ej.datetimepicker.min.js" />
     <Content Include="Scripts\ej\web\ej.dialog.min.js" />
+    <Content Include="Scripts\ej\web\ej.documenteditor.min.js" />
     <Content Include="Scripts\ej\web\ej.dropdownlist.min.js" />
     <Content Include="Scripts\ej\web\ej.editor.min.js" />
     <Content Include="Scripts\ej\web\ej.excelfilter.min.js" />
@@ -1152,13 +839,13 @@
     <Content Include="Scripts\ej\web\ej.navigationdrawer.min.js" />
     <Content Include="Scripts\ej\web\ej.olap.base.min.js" />
     <Content Include="Scripts\ej\web\ej.olapchart.min.js" />
-    <Content Include="Scripts\ej\web\ej.olapclient.min.js" />
     <Content Include="Scripts\ej\web\ej.olapgauge.min.js" />
     <Content Include="Scripts\ej\web\ej.pager.min.js" />
     <Content Include="Scripts\ej\web\ej.pdfviewer.min.js" />
+    <Content Include="Scripts\ej\web\ej.pivot.common.min.js" />
     <Content Include="Scripts\ej\web\ej.pivotanalysis.base.min.js" />
     <Content Include="Scripts\ej\web\ej.pivotchart.min.js" />
-    <Content Include="Scripts\ej\web\ej.pivotgauge.common.min.js" />
+    <Content Include="Scripts\ej\web\ej.pivotclient.min.js" />
     <Content Include="Scripts\ej\web\ej.pivotgauge.min.js" />
     <Content Include="Scripts\ej\web\ej.pivotgrid.min.js" />
     <Content Include="Scripts\ej\web\ej.pivotpager.min.js" />
@@ -1176,7 +863,9 @@
     <Content Include="Scripts\ej\web\ej.rotator.min.js" />
     <Content Include="Scripts\ej\web\ej.rte.min.js" />
     <Content Include="Scripts\ej\web\ej.schedule.min.js" />
+    <Content Include="Scripts\ej\web\ej.signature.min.js" />
     <Content Include="Scripts\ej\web\ej.slider.min.js" />
+    <Content Include="Scripts\ej\web\ej.spellcheck.min.js" />
     <Content Include="Scripts\ej\web\ej.splitbutton.min.js" />
     <Content Include="Scripts\ej\web\ej.splitter.min.js" />
     <Content Include="Scripts\ej\web\ej.spreadsheet.min.js" />
@@ -1203,9 +892,11 @@
     <Content Include="Scripts\globalize\plural.js" />
     <Content Include="Scripts\globalize\relative-time.js" />
     <Content Include="Scripts\globalize\unit.js" />
-    <Content Include="Scripts\jquery-2.2.4.intellisense.js" />
-    <Content Include="Scripts\jquery-2.2.4.js" />
-    <Content Include="Scripts\jquery-2.2.4.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Scripts\jquery.easing.1.3.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
