@@ -360,8 +360,12 @@ namespace SyncfusionProof
         );
 
       //we must include Syncfusion css in a separate bundle for optimizations to work properly
+      //bundles.Add(new StyleBundle("~/content/ejwidgetsall")
+      //  .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
+      //  );
+      
       bundles.Add(new StyleBundle("~/content/ejwidgetsall")
-        .Include("~/Content/ej/web/default-theme/ej.widgets.all.min.css", new CssRewriteUrlTransform())
+        .Include("~/Content/ej/web/default-theme/ej.web.all.min.css", new CssRewriteUrlTransform())
         );
 
       //Use the development version of Modernizr to develop with and learn from. Then, when you're
