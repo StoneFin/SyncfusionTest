@@ -28,17 +28,19 @@ extend(window.Utility, "Syncfusion", {
     getGrid: function (gridId) {
       return $("#" + gridId).ejGrid("instance");
     },
-    applyScrolling: function (gridId) {
-      if (gridId) {
-        var grid = Utility.Syncfusion.Grid.getGrid(gridId);
-        var scrollWidth = grid.element.width();
+    //no longer necessary as of Syncfusion 14.3.0.52
+    //https://www.syncfusion.com/support/directtrac/incidents/166542
+    //applyScrolling: function (gridId) {
+    //  if (gridId) {
+    //    var grid = Utility.Syncfusion.Grid.getGrid(gridId);
+    //    var scrollWidth = grid.element.width();
 
-        $("#" + gridId).ejGrid({
-          allowScrolling: true,
-          scrollSettings: { width: scrollWidth }
-        });
-      }
-    },
+    //    $("#" + gridId).ejGrid({
+    //      allowScrolling: true,
+    //      scrollSettings: { width: scrollWidth }
+    //    });
+    //  }
+    //},
   },
   Tab: {
     hideAllTabs: function () {
@@ -58,8 +60,10 @@ extend(window.Utility, "Syncfusion", {
       //get the grid and apply scrolling
       var gridId = $(tabId).find(".e-grid")[0].id;
 
-      //fix scrolling
-      Utility.Syncfusion.Grid.applyScrolling(gridId);
+      //no longer necessary as of Syncfusion 14.3.0.52
+      //https://www.syncfusion.com/support/directtrac/incidents/166542
+      ////fix scrolling
+      //Utility.Syncfusion.Grid.applyScrolling(gridId);
     },
     loadActiveTab: function () {
       //initially hide all the tabs
@@ -100,24 +104,25 @@ $(function () {
     return parseFloat(value.replace(",", "")) <= parseFloat(value2.replace(",", ""));
   }, "Value 1 must be less than or equal to Value 2");
 
+  //no longer necessary as of Syncfusion 14.3.0.52
+  //https://www.syncfusion.com/support/directtrac/incidents/166542
   ////when the tab selection changes, fix the scrolling
   //$(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
   //  //find the tab's grid
   //  var self = this;
   //  var tabId = $(e.target).attr("href");
   //  var gridId = $(tabId).find(".e-grid")[0].id;
-
   //  //fix scrolling
   //  Utility.Syncfusion.Grid.applyScrolling(gridId);
   //});
 
-  ////set the last remembered tab active when the page loads
-  //Utility.Syncfusion.Tab.loadActiveTab();
+  //set the last remembered tab active when the page loads
+  Utility.Syncfusion.Tab.loadActiveTab();
 
-  ////remember the last selected tab when we leave the page
-  //$(window).on("beforeunload", function () {
-  //  Utility.Syncfusion.Tab.saveActiveTab();
-  //});
+  //remember the last selected tab when we leave the page
+  $(window).on("beforeunload", function () {
+    Utility.Syncfusion.Tab.saveActiveTab();
+  });
 });
 
 var onChange = function (args) {
