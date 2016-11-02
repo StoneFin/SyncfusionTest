@@ -44,11 +44,11 @@ extend(window.Utility, "Syncfusion", {
   },
   Tab: {
     hideAllTabs: function () {
-      //remove "active" from the tab li elements
-      $("ul.nav.nav-tabs").children().removeClass("active");
+      //remove "active" from the tab li elements that are active
+      $("ul.nav.nav-tabs").find(".active").removeClass("active")
 
-      //remove "in active" from the tab content div elements
-      $("div.tab-content").children().removeClass("in active");
+      //remove "in active" from the tab content div elements that are active
+      $("div.tab-content").find(".in.active").removeClass("in active");
     },
     showTab: function (tabId) {
       //add "active" to the tab's li parent element
