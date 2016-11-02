@@ -76,12 +76,10 @@ extend(window.Utility, "Syncfusion", {
         //there's a stored active tab, activate it instead of the default
         Utility.Syncfusion.Tab.showTab(lastActiveTab);
       }
-      //no longer necessary as of Syncfusion 14.3.0.52
-      //https://www.syncfusion.com/support/directtrac/incidents/166542
-      //else {
-      //  //there's no stored active tab, activate the first one
-      //  Utility.Syncfusion.Tab.showTab("#tabone");
-      //}
+      else {
+        //there's no stored active tab, activate the first one
+        Utility.Syncfusion.Tab.showTab("#tabone");
+      }
     },
     saveActiveTab: function () {
       var currentActiveTab = $("ul.nav.nav-tabs").find(".active").find("a").attr("href");
