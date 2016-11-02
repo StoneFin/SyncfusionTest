@@ -43,15 +43,13 @@ extend(window.Utility, "Syncfusion", {
     //},
   },
   Tab: {
-    //no longer necessary as of Syncfusion 14.3.0.52
-    //https://www.syncfusion.com/support/directtrac/incidents/166542
-    //hideAllTabs: function () {
-    //  //remove "active" from the tab li elements
-    //  $("ul.nav.nav-tabs").children().removeClass("active");
+    hideAllTabs: function () {
+      //remove "active" from the tab li elements
+      $("ul.nav.nav-tabs").children().removeClass("active");
 
-    //  //remove "in active" from the tab content div elements
-    //  $("div.tab-content").children().removeClass("in active");
-    //},
+      //remove "in active" from the tab content div elements
+      $("div.tab-content").children().removeClass("in active");
+    },
     showTab: function (tabId) {
       //add "active" to the tab's li parent element
       $("a[href='" + tabId + "'").parent().addClass("active");
@@ -69,10 +67,8 @@ extend(window.Utility, "Syncfusion", {
     },
     
     loadActiveTab: function () {
-      //no longer necessary as of Syncfusion 14.3.0.52
-      //https://www.syncfusion.com/support/directtrac/incidents/166542
-      ////initially hide all the tabs
-      //Utility.Syncfusion.Tab.hideAllTabs();
+      //initially hide all the tabs
+      Utility.Syncfusion.Tab.hideAllTabs();
 
       var lastActiveTab = amplify.store("BootstrapActiveTab");
 
