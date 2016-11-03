@@ -2,7 +2,7 @@
 
 @using Syncfusion.JavaScript.Models
 
-@(Html.EJ().Grid<SyncfusionProof.Data.Models.TestModel>("InlineEditingGrid")
+@(Html.EJ().Grid<SyncfusionProof.Data.Models.TestModel>("EmptyGrid")
   .Datasource(Model.TestModels)
   .AllowSelection()
   .SelectionType(SelectionType.Multiple)
@@ -40,8 +40,8 @@
   })
   .ClientSideEvents(x =>
   {
-    x.ActionComplete("inlineEditActionComplete");
-    x.ActionBegin("inlineEditActionBegin");
-    x.ToolbarClick("toolbarClick");
+    x.ActionComplete("Utility.Syncfusion.Grid.EmptyGrid.actionComplete");
+    x.ActionBegin("Utility.Syncfusion.Grid.EmptyGrid.actionBegin");
+    x.ToolbarClick("Utility.Syncfusion.Grid.EmptyGrid.toolbarClick");
   })
 )
