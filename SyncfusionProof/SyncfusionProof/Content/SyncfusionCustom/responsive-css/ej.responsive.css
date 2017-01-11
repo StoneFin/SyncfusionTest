@@ -10,9 +10,9 @@
 }
 @media (min-width: 320px) and (max-width:480px) {
 	.e-dialog.e-dialog-wrap.e-dialog-resize{
-		width:100% !important;
-		height:100% !important;
-		min-width:320px !important;
+		width:100%;
+		height:100%;
+		min-width:320px;
 	}
     .e-responsive-toolbar{
         width:200px !important;
@@ -36,10 +36,10 @@
 min-width:48px !important;
 min-height:48px !important;
 }
-.e-ribbon.e-responsive  .e-respmobcontent .e-mobribgroup .e-button .e-icon,
-.e-ribbon.e-responsive  .e-respmobcontent .e-mobribgroup .e-togglebutton .e-icon,
-.e-ribbon.e-responsive  .e-responsivecontent .e-button .e-icon,
-.e-ribbon.e-responsive  .e-responsivecontent .e-togglebutton .e-icon
+.e-ribbon.e-responsive  .e-respmobcontent .e-mobribgroup .e-rbn-button.e-button .e-icon,
+.e-ribbon.e-responsive  .e-respmobcontent .e-mobribgroup .e-rbn-button.e-togglebutton .e-icon,
+.e-ribbon.e-responsive  .e-responsivecontent .e-rbn-button.e-button .e-icon,
+.e-ribbon.e-responsive  .e-responsivecontent .e-rbn-button.e-togglebutton .e-icon
 {
 display:inherit;
 }
@@ -106,7 +106,7 @@ display:none;
 	width:90% !important;
 }
 .e-ribbon.e-responsive .e-mobribgroup{
-	display:initial;
+	display:inline-block;
 }
 .e-ribbon.e-responsive .e-contextliset{
 	display:none;
@@ -150,12 +150,12 @@ display:table !important;
 	padding:12px;
 }
 
-.e-ribbon.e-responsive  .e-resgroupheader .e-btntxt{
+.e-ribbon.e-responsive  .e-resgroupheader .e-rbn-button .e-btntxt{
 	display:table-cell;
 }
 
 
-.e-ribbon.e-responsive  .e-responsiveqat .e-btn
+.e-ribbon.e-responsive  .e-responsiveqat .e-btn.e-rbn-button
 {
 	width:32px !Important;
 }
@@ -163,8 +163,9 @@ display:table !important;
 .e-ribbon.e-responsive .e-innerdivrow {
     padding-bottom: 0;
     padding-left: 0;
+}
+.e-ribbon.e-responsive .e-responsivecontent .e-innerdivrow{
 	width:100%;
-	
 }
 .e-ribbon.e-responsive .e-contextliset{
 	display:none;
@@ -526,6 +527,10 @@ padding-bottom:7px;
 {
 	display:inline-block !important;
 }
+.e-ribbon.e-ribwithout-apptab.e-responsive .e-header.e-resheader
+{
+	display:table !important;
+}
 .e-ribbon.e-responsive .e-header li
 {
 	margin-top:0px !important;
@@ -539,7 +544,7 @@ padding-bottom:7px;
     display:inline-block;
     top:6px;
 }
-.e-ribbon.e-responsive  .e-responsiveqat .e-btn{
+.e-ribbon.e-responsive  .e-responsiveqat .e-rbn-button.e-btn{
     border-top:0px !important;
 }
 
@@ -566,6 +571,7 @@ padding-bottom:7px;
   z-index: 100001;
   height: 37px;
   padding: 0px;
+  left: 0px;
 }
  .e-kanbandialog table td.e-rowcell > :first-child {
   width:100% !important;
@@ -599,7 +605,7 @@ padding-bottom:7px;
     position: absolute;
 	top:0px;
 	left:0px;
-	z-index: 100001;
+	z-index: 10000001;
   }
  .e-kanbanfilter-window .e-filter-content div{
    margin:10px 0 0 10px;
@@ -692,6 +698,8 @@ padding-bottom:7px;
 	.e-kanbanfilter-window .e-filterlabel{
 	 padding-left: 10px;
     font-weight: normal;
+    font-size: 14px;
+    display: inline;
 	}
 	.e-kanbandialog table{
 	 width:100%;
@@ -801,6 +809,8 @@ padding-bottom:7px;
     cursor:default;
     list-style: none;
 	padding: 10px 0 0px 10px;
+    font-family: Segoe UI;
+    font-size: 14px;
   } 
 .e-swimlane-window{
     position: absolute;
@@ -810,7 +820,7 @@ padding-bottom:7px;
 	right:0;
   }
   .e-swimlane-window ul{ 
-      margin: 0;
+      margin: 0px;
       padding-left: 0px;
 }
 .e-kanban.e-responsive .e-vscroll.e-box{
@@ -888,7 +898,7 @@ padding-bottom:7px;
 }
 .e-kbnslwindow-body{
     top: 37px;
-	z-index: 100001;
+	z-index: 10000001;
 }
 .e-kanban.e-responsive .e-vhandlespace,.e-kanbanfilter-window .e-vhandlespace,.e-kbnslwindow-body .e-vhandlespace,.e-kbnadapt-editdlg .e-vhandlespace{
     border: solid;
@@ -992,7 +1002,6 @@ padding-bottom:7px;
 		height: 20px;
 		margin-top: 5px;
 		margin-bottom: 5px;
-		color : #686969;
 	  }
     .e-menu-wrap.e-menu-responsive .e-menu.e-menu-responsive > li.e-separator {
         border:0;
