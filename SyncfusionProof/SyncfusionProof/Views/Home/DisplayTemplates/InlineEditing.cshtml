@@ -2,6 +2,11 @@
 
 @using Syncfusion.JavaScript.Models
 
+<div id="InlineEditingGridUndoAlert" class="alert alert-danger" role="alert" style="display:none;">
+  <strong>Record(s) deleted.</strong>
+  <a id="InlineEditingGridUndoLink" href="#" class="alert-link btn btn-default">Undo</a>
+</div>
+
 <div class="well">
   @(Html.EJ().Grid<SyncfusionProof.Data.Models.TestModel>("InlineEditingGrid")
   .EnablePersistence()
@@ -12,7 +17,6 @@
   .AllowPaging()
   .AllowResizing()
   .AllowScrolling()
-  .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
   //use ShowAddNewRow to automatically add a row whenever an edit finishes
@@ -49,8 +53,8 @@
       .EditType(EditingType.Boolean)
       .Add();
 
-    //x.Field("Value1").HeaderText("Value 1").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").ValidationRules(y => y.AddRule("lessThanValue2", true)).Add();
-    //x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "onChange" }).Format("{0:C}").Add();
+    //x.Field("Value1").HeaderText("Value 1").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "Utility.Syncfusion.Grid.InlineEditingGrid.onChange" }).Format("{0:C}").ValidationRules(y => y.AddRule("lessThanValue2", true)).Add();
+    //x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "Utility.Syncfusion.Grid.InlineEditingGrid.onChange" }).Format("{0:C}").Add();
     //x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();
 
     x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").IsIdentity(true).AllowEditing(false).Add();
@@ -61,9 +65,9 @@
       .Width(500)
       .EditTemplate(y =>
       {
-        y.Create("textAreaCreate")
-          .Read("textAreaRead")
-          .Write("textAreaWrite");
+        y.Create("Utility.Syncfusion.Grid.InlineEditingGridtextAreaCreate")
+          .Read("Utility.Syncfusion.Grid.InlineEditingGridtextAreaRead")
+          .Write("Utility.Syncfusion.Grid.InlineEditingGridtextAreaWrite");
       })
       .Add();
 
@@ -71,9 +75,9 @@
   })
   .ClientSideEvents(x =>
   {
-    x.ActionComplete("inlineEditActionComplete");
-    x.ActionBegin("inlineEditActionBegin");
-    x.ToolbarClick("toolbarClick");
+    x.ActionComplete("Utility.Syncfusion.Grid.InlineEditingGrid.actionComplete");
+    x.ActionBegin("Utility.Syncfusion.Grid.InlineEditingGrid.actionBegin");
+    x.ToolbarClick("Utility.Syncfusion.Grid.InlineEditingGrid.toolbarClick");
   })
   )
 </div>

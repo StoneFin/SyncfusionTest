@@ -2,6 +2,11 @@
 
 @using Syncfusion.JavaScript.Models
 
+<div id="ToolbarTemplateGridUndoAlert" class="alert alert-danger" role="alert" style="display:none;">
+  <strong>Record(s) deleted.</strong>
+  <a id="ToolbarTemplateGridUndoLink" href="#" class="alert-link btn btn-default">Undo</a>
+</div>
+
 @(Html.EJ().Grid<SyncfusionProof.Data.Models.TestModel>("ToolbarTemplateGrid")
   .Datasource(Model.TestModels)
   .EnablePersistence()

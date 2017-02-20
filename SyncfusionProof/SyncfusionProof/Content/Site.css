@@ -39,14 +39,24 @@ div.e-field > textarea {
   background-image: url("ej/web/common-images/icons-white.png");
 }
 
-/*
-  fix for Syncfusion grid checkbox editors being only 1px wide
-  http://www.syncfusion.com/support/directtrac/incidents/147702
-*/
-input.e-field.e-checkbox {
-  width: 13px !important;
-}
-
 .e-reportviewer {
   height: 1080px;
+}
+
+/*
+  The bootstrap tabs override the box-sizing property of the grids and changes it to border-box.
+  To handle this, we change it back to content-box.
+  https://www.syncfusion.com/support/directtrac/incidents/166542
+
+  The width setting fixes grid width rendering problems in bootstrap tabs. We want all grids
+  on the site to be width: auto anyway.
+  Currently, the width setting breaks other things. I'm working with Syncfusion on this
+  problem via the incident report above.
+*/
+.e-grid {
+  /*width: auto !important;*/
+  /*width: 100% !important;*/
+  -moz-box-sizing: content-box; 
+  -webkit-box-sizing: content-box; 
+  box-sizing : content-box; 
 }

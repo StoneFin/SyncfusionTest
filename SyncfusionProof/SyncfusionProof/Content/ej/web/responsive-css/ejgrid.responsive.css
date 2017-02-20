@@ -2,7 +2,9 @@
     .e-grid.e-responsive > [id*='Dlg_wrapper'] {
         width: 130px !important;
     }
-
+    .e-grid.e-responsive .e-gridtoolbar .e-gridresponsiveicons {
+      display : inline !important;
+    }
     .e-grid.e-responsive .e-rowcell {
         display: block;
         height: 27px;
@@ -102,16 +104,22 @@
 
             .e-grid.e-responsive .e-pager .e-parentmsgbar {
                 position: absolute;
-                top: 0;
+                top: 34px;
                 padding-top: 0;
                 margin-left: 24%;
             }
 
             .e-grid.e-responsive .e-pager .e-pagercontainer {
-                position: absolute;
-                bottom: 0;
+                position: absolute;               
                 margin-left: 16%;
-                margin-bottom: 5px;
+                top:5px;
+            }
+            .e-pager .e-pagercontainer{
+                margin-left:30px;               
+            }
+            .e-pager div.e-parentmsgbar{
+                margin-left:24%;
+                float:none;
             }
 
             .e-grid.e-responsive .e-pager .e-PP, .e-grid.e-responsive .e-pager .e-NP {
@@ -139,6 +147,7 @@
     .e-grid.e-responsive td.e-rowcell {
         border-bottom-width: 1px;
         border-bottom-style: solid;
+        min-height: 27px;
     }
 
     .e-grid .e-gridcontent .e-normaledit td.e-rowcell {
@@ -158,7 +167,15 @@
        width: 97px !important;
     }
 }
-
+@media (max-width: 321px) {
+    .e-grid:not(.e-responsive) .e-table-priority-6,
+    .e-grid:not(.e-responsive) .e-table-priority-5,
+    .e-grid:not(.e-responsive) .e-table-priority-4,
+    .e-grid:not(.e-responsive) .e-table-priority-3,
+    .e-grid:not(.e-responsive) .e-table-priority-2 {
+        display: none !important;
+    }
+}
 @media (min-width: 321px) and (max-width:479px) {
     .e-grid .e-table-priority-6,
     .e-grid .e-table-priority-5,

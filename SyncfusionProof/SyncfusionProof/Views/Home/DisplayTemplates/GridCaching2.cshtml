@@ -11,17 +11,16 @@
   .AllowPaging()
   .AllowResizing()
   .AllowScrolling()
-  .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
   .Columns(x =>
   {
     x.HeaderText("Manage").Commands(y =>
     {
-      y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-edit", Click = "editRecord" }).Add();
-      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties() { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "deleteRecord" }).Add();
-    }).IsUnbound(true).Add();
-        
+      y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-icon e-edit", Click = "editRecord" }).Add();
+      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-icon e-delete", Click = "deleteRecord" }).Add();
+    }).Add();
+
     x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();
     x.Field("EmployeeId").HeaderText("Employee ID").Add();

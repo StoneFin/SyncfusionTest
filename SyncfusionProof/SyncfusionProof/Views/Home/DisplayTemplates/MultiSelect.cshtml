@@ -2,6 +2,11 @@
 
 @using Syncfusion.JavaScript.Models
 
+<div id="MultiSelectGridUndoAlert" class="alert alert-danger" role="alert" style="display:none;">
+  <strong>Record(s) deleted.</strong>
+  <a id="MultiSelectGridUndoLink" href="#" class="alert-link btn btn-default">Undo</a>
+</div>
+
 @(Html.EJ().Grid<SyncfusionProof.Data.Models.TestModel>("MultiSelectGrid")
   .Datasource(Model.TestModels)
   .AllowSelection()
@@ -10,10 +15,9 @@
   .AllowPaging()
   .AllowResizing()
   .AllowScrolling()
-  .ScrollSettings(x => { x.Width("100%"); })
   .MinWidth(500)
   .IsResponsive()
-  .EditSettings(x => { x.AllowDeleting(); })
+  .EditSettings(x => { x.AllowAdding(); x.AllowDeleting(); })
   .ToolbarSettings(x =>
   {
     x.ShowToolbar().ToolbarItems(y =>
@@ -28,11 +32,11 @@
   {
     x.HeaderText("Manage").Commands(y =>
     {
-      y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-edit", Click = "editRow" }).Add();
-      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-delete", Click = "removeRow" }).Add();
-    }).IsUnbound(true).Add();
+      y.Type(UnboundType.Edit).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-icon e-edit", Click = "Utility.Syncfusion.Grid.MultiSelectGrid.editRow" }).Add();
+      y.Type(UnboundType.Delete).ButtonOptions(new ButtonProperties { ContentType = ContentType.ImageOnly, PrefixIcon = "e-icon e-delete", Click = "Utility.Syncfusion.Grid.MultiSelectGrid.removeRow" }).Add();
+    }).Add();
 
-    x.Field("OrderId").HeaderText("Order ID").IsPrimaryKey(true).Add();
+    x.Field("OrderId").HeaderText("Order ID").IsIdentity(true).IsPrimaryKey(true).Add();
     x.Field("CustomerId").HeaderText("Customer ID").Add();
     x.Field("EmployeeId").HeaderText("Employee ID").Add();
     x.Field("Freight").HeaderText("Freight").Format("{0:C}").Add();
@@ -41,5 +45,8 @@
     x.Field("ShipCity").HeaderText("Ship City").Add();
     x.Field("ShipState").HeaderText("Ship State").Add();
   })
-  .ClientSideEvents(x => { x.ToolbarClick("toolbarClick"); })
+  .ClientSideEvents(x =>
+  {
+    x.ToolbarClick("Utility.Syncfusion.Grid.MultiSelectGrid.toolbarClick");
+  })
 )
