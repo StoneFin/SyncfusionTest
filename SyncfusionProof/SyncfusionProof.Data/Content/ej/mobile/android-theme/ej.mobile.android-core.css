@@ -1,7 +1,7 @@
 /*!
 *  filename: ej.mobile.android-core.css
-*  version : 15.1.0.32
-*  Copyright Syncfusion Inc. 2001 - 2017. All rights reserved.
+*  version : 15.3.0.26
+*  Copyright Syncfusion Inc. 2001 - 2014. All rights reserved.
 *  Use of this code is subject to the terms of our license.
 *  A copy of the current license can be obtained at any time by e-mailing
 *  licensing@syncfusion.com. Any infringement will be prosecuted under
@@ -1345,20 +1345,24 @@ body.e-m-ios7.e-m-light,
   font-family: roboto, Sans-Serif;
 }
 .e-m-ios7,
-.e-m-ios7 *:not(text) {
+.e-m-ios7 [class^="e-"]:not(text),
+.e-m-ios7 [class*=" e-"]:not(text) {
   font-family: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
   font-weight: normal;
 }
 .e-m-android,
-.e-m-android *:not(text) {
+.e-m-android [class^="e-"]:not(text),
+.e-m-android [class*=" e-"]:not(text) {
   font-family: Roboto;
   font-size: 18px;
   font-weight: normal;
 }
 .e-m-windows,
-.e-m-windows *:not(text),
+.e-m-windows [class^="e-"]:not(text),
+.e-m-windows [class*=" e-"]:not(text),
 .e-m-flat,
-.e-m-flat *:not(text) {
+.e-m-flat [class^="e-"]:not(text),
+.e-m-flat [class*=" e-"]:not(text) {
   font-family: Segoe UI;
   font-weight: normal;
 }

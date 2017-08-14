@@ -57,7 +57,8 @@
     //x.Field("Value2").HeaderText("Value 2").EditType(EditingType.Numeric).NumericEditOptions(new EditorProperties { Change = "Utility.Syncfusion.Grid.InlineEditingGrid.onChange" }).Format("{0:C}").Add();
     //x.Field("ValueSum").HeaderText("Value 1 + Value 2").IsIdentity(true).AllowEditing(false).Add();
 
-    x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").IsIdentity(true).AllowEditing(false).Add();
+    //x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").AllowEditing(false).Add();
+    x.Field("OrderDate").HeaderText("Order Date").EditType(EditingType.Datepicker).Format("{0:MM/dd/yyyy}").AllowEditing(true).Add();
 
     x.Field("ShipCity")
       .HeaderText("Ship City")
@@ -65,12 +66,12 @@
       .Width(500)
       .EditTemplate(y =>
       {
-        y.Create("Utility.Syncfusion.Grid.InlineEditingGridtextAreaCreate")
-          .Read("Utility.Syncfusion.Grid.InlineEditingGridtextAreaRead")
-          .Write("Utility.Syncfusion.Grid.InlineEditingGridtextAreaWrite");
+        y.Create("Utility.Syncfusion.Grid.InlineEditingGrid.textAreaCreate")
+          .Read("Utility.Syncfusion.Grid.InlineEditingGrid.textAreaRead")
+          .Write("Utility.Syncfusion.Grid.InlineEditingGrid.textAreaWrite");
       })
       .Add();
-
+    
     x.Field("ShipState").HeaderText("Ship State").EditType(EditingType.String).Add();
   })
   .ClientSideEvents(x =>

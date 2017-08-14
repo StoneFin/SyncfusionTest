@@ -67,7 +67,7 @@ disableItems:function(index){
 /// <summary>
 /// Disable the accordion widget item based on specified header index.
 /// </summary>
-/// <param name="index"	type="Array&lt;any&gt;">index values to disable the panels</param>
+/// <param name="index"	type="any[]">index values to disable the panels</param>
 /// </signature>
 },
 enable:function(){
@@ -81,7 +81,7 @@ enableItems:function(index){
 /// <summary>
 /// Enable the accordion widget item based on specified header index.
 /// </summary>
-/// <param name="index"	type="Array&lt;any&gt;">index values to enable the panels</param>
+/// <param name="index"	type="any[]">index values to enable the panels</param>
 /// </signature>
 },
 expandAll:function(){
@@ -147,25 +147,25 @@ ejAccordion :function (options) {
 ///<br/>ajaxSettings-AjaxSettings	default-null
 ///<br/><br/>
 ///It specifies, whether to enable or disable asynchronous request.
-///<br/>async-Boolean	default-
+///<br/>async-boolean	default-
 ///<br/><br/>
 ///It specifies the page will be cached in the web browser.
-///<br/>cache-Boolean	default-
+///<br/>cache-boolean	default-
 ///<br/><br/>
 ///It specifies the type of data is send in the query string.
-///<br/>contentType-String	default-
+///<br/>contentType-string	default-
 ///<br/><br/>
 ///It specifies the data as an object, will be passed in the query string.
 ///<br/>data-any	default-
 ///<br/><br/>
 ///It specifies the type of data that you're expecting back from the response.
-///<br/>dataType-String	default-
+///<br/>dataType-string	default-
 ///<br/><br/>
 ///It specifies the HTTP request type.
-///<br/>type-String	default-
+///<br/>type-string	default-
 ///<br/><br/>
 ///Accordion headers can be expanded and collapsed on keyboard action.
-///<br/>allowKeyboardNavigation-Boolean	default-true
+///<br/>allowKeyboardNavigation-boolean	default-true
 ///<br/><br/>
 ///To set the Accordion headers Collapse Speed.
 ///<br/>collapseSpeed-number	default-300
@@ -174,40 +174,40 @@ ejAccordion :function (options) {
 ///<br/>collapsible-boolean	default-false
 ///<br/><br/>
 ///Sets the root CSS class for Accordion theme, which is used customize.
-///<br/>cssClass-String	default-
+///<br/>cssClass-string	default-
 ///<br/><br/>
 ///Allows you to set the custom header Icon. It accepts two key values â€œheaderâ€, â€selectedHeaderâ€.
 ///<br/>customIcon-CustomIcon	default-{ header: e-collapse, selectedHeader: e-expand }
 ///<br/><br/>
 ///This class name set to collapsing header.
-///<br/>header-String	default-
+///<br/>header-string	default-
 ///<br/><br/>
 ///This class name set to expanded (active) header.
-///<br/>selectedHeader-String	default-
+///<br/>selectedHeader-string	default-
 ///<br/><br/>
 ///Disables the specified indexed items in accordion.
 ///<br/>disabledItems-number[]	default-[]
 ///<br/><br/>
 ///Specifies the animation behavior in accordion.
-///<br/>enableAnimation-Boolean	default-true
+///<br/>enableAnimation-boolean	default-true
 ///<br/><br/>
 ///With this enabled property, you can enable or disable the Accordion.
-///<br/>enabled-Boolean	default-true
+///<br/>enabled-boolean	default-true
 ///<br/><br/>
 ///Used to enable the disabled items in accordion.
 ///<br/>enabledItems-number[]	default-[]
 ///<br/><br/>
 ///Multiple content panels to activate at a time.
-///<br/>enableMultipleOpen-Boolean	default-false
+///<br/>enableMultipleOpen-boolean	default-false
 ///<br/><br/>
 ///Save current model value to browser cookies for maintaining states. When refreshing the accordion control page, the model value is applied from browser cookies or HTML 5local storage.
-///<br/>enablePersistence-Boolean	default-false
+///<br/>enablePersistence-boolean	default-false
 ///<br/><br/>
 ///Display headers and panel text from right-to-left.
-///<br/>enableRTL-Boolean	default-false
+///<br/>enableRTL-boolean	default-false
 ///<br/><br/>
 ///The events API binds the action for activating the accordion header. Users can activate the header by using mouse actions such as mouse-over, mouse-up, mouse-down, and soon.
-///<br/>events-String	default-click
+///<br/>events-string	default-click
 ///<br/><br/>
 ///To set the Accordion headers Expand Speed.
 ///<br/>expandSpeed-number	default-300
@@ -231,7 +231,7 @@ ejAccordion :function (options) {
 ///<br/>selectedItems-number[]	default-[0]
 ///<br/><br/>
 ///Used to determines the close button visibility an each accordion items. This close button helps to remove the accordion item from the control.
-///<br/>showCloseButton-Boolean	default-false
+///<br/>showCloseButton-boolean	default-false
 ///<br/><br/>
 ///Displays rounded corner borders on the Accordion control's panels and headers.
 ///<br/>showRoundedCorner-boolean	default-false
@@ -344,7 +344,7 @@ ejAutocomplete :function (options) {
 /// <summary><br/>
 ///The AutoComplete control is a textbox control that provides a list of suggestions based on the user query.When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.<br/><br/>
 ///Customize "Add New" text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it.
-///<br/>addNewText-boolean	default-Add New
+///<br/>addNewText-string	default-Add New
 ///<br/><br/>
 ///Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display â€œNo suggestionsâ€ label in the popup.
 ///<br/>allowAddNew-boolean	default-false
@@ -364,7 +364,7 @@ ejAutocomplete :function (options) {
 ///The root class for the Autocomplete textbox widget which helps in customizing its theme.
 ///<br/>cssClass-string	default-&#226;€&#226;€
 ///<br/><br/>
-///The data source contains the list of data for the suggestions list. It can be a string array or JSON array.
+///The data source contains the list of data for the suggestions list. It can be a string array or JSON array or service URL that returns JSON.
 ///<br/>dataSource-any|Array&lt;any&gt;	default-null
 ///<br/><br/>
 ///The time delay (in milliseconds) after which the suggestion popup will be shown.
@@ -410,7 +410,7 @@ ejAutocomplete :function (options) {
 ///<br/>filterType-string	default-ej.filterType.StartsWith
 ///<br/><br/>
 ///The height of the Autocomplete textbox.
-///<br/>height-string	default-null
+///<br/>height-string|number	default-null
 ///<br/><br/>
 ///The search text can be highlighted in the AutoComplete suggestion list when enabled.
 ///<br/>highlightSearch-boolean	default-false
@@ -458,7 +458,7 @@ ejAutocomplete :function (options) {
 ///<br/>headerTextAlign-ej.TextAlign|string	default-ej.TextAlign.Left
 ///<br/><br/>
 ///Gets or sets a value that indicates to align the text within the column. See textAlign
-///<br/>textAlign- ej.TextAlign|string	default-ej.TextAlign.Left
+///<br/>textAlign-ej.TextAlign|string	default-ej.TextAlign.Left
 ///<br/><br/>
 ///Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
 ///<br/>multiSelectMode-ej.Autocomplete.MultiSelectMode|string	default-ej.MultiSelectMode.None
@@ -515,7 +515,7 @@ ejAutocomplete :function (options) {
 ///<br/>watermarkText-string	default-null
 ///<br/><br/>
 ///The width of the Autocomplete textbox.
-///<br/>width-string	default-null
+///<br/>width-string|number	default-null
 ///</summary>
 ///<param name="options" type="Object">
 ///The widget configuration options
@@ -885,7 +885,10 @@ ejBulletGraph :function (options) {
 ///Toggles the animation of bullet graph.
 ///<br/>enableAnimation-boolean	default-true
 ///<br/><br/>
-///Specifies the direction of flow in bullet graph. Neither it may be backward nor forward.
+///Controls whether bullet graph has to be responsive while resizing.
+///<br/>enableResizing-boolean	default-true
+///<br/><br/>
+///Specifies the direction of flow in bullet graph. Neither it may be backward nor forward. 
 ///<br/>flowDirection-ej.datavisualization.BulletGraph.FlowDirection|string	default-forward
 ///<br/><br/>
 ///Specifies the height of the bullet graph.
@@ -893,6 +896,12 @@ ejBulletGraph :function (options) {
 ///<br/><br/>
 ///Sets a value whether to make the bullet graph responsive on resize.
 ///<br/>isResponsive-boolean	default-true
+///<br/><br/>
+///Specifies to convert the date object to string, using locale settings.
+///<br/>enableGroupSeparator-boolean	default-false
+///<br/><br/>
+///Name of the culture based on which bulletgraph should be localized.
+///<br/>locale-string	default-en-US
 ///<br/><br/>
 ///Bullet graph will render in the specified orientation.
 ///<br/>orientation-ej.datavisualization.BulletGraph.Orientation|string	default-horizontal
@@ -1002,7 +1011,7 @@ ejBulletGraph :function (options) {
 ///Specifies the horizontal/vertical padding of labels.
 ///<br/>offset-number	default-15
 ///<br/><br/>
-///Specifies the position of the labels to render either above or below the graph. See Position
+///Specifies the position of the labels to render either above or below the graph. See 
 ///<br/>position-ej.datavisualization.BulletGraph.LabelPosition|string	default-below
 ///<br/><br/>
 ///Specifies the Size of the labels.
@@ -1403,6 +1412,12 @@ animate:function(options){
 /// <param name="options"	type="any">If an array collection is passed as parameter, series and indicator objects passed in array collection are animated.ExampleIf a series or indicator object is passed to this method, then the specific series or indicator is animated.Example,</param>
 /// </signature>
 },
+print:function(){
+/// <signature>
+/// <summary>
+/// Prints the rendered chart.
+/// </summary>
+},
 export:function(type, URL, exportMultipleChart){
 /// <signature>
 /// <summary>
@@ -1498,6 +1513,9 @@ ejChart :function (options) {
 ///Name of the vertical axis to be used for positioning the annotation.This property is applicable only when coordinateUnit is points.
 ///<br/>yAxisName-string	default-
 ///<br/><br/>
+///Sets the background color of the  chart.
+///<br/>background-string	default-transparent
+///<br/><br/>
 ///URL of the image to be used as chart background.
 ///<br/>backGroundImageUrl-string	default-null
 ///<br/><br/>
@@ -1573,6 +1591,9 @@ ejChart :function (options) {
 ///Options for configuring the properties of all the series. You can also override the options for specific series by using series collection.
 ///<br/>commonSeriesOptions-CommonSeriesOptions	default-
 ///<br/><br/>
+///Specifies animation duration for series rendering
+///<br/>animationDuration-string	default-null
+///<br/><br/>
 ///Options to customize the border of all the series.
 ///<br/>border-any	default-
 ///<br/><br/>
@@ -1585,7 +1606,7 @@ ejChart :function (options) {
 ///Border width of all series.
 ///<br/>width-number	default-1
 ///<br/><br/>
-///To render the column and bar type series in rectangle/cylinder shape. See ColumnFacet
+///To render the column and bar type series in rectangle/cylinder shape. See 
 ///<br/>columnFacet-ej.datavisualization.Chart.ColumnFacet|string	default-rectangle
 ///<br/><br/>
 ///Relative width of the columns in column type series. Value ranges from 0 to 1. Width also depends upon columnSpacing property.
@@ -1606,13 +1627,16 @@ ejChart :function (options) {
 ///Set the dataSource for all series. It can be an array of JSON objects or an instance of ej.DataManager.
 ///<br/>dataSource-any	default-null
 ///<br/><br/>
+///Specifies spline tension value for cardianal spline type. Value ranges from 0 to 1.
+///<br/>cardinalSplineTension-number	default-0.5
+///<br/><br/>
 ///Controls the size of the hole in doughnut series. Value ranges from 0 to 1
 ///<br/>doughnutCoefficient-number	default-0.4
 ///<br/><br/>
 ///Controls the size of the doughnut series. Value ranges from 0 to 1.
 ///<br/>doughnutSize-number	default-0.8
 ///<br/><br/>
-///Specifies the type of series to be drawn in radar or polar series.
+///Specifies the type of series to be drawn in radar or polar series. 
 ///<br/>drawType-ej.datavisualization.Chart.DrawType|string	default-line. See DrawType
 ///<br/><br/>
 ///Enable/disable the animation for all the series.
@@ -1678,16 +1702,34 @@ ejChart :function (options) {
 ///Renders the chart vertically. This is applicable only for Cartesian type series.
 ///<br/>isTransposed-boolean	default-false
 ///<br/><br/>
-///Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+///Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
 ///<br/>showMedian-boolean	default-true
 ///<br/><br/>
 ///Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
 ///<br/>labelPosition-ej.datavisualization.Chart.LabelPosition|string	default-inside. See LabelPosition
 ///<br/><br/>
-///Quartile calculation has been performed in three different formulas to render the boxplot series.
+///Specifies the mode for splitting the data points in pieOfPie series.
+///<br/>splitMode-ej.datavisualization.Chart.SplitMode|string	default-value. See SplitMode
+///<br/><br/>
+///Quartile calculation has been performed in three different formulas to render the box and whisker series.
 ///<br/>boxPlotMode-ej.datavisualization.Chart.boxPlotMode|string	default-exclusive
 ///<br/><br/>
-///Specifies the line cap of the series.
+///Options for customizing the bubble options of the Bubble series
+///<br/>bubbleOptions-any	default-
+///<br/><br/>
+///Used for the calculation of the bubble radius based on the mode selected 
+///<br/>radiusMode-ej.datavisualization.Chart.RadiusMode|string	default-minmax
+///<br/><br/>
+///Used for the setting the minimum radius of the bubble
+///<br/>minRadius-number	default-1
+///<br/><br/>
+///Used for setting the maximum radius of the bubble
+///<br/>maxRadius-number	default-3
+///<br/><br/>
+///To render the spline series curve in different forms. 
+///<br/>splineType-ej.datavisualization.Chart.SplineType|string	default-natural. See SplineType
+///<br/><br/>
+///Specifies the line cap of the series. 
 ///<br/>lineCap-ej.datavisualization.Chart.LineCap|string	default-butt. See LineCap
 ///<br/><br/>
 ///Specifies the type of shape to be used where two lines meet.
@@ -1716,6 +1758,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Enable the wrap option to the data label.
 ///<br/>enableWrap-boolean	default-false
+///<br/><br/>
+///Enables saturation to the data label.
+///<br/>enableContrastColor-boolean	default-false
 ///<br/><br/>
 ///Options for customizing the border of the data label.
 ///<br/>border-any	default-
@@ -1765,7 +1810,7 @@ ejChart :function (options) {
 ///Font size of the data label.
 ///<br/>size-string	default-12px
 ///<br/><br/>
-///Horizontal alignment of the data label.
+///Horizontal alignment of the data label. 
 ///<br/>horizontalTextAlignment-ej.datavisualization.Chart.HorizontalTextAlignment|string	default-center
 ///<br/><br/>
 ///Margin of the text to its background shape. The size of the background shape increases based on the margin applied to its text.
@@ -1786,7 +1831,16 @@ ejChart :function (options) {
 ///Opacity of the data label.
 ///<br/>opacity-number	default-1
 ///<br/><br/>
-///Background shape of the data label.
+///Options for customizing the datalabel positions
+///<br/>offset-any|number	default-
+///<br/><br/>
+///X value or horizontal offset to position the labels in chart.
+///<br/>x-number	default-0
+///<br/><br/>
+///Y value or vertical offset to position the labels.
+///<br/>y-number	default-0
+///<br/><br/>
+///Background shape of the data label. 
 ///<br/>shape-ej.datavisualization.Chart.Shape|string	default-none. See Shape
 ///<br/><br/>
 ///Custom template to format the data label content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
@@ -1798,7 +1852,7 @@ ejChart :function (options) {
 ///Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC.
 ///<br/>textPosition-ej.datavisualization.Chart.TextPosition|string	default-top. See TextPosition
 ///<br/><br/>
-///Vertical alignment of the data label.
+///Vertical alignment of the data label. 
 ///<br/>verticalTextAlignment-ej.datavisualization.Chart.VerticalTextAlignment|string	default-center
 ///<br/><br/>
 ///Controls the visibility of the data labels.
@@ -1852,10 +1906,19 @@ ejChart :function (options) {
 ///Controls the size of pie series. Value ranges from 0 to 1.
 ///<br/>pieCoefficient-number	default-0.8
 ///<br/><br/>
+///Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
+///<br/>pieOfPieCoefficient-number	default-0.6
+///<br/><br/>
+///Split Value of pieofpie series.
+///<br/>splitValue-string	default-null
+///<br/><br/>
+///Distance between the two pie's in pieOfPie series.
+///<br/>gapWidth-number	default-50
+///<br/><br/>
 ///Name of the property in the datasource that contains fill color for the series.
 ///<br/>pointColorMappingName-string	default-null
 ///<br/><br/>
-///Specifies the mode of the pyramid series.
+///Specifies the mode of the pyramid series. 
 ///<br/>pyramidMode-ej.datavisualization.Chart.PyramidMode|string	default-linear. See PyramidMode
 ///<br/><br/>
 ///Start angle from where the pie/doughnut series renders. By default it starts from 0.
@@ -1915,7 +1978,7 @@ ejChart :function (options) {
 ///Controls the visibility of the tooltip.
 ///<br/>visible-boolean	default-false
 ///<br/><br/>
-///Specifies the type of the series to render in chart.
+///Specifies the type of the series to render in chart. 
 ///<br/>type-ej.datavisualization.Chart.Type|string	default-column. See Type
 ///<br/><br/>
 ///Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
@@ -2059,6 +2122,9 @@ ejChart :function (options) {
 ///Show/hides the trendline.
 ///<br/>visibility-boolean	default-
 ///<br/><br/>
+///Show/hides the trendline legend.
+///<br/>visibleOnLegend-string	default-visible
+///<br/><br/>
 ///Specifies the type of the trendline for the series.
 ///<br/>type-string	default-linear. See TrendlinesType
 ///<br/><br/>
@@ -2088,6 +2154,42 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Specifies the moving average starting period value.
 ///<br/>period-number	default-2
+///<br/><br/>
+///Options for customizing the tooltip of the trendlines in the chart.
+///<br/>tooltip-any	default-
+///<br/><br/>
+///Options for customizing the border of the  trendline tooltip.
+///<br/>border-any	default-
+///<br/><br/>
+///Border color of the trendline tooltip.
+///<br/>color-string	default-null
+///<br/><br/>
+///Border width of the trendline tooltip.
+///<br/>width-number	default-1
+///<br/><br/>
+///Customize the corner radius of the trendline tooltip rectangle.
+///<br/>rx-number	default-0
+///<br/><br/>
+///Customize the corner radius of the trendline tooltip rectangle.
+///<br/>ry-number	default-0
+///<br/><br/>
+///Specifies the duration, the tooltip has to be displayed.
+///<br/>duration-string	default-500ms
+///<br/><br/>
+///Enables/disables the animation of the trendline tooltip when moving from one point to other.
+///<br/>enableAnimation-boolean	default-true
+///<br/><br/>
+///Background color of the trendline tooltip.
+///<br/>fill-string	default-null
+///<br/><br/>
+///Format of the tooltip content displayed in the trendlines.
+///<br/>format-string	default-#point.x# : #point.y#
+///<br/><br/>
+///Opacity of the trendline tooltip.
+///<br/>opacity-number	default-0.5
+///<br/><br/>
+///Specifies the intercept value of the trendlines.
+///<br/>intercept-number	default-null
 ///<br/><br/>
 ///Options for customizing the appearance of the series or data point while highlighting.
 ///<br/>highlightSettings-any	default-
@@ -2154,6 +2256,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Custom pattern for the series on selection.
 ///<br/>customPattern-string	default-
+///<br/><br/>
+///Options for displaying the chart along with selected points while loading
+///<br/>selectedDataPointIndexes-Array&lt;any&gt;	default-[ ]
 ///<br/><br/>
 ///Options for displaying and customizing the crosshair.
 ///<br/>crosshair-Crosshair	default-
@@ -2247,6 +2352,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Enables/disables the animation.
 ///<br/>enableAnimation-boolean	default-false
+///<br/><br/>
+///Specifies animation duration for indicator rendering.
+///<br/>animationDuration-boolean	default-null
 ///<br/><br/>
 ///Color of the technical indicator.
 ///<br/>fill-string	default-#00008B
@@ -2452,7 +2560,7 @@ ejChart :function (options) {
 ///Opacity of the legend.
 ///<br/>opacity-number	default-1
 ///<br/><br/>
-///Places the legend at specified position. Legend can be placed at left, right, top or bottom of the chart area.To manually specify the location of legend, set custom as value to this property.
+///Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. To manually specify the location of legend, set **custom** as value to this property.
 ///<br/>position-ej.datavisualization.Chart.Position|string	default-Bottom. See Position
 ///<br/><br/>
 ///Number of rows to arrange the legend items.
@@ -2502,6 +2610,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Controls the visibility of the legend.
 ///<br/>visible-boolean	default-true
+///<br/><br/>
+///Controls the selection through the legend.
+///<br/>toggleSeriesVisibility-boolean	default-true
 ///<br/><br/>
 ///Name of the culture based on which chart should be localized. Number and date time values are localized with respect to the culture name.String type properties like title text are not localized automatically. Provide localized text as value to string type properties.
 ///<br/>locale-string	default-en-US
@@ -2560,6 +2671,9 @@ ejChart :function (options) {
 ///Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting â€˜isIndexedâ€™ property to true.
 ///<br/>isIndexed-boolean	default-false
 ///<br/><br/>
+///Specifies the interval of the axis according to the zoomed data of the chart.
+///<br/>enableAutoIntervalOnZooming-boolean	default-true
+///<br/><br/>
 ///Options for customizing the axis line.
 ///<br/>axisLine-any	default-
 ///<br/><br/>
@@ -2593,10 +2707,10 @@ ejChart :function (options) {
 ///With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
 ///<br/>desiredIntervals-number	default-null
 ///<br/><br/>
-///Specifies the placement of labels.
+///Specifies the placement of labels. 
 ///<br/>labelPlacement-ej.datavisualization.Chart.LabelPlacement|string	default-ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See LabelPlacement
 ///<br/><br/>
-///Specifies the position of labels at the edge of the axis.
+///Specifies the position of labels at the edge of the axis. 
 ///<br/>edgeLabelPlacement-ej.datavisualization.Chart.EdgeLabelPlacement|string	default-ej.datavisualization.Chart.EdgeLabelPlacement.None. See EdgeLabelPlacement
 ///<br/><br/>
 ///Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
@@ -2629,7 +2743,7 @@ ejChart :function (options) {
 ///Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
 ///<br/>labelFormat-string	default-null
 ///<br/><br/>
-///Specifies the action to take when the axis labels are overlapping with each other.
+///Specifies the action to take when the axis labels are overlapping with each other. 
 ///<br/>labelIntersectAction-ej.datavisualization.Chart.LabelIntersectAction|string	default-ej.datavisualization.Chart.LabelIntersectAction.None. See LabelIntersectAction
 ///<br/><br/>
 ///Specifies the position of the axis labels.
@@ -2713,6 +2827,9 @@ ejChart :function (options) {
 ///Specifies whether to render the axis at the opposite side of its default position.
 ///<br/>opposedPosition-boolean	default-false
 ///<br/><br/>
+///Specifies the orientation of the axis line
+///<br/>orientation-ej.datavisualization.Chart.AxisOrientation|string	default-Horizontal
+///<br/><br/>
 ///Specifies the padding for the plot area.
 ///<br/>plotOffset-number	default-10
 ///<br/><br/>
@@ -2744,10 +2861,10 @@ ejChart :function (options) {
 ///<br/>text-string	default-
 ///<br/><br/>
 ///Starting value of the multi level labels.
-///<br/>start-number	default-null
+///<br/>start-any	default-null
 ///<br/><br/>
 ///Ending value of the multi level labels.
-///<br/>end-number	default-null
+///<br/>end-any	default-null
 ///<br/><br/>
 ///Specifies the level of multi level labels.
 ///<br/>level-number	default-0
@@ -2793,6 +2910,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Border type of the multi level labels.
 ///<br/>type-ej.datavisualization.Chart.MultiLevelLabelsBorderType|string	default-rectangle. See Type
+///<br/><br/>
+///Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
+///<br/>showNextToAxisLine-boolean	default-true
 ///<br/><br/>
 ///Options for customizing the strip lines.
 ///<br/>stripLine-Array&lt;any&gt;	default-[ ]
@@ -2913,6 +3033,27 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Position of the zoomed axis. Value ranges from 0 to 1.
 ///<br/>zoomPosition-number	default-0
+///<br/><br/>
+///Options for customizing the axis scrollbar
+///<br/>scrollbarSettings-any	default-
+///<br/><br/>
+///Specifies to enables or disables the scroll bar.
+///<br/>visible-boolean	default-false
+///<br/><br/>
+///Controls whether scrollbar has to be responsive in the chart.
+///<br/>canResize-boolean	default-false
+///<br/><br/>
+///Options to customize the range for the scrollbar in the axis.
+///<br/>range-any	default-
+///<br/><br/>
+///Minimum value of the scrollbar range.
+///<br/>min-number	default-null
+///<br/><br/>
+///Maximum value for the scrollbar range .
+///<br/>max-number	default-null
+///<br/><br/>
+///The maximum number of points to be displayed in the scrollbar.
+///<br/>pointsLength-number	default-null
 ///<br/><br/>
 ///To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the seriesâ€™s xAxisName property to link both axis and series.
 ///<br/>axes-Array&lt;Axes&gt;	default-
@@ -2986,6 +3127,9 @@ ejChart :function (options) {
 ///Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
 ///<br/>enableTrim-boolean	default-false
 ///<br/><br/>
+///Specifies the interval of the axis according to the zoomed data of the chart.
+///<br/>enableAutoIntervalOnZooming-boolean	default-true
+///<br/><br/>
 ///Options for customizing the font of the axis Labels.
 ///<br/>font-any	default-
 ///<br/><br/>
@@ -3097,6 +3241,9 @@ ejChart :function (options) {
 ///Specifies whether to render the axis at the opposite side of its default position.
 ///<br/>opposedPosition-boolean	default-false
 ///<br/><br/>
+///Specifies the orientation of the axis line in the chart.
+///<br/>orientation-ej.datavisualization.Chart.AxisOrientation|string	default-&#39;horizontal&#39;
+///<br/><br/>
 ///Specifies the padding for the plot area.
 ///<br/>plotOffset-number	default-10
 ///<br/><br/>
@@ -3128,10 +3275,10 @@ ejChart :function (options) {
 ///<br/>text-string	default-
 ///<br/><br/>
 ///Starting value of the multi level labels.
-///<br/>start-number	default-null
+///<br/>start-any	default-null
 ///<br/><br/>
 ///Ending value of the multi level labels.
-///<br/>end-number	default-null
+///<br/>end-any	default-null
 ///<br/><br/>
 ///Specifies the level of multi level labels.
 ///<br/>level-number	default-0
@@ -3177,6 +3324,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Border type of the multi level labels.
 ///<br/>type-ej.datavisualization.Chart.MultiLevelLabelsBorderType|string	default-rectangle. See Type
+///<br/><br/>
+///Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
+///<br/>showNextToAxisLine-boolean	default-true
 ///<br/><br/>
 ///Options for customizing the strip lines.
 ///<br/>stripLine-Array&lt;any&gt;	default-[ ]
@@ -3298,6 +3448,27 @@ ejChart :function (options) {
 ///Position of the zoomed axis. Value ranges from 0 to 1.
 ///<br/>zoomPosition-number	default-0
 ///<br/><br/>
+///Options for customizing the axis scrollbar.
+///<br/>scrollbarSettings-any	default-
+///<br/><br/>
+///Specifies to enable or disable the scrollbar.
+///<br/>visible-boolean	default-false
+///<br/><br/>
+///Controls whether scrollbar has to be responsive in the chart.
+///<br/>canResize-boolean	default-false
+///<br/><br/>
+///Options to customize the range for the scrollbar in the axis.
+///<br/>range-any	default-
+///<br/><br/>
+///Minimum value of the scrollbar range.
+///<br/>min-number	default-null
+///<br/><br/>
+///Maximum value for the scrollbar range .
+///<br/>max-number	default-null
+///<br/><br/>
+///The maximum number of points to be displayed in the scrollbar.
+///<br/>pointsLength-number	default-null
+///<br/><br/>
 ///This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the seriesâ€™s yAxisName property to link both axis and series.
 ///<br/>primaryYAxis-PrimaryYAxis	default-
 ///<br/><br/>
@@ -3321,6 +3492,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Opacity of odd grid band.
 ///<br/>opacity-number	default-1
+///<br/><br/>
+///Specifies the interval of the axis according to the zoomed data of the chart.
+///<br/>enableAutoIntervalOnZooming-boolean	default-true
 ///<br/><br/>
 ///Options for customizing the axis line.
 ///<br/>axisLine-any	default-
@@ -3472,6 +3646,9 @@ ejChart :function (options) {
 ///Specifies whether to render the axis at the opposite side of its default position.
 ///<br/>opposedPosition-boolean	default-false
 ///<br/><br/>
+///Specifies the orientation of the axis line in the chart.
+///<br/>orientation-ej.datavisualization.Chart.AxisOrientation|string	default-Vertical
+///<br/><br/>
 ///Specifies the padding for the plot area.
 ///<br/>plotOffset-number	default-10
 ///<br/><br/>
@@ -3558,6 +3735,30 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Border type of the multi level labels.
 ///<br/>type-ej.datavisualization.Chart.MultiLevelLabelsBorderType|string	default-rectangle. See Type
+///<br/><br/>
+///Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
+///<br/>showNextToAxisLine-boolean	default-true
+///<br/><br/>
+///Options for customizing the axis scrollbar.
+///<br/>scrollbarSettings-any	default-
+///<br/><br/>
+///Specifies to enable or disable the scrollbar.
+///<br/>visible-boolean	default-false
+///<br/><br/>
+///Controls whether scrollbar has to be responsive in the chart.
+///<br/>canResize-boolean	default-false
+///<br/><br/>
+///Options to customize the range for the scrollbar in the axis.
+///<br/>range-any	default-
+///<br/><br/>
+///Minimum value of the scrollbar range.
+///<br/>min-number	default-null
+///<br/><br/>
+///Maximum value for the scrollbar range .
+///<br/>max-number	default-null
+///<br/><br/>
+///The maximum number of points to be displayed in the scrollbar.
+///<br/>pointsLength-number	default-null
 ///<br/><br/>
 ///Options for customizing the strip lines.
 ///<br/>stripLine-Array&lt;any&gt;	default-[ ]
@@ -3715,6 +3916,9 @@ ejChart :function (options) {
 ///DashArray for border of the series.
 ///<br/>dashArray-string	default-null
 ///<br/><br/>
+///Specifies animation duration for series rendering.
+///<br/>animationDuration-string	default-null
+///<br/><br/>
 ///Color of the point, where the close is down in financial chart.
 ///<br/>bullFillColor-string	default-null
 ///<br/><br/>
@@ -3735,6 +3939,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
 ///<br/>dataSource-any	default-null
+///<br/><br/>
+///Specifies spline tension values for cardianal spline type.Value ranges from 0 to 1.
+///<br/>cardinalSplineTension-number	default-0.5
 ///<br/><br/>
 ///Controls the size of the hole in doughnut series. Value ranges from 0 to 1.
 ///<br/>doughnutCoefficient-number	default-0.4
@@ -3808,14 +4015,32 @@ ejChart :function (options) {
 ///Renders the chart vertically. This is applicable only for Cartesian type series.
 ///<br/>isTransposed-boolean	default-false
 ///<br/><br/>
-///Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+///Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
 ///<br/>showMedian-boolean	default-true
 ///<br/><br/>
 ///Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
 ///<br/>labelPosition-ej.datavisualization.Chart.LabelPosition|string	default-inside. See LabelPosition
 ///<br/><br/>
+///Specifies the mode for splitting the data points in pieOfPie series.
+///<br/>splitMode-ej.datavisualization.Chart.SplitMode|string	default-value. See SplitMode
+///<br/><br/>
 ///Quartile calculation has been performed in three different formulas to render the boxplot series .
 ///<br/>boxPlotMode-ej.datavisualization.Chart.LabelPosition|string	default-exclusive
+///<br/><br/>
+///Options for customizing the bubble options of the Bubble series
+///<br/>bubbleOptions-any	default-
+///<br/><br/>
+///Used for the calculation of the bubble radius based on the mode selected
+///<br/>radiusMode-ej.datavisualization.Chart.RadiusMode|string	default-minmax .See RadiusMode
+///<br/><br/>
+///Used for the setting the minimum radius of the bubble
+///<br/>minRadius-number	default-1
+///<br/><br/>
+///Used for setting the maximum radius of the bubble
+///<br/>maxRadius-number	default-3
+///<br/><br/>
+///Specifies the different types of spline curve.
+///<br/>splineType-ej.datavisualization.Chart.SplineType|string	default-Natural. See SplineType
 ///<br/><br/>
 ///Specifies the line cap of the series.
 ///<br/>lineCap-ej.datavisualization.Chart.LineCap|string	default-Butt. See LineCap
@@ -3846,6 +4071,9 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Enable the wrap option to the data label.
 ///<br/>enableWrap-boolean	default-false
+///<br/><br/>
+///Enables saturation to the data label.
+///<br/>enableContrastColor-boolean	default-false
 ///<br/><br/>
 ///Options for customizing the border of the data label.
 ///<br/>border-any	default-
@@ -3934,8 +4162,14 @@ ejChart :function (options) {
 ///Custom template to format the data label content. Use â€œpoint.xâ€ and â€œpoint.yâ€ as a placeholder text to display the corresponding data pointâ€™s x and y value.
 ///<br/>template-string	default-
 ///<br/><br/>
-///Moves the label vertically by some offset.
-///<br/>offset-number	default-0
+///Options for customizing the datalabel positions
+///<br/>offset-any|number	default-
+///<br/><br/>
+///X value or horizontal offset to position the labels in chart.
+///<br/>x-number	default-0
+///<br/><br/>
+///Y value or vertical offset to position the labels.
+///<br/>y-number	default-0
 ///<br/><br/>
 ///Color of the marker shape.
 ///<br/>fill-string	default-null
@@ -3987,6 +4221,15 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Controls the size of pie series. Value ranges from 0 to 1.
 ///<br/>pieCoefficient-number	default-0.8
+///<br/><br/>
+///Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
+///<br/>pieOfPieCoefficient-number	default-0.6
+///<br/><br/>
+///Split Value of pieofpie series.
+///<br/>splitValue-string	default-null
+///<br/><br/>
+///Distance between the two pie's in pieOfPie series.
+///<br/>gapWidth-number	default-50
 ///<br/><br/>
 ///Options for customizing the empty point in the series.
 ///<br/>emptyPointSettings-any	default-
@@ -4402,6 +4645,45 @@ ejChart :function (options) {
 ///Specifies the moving average starting period  value.
 ///<br/>period-number	default-2
 ///<br/><br/>
+///Options for customizing the trendline tooltip
+///<br/>tooltip-any	default-
+///<br/><br/>
+///Options for customizing the border of the trendline tooltip.
+///<br/>border-any	default-
+///<br/><br/>
+///Specify the Border color of the  trendline tooltip.
+///<br/>color-string	default-null
+///<br/><br/>
+///Border width of the trendline tooltip.
+///<br/>width-number	default-1
+///<br/><br/>
+///Customize the corner radius of the trendline tooltip rectangle.
+///<br/>rx-number	default-0
+///<br/><br/>
+///Customize the corner radius of the trendline tooltip rectangle.
+///<br/>ry-number	default-0
+///<br/><br/>
+///Specifies the duration of the trendline tooltip to be displayed.
+///<br/>duration-string	default-500ms
+///<br/><br/>
+///Enables/disables the animation of the trendline tooltip when moving from one point to other.
+///<br/>enableAnimation-boolean	default-true
+///<br/><br/>
+///Background color of the trendline tooltip.
+///<br/>fill-string	default-null
+///<br/><br/>
+///Format of the trendline tooltip content.
+///<br/>format-string	default-#point.x# : #point.y#
+///<br/><br/>
+///Opacity of the trendline tooltip.
+///<br/>opacity-number	default-0.5
+///<br/><br/>
+///Show/hides the trendline legend.
+///<br/>visibleOnLegend-string	default-visible
+///<br/><br/>
+///Specifies the trendline intercept value
+///<br/>intercept-number	default-null
+///<br/><br/>
 ///Options for customizing the appearance of the series or data point while highlighting.
 ///<br/>highlightSettings-any	default-
 ///<br/><br/>
@@ -4525,6 +4807,18 @@ ejChart :function (options) {
 ///Font size for Chart title.
 ///<br/>size-string	default-20px
 ///<br/><br/>
+///Controls the visibility of the Chart title
+///<br/>visible-boolean	default-true
+///<br/><br/>
+///Specifies whether to trim the Chart Title when the width of the title exceeds the maximumWidth.
+///<br/>enableTrim-boolean	default-false
+///<br/><br/>
+///Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true.
+///<br/>maximumWidth-string	default-auto
+///<br/><br/>
+///Specifies the action taken when the Chart width is more than the titleWidth.
+///<br/>textOverflow-ej.datavisualization.Chart.TextOverflow|string	default-trim.
+///<br/><br/>
 ///Options to customize the sub title of Chart.
 ///<br/>subTitle-any	default-
 ///<br/><br/>
@@ -4569,6 +4863,18 @@ ejChart :function (options) {
 ///<br/><br/>
 ///Alignment of sub title text.
 ///<br/>textAlignment-ej.datavisualization.Chart.Alignment|string	default-far. See TextAlignment
+///<br/><br/>
+///Controls the visibility of the Chart SubTitle
+///<br/>visible-boolean	default-true
+///<br/><br/>
+///Specifies whether to trim the Chart SubTitle when the width of the Subtitle exceeds the maximumWidth.
+///<br/>enableTrim-boolean	default-false
+///<br/><br/>
+///Maximum width of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true.
+///<br/>maximumWidth-string	default-auto
+///<br/><br/>
+///Specifies the action taken when the Chart width is more than the SubTitleWidth.
+///<br/>textOverflow-ej.datavisualization.Chart.TextOverflow|string	default-trim.
 ///<br/><br/>
 ///Text to be displayed in Chart title.
 ///<br/>text-string	default-
@@ -5259,8 +5565,17 @@ ejCircularGauge :function (options) {
 ///Specify distanceFromCorner value of circular gauge
 ///<br/>distanceFromCorner-number	default-center
 ///<br/><br/>
+///Specify range zOrder placement of circular gauge.
+///<br/>rangeZOrder-ej.datavisualization.CircularGauge.RangeZOrderPlacement|string	default-Rear
+///<br/><br/>
 ///Specify animate value of circular gauge
 ///<br/>enableAnimation-boolean	default-true
+///<br/><br/>
+///Specify to convert the  date object to  string, using locale settings.
+///<br/>enableGroupSeparator-boolean	default-false
+///<br/><br/>
+///Controls whether circular gauge has to be responsive while resizing.
+///<br/>enableResize-boolean	default-false
 ///<br/><br/>
 ///Specify the frame of circular gauge
 ///<br/>frame-Frame	default-Object
@@ -5268,7 +5583,7 @@ ejCircularGauge :function (options) {
 ///Specify the URL of the frame background image for circular gauge
 ///<br/>backgroundImageUrl-string	default-null
 ///<br/><br/>
-///Specifies the frameType of circular gauge. See Frame
+///Specifies the frameType of circular gauge. See 
 ///<br/>frameType-ej.datavisualization.CircularGauge.FrameType|string	default-FullCircle
 ///<br/><br/>
 ///Specifies the end angle for the half circular frame.
@@ -5292,14 +5607,17 @@ ejCircularGauge :function (options) {
 ///Specify isResponsive value of circular gauge
 ///<br/>isResponsive-boolean	default-false
 ///<br/><br/>
+///Name of the culture based on which circular gauge should be localized.
+///<br/>locale-string	default-en-US
+///<br/><br/>
 ///Specifies the maximum value of circular gauge.
 ///<br/>maximum-number	default-100
 ///<br/><br/>
 ///Specifies the minimum value of circular gauge.
 ///<br/>minimum-number	default-0
 ///<br/><br/>
-///Specify outerCustomLabelPosition value of circular gauge See OuterCustomLabelPosition
-///<br/>outerCustomLabelPosition-ej.datavisualization.CircularGauge.CustomLabelPositionType|string	default-bottom
+///Specify outerCustomLabelPosition value of circular gauge See 
+///<br/>outerCustomLabelPosition-ej.datavisualization.CircularGauge.OuterCustomLabelPosition|string	default-bottom
 ///<br/><br/>
 ///Specifies the radius of circular gauge.
 ///<br/>radius-number	default-180
@@ -5322,7 +5640,7 @@ ejCircularGauge :function (options) {
 ///Specify border width of circular gauge
 ///<br/>width-number	default-1.5
 ///<br/><br/>
-///Specify scale direction of circular gauge. See Directions
+///Specify scale direction of circular gauge. See 
 ///<br/>direction-ej.datavisualization.CircularGauge.Direction|string	default-Clockwise
 ///<br/><br/>
 ///Specify the custom labels for the scales.
@@ -5343,6 +5661,9 @@ ejCircularGauge :function (options) {
 ///Specify y-axis  position of labels.
 ///<br/>y-number	default-0
 ///<br/><br/>
+///Specify angle for the rotation of the custom labels in degrees.
+///<br/>textAngle-number	default-0
+///<br/><br/>
 ///Specify font for custom labels
 ///<br/>font-any	default-Object
 ///<br/><br/>
@@ -5354,6 +5675,9 @@ ejCircularGauge :function (options) {
 ///<br/><br/>
 ///Specify font size for custom labels.
 ///<br/>size-string	default-12px
+///<br/><br/>
+///Specifies the position of the  custom labels. See 
+///<br/>positionType-ej.datavisualization.CircularGauge.CustomLabelPositionType|string	default-inner
 ///<br/><br/>
 ///Specify representing state of circular gauge
 ///<br/>indicators-Array&lt;any&gt;	default-Array
@@ -5397,7 +5721,7 @@ ejCircularGauge :function (options) {
 ///Specify value of the textColor as the indicator when the indicator style is set with the value "text" of circular gauge
 ///<br/>textColor-string	default-null
 ///<br/><br/>
-///Specify indicator style of circular gauge. See IndicatorType
+///Specify indicator style of circular gauge. See 
 ///<br/>type-ej.datavisualization.CircularGauge.IndicatorTypes|string	default-Circle
 ///<br/><br/>
 ///Specify indicator width of circular gauge
@@ -5436,10 +5760,10 @@ ejCircularGauge :function (options) {
 ///Specify opacity value for labels of circular gauge
 ///<br/>opacity-number	default-null
 ///<br/><br/>
-///Specify label placement of circular gauge. See LabelPlacement
+///Specify label placement of circular gauge. See 
 ///<br/>placement-ej.datavisualization.CircularGauge.Placement|string	default-Near
 ///<br/><br/>
-///Specify label Style of circular gauge. See LabelType
+///Specify label Style of circular gauge. See 
 ///<br/>type-ej.datavisualization.CircularGauge.LabelType|string	default-Major
 ///<br/><br/>
 ///Specify unitText of circular gauge
@@ -5511,10 +5835,10 @@ ejCircularGauge :function (options) {
 ///Specify pointer length of circular gauge
 ///<br/>length-number	default-150
 ///<br/><br/>
-///Specify marker Style value of circular gauge. See MarkerType
+///Specify marker Style value of circular gauge. See 
 ///<br/>markerType-ej.datavisualization.CircularGauge.MarkerType|string	default-Rectangle
 ///<br/><br/>
-///Specify needle Style value of circular gauge. See NeedleType
+///Specify needle Style value of circular gauge. See 
 ///<br/>needleType-ej.datavisualization.CircularGauge.NeedleType|string	default-Triangle
 ///<br/><br/>
 ///Specify opacity value for pointer of circular gauge
@@ -5562,7 +5886,7 @@ ejCircularGauge :function (options) {
 ///Specify showBackNeedle value of circular gauge
 ///<br/>showBackNeedle-boolean	default-false
 ///<br/><br/>
-///Specify pointer type value of circular gauge. See PointerType
+///Specify pointer type value of circular gauge. See 
 ///<br/>type-ej.datavisualization.CircularGauge.PointerType|string	default-Needle
 ///<br/><br/>
 ///Specify value of the pointer of circular gauge
@@ -5579,6 +5903,9 @@ ejCircularGauge :function (options) {
 ///<br/><br/>
 ///Specify backgroundColor for the ranges of circular gauge
 ///<br/>backgroundColor-string	default-#32b3c6
+///<br/><br/>
+///Specify text for the ranges of circular gauge
+///<br/>legendText-string	default-null
 ///<br/><br/>
 ///Specify border for ranges of circular gauge
 ///<br/>border-any	default-Object
@@ -5690,6 +6017,87 @@ ejCircularGauge :function (options) {
 ///<br/><br/>
 ///Specify the theme of circular gauge.
 ///<br/>theme-string	default-flatlight
+///<br/><br/>
+///Options to customize the legend.
+///<br/>legend-Legend	default-
+///<br/><br/>
+///Toggles the visibility of the legend.
+///<br/>visible-boolean	default-false
+///<br/><br/>
+///Toggles the visibility of the ranges.
+///<br/>toggleVisibility-boolean	default-true
+///<br/><br/>
+///Specifies the alignment of the legend.
+///<br/>alignment-ej.datavisualization.CircularGauge.LegendAlignment|string	default-Center. See Alignment
+///<br/><br/>
+///Options for customizing the legend border.
+///<br/>border-any	default-
+///<br/><br/>
+///Border color of the legend.
+///<br/>color-string	default-transparent
+///<br/><br/>
+///Border width of the legend.
+///<br/>width-number	default-1
+///<br/><br/>
+///Fill color for the legend items. By using this property, it displays all legend item shapes in same color.Legend items representing invisible ranges is displayed in gray color.
+///<br/>fill-string	default-null
+///<br/><br/>
+///Gap or padding between the legend items.
+///<br/>itemPadding-number	default-20
+///<br/><br/>
+///Options to customize the style of legend items.
+///<br/>itemStyle-any	default-
+///<br/><br/>
+///Options for customizing the border of legend items.
+///<br/>border-any	default-
+///<br/><br/>
+///Border color of the legend items.
+///<br/>color-string	default-transparent
+///<br/><br/>
+///Border width of the legend items.
+///<br/>width-number	default-1
+///<br/><br/>
+///Specifies the height of the  legend item shapes.
+///<br/>height-number	default-10
+///<br/><br/>
+///Specifies the width of the  legend item shapes.
+///<br/>width-number	default-10
+///<br/><br/>
+///Opacity of the legend.
+///<br/>opacity-number	default-1
+///<br/><br/>
+///Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the circular gauge.
+///<br/>position-ej.datavisualization.CircularGauge.LegendPosition|string	default-Bottom. See Position
+///<br/><br/>
+///Shape of the legend items.
+///<br/>shape-ej.datavisualization.CircularGauge.LegendShape|string	default-Circle. See Shape
+///<br/><br/>
+///Options to customize the size of the legend.
+///<br/>size-any	default-
+///<br/><br/>
+///Specify the height of the legend. Height can be specified in pixel.
+///<br/>height-string	default-null
+///<br/><br/>
+///Specify the width of the legend. Width can be specified in pixel.
+///<br/>width-string	default-null
+///<br/><br/>
+///Options to customize the font used for legend item text.
+///<br/>font-any	default-
+///<br/><br/>
+///Font family for legend item text.
+///<br/>fontFamily-string	default-Segoe UI
+///<br/><br/>
+///Font style for legend item text.
+///<br/>fontStyle-string	default-Normal
+///<br/><br/>
+///Font weight for legend item text.
+///<br/>fontWeight-string	default-Regular
+///<br/><br/>
+///Font size for legend item text.
+///<br/>size-string	default-12px
+///<br/><br/>
+///Font color of the text for legend items.
+///<br/>color-string	default-null
 ///<br/><br/>
 ///Specify tooltip option of circular gauge
 ///<br/>tooltip-Tooltip	default-object
@@ -5964,86 +6372,128 @@ executeLocal:function(query){
 /// <param name="query"	type="ej.query">Sets the default query for the data source.</param>
 /// </signature>
 },
-executeQuery:function(query){
+executeQuery:function(query, done, fail, always){
 /// <signature>
 /// <summary>
 /// The executeQuery property is used to process the data based on the query on URL Binding.
 /// </summary>
 /// <param name="query"	type="ej.query">Sets the default query for the data source.</param>
 /// </signature>
-},
-insert:function(data, tableName){
 /// <signature>
 /// <summary>
-/// It is a method used to inserts a new record in the table.
+/// The executeQuery property is used to process the data based on the query on URL Binding.
+/// </summary>
+/// <param name="done"	type="() =&gt; void">A function to be called if the request succeeds.</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// The executeQuery property is used to process the data based on the query on URL Binding.
+/// </summary>
+/// <param name="fail"	type="() =&gt; void">A function to be called if the request fails.</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// The executeQuery property is used to process the data based on the query on URL Binding.
+/// </summary>
+/// <param name="always"	type="() =&gt; void">A function to be called when the request finishes (after success and error callbacks are executed).</param>
+/// </signature>
+},
+insert:function(data, tableName, query){
+/// <signature>
+/// <summary>
+/// Inserts a data item in the data table.
 /// </summary>
 /// <param name="data"	type="any">JSON data or JSON array</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// It is a method used to inserts a new record in the table.
+/// Inserts a data item in the data table.
 /// </summary>
-/// <param name="tableName"	type="string">name of the table</param>
+/// <param name="tableName"	type="string">Name of the table</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Inserts a data item in the data table.
+/// </summary>
+/// <param name="query"	type="ej.query">Sets the default query for the data source.</param>
 /// </signature>
 },
-remove:function(keyField, value, tableName){
+remove:function(keyField, value, tableName, query){
 /// <signature>
 /// <summary>
 /// It is used to remove the data from the dataSource.
 /// </summary>
-/// <param name="keyField"	type="string">keyColumn to find the data</param>
+/// <param name="keyField"	type="string">KeyColumn to find the data</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// It is used to remove the data from the dataSource.
 /// </summary>
-/// <param name="value"	type="string">specified value for the keyField</param>
+/// <param name="value"	type="string">Specified value for the keyField</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// It is used to remove the data from the dataSource.
 /// </summary>
-/// <param name="tableName"	type="string">name of the source table</param>
+/// <param name="tableName"	type="string">Name of the source table</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// It is used to remove the data from the dataSource.
+/// </summary>
+/// <param name="query"	type="ej.query">Sets the default query for the data source.</param>
 /// </signature>
 },
-saveChanges:function(changes, key, tableName){
+saveChanges:function(changes, key, tableName, query){
 /// <signature>
 /// <summary>
 /// This method is used to save the changes to the corresponding table. You can add a new record, edit an existing record, or delete a record by using this method.
 /// </summary>
-/// <param name="changes"	type="string"></param>
+/// <param name="changes"	type="any">Specified values for the Data Table</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// This method is used to save the changes to the corresponding table. You can add a new record, edit an existing record, or delete a record by using this method.
 /// </summary>
-/// <param name="key"	type="string"></param>
+/// <param name="key"	type="string">KeyColumn to find the data</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// This method is used to save the changes to the corresponding table. You can add a new record, edit an existing record, or delete a record by using this method.
 /// </summary>
-/// <param name="tableName"	type="string"></param>
+/// <param name="tableName"	type="string">Name of the source table</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// This method is used to save the changes to the corresponding table. You can add a new record, edit an existing record, or delete a record by using this method.
+/// </summary>
+/// <param name="query"	type="ej.query">Sets the default query for the data source.</param>
 /// </signature>
 },
-update:function(keyField, value, tableName){
+update:function(keyField, value, tableName, query){
 /// <signature>
 /// <summary>
 /// Updates existing record and saves the changes to the table.
 /// </summary>
-/// <param name="keyField"	type="string"></param>
+/// <param name="keyField"	type="string">KeyColumn to find the data</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// Updates existing record and saves the changes to the table.
 /// </summary>
-/// <param name="value"	type="string"></param>
+/// <param name="value"	type="string">Specified value for the keyField</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// Updates existing record and saves the changes to the table.
 /// </summary>
-/// <param name="tableName"	type="string"></param>
+/// <param name="tableName"	type="string">Name of the source table</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Updates existing record and saves the changes to the table.
+/// </summary>
+/// <param name="query"	type="ej.query">Sets the default query for the data source.</param>
 /// </signature>
 },
 });
@@ -6254,6 +6704,9 @@ ejDatePicker :function (options) {
 ///Specifies the water mark text to be displayed in input text.
 ///<br/>watermarkText-string	default-Select date
 ///<br/><br/>
+///Allows to embed  a new column with the calendar in the popup, which will display the week number of every week in a calendar year.
+///<br/>weekNumber-boolean	default-false
+///<br/><br/>
 ///Specifies the width of the DatePicker input text.
 ///<br/>width-string	default-160px
 ///</summary>
@@ -6287,7 +6740,7 @@ addRanges:function(label, range){
 /// <summary>
 /// Add the preset ranges to DateRangePicker popup.
 /// </summary>
-/// <param name="range"	type="Array&lt;any&gt;">StartDate and endDate of range.</param>
+/// <param name="range"	type="any[]">StartDate and endDate of range.</param>
 /// </signature>
 },
 clearRanges:function(){
@@ -6308,7 +6761,7 @@ enable:function(){
 /// Enable the DateRangePicker control, if it is in disabled state.
 /// </summary>
 },
-getSelectedValue:function(){
+getSelectedRange:function(){
 /// <signature>
 /// <summary>
 /// Returns the startDate and endDate values in the selected ranges in the DateRangePicker control.
@@ -6379,6 +6832,9 @@ ejDateRangePicker :function (options) {
 ///<br/><br/>
 ///Used to add the preset ranges. Added ranges using this, will show in popup in right side for easy selection of different preset ranges.
 ///<br/>ranges-any	default-null
+///<br/><br/>
+///Used to separate the two date strings of the value in the DateRangePicker popup.
+///<br/>separator-string	default--
 ///<br/><br/>
 ///Specifies the start date of the date ranges
 ///<br/>startDate-string|Date	default-null
@@ -6471,6 +6927,9 @@ ejDateTimePicker :function (options) {
 /// <signature>
 /// <summary><br/>
 ///The DateTimePicker control is used to input the date and time with a specific format. It combines the DatePicker and TimePicker controls so that users can select the date and time with their desired format.<br/><br/>
+///Used to allow or restrict the editing in DateTimePicker input field directly. By setting false to this API, You can only pick the date and time values from DateTimePicker popup.
+///<br/>allowEdit-boolean	default-true
+///<br/><br/>
 ///Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
 ///<br/>buttonText-ButtonText	default-{ today: Today, timeNow: Time Now, done: Done, timeTitle: Time }
 ///<br/><br/>
@@ -6535,7 +6994,7 @@ ejDateTimePicker :function (options) {
 ///<br/>minDateTime-string|Date	default-new Date(1/1/1900 12:00:00 AM)
 ///<br/><br/>
 ///Specifies the popup position of DateTimePicker.See below to know available popup positions
-///<br/>popupPosition-string | ej.popupPosition	default-ej.DateTimePicker.Bottom
+///<br/>popupPosition-string | ej.popupPosition	default-ej.PopupPosition.Bottom
 ///<br/><br/>
 ///Indicates that the DateTimePicker value can only be read and canâ€™t change.
 ///<br/>readOnly-boolean	default-false
@@ -6674,7 +7133,7 @@ addPorts:function(name, ports){
 /// <summary>
 /// Add a collection of ports to the node specified by name
 /// </summary>
-/// <param name="ports"	type="Array&lt;any&gt;">a collection of ports to be added to the specified node</param>
+/// <param name="ports"	type="any[]">a collection of ports to be added to the specified node</param>
 /// </signature>
 },
 addSelection:function(node, clearSelection){
@@ -6772,13 +7231,13 @@ fitToPage:function(mode, region, margin){
 /// <summary>
 /// Fit the diagram content into diagram viewport
 /// </summary>
-/// <param name="mode"	type="string">to set the mode of fit to command. See [Fit Mode](/api/js/global#fitmode)</param>
+/// <param name="mode"	type="ej.datavisualization.Diagram.FitMode">to set the mode of fit to command.</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// Fit the diagram content into diagram viewport
 /// </summary>
-/// <param name="region"	type="string">to set whether the region to be fit will be based on diagram elements or page settings [Region](/api/js/global#region)</param>
+/// <param name="region"	type="ej.datavisualization.Diagram.Region">to set whether the region to be fit will be based on diagram elements or page settings.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -6885,6 +7344,34 @@ remove:function(node){
 /// Remove either the given node/connector or the selected element from diagram
 /// </summary>
 /// <param name="node"	type="any">the node/connector to be removed from diagram</param>
+/// </signature>
+},
+removePorts:function(name, ports){
+/// <signature>
+/// <summary>
+/// Add a collection of ports to the node specified by name
+/// </summary>
+/// <param name="name"	type="string">name of the node to which the ports have to be added</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Add a collection of ports to the node specified by name
+/// </summary>
+/// <param name="ports"	type="any[]">a collection of ports to be deleted from the specified node</param>
+/// </signature>
+},
+removeLabels:function(name, labels){
+/// <signature>
+/// <summary>
+/// Add a collection of ports to the node specified by name
+/// </summary>
+/// <param name="name"	type="string">name of the node to which the ports have to be added</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Add a collection of ports to the node specified by name
+/// </summary>
+/// <param name="labels"	type="any[]">a collection of labels to be deleted from the specified node</param>
 /// </signature>
 },
 removeSelection:function(node){
@@ -7240,6 +7727,21 @@ ejDiagram :function (options) {
 ///To set the margin of the label in bottom direction
 ///<br/>bottom-number	default-0
 ///<br/><br/>
+///Sets the value which is used to drag the label within certain bounds.
+///<br/>dragLimit-any	default-null
+///<br/><br/>
+///To set the drag limit of the label in right direction
+///<br/>right-number	default-10
+///<br/><br/>
+///To set the drag limit of the label in left direction
+///<br/>left-number	default-10
+///<br/><br/>
+///To set the drag limit of the label in top direction
+///<br/>top-number	default-10
+///<br/><br/>
+///To set the drag limit of the label in bottom direction
+///<br/>bottom-number	default-10
+///<br/><br/>
 ///Defines the transparency of labels
 ///<br/>opacity-number	default-1
 ///<br/><br/>
@@ -7483,11 +7985,20 @@ ejDiagram :function (options) {
 ///Defines the collection of context menu items
 ///<br/>items-Array&lt;any&gt;	default-[]
 ///<br/><br/>
+///Defines the text for the collection of context menu item
+///<br/>text-string	default-null
+///<br/><br/>
+///Defines the name for the collection of context menu items
+///<br/>name-string	default-null
+///<br/><br/>
 ///Defines the image url for the collection of context menu items
 ///<br/>imageUrl-string	default-null
 ///<br/><br/>
 ///Defines the CssClass for the collection of context menu items
 ///<br/>cssClass-string	default-null
+///<br/><br/>
+///Defines the collection of sub items for the context menu items
+///<br/>subItems-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///To set whether to display the default context menu items or not
 ///<br/>showCustomMenuItemsOnly-boolean	default-false
@@ -7512,6 +8023,69 @@ ejDiagram :function (options) {
 ///<br/><br/>
 ///Describes the name of the table on which the specified query has to be executed
 ///<br/>tableName-string	default-null
+///<br/><br/>
+///Specifies the method name which is used to get the updated data from client side to the server side
+///<br/>crudAction-any	default-null
+///<br/><br/>
+///Specifies the create method which is used to get the nodes to be added from client side to the server side
+///<br/>create-string	default-null
+///<br/><br/>
+///Specifies the update method which is used to get the updated data from client side to the server side
+///<br/>update-string	default-null
+///<br/><br/>
+///Specifies the destroy method which is used to get the deleted items data from client side to the server side
+///<br/>destroy-string	default-null
+///<br/><br/>
+///Specifies the read method to get the created nodes from client side to the server side
+///<br/>read-string	default-null
+///<br/><br/>
+///Specifies the customfields to get the updated data from client side to the server side
+///<br/>customFields-Array&lt;any&gt;	default-[]
+///<br/><br/>
+///Defines the data source either as a collection of objects or as an instance of ej.DataManager
+///<br/>connectionDataSource-any	default-null
+///<br/><br/>
+///Sets the datasource for the connection datasource settings items.
+///<br/>dataSource-string	default-null
+///<br/><br/>
+///Sets the unique id of the connection data source item
+///<br/>id-string	default-null
+///<br/><br/>
+///Sets the sourcenode of the connection data source item
+///<br/>sourceNode-string	default-null
+///<br/><br/>
+///Sets the targetnode of the connection data source item
+///<br/>targetNode-string	default-null
+///<br/><br/>
+///Sets the sourcepoint-x value of the connection data source item
+///<br/>sourcePointX-string	default-null
+///<br/><br/>
+///Sets the sourcePoint-y value of the connection data source item
+///<br/>sourcePointY-string	default-null
+///<br/><br/>
+///Sets the targetPoint-x value of the connection data source item
+///<br/>targetPointX-string	default-null
+///<br/><br/>
+///Sets the targetPoint-y value of the connection data source item
+///<br/>targetPointY-string	default-null
+///<br/><br/>
+///Specifies the method name which is used to get updated connectors from client side to the server side
+///<br/>crudAction-any	default-null
+///<br/><br/>
+///Specifies the create method which is used to get the connectors to be added from client side to the server side
+///<br/>create-string	default-null
+///<br/><br/>
+///Specifies the update method which is used to get the updated connectors from client side to the server side
+///<br/>update-string	default-null
+///<br/><br/>
+///Specifies the destroy method which is used to get the deleted items data from client side to the server side
+///<br/>destroy-string	default-null
+///<br/><br/>
+///Specifies the read method which is used to get the data from client side to the server side
+///<br/>read-string	default-null
+///<br/><br/>
+///Specifies the customfields to get the updated data from client side to the server side
+///<br/>customFields-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Initializes the default values for nodes and connectors
 ///<br/>defaultSettings-DefaultSettings	default-{}
@@ -7585,6 +8159,9 @@ ejDiagram :function (options) {
 ///Customizes the orientation of trees/sub trees. For orientations, see Chart Orientations. For chart types, see Chart Types
 ///<br/>getLayoutInfo-any	default-null
 ///<br/><br/>
+///Defines a method to customize the segments based on source and target nodes.
+///<br/>getConnectorSegments-any	default-null
+///<br/><br/>
 ///Sets the space to be horizontally left between nodes
 ///<br/>horizontalSpacing-number	default-30
 ///<br/><br/>
@@ -7605,6 +8182,9 @@ ejDiagram :function (options) {
 ///<br/><br/>
 ///Sets the space to be vertically left between nodes
 ///<br/>verticalSpacing-number	default-30
+///<br/><br/>
+///Sets the value is used to define the root node of the layout.
+///<br/>root-string	default-30
 ///<br/><br/>
 ///Defines the current culture of diagram
 ///<br/>locale-string	default-en-US
@@ -8065,6 +8645,9 @@ ejDiagram :function (options) {
 ///Defines the height of the symbol
 ///<br/>height-number	default-0
 ///<br/><br/>
+///To display a name for nodes in the symbol palette
+///<br/>label-string	default-null
+///<br/><br/>
 ///Defines the margin of the symbol item
 ///<br/>margin-any	default-{ left: 4, right: 4, top: 4, bottom: 4 }
 ///<br/><br/>
@@ -8347,6 +8930,9 @@ ejDiagram :function (options) {
 ///A collection of frequently used commands that will be added around the selector
 ///<br/>userHandles-Array&lt;any&gt;	default-[]
 ///<br/><br/>
+///Defines the name of the user handle
+///<br/>name-string	default-
+///<br/><br/>
 ///Defines the background color of the user handle
 ///<br/>backgroundColor-string	default-#2382c3
 ///<br/><br/>
@@ -8379,6 +8965,60 @@ ejDiagram :function (options) {
 ///<br/><br/>
 ///Enables or disables tooltip of diagram
 ///<br/>showTooltip-boolean	default-true
+///<br/><br/>
+///Defines the properties of the both the horizontal and vertical gauge to measure the diagram area.
+///<br/>rulerSettings-RulerSettings	default-
+///<br/><br/>
+///Enables or disables both the horizontal and vertical ruler.
+///<br/>showRulers-boolean	default-false
+///<br/><br/>
+///Defines the appearance of horizontal ruler
+///<br/>horizontalRuler-any	default-
+///<br/><br/>
+///Defines the number of intervals to be present on the each segment of the horizontal ruler.
+///<br/>interval-number	default-5
+///<br/><br/>
+///Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the horizontal ruler.
+///<br/>segmentWidth-number	default-100
+///<br/><br/>
+///Defines the method which used to position and arrange the tick elements of the horizontal ruler.
+///<br/>arrangeTick-any	default-null
+///<br/><br/>
+///Defines and sets the tick alignment of the ruler scale.
+///<br/>tickAlignment-ej.datavisualization.Diagram.TickAlignment|string	default-ej.datavisualization.Diagram.TickAlignment.RightOrBottom
+///<br/><br/>
+///Defines the color of the horizontal marker brush.
+///<br/>markerColor-string	default-red
+///<br/><br/>
+///Defines the width of the horizontal ruler.
+///<br/>length-number	default-null
+///<br/><br/>
+///Defines the height of the horizontal ruler.
+///<br/>thickness-number	default-25
+///<br/><br/>
+///Defines the appearance of vertical ruler
+///<br/>verticalRuler-any	default-
+///<br/><br/>
+///Defines the number of intervals to be present on the each segment of the vertical ruler.
+///<br/>interval-number	default-5
+///<br/><br/>
+///Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the vertical ruler.
+///<br/>segmentWidth-number	default-100
+///<br/><br/>
+///Defines the method which used to position and arrange the tick elements of the vertical ruler.
+///<br/>arrangeTick-any	default-null
+///<br/><br/>
+///Defines and sets the tick alignment of the ruler scale.
+///<br/>tickAlignment-ej.datavisualization.Diagram.TickAlignment|string	default-ej.datavisualization.Diagram.TickAlignment.RightOrBottom
+///<br/><br/>
+///Defines the color of the vertical marker brush.
+///<br/>markerColor-string	default-red
+///<br/><br/>
+///Defines the height of the vertical ruler.
+///<br/>length-number	default-null
+///<br/><br/>
+///Defines the width of the vertical ruler.
+///<br/>thickness-number	default-25
 ///<br/><br/>
 ///Defines the gridlines and defines how and when the objects have to be snapped
 ///<br/>snapSettings-SnapSettings	default-
@@ -8616,6 +9256,9 @@ ejDialog :function (options) {
 ///Customizes the Dialog widget animations. The Dialog widget can be animated while opening and closing the dialog. In order to customize animation effects, you need to set â€œenableAnimationâ€ as true. It contains the following sub properties.
 ///<br/>animation-any	default-
 ///<br/><br/>
+///To Enable or disable the scrolling for background element of the modal dialog. This will work only with modal dialog.
+///<br/>backgroundScroll-boolean	default-
+///<br/><br/>
 ///Closes the dialog widget on pressing the ESC key when it is set to true.
 ///<br/>closeOnEscape-boolean	default-
 ///<br/><br/>
@@ -8662,19 +9305,19 @@ ejDialog :function (options) {
 ///<br/>isResponsive-boolean	default-
 ///<br/><br/>
 ///Default Value:{:.param}â€œen-USâ€
-///<br/>locale-number	default-
+///<br/>locale-string	default-
 ///<br/><br/>
 ///Sets the maximum height for the dialog widget.
-///<br/>maxHeight-number	default-
+///<br/>maxHeight-string|number	default-
 ///<br/><br/>
 ///Sets the maximum width for the dialog widget.
-///<br/>maxWidth-number	default-
+///<br/>maxWidth-string|number	default-
 ///<br/><br/>
 ///Sets the minimum height for the dialog widget.
-///<br/>minHeight-number	default-
+///<br/>minHeight-string|number	default-
 ///<br/><br/>
 ///Sets the minimum width for the dialog widget.
-///<br/>minWidth-number	default-
+///<br/>minWidth-string|number	default-
 ///<br/><br/>
 ///Displays the Dialog widget at the given X and Y position.
 ///<br/>position-any	default-
@@ -8830,6 +9473,9 @@ ejDigitalGauge :function (options) {
 ///<br/><br/>
 ///Specifies the resize option of the DigitalGauge.
 ///<br/>isResponsive-boolean	default-false
+///<br/><br/>
+///Specifies the responsiveness of the Digital gauge
+///<br/>enableResize-boolean	default-false
 ///<br/><br/>
 ///Specifies the items for the DigitalGauge.
 ///<br/>items-Array&lt;Items&gt;	default-null
@@ -9043,7 +9689,7 @@ var wrapper=function(){
 var instance = new original();
 intellisense.annotate(instance, {
 
-_destroy:function(){
+destroy:function(){
 /// <signature>
 /// <summary>
 /// destroy in the draggable.
@@ -9073,8 +9719,8 @@ ejDraggable :function (options) {
 ///Distance in pixels after mousedown the mouse must move before dragging should start. This option can be used to prevent unwanted drags when clicking on an element.
 ///<br/>distance-number	default-1
 ///<br/><br/>
-///The drag area is used to restrict the dragging element bounds.
-///<br/>dragArea-boolean	default-false
+///The drag area is used to restrict the dragging element bounds.Specify the id of the container within which the element should be dragged.
+///<br/>dragArea-boolean	default-null
 ///<br/><br/>
 ///If specified, restricts drag start click to the specified element(s).
 ///<br/>handle-string	default-null
@@ -9104,9 +9750,9 @@ intellisense.annotate(instance, {
 addItem:function(data){
 /// <signature>
 /// <summary>
-/// Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items.
+/// Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items.Grouping and sorting will not be supported when we add items through this method.
 /// </summary>
-/// <param name="data"	type="any|Array&lt;any&gt;"> this parameter should have field attributes with respect to mapped field attributes and it's corresponding values to fields</param>
+/// <param name="data"	type="any|any[]"> this parameter should have field attributes with respect to mapped field attributes and it's corresponding values to fields</param>
 /// </signature>
 },
 checkAll:function(){
@@ -9138,7 +9784,7 @@ disableItemsByIndices:function(index){
 /// <summary>
 /// This property disables the set of items in the DropDownList.
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> disable the given index list items</param>
+/// <param name="index"	type="string|number|any[]"> disable the given index list items</param>
 /// </signature>
 },
 enable:function(){
@@ -9152,7 +9798,7 @@ enableItemsByIndices:function(index){
 /// <summary>
 /// Enables an Item or set of Items that are disabled in the DropDownList
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> enable the given index list items if it's disabled</param>
+/// <param name="index"	type="string|number|any[]"> enable the given index list items if it's disabled</param>
 /// </signature>
 },
 getItemDataByValue:function(value){
@@ -9192,7 +9838,7 @@ selectItemsByIndices:function(index){
 /// <summary>
 /// This method is used to select the list of items in the DropDownList through the Index of the items.
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> select the given index list items</param>
+/// <param name="index"	type="string|number|any[]"> select the given index list items</param>
 /// </signature>
 },
 selectItemByText:function(index){
@@ -9200,7 +9846,7 @@ selectItemByText:function(index){
 /// <summary>
 /// This method is used to select an item in the DropDownList by using the given text value.
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> select the list items relates to given text</param>
+/// <param name="index"	type="string|number|any[]"> select the list items relates to given text</param>
 /// </signature>
 },
 selectItemByValue:function(index){
@@ -9208,7 +9854,7 @@ selectItemByValue:function(index){
 /// <summary>
 /// This method is used to select an item in the DropDownList by using the given value.
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> select the list items relates to given values</param>
+/// <param name="index"	type="string|number|any[]"> select the list items relates to given values</param>
 /// </signature>
 },
 showPopup:function(){
@@ -9228,7 +9874,7 @@ unselectItemsByIndices:function(index){
 /// <summary>
 /// This method is used to unselect the list of items in the DropDownList through Index of the items.
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> unselect the given index list items</param>
+/// <param name="index"	type="string|number|any[]"> unselect the given index list items</param>
 /// </signature>
 },
 unselectItemByText:function(index){
@@ -9236,7 +9882,7 @@ unselectItemByText:function(index){
 /// <summary>
 /// This method is used to unselect an item in the DropDownList by using the given text value.
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> unselect the list items relates to given text</param>
+/// <param name="index"	type="string|number|any[]"> unselect the list items relates to given text</param>
 /// </signature>
 },
 unselectItemByValue:function(index){
@@ -9244,7 +9890,7 @@ unselectItemByValue:function(index){
 /// <summary>
 /// This method is used to unselect an item in the DropDownList by using the given value.
 /// </summary>
-/// <param name="index"	type="string|number|Array&lt;any&gt;"> unselect the list items relates to given values</param>
+/// <param name="index"	type="string|number|any[]"> unselect the list items relates to given values</param>
 /// </signature>
 },
 });
@@ -9446,7 +10092,7 @@ var wrapper=function(){
 var instance = new original();
 intellisense.annotate(instance, {
 
-_destroy:function(){
+destroy:function(){
 /// <signature>
 /// <summary>
 /// destroy in the Droppable.
@@ -9655,6 +10301,9 @@ ejFileExplorer :function (options) {
 ///The property path denotes the filesystem path that are to be explored. The path for the filesystem can be physical path or relative path, but it has to be relevant to where the Web API is hosted.
 ///<br/>path-string	default-
 ///<br/><br/>
+///Sets the alias name of root folder name in FileExplorer. It is used to replace the actual root folder name in FileExplorer.
+///<br/>rootFolderName-string	default-
+///<br/><br/>
 ///The selectedFolder is used to select the specified folder of FileExplorer control.
 ///<br/>selectedFolder-string	default-
 ///<br/><br/>
@@ -9741,7 +10390,7 @@ selectCells:function(Indexes, preservePreviousSelectedCell){
 /// <summary>
 /// To select cell based on the cell and row index dynamically.
 /// </summary>
-/// <param name="Indexes"	type="Array&lt;any&gt;">array of cell indexes to be select</param>
+/// <param name="Indexes"	type="any[]">array of cell indexes to be select</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -9756,6 +10405,20 @@ setSplitterIndex:function(index){
 /// Positions the splitter by the specified column index.
 /// </summary>
 /// <param name="index"	type="number">Set the splitter position based on column index.</param>
+/// </signature>
+},
+sortColumn:function(mappingName, columnSortDirection){
+/// <signature>
+/// <summary>
+/// To sort the column in required direction
+/// </summary>
+/// <param name="mappingName"	type="string">Defines the column's mapping name in which sorting have to be performed</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// To sort the column in required direction
+/// </summary>
+/// <param name="columnSortDirection"	type="string">Defines the sort direction whether the column has to sorted in ascending/descending order. By default it is sorting in an ascending order</param>
 /// </signature>
 },
 cancelEdit:function(){
@@ -9794,6 +10457,26 @@ expandCollapseRecord:function(taskId){
 /// To expand and collapse an item in Gantt using item's ID
 /// </summary>
 /// <param name="taskId"	type="number">Expand or Collapse a record based on task id.</param>
+/// </signature>
+},
+export:function(action, serverEvent, multipleExport){
+/// <signature>
+/// <summary>
+/// Export the Gantt content to excel or PDF document.
+/// </summary>
+/// <param name="action"	type="string">Pass the controller action name corresponding to exporting</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Export the Gantt content to excel or PDF document.
+/// </summary>
+/// <param name="serverEvent"	type="string">optionalASP server event name corresponding to exporting</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Export the Gantt content to excel or PDF document.
+/// </summary>
+/// <param name="multipleExport"	type="boolean">optionalPass the multiple exporting value as true/false</param>
 /// </signature>
 },
 hideColumn:function(headerText){
@@ -9874,7 +10557,13 @@ ejGantt :function (options) {
 /// <summary><br/>
 ///The Essential JavaScript Gantt control is designed to visualize and edit the project schedule, and track the project progress.<br/><br/>
 ///Specifies the fields to be included in the add dialog in Gantt
-///<br/>addDialogFields-Array&lt;any&gt;	default-[]
+///<br/>addDialogFields-Array&lt;AddDialogFields&gt;	default-[]
+///<br/><br/>
+///Specifies mapping name to include required fields in Gantt
+///<br/>field-string	default-
+///<br/><br/>
+///Specifies editType of fields to be included in the add dialog in Gantt
+///<br/>editType-string	default-
 ///<br/><br/>
 ///Enables or disables the ability to resize column.
 ///<br/>allowColumnResize-boolean	default-false
@@ -9905,6 +10594,12 @@ ejGantt :function (options) {
 ///<br/><br/>
 ///Specifies the baseline background color in Gantt
 ///<br/>baselineColor-string	default-#fba41c
+///<br/><br/>
+///Specifies the mapping property path for the work field of a task in the data source. When it is mapped the end date and duration for a task will be calculated automatically.
+///<br/>workMapping-string	default-
+///<br/><br/>
+///Specifies the mapping property path for the expand status of a record in data source.
+///<br/>expandStateMapping-string	default-
 ///<br/><br/>
 ///Specifies the mapping property path for baseline end date in datasource
 ///<br/>baselineEndDateMapping-string	default-
@@ -9948,6 +10643,9 @@ ejGantt :function (options) {
 ///Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
 ///<br/>dateFormat-string	default-MM/dd/yyyy
 ///<br/><br/>
+///Specifies the customized working time for tasks in Gantt
+///<br/>dayWorkingTime-Array&lt;any&gt;	default-[{ from: 08:00 AM, to: 12:00 PM }, { from: 01:00 PM, to: 05:00 PM }]
+///<br/><br/>
 ///Specifies the mapping property path for duration of a task in datasource
 ///<br/>durationMapping-string	default-
 ///<br/><br/>
@@ -9955,7 +10653,13 @@ ejGantt :function (options) {
 ///<br/>durationUnit-ej.Gantt.DurationUnit|string	default-ej.Gantt.DurationUnit.Day
 ///<br/><br/>
 ///Specifies the fields to be included in the edit dialog in Gantt
-///<br/>editDialogFields-Array&lt;any&gt;	default-[]
+///<br/>editDialogFields-Array&lt;EditDialogFields&gt;	default-[]
+///<br/><br/>
+///Specifies mapping name to include required fields in Gantt
+///<br/>field-string	default-
+///<br/><br/>
+///Specifies editType of fields to be included in the edit dialog in Gantt
+///<br/>editType-string	default-
 ///<br/><br/>
 ///Enables or disables the responsiveness of Gantt
 ///<br/>isResponsive-boolean	default-false
@@ -9992,6 +10696,9 @@ ejGantt :function (options) {
 ///<br/><br/>
 ///Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" is for cell type editing
 ///<br/>editMode-string	default-normal
+///<br/><br/>
+///Specifies the position where the new row has to be added.
+///<br/>rowPosition-ej.Gantt.RowPosition|string	default-ej.Gantt.RowPosition.BelowSelectedRow
 ///<br/><br/>
 ///Enables or Disables enableAltRow row effect in Gantt
 ///<br/>enableAltRow-boolean	default-true
@@ -10042,7 +10749,16 @@ ejGantt :function (options) {
 ///<br/>highlightWeekends-boolean	default-true
 ///<br/><br/>
 ///Collection of holidays with date, background and label information to be displayed in Gantt.
-///<br/>holidays-Array&lt;any&gt;	default-[]
+///<br/>holidays-Array&lt;Holidays&gt;	default-[]
+///<br/><br/>
+///Specifies holiday date to be displayed in Gantt
+///<br/>day-string	default-
+///<br/><br/>
+///Specifies the background color for holiday date in Gantt Schedule
+///<br/>background-string	default-
+///<br/><br/>
+///Specifies the label to be displayed for rendered holiday in Gantt
+///<br/>label-string	default-
 ///<br/><br/>
 ///Specifies whether to include weekends while calculating the duration of a task.
 ///<br/>includeWeekend-boolean	default-true
@@ -10116,9 +10832,6 @@ ejGantt :function (options) {
 ///Enables or Disables rendering baselines in Gantt , when enabled baseline is rendered in Gantt
 ///<br/>renderBaseline-boolean	default-false
 ///<br/><br/>
-///Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
-///<br/>validateManualTasksOnLinking-boolean	default-false
-///<br/><br/>
 ///Specifies the mapping property name for resource ID in resource Collection in Gantt
 ///<br/>resourceIdMapping-string	default-
 ///<br/><br/>
@@ -10144,7 +10857,7 @@ ejGantt :function (options) {
 ///<br/>scheduleHeaderSettings-ScheduleHeaderSettings	default-
 ///<br/><br/>
 ///Specified the format for day view in schedule header
-///<br/>dayHeaderFormat-string	default-ddd
+///<br/>dayHeaderFormat-string	default-
 ///<br/><br/>
 ///Specified the format for Hour view in schedule header
 ///<br/>hourHeaderFormat-string	default-HH
@@ -10165,13 +10878,13 @@ ejGantt :function (options) {
 ///<br/>weekendBackground-string	default-#F2F2F2
 ///<br/><br/>
 ///Specified the format for week view in schedule header
-///<br/>weekHeaderFormat-string	default-ddd
+///<br/>weekHeaderFormat-string	default-MMM dd , yyyy
 ///<br/><br/>
 ///Specified the format for year view in schedule header
 ///<br/>yearHeaderFormat-string	default-yyyy
 ///<br/><br/>
-///Specifies the size of the lowest time unit along the timescale, with minimum value as "50%" and maximum value as "500%". It is also possble to set the value in pixels.
-///<br/>timscaleUnitSize-string	default-100%
+///Specifies the size of the lowest time unit along the timescale, with minimum value as "50%" and maximum value as "500%". It is also possible to set the value in pixels.
+///<br/>timescaleUnitSize-string	default-100%
 ///<br/><br/>
 ///Specifies the start day of the week in week timescale mode
 ///<br/>weekStartDay-number	default-0
@@ -10204,10 +10917,10 @@ ejGantt :function (options) {
 ///<br/>sizeSettings-SizeSettings	default-
 ///<br/><br/>
 ///Specifies the height of Gantt control
-///<br/>height-string	default-450px
+///<br/>height-string	default-
 ///<br/><br/>
 ///Specifies the width of Gantt control
-///<br/>width-string	default-1000px
+///<br/>width-string	default-
 ///<br/><br/>
 ///Specifies the selected cell information on rendering Gantt.
 ///<br/>selectedCellIndexes-Array&lt;SelectedCellIndexes&gt;	default-
@@ -10224,6 +10937,12 @@ ejGantt :function (options) {
 ///Specifies the sorted columns for Gantt
 ///<br/>sortedColumns-Array&lt;any&gt;	default-[]
 ///<br/><br/>
+///Specifies the field to be sorted in Gantt
+///<br/>field-string	default-
+///<br/><br/>
+///Specifies the sort direction in Gantt
+///<br/>direction-string	default-
+///<br/><br/>
 ///Specifies splitter position in Gantt.
 ///<br/>splitterPosition-string	default-null
 ///<br/><br/>
@@ -10231,7 +10950,22 @@ ejGantt :function (options) {
 ///<br/>startDateMapping-string	default-
 ///<br/><br/>
 ///Specifies the options for striplines
-///<br/>stripLines-Array&lt;any&gt;	default-[]
+///<br/>stripLines-Array&lt;StripLines&gt;	default-[]
+///<br/><br/>
+///Specifies date to render striplines in Gantt
+///<br/>day-string	default-
+///<br/><br/>
+///Specifies label to be displayed for striplines in Gantt
+///<br/>label-string	default-
+///<br/><br/>
+///Specifies line style for rendered striplines in Gantt
+///<br/>lineStyle-string	default-
+///<br/><br/>
+///Specifies the line color for rendered striplines in Gantt
+///<br/>lineColor-string	default-
+///<br/><br/>
+///Specifies the width of the stripline in Gantt
+///<br/>lineWidth-string	default-
 ///<br/><br/>
 ///Specifies the background of the taskbar in Gantt
 ///<br/>taskbarBackground-string	default-
@@ -10241,6 +10975,9 @@ ejGantt :function (options) {
 ///<br/><br/>
 ///Specifies the template Id for customized tooltip for taskbar editing in Gantt
 ///<br/>taskbarEditingTooltipTemplateId-string	default-
+///<br/><br/>
+///Specifies the height of taskBar in Gantt.
+///<br/>taskbarHeight-number	default-20
 ///<br/><br/>
 ///Specifies the template for tooltip on mouse action on taskbars
 ///<br/>taskbarTooltipTemplate-string	default-
@@ -10272,17 +11009,35 @@ ejGantt :function (options) {
 ///Specifies the list of toolbar items to be rendered in Gantt toolbar
 ///<br/>toolbarItems-Array&lt;any&gt;	default-[]
 ///<br/><br/>
+///Allows the user to insert custom toolbar items.
+///<br/>customToolbarItems-Array&lt;any&gt;	default-
+///<br/><br/>
+///Allows the user to insert the custom icons in toolbar using CSS class name selector.
+///<br/>text-string	default-
+///<br/><br/>
+///Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
+///<br/>templateID-string	default-
+///<br/><br/>
+///Allows the user to display custom tooltip text for Gantt custom toolbar items.
+///<br/>tooltipText-string	default-
+///<br/><br/>
 ///Specifies the tree expander column in Gantt
 ///<br/>treeColumnIndex-number	default-0
 ///<br/><br/>
 ///Specifies the type of selection whether to select row or cell.
 ///<br/>selectionMode-ej.Gantt.SelectionMode|string	default-ej.Gantt.SelectionMode.Row
 ///<br/><br/>
+///Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
+///<br/>validateManualTasksOnLinking-boolean	default-false
+///<br/><br/>
 ///Specifies the weekendBackground color in Gantt
 ///<br/>weekendBackground-string	default-#F2F2F2
 ///<br/><br/>
 ///Specifies the working time schedule of day
 ///<br/>workingTimeScale-ej.Gantt.workingTimeScale|string	default-ej.Gantt.workingTimeScale.TimeScale8Hours
+///<br/><br/>
+///Gets or sets the working days of a week in a project.
+///<br/>workWeek-Array&lt;any&gt;	default-[Monday,Tuesday,Wednesday,Thursday,Friday]
 ///</summary>
 ///<param name="options" type="Object">
 ///The widget configuration options
@@ -10308,27 +11063,29 @@ addIgnoreOnExport:function(propertyNames){
 /// <summary>
 /// Adds a grid model property which is to be ignored upon exporting.
 /// </summary>
-/// <param name="propertyNames"	type="Array&lt;any&gt;">Pass the array of parameters which need to be ignored on exporting </param>
+/// <param name="propertyNames"	type="any[]">Pass the array of parameters which need to be ignored on exporting </param>
 /// </signature>
 },
-addRecord:function(){
+addIgnoreOnToolbarServerClick:function(propertyNames){
 /// <signature>
 /// <summary>
-/// Add a new record in grid control when allowAdding is set as true.
+/// Adds a grid model property which is to be ignored upon OnServerToolbarClick.
 /// </summary>
+/// <param name="propertyNames"	type="any[]">Pass the array of parameters which need to be ignored on OnServerToolbarClick </param>
+/// </signature>
 },
 addRecord:function(data, serverChange){
 /// <signature>
 /// <summary>
-/// Add a new record in grid control when allowAdding is set as true.
+/// Add a new record in grid control when allowAdding is set as true.Without passing parameters it will add empty row.
 /// </summary>
-/// <param name="data"	type="Array&lt;any&gt;">Pass the array of added Records</param>
+/// <param name="data"	type="any[]">Pass the array of added Records</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// Add a new record in grid control when allowAdding is set as true.
+/// Add a new record in grid control when allowAdding is set as true.Without passing parameters it will add empty row.
 /// </summary>
-/// <param name="serverChange"	type="Array&lt;any&gt;">optionalIf we pass serverChange as true, send post to server side for server action.</param>
+/// <param name="serverChange"	type="any[]">optionalIf we pass serverChange as true, send post to server side for server action.</param>
 /// </signature>
 },
 batchCancel:function(){
@@ -10428,7 +11185,7 @@ columns:function(columnDetails, action){
 /// <summary>
 /// Add or remove columns in grid column collections
 /// </summary>
-/// <param name="columnDetails"	type="Array&lt;any&gt;|string">Pass array of columns or string of field name to add/remove the column in grid</param>
+/// <param name="columnDetails"	type="any[]|string">Pass array of columns or string of field name to add/remove the column in grid</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -10442,7 +11199,7 @@ dataSource:function(datasource, templateRefresh){
 /// <summary>
 /// Refresh the grid with new data source
 /// </summary>
-/// <param name="datasource"	type="Array&lt;any&gt;">Pass new data source to the grid</param>
+/// <param name="datasource"	type="any">Pass new data source to the grid</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -10462,7 +11219,15 @@ deleteRecord:function(fieldName, data){
 /// <summary>
 /// Delete a record in grid control when allowDeleting is set as true
 /// </summary>
-/// <param name="data"	type="Array&lt;any&gt;">Pass the JSON data of record need to be delete.</param>
+/// <param name="data"	type="any">Pass the JSON data of record need to be delete.</param>
+/// </signature>
+},
+deleteRow:function($tr){
+/// <signature>
+/// <summary>
+/// Delete the row based on the given tr element in grid.
+/// </summary>
+/// <param name="$tr"	type="JQuery">Pass the tr element in grid content to get its row index</param>
 /// </signature>
 },
 destroy:function(){
@@ -10484,6 +11249,12 @@ editCell:function(index, fieldName){
 /// </summary>
 /// <param name="fieldName"	type="string">Pass the field name of the column to perform batch edit</param>
 /// </signature>
+},
+editFormValidate:function(){
+/// <signature>
+/// <summary>
+/// It returns a value and if the input field values of edit form is not based on the validation rules then it will show the validation message.
+/// </summary>
 },
 endEdit:function(){
 /// <signature>
@@ -10534,27 +11305,7 @@ export:function(action, serverEvent, multipleExport, gridIds){
 /// <summary>
 /// Export the grid content to excel, word or PDF document.
 /// </summary>
-/// <param name="gridIds"	type="Array&lt;any&gt;">optionalPass the array of the gridIds to be filtered</param>
-/// </signature>
-},
-export:function(action, serverEvent, multipleExport){
-/// <signature>
-/// <summary>
-/// Export the grid content to excel, word or PDF document.
-/// </summary>
-/// <param name="action"	type="string">Pass the controller action name corresponding to exporting</param>
-/// </signature>
-/// <signature>
-/// <summary>
-/// Export the grid content to excel, word or PDF document.
-/// </summary>
-/// <param name="serverEvent"	type="string">optionalASP server event name corresponding to exporting</param>
-/// </signature>
-/// <signature>
-/// <summary>
-/// Export the grid content to excel, word or PDF document.
-/// </summary>
-/// <param name="multipleExport"	type="boolean">optionalPass the multiple exporting value as true/false</param>
+/// <param name="gridIds"	type="any[]">optionalPass the array of the gridIds to be filtered</param>
 /// </signature>
 },
 filterColumn:function(fieldName, filterOperator, filterValue, predicate, matchcase, actualFilterValue){
@@ -10562,7 +11313,7 @@ filterColumn:function(fieldName, filterOperator, filterValue, predicate, matchca
 /// <summary>
 /// Send a filtering request to filter one column in grid.
 /// </summary>
-/// <param name="fieldName"	type="Array&lt;any&gt;">Pass the field name of the column</param>
+/// <param name="fieldName"	type="any[]">Pass the field name of the column</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -10600,7 +11351,7 @@ filterColumn:function(filterQueries){
 /// <summary>
 /// Send a filtering request to filter single or multiple column in grid.
 /// </summary>
-/// <param name="filterQueries"	type="Array&lt;any&gt;">Pass array of filterColumn query for performing filter operation</param>
+/// <param name="filterQueries"	type="any[]">Pass array of filterColumn query for performing filter operation</param>
 /// </signature>
 },
 getBatchChanges:function(){
@@ -10653,6 +11404,20 @@ getColumnIndexByField:function(fieldName){
 /// <param name="fieldName"	type="string">Pass the field name of the column to get the corresponding column index</param>
 /// </signature>
 },
+getColumnIndexByHeaderText:function(headerText, field){
+/// <signature>
+/// <summary>
+/// Get the column index of the given headerText of column in grid.
+/// </summary>
+/// <param name="headerText"	type="string">Pass the headerText of the column to get that column index</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Get the column index of the given headerText of column in grid.
+/// </summary>
+/// <param name="field"	type="string">optionalOptional Pass the field name of the column.</param>
+/// </signature>
+},
 getContent:function(){
 /// <signature>
 /// <summary>
@@ -10681,6 +11446,12 @@ getCurrentViewData:function(){
 /// <signature>
 /// <summary>
 /// Get the current page data source of grid.
+/// </summary>
+},
+getDataByIndex:function(){
+/// <signature>
+/// <summary>
+/// Get the data of given row index in grid.
 /// </summary>
 },
 getFieldNameByHeaderText:function(headerText){
@@ -10799,6 +11570,20 @@ getSelectedRecords:function(){
 /// Get the selected records details in grid.
 /// </summary>
 },
+getSelectedRows:function(){
+/// <signature>
+/// <summary>
+/// Get the selected row element details in grid.
+/// </summary>
+},
+getsortColumnByField:function(field){
+/// <signature>
+/// <summary>
+/// It accepts the string value and returns the field and sorted direction of the column in grid.
+/// </summary>
+/// <param name="field"	type="string">Pass the field of the column to get the sorted direction of the corresponding column in Grid.</param>
+/// </signature>
+},
 getSummaryValues:function(summaryCol, summaryData){
 /// <signature>
 /// <summary>
@@ -10840,7 +11625,7 @@ hideColumns:function(headerText){
 /// <summary>
 /// Hide columns from the grid based on the header text
 /// </summary>
-/// <param name="headerText"	type="Array&lt;any&gt;|string">you can pass either array of header text of various columns or a header text of a column to hide</param>
+/// <param name="headerText"	type="any[]|string">you can pass either array of header text of various columns or a header text of a column to hide</param>
 /// </signature>
 },
 print:function(){
@@ -10886,7 +11671,7 @@ removeSortedColumns:function(fieldName){
 /// <summary>
 /// Remove a column or collection of columns from a sorted column collections in grid.
 /// </summary>
-/// <param name="fieldName"	type="Array&lt;any&gt;|string">Pass array of field names of the columns to remove a collection of sorted columns or pass a string of field name to remove a column from sorted column collections</param>
+/// <param name="fieldName"	type="any[]|string">Pass array of field names of the columns to remove a collection of sorted columns or pass a string of field name to remove a column from sorted column collections</param>
 /// </signature>
 },
 render:function(){
@@ -10907,6 +11692,20 @@ reorderColumns:function(fromFieldName, toFieldName){
 /// Re-order the column in grid
 /// </summary>
 /// <param name="toFieldName"	type="string">Pass the to field name of the column needs to be changed</param>
+/// </signature>
+},
+reorderRows:function(indexes, toIndex){
+/// <signature>
+/// <summary>
+/// Re-order the row in grid
+/// </summary>
+/// <param name="indexes"	type="any[]">Pass the indexes of the rows needs to reorder.</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Re-order the row in grid
+/// </summary>
+/// <param name="toIndex"	type="number">Pass the index of a row where to be reordered.</param>
 /// </signature>
 },
 resetModelCollections:function(){
@@ -10935,16 +11734,10 @@ rowHeightRefresh:function(){
 /// Resolves row height issue when unbound column is used with FrozenColumn
 /// </summary>
 },
-saveCell:function(){
-/// <signature>
-/// <summary>
-/// Save the particular edited cell in grid.
-/// </summary>
-},
 saveCell:function(preventSaveEvent){
 /// <signature>
 /// <summary>
-/// We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.
+/// We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.Without argument it will save the particular edited grid cell.
 /// </summary>
 /// <param name="preventSaveEvent"	type="boolean">optionalIf we pass preventSaveEvent as true, it prevents the client side cellSave event triggering </param>
 /// </signature>
@@ -11026,7 +11819,7 @@ selectRows:function(from, to, target){
 /// <summary>
 /// Select specified rows in grid based on Index provided.
 /// </summary>
-/// <param name="from"	type="Array&lt;any&gt;|number">It is used to set the starting index of row for selecting rows.</param>
+/// <param name="from"	type="any[]|number">It is used to set the starting index of row for selecting rows.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -11046,7 +11839,7 @@ selectRows:function(rowIndexes){
 /// <summary>
 /// Select rows in grid.
 /// </summary>
-/// <param name="rowIndexes"	type="Array&lt;any&gt;">Pass array of rowIndexes for selecting rows</param>
+/// <param name="rowIndexes"	type="any[]">Pass array of rowIndexes for selecting rows</param>
 /// </signature>
 },
 setCellText:function(){
@@ -11075,6 +11868,12 @@ setCellValue:function(Index, fieldName, value){
 /// <param name="value"	type="any">It is used to set the value for the selected cell.</param>
 /// </signature>
 },
+setDefaultData:function(){
+/// <signature>
+/// <summary>
+/// It sets the default data to the column in grid during adding record in batch edit mode.
+/// </summary>
+},
 setPhoneModeMaxWidth:function(Index){
 /// <signature>
 /// <summary>
@@ -11083,16 +11882,22 @@ setPhoneModeMaxWidth:function(Index){
 /// <param name="Index"	type="number">It is used to render grid rows as details view in mobile mode.</param>
 /// </signature>
 },
+setValidation:function(){
+/// <signature>
+/// <summary>
+/// Set validation to edit form in the grid.
+/// </summary>
+},
 setValidationToField:function(fieldName, rules){
 /// <signature>
 /// <summary>
-/// Set validation to a field during editing.
+/// Set validation to a particular input field in a edit form dynamically.
 /// </summary>
 /// <param name="fieldName"	type="string">Specify the field name of the column to set validation rules</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// Set validation to a field during editing.
+/// Set validation to a particular input field in a edit form dynamically.
 /// </summary>
 /// <param name="rules"	type="any">Specify the validation rules for the field</param>
 /// </signature>
@@ -11102,7 +11907,7 @@ showColumns:function(headerText){
 /// <summary>
 /// Show columns in the grid based on the header text
 /// </summary>
-/// <param name="headerText"	type="Array&lt;any&gt;|string">you can pass either array of header text of various columns or a header text of a column to show</param>
+/// <param name="headerText"	type="any[]|string">you can pass either array of header text of various columns or a header text of a column to show</param>
 /// </signature>
 },
 sortColumn:function(columnName, sortingDirection){
@@ -11146,7 +11951,7 @@ updateRecord:function(fieldName, data){
 /// <summary>
 /// Update a edited record in grid control when allowEditing is set as true.
 /// </summary>
-/// <param name="data"	type="Array&lt;any&gt;">Pass the edited JSON data of record need to be update.</param>
+/// <param name="data"	type="any[]">Pass the edited JSON data of record need to be update.</param>
 /// </signature>
 },
 windowonresize:function(){
@@ -11171,55 +11976,55 @@ ejGrid :function (options) {
 /// <summary><br/>
 ///The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.<br/><br/>
 ///Gets or sets a value that indicates whether to customizing cell based on our needs.
-///<br/>allowCellMerging-Boolean	default-false
+///<br/>allowCellMerging-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic grouping behavior. Grouping can be done by drag on drop desired columns to gridâ€™s GroupDropArea. This can be further customized through â€œgroupSettingsâ€ property.
-///<br/>allowGrouping-Boolean	default-false
+///<br/>allowGrouping-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable keyboard support for performing grid actions. selectionType â€“ Gets or sets a value that indicates whether to enable single row or multiple rows selection behavior in grid. Multiple selection can be done through by holding CTRL and clicking the grid rows
-///<br/>allowKeyboardNavigation-Boolean	default-true
+///<br/>allowKeyboardNavigation-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through â€œfilterSettingsâ€ property
-///<br/>allowFiltering-Boolean	default-false
+///<br/>allowFiltering-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
-///<br/>allowSorting-Boolean	default-false
+///<br/>allowSorting-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable multi columns sorting behavior in grid. Sort multiple columns by holding CTRL and click on the corresponding column header.
-///<br/>allowMultiSorting-Boolean	default-false
+///<br/>allowMultiSorting-boolean	default-false
 ///<br/><br/>
 ///This specifies the grid to show the paginated data. Also enables pager control at the bottom of grid for dynamic navigation through data source. Paging can be further customized through â€œpageSettingsâ€ property.
-///<br/>allowPaging-Boolean	default-false
+///<br/>allowPaging-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the columns reordering behavior in the grid. Reordering can be done through by drag and drop the particular column from one index to another index within the grid.
-///<br/>allowReordering-Boolean	default-false
+///<br/>allowReordering-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether the column is non resizable. Column width is set automatically based on the content or header text which is large.
-///<br/>allowResizeToFit-Boolean	default-false
+///<br/>allowResizeToFit-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic resizable of columns. Resize the width of the columns by simply click and move the particular column header line
-///<br/>allowResizing-Boolean	default-false
+///<br/>allowResizing-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag & drop rows between multiple Grid.
-///<br/>allowRowDragAndDrop-Boolean	default-false
+///<br/>allowRowDragAndDrop-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the scrollbar in the grid and view the records by scroll through the grid manually
-///<br/>allowScrolling-Boolean	default-false
+///<br/>allowScrolling-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic searching behavior in grid. Currently search box can be enabled through â€œtoolbarSettingsâ€
-///<br/>allowSearching-Boolean	default-false
+///<br/>allowSearching-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether user can select rows on grid. On enabling feature, selected row will be highlighted.
-///<br/>allowSelection-Boolean	default-true
+///<br/>allowSelection-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
-///<br/>allowTextWrap-Boolean	default-false
+///<br/>allowTextWrap-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the multiple exporting behavior on grid data.
-///<br/>allowMultipleExporting-Boolean	default-false
+///<br/>allowMultipleExporting-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates to define common width for all the columns in the grid.
-///<br/>commonWidth-Number	default-
+///<br/>commonWidth-number	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to enable the visibility of the grid lines.
 ///<br/>gridLines-ej.Grid.GridLines|string	default-ej.Grid.GridLines.Both
@@ -11237,19 +12042,19 @@ ejGrid :function (options) {
 ///<br/>columns-Array&lt;Columns&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable editing behavior for particular column.
-///<br/>allowEditing-Boolean	default-true
+///<br/>allowEditing-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic filtering behavior for particular column.
-///<br/>allowFiltering-Boolean	default-true
+///<br/>allowFiltering-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic grouping behavior for particular column.
-///<br/>allowGrouping-Boolean	default-true
+///<br/>allowGrouping-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic sorting behavior for particular column.
-///<br/>allowSorting-Boolean	default-true
+///<br/>allowSorting-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable dynamic resizable for particular column.
-///<br/>allowResizing-Boolean	default-true
+///<br/>allowResizing-boolean	default-true
 ///<br/><br/>
 ///Gets or sets an object that indicates to define a command column in the grid.
 ///<br/>commands-Array&lt;any&gt;	default-[]
@@ -11261,22 +12066,22 @@ ejGrid :function (options) {
 ///<br/>type-ej.Grid.UnboundType|string	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to provide custom CSS for an individual column.
-///<br/>cssClass-String	default-
+///<br/>cssClass-string	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates the attribute values to the td element of a particular column
 ///<br/>customAttributes-any	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to bind the external datasource to the particular column when column editType as dropdownedit and also it is used to bind the datasource to the foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
-///<br/>dataSource-Array&lt;any&gt;	default-null
+///<br/>dataSource-any	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates to display the specified default value while adding a new record to the grid
-///<br/>defaultValue-String|Number|Boolean|Date	default-
+///<br/>defaultValue-string|number|boolean|Date	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to render the grid content and header with an HTML elements
-///<br/>disableHtmlEncode-Boolean	default-false
+///<br/>disableHtmlEncode-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates to display a column value as checkbox or string
-///<br/>displayAsCheckBox-Boolean	default-true
+///<br/>displayAsCheckBox-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates to customize ejNumericTextbox of an editable column. See editingType
 ///<br/>editParams-any	default-
@@ -11288,67 +12093,73 @@ ejGrid :function (options) {
 ///<br/>editType-ej.Grid.EditingType|string	default-ej.Grid.EditingType.String
 ///<br/><br/>
 ///Gets or sets a value that indicates to groups the column based on its column format.
-///<br/>enableGroupByFormat-Boolean	default-false
+///<br/>enableGroupByFormat-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates to display the columns in the grid mapping with column name of the dataSource.
-///<br/>field-String	default-
+///<br/>field-string	default-
 ///<br/><br/>
 ///Gets or sets a template that customize the filter control from default . See filterBarTemplate
 ///<br/>filterBarTemplate-any	default-null
 ///<br/><br/>
+///Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See filterType
+///<br/>filterType-ej.Grid.FilterType|string	default-null
+///<br/><br/>
 ///Gets or sets a value that indicates to define foreign key field name of the grid datasource.
-///<br/>foreignKeyField-String	default-null
+///<br/>foreignKeyField-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates to bind the field which is in foreign column datasource based on the foreignKeyField
-///<br/>foreignKeyValue-String	default-null
+///<br/>foreignKeyValue-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates the format for the text applied on the column
-///<br/>format-String	default-
+///<br/>format-string	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to add the template within the header element of the particular column.
-///<br/>headerTemplateID-String	default-null
+///<br/>headerTemplateID-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates to display the title of that particular column.
-///<br/>headerText-String	default-
+///<br/>headerText-string	default-
 ///<br/><br/>
 ///This defines the text alignment of a particular column header cell value. See headerTextAlign
 ///<br/>headerTextAlign-ej.TextAlign|string	default-null
 ///<br/><br/>
+///It accepts the string value and shows the tooltip for the Grid column header.
+///<br/>headerTooltip-string	default-null
+///<br/><br/>
 ///You can use this property to freeze selected columns in grid at the time of scrolling.
-///<br/>isFrozen-Boolean	default-false
+///<br/>isFrozen-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates the column has an identity in the database.
-///<br/>isIdentity-Boolean	default-false
+///<br/>isIdentity-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates the column is act as a primary key(read-only) of the grid. The editing is performed based on the primary key column
-///<br/>isPrimaryKey-Boolean	default-false
+///<br/>isPrimaryKey-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates the order of Column that are to be hidden or visible when Grid element is in responsive mode and could not occupy all columns.
-///<br/>priority-Number	default-null
+///<br/>priority-number	default--1
 ///<br/><br/>
 ///Used to hide the particular column in column chooser by giving value as false.
-///<br/>showInColumnChooser-Boolean	default-true
+///<br/>showInColumnChooser-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enables column template for a particular column.
-///<br/>template-Boolean|String	default-false
+///<br/>template-boolean|string	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates to align the text within the column. See textAlign
-///<br/>textAlign- ej.TextAlign|string	default-ej.TextAlign.Left
+///<br/>textAlign-ej.TextAlign|string	default-ej.TextAlign.Left
 ///<br/><br/>
 ///Sets the template for Tooltip in Grid Columns(both header and content)
 ///<br/>tooltip-string	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to specify the data type of the specified columns.
-///<br/>type-String	default-
+///<br/>type-string	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to define constraints for saving data to the database.
 ///<br/>validationRules-any	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates whether this column is visible in the grid.
-///<br/>visible-Boolean	default-true
+///<br/>visible-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates to define the width for a particular column in the grid.
-///<br/>width-Number	default-
+///<br/>width-number	default-
 ///<br/><br/>
 ///Gets or sets an object that indicates whether to customize the context menu behavior of the grid.
 ///<br/>contextMenuSettings-ContextMenuSettings	default-
@@ -11360,7 +12171,7 @@ ejGrid :function (options) {
 ///<br/>customContextMenuItems-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the context menu action in the grid.
-///<br/>enableContextMenu-Boolean	default-false
+///<br/>enableContextMenu-boolean	default-false
 ///<br/><br/>
 ///Used to get or set the subMenu to the corresponding custom context menu item.
 ///<br/>subContextMenu-Array&lt;any&gt;	default-
@@ -11372,85 +12183,88 @@ ejGrid :function (options) {
 ///<br/>subMenu-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to disable the default context menu items in the grid.
-///<br/>disableDefaultItems-Boolean	default-false
+///<br/>disableDefaultItems-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates to render the grid with custom theme.
-///<br/>cssClass-String	default-
+///<br/>cssClass-string	default-
 ///<br/><br/>
 ///Gets or sets the data to render the grid with records
 ///<br/>dataSource-any	default-null
 ///<br/><br/>
 ///Default Value:
-///<br/>detailsTemplate-String	default-null
+///<br/>detailsTemplate-string	default-null
 ///<br/><br/>
 ///Gets or sets an object that indicates whether to customize the editing behavior of the grid.
 ///<br/>editSettings-EditSettings	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable insert action in the editing mode.
-///<br/>allowAdding-Boolean	default-false
+///<br/>allowAdding-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the delete action in the editing mode.
-///<br/>allowDeleting-Boolean	default-false
+///<br/>allowDeleting-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the edit action in the editing mode.
-///<br/>allowEditing-Boolean	default-false
+///<br/>allowEditing-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the editing action while double click on the record
-///<br/>allowEditOnDblClick-Boolean	default-true
+///<br/>allowEditOnDblClick-boolean	default-true
 ///<br/><br/>
 ///This specifies the id of the template. This template can be used to display the data that you require to be edited using the Dialog Box
-///<br/>dialogEditorTemplateID-String	default-null
+///<br/>dialogEditorTemplateID-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define the mode of editing See editMode
 ///<br/>editMode-ej.Grid.EditMode|string	default-ej.Grid.EditMode.Normal
 ///<br/><br/>
 ///This specifies the id of the template. This template can be used to display the data that you require to be edited using the External edit form
-///<br/>externalFormTemplateID-String	default-null
+///<br/>externalFormTemplateID-string	default-null
 ///<br/><br/>
-///This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid
+///This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid. See formPosition
 ///<br/>formPosition-ej.Grid.FormPosition|string	default-ej.Grid.FormPosition.BottomLeft
 ///<br/><br/>
 ///This specifies the id of the template. This template can be used to display the data that you require to be edited using the Inline edit form
-///<br/>inlineFormTemplateID-String	default-null
+///<br/>inlineFormTemplateID-string	default-null
 ///<br/><br/>
-///This specifies to set the position of an adding new row either in the top or bottom of the grid
+///This specifies to set the position of an adding new row either in the top or bottom of the grid. See rowPosition
 ///<br/>rowPosition-ej.Grid.RowPosition|string	default-ej.Grid.RowPosition.Top
 ///<br/><br/>
 ///Gets or sets a value that indicates whether the confirm dialog has to be shown while saving or discarding the batch changes
-///<br/>showConfirmDialog-Boolean	default-true
+///<br/>showConfirmDialog-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether the confirm dialog has to be shown while deleting record
-///<br/>showDeleteConfirmDialog-Boolean	default-false
+///<br/>showDeleteConfirmDialog-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether the title for edit form is different from the primarykey column.
-///<br/>titleColumn-String	default-null
+///<br/>titleColumn-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to display the add new form by default in the grid.
-///<br/>showAddNewRow-Boolean	default-false
+///<br/>showAddNewRow-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the alternative rows differentiation in the grid records based on corresponding theme.
-///<br/>enableAltRow-Boolean	default-true
+///<br/>enableAltRow-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the save action in the grid through row selection
-///<br/>enableAutoSaveOnSelectionChange-Boolean	default-true
+///<br/>enableAutoSaveOnSelectionChange-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable mouse over effect on the corresponding column header cell of the grid
-///<br/>enableHeaderHover-Boolean	default-false
+///<br/>enableHeaderHover-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to persist the grid model state in page using applicable medium i.e., HTML5 localStorage or cookies
-///<br/>enablePersistence-Boolean	default-false
+///<br/>enablePersistence-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether the grid rows has to be rendered as detail view in mobile mode
-///<br/>enableResponsiveRow-Boolean	default-false
+///<br/>enableResponsiveRow-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable mouse over effect on corresponding grid row.
-///<br/>enableRowHover-Boolean	default-true
+///<br/>enableRowHover-boolean	default-true
 ///<br/><br/>
 ///Align content in the grid control from right to left by setting the property as true.
-///<br/>enableRTL-Boolean	default-false
+///<br/>enableRTL-boolean	default-false
 ///<br/><br/>
 ///To Disable the mouse swipe property as false.
-///<br/>enableTouch-Boolean	default-true
+///<br/>enableTouch-boolean	default-true
+///<br/><br/>
+///It sets a value that indicates whether to enable toolbar items, when allowEditing, allowAdding and allowDeleting property set as false in the grid.
+///<br/>enableToolbarItems-boolean	default-false
 ///<br/><br/>
 ///Act as mapper for the excel exporting URL.
 ///<br/>exportToExcelAction-string	default-ExportToExcel
@@ -11465,9 +12279,12 @@ ejGrid :function (options) {
 ///<br/>filterSettings-FilterSettings	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode
-///<br/>enableCaseSensitivity-Boolean	default-false
+///<br/>enableCaseSensitivity-boolean	default-false
 ///<br/><br/>
-///This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode
+///Gets or sets a value that indicates to define the interDeterminateState of checkbox in excel filter dialog.
+///<br/>enableInterDeterminateState-boolean	default-true
+///<br/><br/>
+///This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode.
 ///<br/>filterBarMode-ej.Grid.FilterBarMode|string	default-ej.Grid.FilterBarMode.Immediate
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define the filtered columns details programmatically at initial load
@@ -11476,7 +12293,10 @@ ejGrid :function (options) {
 ///Gets or sets a value that indicates whether to define the field name of the column to be filter.
 ///<br/>field-string	default-
 ///<br/><br/>
-///Gets or sets a value that indicates whether to define the filter condition to filtered column.
+///Gets or sets a value that indicates whether to define the matchCase of given value to be filter.
+///<br/>matchCase-boolean	default-
+///<br/><br/>
+///Gets or sets a value that indicates whether to define the filter condition to filtered column. See operator
 ///<br/>operator-ej.FilterOperators|string	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define the predicate as and/or.
@@ -11488,82 +12308,88 @@ ejGrid :function (options) {
 ///This specifies the grid to show the filterBar or filterMenu to the grid records. See filterType
 ///<br/>filterType-ej.Grid.FilterType|string	default-ej.Grid.FilterType.FilterBar
 ///<br/><br/>
+///This specifies the grid to delay the filter action while typing in the filterBar.
+///<br/>immediateModeDelay-number	default-1500
+///<br/><br/>
 ///Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
-///<br/>maxFilterChoices-Number	default-1000
+///<br/>maxFilterChoices-number	default-1000
 ///<br/><br/>
 ///This specifies the grid to show the filter text within the grid pager itself.
-///<br/>showFilterBarMessage-Boolean	default-true
+///<br/>showFilterBarStatus-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the predicate options in the filtering menu
-///<br/>showPredicate-Boolean	default-false
+///<br/>showPredicate-boolean	default-false
 ///<br/><br/>
 ///Gets or sets an object that indicates whether to customize the grouping behavior of the grid.
 ///<br/>groupSettings-GroupSettings	default-
 ///<br/><br/>
 ///Gets or sets a value that customize the group caption format.
-///<br/>captionFormat-String	default-null
+///<br/>captionFormat-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable animation button option in the group drop area of the grid.
-///<br/>enableDropAreaAutoSizing-Boolean	default-false
+///<br/>enableDropAreaAutoSizing-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to add grouped columns programmatically at initial load
 ///<br/>groupedColumns-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using groupSettings.
-///<br/>showDropArea-Boolean	default-true
+///<br/>showDropArea-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to hide the grouped columns from the grid
-///<br/>showGroupedColumn-Boolean	default-false
+///<br/>showGroupedColumn-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
-///<br/>showToggleButton-Boolean	default-false
+///<br/>showToggleButton-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the close button in the grouped column which is in the group drop area to ungroup the grouped column
-///<br/>showUngroupButton-Boolean	default-false
+///<br/>showUngroupButton-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether the grid design has be to made responsive.
-///<br/>isResponsive-Boolean	default-false
+///<br/>isResponsive-boolean	default-false
 ///<br/><br/>
 ///This specifies to change the key in keyboard interaction to grid control
 ///<br/>keySettings-any	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to a particular country or region.
-///<br/>locale-String	default-en-US
+///<br/>locale-string	default-en-US
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to set the minimum width of the responsive grid while isResponsive property is true and enableResponsiveRow property is set as false.
-///<br/>minWidth-Number	default-0
+///<br/>minWidth-number	default-0
 ///<br/><br/>
 ///Gets or sets an object that indicates whether to modify the pager default configuration.
 ///<br/>pageSettings-PageSettings	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define which page to display currently in the grid
-///<br/>currentPage-Number	default-1
+///<br/>currentPage-number	default-1
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to pass the current page information as a query string along with the URL while navigating to other page.
-///<br/>enableQueryString-Boolean	default-false
+///<br/>enableQueryString-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enables pager template for the grid.
-///<br/>enableTemplates-Boolean	default-false
+///<br/>enableTemplates-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation
-///<br/>pageCount-Number	default-8
+///<br/>pageCount-number	default-8
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define the number of records displayed per page
-///<br/>pageSize-Number	default-12
+///<br/>pageSize-number	default-12
+///<br/><br/>
+///Gets or sets different page size values to the Dropdown in Grid Pager, by which number of records in a page can be changed dynamically.
+///<br/>pageSizeList-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enables default pager for the grid.
-///<br/>showDefaults-Boolean	default-false
+///<br/>showDefaults-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates to add the template as a pager template for grid.
-///<br/>template-String	default-null
+///<br/>template-string	default-null
 ///<br/><br/>
 ///Get the value of total number of pages in the grid. The totalPages value is calculated based on page size and total records of grid
-///<br/>totalPages-Number	default-null
+///<br/>totalPages-number	default-null
 ///<br/><br/>
 ///Get the value of total number of records which is bound to the grid. The totalRecordsCount value is calculated based on dataSource bound to the grid.
-///<br/>totalRecordsCount-Number	default-null
+///<br/>totalRecordsCount-number	default-null
 ///<br/><br/>
-///Gets or sets a value that indicates whether to define the number of pages to print
+///Gets or sets a value that indicates whether to define the number of pages to print. See printMode.
 ///<br/>printMode-ej.Grid.PrintMode|string	default-ej.Grid.PrintMode.AllPages
 ///<br/><br/>
 ///Query the dataSource from the table for Grid.
@@ -11576,7 +12402,7 @@ ejGrid :function (options) {
 ///<br/>resizeMode-ej.Grid.ResizeMode|string	default-ej.Grid.ResizeMode.Normal
 ///<br/><br/>
 ///Gets or sets a value that indicates to render the grid with template rows. The template row must be a table row. That table row must have the JavaScript render binding format ({{:columnName}}) then the grid data source binds the data to the corresponding table row of the template.
-///<br/>rowTemplate-String	default-null
+///<br/>rowTemplate-string	default-null
 ///<br/><br/>
 ///Gets or sets an object that indicates whether to customize the drag and drop behavior of the grid rows
 ///<br/>rowDropSettings-RowDropSettings	default-
@@ -11609,7 +12435,7 @@ ejGrid :function (options) {
 ///<br/>selectedRecords-Array&lt;any&gt;	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates to select the row while initializing the grid
-///<br/>selectedRowIndex-Number	default--1
+///<br/>selectedRowIndex-number	default--1
 ///<br/><br/>
 ///Gets or sets a value that indicates the selected rows in grid
 ///<br/>selectedRowIndices-Array&lt;any&gt;	default-[]
@@ -11617,8 +12443,11 @@ ejGrid :function (options) {
 ///This property is used to configure the selection behavior of the grid.
 ///<br/>selectionSettings-SelectionSettings	default-
 ///<br/><br/>
+///Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
+///<br/>cellSelectionMode-ej.Grid.CellSelectionMode|string	default-ej.Grid.CellSelectionMode.Flow
+///<br/><br/>
 ///Gets or sets a value that indicates whether to enable the toggle selection behavior for row, cell and column.
-///<br/>enableToggle-Boolean	default-false
+///<br/>enableToggle-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
 ///<br/>selectionMode-Array&lt;any&gt;	default-[row]
@@ -11630,40 +12459,49 @@ ejGrid :function (options) {
 ///<br/>scrollSettings-ScrollSettings	default-
 ///<br/><br/>
 ///This specify the grid to to view data that you require without buffering the entire load of a huge database
-///<br/>allowVirtualScrolling-Boolean	default-false
+///<br/>allowVirtualScrolling-boolean	default-false
+///<br/><br/>
+///It accepts the boolean value and shows or hides the scrollbar while focus in or focus out of the Grid.
+///<br/>autoHide-boolean	default-false
+///<br/><br/>
+///Specifies the height and width of button in the scrollbar.
+///<br/>buttonSize-number	default-18
 ///<br/><br/>
 ///This specify the grid to enable/disable touch control for scrolling.
-///<br/>enableTouchScroll-Boolean	default-true
+///<br/>enableTouchScroll-boolean	default-true
 ///<br/><br/>
 ///This specify the grid to freeze particular columns at the time of scrolling.
-///<br/>frozenColumns-Number	default-0
+///<br/>frozenColumns-number	default-0
 ///<br/><br/>
 ///This specify the grid to freeze particular rows at the time of scrolling.
-///<br/>frozenRows-Number	default-0
+///<br/>frozenRows-number	default-0
 ///<br/><br/>
 ///This specify the grid to show the vertical scroll bar, to scroll and view the grid contents.
-///<br/>height-String|Number	default-0
+///<br/>height-string|number	default-0
+///<br/><br/>
+///It accepts the integer value and sets the width of scrollbar.
+///<br/>scrollerSize-number	default-18
 ///<br/><br/>
 ///This is used to define the mode of virtual scrolling in grid. See virtualScrollMode
 ///<br/>virtualScrollMode-ej.Grid.VirtualScrollMode|string	default-ej.Grid.VirtualScrollMode.Normal
 ///<br/><br/>
 ///This is used to enable the enhanced virtual scrolling in Grid.
-///<br/>enableVirtualization-Boolean	default-false
+///<br/>enableVirtualization-boolean	default-false
 ///<br/><br/>
 ///This specify the grid to show the horizontal scroll bar, to scroll and view the grid contents
-///<br/>width-String|Number	default-250
+///<br/>width-string|number	default-250
 ///<br/><br/>
 ///This specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents.
-///<br/>scrollOneStepBy-Number	default-57
+///<br/>scrollOneStepBy-number	default-57
 ///<br/><br/>
 ///Default Value:
-///<br/>showColumnChooser-Boolean	default-false
+///<br/>showColumnChooser-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates stacked header should be shown on grid layout when the property â€œstackedHeaderRowsâ€ is set.
-///<br/>showStackedHeader-Boolean	default-false
+///<br/>showStackedHeader-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates summary rows should be shown on grid layout when the property â€œsummaryRowsâ€ is set
-///<br/>showSummary-Boolean	default-false
+///<br/>showSummary-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to customize the sorting behavior of the grid.
 ///<br/>sortSettings-SortSettings	default-
@@ -11672,10 +12510,10 @@ ejGrid :function (options) {
 ///<br/>sortedColumns-Array&lt;any&gt;	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define the direction to sort the column.
-///<br/>direction-String	default-
+///<br/>direction-string	default-
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to define the field name of the column to be sort
-///<br/>field-String	default-
+///<br/>field-string	default-
 ///<br/><br/>
 ///Gets or sets an object that indicates to managing the collection of stacked header rows for the grid.
 ///<br/>stackedHeaderRows-Array&lt;StackedHeaderRows&gt;	default-[]
@@ -11687,58 +12525,61 @@ ejGrid :function (options) {
 ///<br/>column-any	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
-///<br/>cssClass-String	default-null
+///<br/>cssClass-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates the header text for the particular stacked header column.
-///<br/>headerText-String	default-null
+///<br/>headerText-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates the text alignment of the corresponding headerText.
-///<br/>textAlign-String	default-ej.TextAlign.Left
+///<br/>textAlign-string	default-ej.TextAlign.Left
+///<br/><br/>
+///Sets the template for tooltip for the Grid stackedHeaderColumns.
+///<br/>tooltip-string	default-null
 ///<br/><br/>
 ///Gets or sets an object that indicates to managing the collection of summary rows for the grid.
 ///<br/>summaryRows-Array&lt;SummaryRows&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to show the summary value within the group caption area for the corresponding summary column while grouping the column
-///<br/>showCaptionSummary-Boolean	default-false
+///<br/>showCaptionSummary-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to show the group summary value for the corresponding summary column while grouping a column
-///<br/>showGroupSummary-Boolean	default-false
+///<br/>showGroupSummary-boolean	default-false
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to show the total summary value the for the corresponding summary column. The summary row is added after the grid content.
-///<br/>showTotalSummary-Boolean	default-true
+///<br/>showTotalSummary-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to add summary columns into the summary rows.
 ///<br/>summaryColumns-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates the text displayed in the summary column as a value
-///<br/>customSummaryValue-String	default-null
+///<br/>customSummaryValue-string	default-null
 ///<br/><br/>
 ///This specifies summary column used to perform the summary calculation
-///<br/>dataMember-String	default-null
+///<br/>dataMember-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates to define the target column at which to display the summary.
-///<br/>displayColumn-String	default-null
+///<br/>displayColumn-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates the format for the text applied on the column
-///<br/>format-String	default-null
+///<br/>format-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates the text displayed before the summary column value
-///<br/>prefix-String	default-null
+///<br/>prefix-string	default-null
 ///<br/><br/>
 ///Gets or sets a value that indicates the text displayed after the summary column value
-///<br/>suffix-String	default-null
+///<br/>suffix-string	default-null
 ///<br/><br/>
-///Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column
+///Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column. See summaryType.
 ///<br/>summaryType-ej.Grid.SummaryType|string	default-[]
 ///<br/><br/>
 ///Gets or sets a value that indicates to add the template for the summary value of dataMember given.
-///<br/>template-String	default-null
+///<br/>template-string	default-null
 ///<br/><br/>
 ///This specifies the grid to show the title for the summary rows.
-///<br/>title-String	default-
+///<br/>title-string	default-
 ///<br/><br/>
 ///This specifies the grid to show the title of summary row in the specified column.
-///<br/>titleColumn-String	default-null
+///<br/>titleColumn-string	default-null
 ///<br/><br/>
 ///Gets or sets an object that indicates whether to auto wrap the grid header or content or both
 ///<br/>textWrapSettings-TextWrapSettings	default-
@@ -11752,10 +12593,16 @@ ejGrid :function (options) {
 ///Gets or sets a value that indicates whether to add custom toolbar items within the toolbar to perform any action in the grid
 ///<br/>customToolbarItems-Array&lt;any&gt;	default-[]
 ///<br/><br/>
-///Gets or sets a value that indicates whether to enable toolbar in the grid.
-///<br/>showToolbar-Boolean	default-false
+///Gets or sets a value that indicates whether to add custom toolbar item as a template element.
+///<br/>templateID-string	default-
 ///<br/><br/>
-///Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
+///Gets or sets a value that indicates whether to add custom toolbar item with a custom tooltip.
+///<br/>tooltip-string	default-
+///<br/><br/>
+///Gets or sets a value that indicates whether to enable toolbar in the grid.
+///<br/>showToolbar-boolean	default-false
+///<br/><br/>
+///Gets or sets a value that indicates whether to add the default editing actions as a toolbar items. See toolbarItems.
 ///<br/>toolbarItems-array&lt;ej.Grid.ToolBarItems|string&gt;	default-[]
 ///</summary>
 ///<param name="options" type="Object">
@@ -11991,7 +12838,7 @@ ejHeatMap :function (options) {
 ///<br/>templateId-string	default-null
 ///<br/><br/>
 ///Defines the tooltip of associate that should be shown when the mouse hovers over rows/columns.
-///<br/>associate-ej.datavisualization.HeatMap.Associate|string	default-
+///<br/>associate-ej.datavisualization.HeatMap.Associate|string	default-mouseFollow
 ///<br/><br/>
 ///Enables/ disables the balloon for the tooltip to be shown
 ///<br/>isBalloon-boolean	default-true
@@ -12089,7 +12936,7 @@ ejHeatMap :function (options) {
 ///Specifies the value of the column or row.
 ///<br/>displayName-string	default-
 ///<br/><br/>
-///Specifies the property and display value of the heat map.row
+///Specifies the row property and display value of the heat map.
 ///<br/>row-any	default-null
 ///<br/><br/>
 ///Specifies the name of the column or row.
@@ -12264,13 +13111,13 @@ columns:function(columndetails, keyvalue, action){
 /// <summary>
 /// Add or remove columns in Kanban columns collections.Default action is add.
 /// </summary>
-/// <param name="columndetails"	type="Array&lt;any&gt;|string">Pass array of columns or string of headerText to add/remove the column in Kanban</param>
+/// <param name="columndetails"	type="any[]|string">Pass array of columns or string of headerText to add/remove the column in Kanban</param>
 /// </signature>
 /// <signature>
 /// <summary>
 /// Add or remove columns in Kanban columns collections.Default action is add.
 /// </summary>
-/// <param name="keyvalue"	type="Array&lt;any&gt;|string">Pass array of columns or string of key value to add/remove the column in Kanban</param>
+/// <param name="keyvalue"	type="any[]|string">Pass array of columns or string of key value to add/remove the column in Kanban</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -12290,7 +13137,7 @@ dataSource:function(datasource){
 /// <summary>
 /// Refresh the Kanban with new data source.
 /// </summary>
-/// <param name="datasource"	type="Array&lt;any&gt;">Pass new data source to the Kanban</param>
+/// <param name="datasource"	type="any[]">Pass new data source to the Kanban</param>
 /// </signature>
 },
 toggleColumn:function(headerText){
@@ -12340,7 +13187,7 @@ hideColumns:function(headerText){
 /// <summary>
 /// Hide columns from the Kanban based on the header text
 /// </summary>
-/// <param name="headerText"	type="Array&lt;any&gt;|string">you can pass either array of header text of various columns or a header text of a column to hide</param>
+/// <param name="headerText"	type="any[]|string">you can pass either array of header text of various columns or a header text of a column to hide</param>
 /// </signature>
 },
 print:function(){
@@ -12368,7 +13215,7 @@ showColumns:function(headerText){
 /// <summary>
 /// Show columns in the Kanban based on the header text.
 /// </summary>
-/// <param name="headerText"	type="Array&lt;any&gt;|string">You can pass either array of header text of various columns or a header text of a column to show</param>
+/// <param name="headerText"	type="any[]|string">You can pass either array of header text of various columns or a header text of a column to show</param>
 /// </signature>
 },
 updateCard:function(key, data){
@@ -12382,7 +13229,7 @@ updateCard:function(key, data){
 /// <summary>
 /// Update a card in Kanban control based on key and JSON data given.
 /// </summary>
-/// <param name="data"	type="Array&lt;any&gt;">Pass the edited JSON data of card need to be update.</param>
+/// <param name="data"	type="any[]">Pass the edited JSON data of card need to be update.</param>
 /// </signature>
 },
 });
@@ -12479,7 +13326,10 @@ ejKanban :function (options) {
 ///<br/>headerText-string	default-null
 ///<br/><br/>
 ///To customize the totalCount properties.
-///<br/>totalCount-string	default-false
+///<br/>totalCount-any	default-Object
+///<br/><br/>
+///To customize the totalCount text properties.
+///<br/>text-string	default-null
 ///<br/><br/>
 ///Gets or sets an object that indicates to render the Kanban with specified columns key.
 ///<br/>key-string|number	default-null
@@ -12612,6 +13462,15 @@ ejKanban :function (options) {
 ///<br/><br/>
 ///ImageUrl field has been Mapped into card image.
 ///<br/>imageUrl-string	default-null
+///<br/><br/>
+///Get or sets an object that indicates the options to map the cards to the collapsible area.
+///<br/>collapsibleCards-any	default-Object
+///<br/><br/>
+///It is used to specify the collapsible card's field mapping.
+///<br/>field-string	default-null
+///<br/><br/>
+///It is used to specify the collapsible card's key mapping which is available in datasource value of field mapped in collapsibleCards.field.
+///<br/>key-string	default-null
 ///<br/><br/>
 ///To map datasource field for column values mapping
 ///<br/>keyField-string	default-null
@@ -13253,6 +14112,12 @@ ejLinearGauge :function (options) {
 ///Specifies the can resize state.
 ///<br/>isResponsive-boolean	default-false
 ///<br/><br/>
+///Used to Convert the date object to  string while using the  locale settings
+///<br/>enableGroupSeparator-boolean	default-false
+///<br/><br/>
+///Responsiveness of the linear gauge is controlled
+///<br/>enableResize-boolean	default-false
+///<br/><br/>
 ///Specify frame of linear gauge
 ///<br/>frame-Frame	default-null
 ///<br/><br/>
@@ -13271,6 +14136,9 @@ ejLinearGauge :function (options) {
 ///Specifies the labelColor for Linear gauge.
 ///<br/>labelColor-string	default-null
 ///<br/><br/>
+///Set the  localization culture  for the Linear gauge
+///<br/>locale-string	default-en-US
+///<br/><br/>
 ///Specifies the maximum value of Linear gauge.
 ///<br/>maximum-number	default-100
 ///<br/><br/>
@@ -13280,7 +14148,7 @@ ejLinearGauge :function (options) {
 ///Specifies the orientation for Linear gauge.
 ///<br/>orientation-string	default-Vertical
 ///<br/><br/>
-///Specify labelPosition value of Linear gauge See OuterCustomLabelPosition
+///Specify labelPosition value of Linear gauge See 
 ///<br/>outerCustomLabelPosition-ej.datavisualization.LinearGauge.OuterCustomLabelPosition|string	default-bottom
 ///<br/><br/>
 ///Specifies the pointerGradient1 for Linear gauge.
@@ -13349,7 +14217,7 @@ ejLinearGauge :function (options) {
 ///Specifies the fontFamily in customLabels
 ///<br/>fontFamily-string	default-Arial
 ///<br/><br/>
-///Specifies the fontStyle in customLabels. See FontStyle
+///Specifies the fontStyle in customLabels. See 
 ///<br/>fontStyle-ej.datavisualization.LinearGauge.FontStyle|string	default-Bold
 ///<br/><br/>
 ///Specifies the font size in customLabels
@@ -13376,7 +14244,7 @@ ejLinearGauge :function (options) {
 ///Specifies the label Value in customLabels
 ///<br/>value-string	default-
 ///<br/><br/>
-///Specifies the scale Direction of the Scale. See Directions
+///Specifies the scale Direction of the Scale. See 
 ///<br/>direction-ej.datavisualization.LinearGauge.Direction|string	default-CounterClockwise
 ///<br/><br/>
 ///Specifies the indicator
@@ -13410,7 +14278,7 @@ ejLinearGauge :function (options) {
 ///<br/>height-number	default-30
 ///<br/><br/>
 ///Specifies the opacity in bar indicators
-///<br/>opacity-number	default-NaN
+///<br/>opacity-number	default-null
 ///<br/><br/>
 ///Specifies the position in bar indicators
 ///<br/>position-any	default-null
@@ -13490,19 +14358,19 @@ ejLinearGauge :function (options) {
 ///Specifies the opacity of label.
 ///<br/>opacity-number	default-0
 ///<br/><br/>
-///Specifies the label Placement of label. See LabelPlacement
+///Specifies the label Placement of label. See 
 ///<br/>placement-ej.datavisualization.LinearGauge.PointerPlacement|string	default-Near
 ///<br/><br/>
 ///Specifies the textColor of font.
 ///<br/>textColor-string	default-null
 ///<br/><br/>
-///Specifies the label Style of label. See LabelType
+///Specifies the label Style of label. See 
 ///<br/>type-ej.datavisualization.LinearGauge.ScaleType|string	default-ej.datavisualization.LinearGauge.LabelType.Major
 ///<br/><br/>
 ///Specifies the unitText of label.
 ///<br/>unitText-string	default-
 ///<br/><br/>
-///Specifies the unitText Position of label.See UnitTextPlacement
+///Specifies the unitText Position of label.See 
 ///<br/>unitTextPlacement-ej.datavisualization.LinearGauge.UnitTextPlacement|string	default-Back
 ///<br/><br/>
 ///Specifies the scaleBar Length.
@@ -13541,7 +14409,7 @@ ejLinearGauge :function (options) {
 ///Specifies the pointer Placement of marker pointer See PointerPlacement
 ///<br/>placement-ej.datavisualization.LinearGauge.PointerPlacement|string	default-Far
 ///<br/><br/>
-///Specifies the marker Style of marker pointerSee MarkerType
+///Specifies the marker Style of marker pointerSee 
 ///<br/>type-ej.datavisualization.LinearGauge.MarkerType|string	default-Triangle
 ///<br/><br/>
 ///Specifies the value of marker pointer
@@ -13661,13 +14529,13 @@ ejLinearGauge :function (options) {
 ///Specifies the tick Placement in the tick. See TickPlacement
 ///<br/>placement-ej.datavisualization.LinearGauge.PointerPlacement|string	default-Near
 ///<br/><br/>
-///Specifies the tick Style in the tick. See TickType
+///Specifies the tick Style in the tick. See 
 ///<br/>type-ej.datavisualization.LinearGauge.TicksType|string	default-MajorInterval
 ///<br/><br/>
 ///Specifies the tick Width in the tick.
 ///<br/>width-number	default-3
 ///<br/><br/>
-///Specifies the scaleBar type .See ScaleType
+///Specifies the scaleBar type .See 
 ///<br/>type-ej.datavisualization.LinearGauge.ScaleType|string	default-Rectangle
 ///<br/><br/>
 ///Specifies the scaleBar width.
@@ -13865,7 +14733,7 @@ mergeData:function(data){
 /// <summary>
 /// Merges the given data with the existing data items in the listbox.
 /// </summary>
-/// <param name="data"	type="Array&lt;any&gt;">Data to merge in listbox.</param>
+/// <param name="data"	type="any[]">Data to merge in listbox.</param>
 /// </signature>
 },
 moveDown:function(){
@@ -14041,7 +14909,7 @@ showItemsByValues:function(values){
 /// <summary>
 /// Shows the hidden list items using its values.
 /// </summary>
-/// <param name="values"	type="Array&lt;any&gt;">Values of the listbox items to be shown.</param>
+/// <param name="values"	type="any[]">Values of the listbox items to be shown.</param>
 /// </signature>
 },
 hideItemsByValues:function(values){
@@ -14049,7 +14917,7 @@ hideItemsByValues:function(values){
 /// <summary>
 /// Hides the list item using its values.
 /// </summary>
-/// <param name="values"	type="Array&lt;any&gt;">Values of the listbox items to be hidden.</param>
+/// <param name="values"	type="any[]">Values of the listbox items to be hidden.</param>
 /// </signature>
 },
 showItemByValue:function(value){
@@ -14217,7 +15085,7 @@ ejListBox :function (options) {
 ///<br/>itemRequestCount-number	default-5
 ///<br/><br/>
 ///Loads data for the listbox by default (i.e. on initialization) when it is set to true. It creates empty ListBox if it is set to false.
-///<br/>loadDataOnInit-boolean	default-
+///<br/>loadDataOnInit-boolean	default-true
 ///<br/><br/>
 ///The query to retrieve required data from the data source.
 ///<br/>query-ej.Query	default-ej.Query()
@@ -14234,6 +15102,9 @@ ejListBox :function (options) {
 ///To display the ListBox container with rounded corners.
 ///<br/>showRoundedCorner-boolean	default-false
 ///<br/><br/>
+///Set to sort ListBox items either by Ascending or Descending order. By default sortOrder is set as enum type of "None".You can use only below mentioned type for sorting purpose.
+///<br/>sortOrder-ej.ListBox.SortOrder|string	default-ej.SortOrder.None
+///<br/><br/>
 ///The template to display the ListBox widget with customized appearance.
 ///<br/>template-string	default-null
 ///<br/><br/>
@@ -14241,13 +15112,13 @@ ejListBox :function (options) {
 ///<br/>value-number	default-&#226;€œ&#226;€
 ///<br/><br/>
 ///Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
-///<br/>virtualScrollMode-ej.VirtualScrollMode|string	default-
+///<br/>virtualScrollMode-ej.VirtualScrollMode|string	default-ej.VirtualScrollMode.Normal
 ///<br/><br/>
 ///Defines the width of the ListBox widget.
 ///<br/>width-string	default-null
 ///<br/><br/>
 ///Specifies the targetID for the listbox items.
-///<br/>targetID-string	default-
+///<br/>targetID-string	default-null
 ///</summary>
 ///<param name="options" type="Object">
 ///The widget configuration options
@@ -14271,19 +15142,19 @@ intellisense.annotate(instance, {
 addItem:function(item, index, groupid){
 /// <signature>
 /// <summary>
-/// To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it.
+/// To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound to ListView, we need to pass either an HTML element or JSON objects in this method.
 /// </summary>
-/// <param name="item"	type="any">Specifies the item to be added in ListView</param>
+/// <param name="item"	type="string|any">To pass the list item as element/ JSON object</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it.
+/// To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound to ListView, we need to pass either an HTML element or JSON objects in this method.
 /// </summary>
 /// <param name="index"	type="number">Specifies the index where item to be added</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it.
+/// To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound to ListView, we need to pass either an HTML element or JSON objects in this method.
 /// </summary>
 /// <param name="groupid"	type="string">optionalThis is an optional parameter. You must pass the group list title here if grouping is enabled in the ListView</param>
 /// </signature>
@@ -14573,6 +15444,18 @@ ejListView :function (options) {
 ///<br/><br/>
 ///Specifies the width.
 ///<br/>width-string|number	default-null
+///<br/><br/>
+///Specifies the number of items to be fetched on each scroll. Note: This property works only with Virtual scrolling.
+///<br/>itemRequestCount-number	default-5
+///<br/><br/>
+///Specifies the maximum number of items to be fetched. Note: This will work only with Virtual scrolling
+///<br/>totalItemsCount-number	default-null
+///<br/><br/>
+///Loads the list data on demand via scrolling behavior to improve the applicationâ€™s performance. There are two ways to load data which can be defined using virtualScrollMode property.
+///<br/>allowVirtualScrolling-boolean	default-false
+///<br/><br/>
+///Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
+///<br/>virtualScrollMode-ej.VirtualScrollMode|string	default-ej.VirtualScrollMode.Normal
 ///</summary>
 ///<param name="options" type="Object">
 ///The widget configuration options
@@ -14679,6 +15562,9 @@ ejMap :function (options) {
 ///Specify the center position where map should be displayed
 ///<br/>centerPosition-any	default-[0,0]
 ///<br/><br/>
+///Controls the selection through dragging
+///<br/>draggingOnSelection-boolean	default-false
+///<br/><br/>
 ///Enables or Disables the map animation
 ///<br/>enableAnimation-boolean	default-false
 ///<br/><br/>
@@ -14690,6 +15576,9 @@ ejMap :function (options) {
 ///<br/><br/>
 ///Determines whether map need to resize when container is resized
 ///<br/>enableResize-boolean	default-true
+///<br/><br/>
+///Determines whether map need to resize when container is resized
+///<br/>isResponsive-boolean	default-true
 ///<br/><br/>
 ///Enables or Disables the Zooming for map.
 ///<br/>zoomSettings-ZoomSettings	default-
@@ -14729,6 +15618,9 @@ ejMap :function (options) {
 ///<br/><br/>
 ///Set the orientation value for navigation control
 ///<br/>orientation-ej.datavisualization.Map.LabelOrientation|string	default-vertical
+///<br/><br/>
+///Name of the culture based on which map should be localized. Labels are localized with respect to the culture name.String type properties like template text are not localized automatically. Provide localized text as value to string type properties.
+///<br/>locale-string	default-en-US
 ///<br/><br/>
 ///Layer for holding the map shapes
 ///<br/>layers-Array&lt;Layers&gt;	default-
@@ -14806,7 +15698,7 @@ ejMap :function (options) {
 ///<br/>labelSettings-any	default-
 ///<br/><br/>
 ///enable or disable the enableSmartLabel property
-///<br/>enableSmartLabel-Boolean	default-false
+///<br/>enableSmartLabel-boolean	default-false
 ///<br/><br/>
 ///set the labelLength property
 ///<br/>labelLength-number	default-&#39;2&#39;
@@ -14819,6 +15711,9 @@ ejMap :function (options) {
 ///<br/><br/>
 ///set the smartLabelSize property
 ///<br/>smartLabelSize-ej.datavisualization.Map.LabelSize|string	default-fixed
+///<br/><br/>
+///Specifies the map view type.
+///<br/>geometryType-ej.datavisualization.Map.GeometryType|string	default-&#39;geographic&#39;
 ///<br/><br/>
 ///Specifies the map type.
 ///<br/>layerType-ej.datavisualization.Map.LayerType|string	default-&#39;geometry&#39;
@@ -14884,7 +15779,259 @@ ejMap :function (options) {
 ///<br/>mapItemsTemplate-string	default-
 ///<br/><br/>
 ///Specify markers for shape layer.
-///<br/>markers-Array&lt;any&gt;	default-[]
+///<br/>markers-Array&lt;any&gt;	default-
+///<br/><br/>
+///Specifies the map marker template for map layer.
+///<br/>markerTemplate-string	default-null
+///<br/><br/>
+///Specify selectedMapShapes for shape layer
+///<br/>selectedMapShapes-Array&lt;any&gt;	default-[]
+///<br/><br/>
+///Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
+///<br/>selectionMode-ej.datavisualization.Map.SelectionMode|string	default-default
+///<br/><br/>
+///Specifies the shape data for the shape layer
+///<br/>shapeData-any	default-
+///<br/><br/>
+///Specifies the shape settings of map layer
+///<br/>shapeSettings-any	default-
+///<br/><br/>
+///Enables or Disables the auto fill colors for shape layer in map. When this property value set to true, shapes will be filled with palette colors.
+///<br/>autoFill-boolean	default-false
+///<br/><br/>
+///Specifies the colorMappings of the shape layer in map
+///<br/>colorMappings-any	default-null
+///<br/><br/>
+///Specifies the range colorMappings in the shape layer of map.
+///<br/>rangeColorMapping-Array&lt;any&gt;	default-null
+///<br/><br/>
+///Specifies the start range colorMappings in the shape layer of map.
+///<br/>from-number	default-null
+///<br/><br/>
+///Specifies the to range colorMappings in the shape layer of map.
+///<br/>to-number	default-null
+///<br/><br/>
+///Specifies the gradientColors in the shape layer of map.
+///<br/>gradientColors-Array&lt;any&gt;	default-null
+///<br/><br/>
+///Specifies the equalColorMapping in the shape layer of map.
+///<br/>equalColorMapping-Array&lt;any&gt;	default-null
+///<br/><br/>
+///Specifies the equalColorMapping value in the shape layer of map.
+///<br/>value-string	default-null
+///<br/><br/>
+///Specifies the equalColorMapping color in the shape layer of map.
+///<br/>color-string	default-null
+///<br/><br/>
+///Specifies the shape color palette value of the shape layer in map. Accepted colorPalette values are palette1, palette2, palette3 and custompalette.
+///<br/>colorPalette-ej.datavisualization.Map.ColorPalette|string	default-palette1
+///<br/><br/>
+///Specifies the shape color valuePath of the shape layer in map
+///<br/>colorValuePath-string	default-null
+///<br/><br/>
+///Enables or Disables the gradient colors for map shapes.
+///<br/>enableGradient-boolean	default-false
+///<br/><br/>
+///Specifies the shape fill color of the shape layer in map
+///<br/>fill-string	default-#E5E5E5
+///<br/><br/>
+///Specifies the mouse over width of the shape layer in map
+///<br/>highlightBorderWidth-number	default-1
+///<br/><br/>
+///Specifies the mouse hover color of the shape layer in map
+///<br/>highlightColor-string	default-gray
+///<br/><br/>
+///Specifies the mouse over stroke color of the shape layer in map
+///<br/>highlightStroke-string	default-#C1C1C1
+///<br/><br/>
+///Specifies the shape selection color of the shape layer in map
+///<br/>selectionColor-string	default-gray
+///<br/><br/>
+///Specifies the shape selection stroke color of the shape layer in map
+///<br/>selectionStroke-string	default-#C1C1C1
+///<br/><br/>
+///Specifies the shape selection stroke width of the shape layer in map
+///<br/>selectionStrokeWidth-number	default-1
+///<br/><br/>
+///Specifies the shape stroke color of the shape layer in map
+///<br/>stroke-string	default-#C1C1C1
+///<br/><br/>
+///Specifies the shape stroke thickness value of the shape layer in map
+///<br/>strokeThickness-number	default-0.2
+///<br/><br/>
+///Specifies the shape valuePath of the shape layer in map
+///<br/>valuePath-string	default-null
+///<br/><br/>
+///Shows or hides the map items.
+///<br/>showMapItems-boolean	default-false
+///<br/><br/>
+///Shows or hides the tooltip for shapes
+///<br/>showTooltip-boolean	default-false
+///<br/><br/>
+///Specifies the tooltip template for shapes.
+///<br/>tooltipTemplate-string	default-
+///<br/><br/>
+///Specifies the URL template for the OSM type map.
+///<br/>urlTemplate-string	default-&#39;http://a.tile.openstreetmap.org/level/tileX/tileY.png&#39;
+///<br/><br/>
+///Sublayer is the collection of shape Layer
+///<br/>sublayers-Array&lt;any&gt;	default-
+///<br/><br/>
+///to get the type of bing map.
+///<br/>bingMapType-ej.datavisualization.Map.BingMapType|string	default-aerial
+///<br/><br/>
+///Specifies the bubble settings for map
+///<br/>bubbleSettings-any	default-
+///<br/><br/>
+///Specifies the bubble Opacity value of bubbles for shape layer in map
+///<br/>bubbleOpacity-number	default-0.9
+///<br/><br/>
+///Specifies the mouse hover color of the shape layer in map
+///<br/>color-string	default-gray
+///<br/><br/>
+///Specifies the colorMappings of the shape layer in map
+///<br/>colorMappings-any	default-null
+///<br/><br/>
+///Specifies the range colorMappings in the bubble layer.
+///<br/>rangeColorMapping-Array&lt;any&gt;	default-null
+///<br/><br/>
+///Start range colorMappings in the bubble layer.
+///<br/>from-number	default-null
+///<br/><br/>
+///End range colorMappings in the bubble layer.
+///<br/>to-number	default-null
+///<br/><br/>
+///GradientColors in the bubble layer of map.
+///<br/>gradientColors-Array&lt;any&gt;	default-
+///<br/><br/>
+///Color of the bubble layer.
+///<br/>color-string	default-null
+///<br/><br/>
+///Specifies the bubble color valuePath of the shape layer in map
+///<br/>colorValuePath-string	default-null
+///<br/><br/>
+///Specifies the maximum size value of bubbles for shape layer in map
+///<br/>maxValue-number	default-20
+///<br/><br/>
+///Specifies the minimum size value of bubbles for shape layer in map
+///<br/>minValue-number	default-10
+///<br/><br/>
+///Specifies the showBubble visibility status map
+///<br/>showBubble-boolean	default-true
+///<br/><br/>
+///Specifies the tooltip visibility status of the shape layer in map
+///<br/>showTooltip-boolean	default-false
+///<br/><br/>
+///Specifies the bubble tooltip template of the shape layer in map
+///<br/>tooltipTemplate-string	default-null
+///<br/><br/>
+///Specifies the bubble valuePath of the shape layer in map
+///<br/>valuePath-string	default-null
+///<br/><br/>
+///Specifies the datasource for the shape layer
+///<br/>dataSource-any	default-
+///<br/><br/>
+///Specifies the data path of shape
+///<br/>shapeDataPath-string	default-
+///<br/><br/>
+///Specifies the data path of shape
+///<br/>shapePropertyPath-string	default-
+///<br/><br/>
+///Enables or disables the shape mouse hover
+///<br/>enableMouseHover-boolean	default-false
+///<br/><br/>
+///Enables or disables the shape selection
+///<br/>enableSelection-boolean	default-true
+///<br/><br/>
+///to get the key of bing map
+///<br/>key-string	default-null
+///<br/><br/>
+///Options for enabling and configuring labelSettings labelPath, smartLabelSize, labelLength etc.,
+///<br/>labelSettings-any	default-
+///<br/><br/>
+///enable or disable the enableSmartLabel property
+///<br/>enableSmartLabel-boolean	default-false
+///<br/><br/>
+///set the labelLength property
+///<br/>labelLength-number	default-&#39;2&#39;
+///<br/><br/>
+///set the labelPath property
+///<br/>labelPath-string	default-null
+///<br/><br/>
+///The property specifies whether to show labels or not.
+///<br/>showLabels-boolean	default-false
+///<br/><br/>
+///set the smartLabelSize property
+///<br/>smartLabelSize-ej.datavisualization.Map.LabelSize|string	default-fixed
+///<br/><br/>
+///Specifies the map view type.
+///<br/>geometryType-ej.datavisualization.Map.GeometryType|string	default-&#39;geographic&#39;
+///<br/><br/>
+///Specifies the map type.
+///<br/>layerType-ej.datavisualization.Map.LayerType|string	default-&#39;geometry&#39;
+///<br/><br/>
+///Options for enabling and configuring legendSettings position, height, width, mode, type etc.,
+///<br/>legendSettings-any	default-
+///<br/><br/>
+///Determines whether the legend should be placed outside or inside the map bounds
+///<br/>dockOnMap-boolean	default-false
+///<br/><br/>
+///Determines the legend placement and it is valid only when dockOnMap is true
+///<br/>dockPosition-ej.datavisualization.Map.DockPosition|string	default-top
+///<br/><br/>
+///height value for legend setting
+///<br/>height-number	default-0
+///<br/><br/>
+///to get icon value for legend setting
+///<br/>icon-ej.datavisualization.Map.LegendIcons|string	default-rectangle
+///<br/><br/>
+///icon height value for legend setting
+///<br/>iconHeight-number	default-20
+///<br/><br/>
+///icon Width value for legend setting
+///<br/>iconWidth-number	default-20
+///<br/><br/>
+///set the orientation of legend labels
+///<br/>labelOrientation-ej.datavisualization.Map.LabelOrientation|string	default-vertical
+///<br/><br/>
+///to get leftLabel value for legend setting
+///<br/>leftLabel-string	default-null
+///<br/><br/>
+///to get mode of legend setting
+///<br/>mode-ej.datavisualization.Map.Mode|string	default-default
+///<br/><br/>
+///set the position of legend settings
+///<br/>position-ej.datavisualization.Map.Position|string	default-topleft
+///<br/><br/>
+///x position value for legend setting
+///<br/>positionX-number	default-0
+///<br/><br/>
+///y position value for legend setting
+///<br/>positionY-number	default-0
+///<br/><br/>
+///to get rightLabel value for legend setting
+///<br/>rightLabel-string	default-null
+///<br/><br/>
+///Enables or Disables the showLabels
+///<br/>showLabels-boolean	default-false
+///<br/><br/>
+///Enables or Disables the showLegend
+///<br/>showLegend-boolean	default-false
+///<br/><br/>
+///to get title of legend setting
+///<br/>title-string	default-null
+///<br/><br/>
+///to get type of legend setting
+///<br/>type-ej.datavisualization.Map.LegendType|string	default-layers
+///<br/><br/>
+///width value for legend setting
+///<br/>width-number	default-0
+///<br/><br/>
+///Specifies the map items template for shapes.
+///<br/>mapItemsTemplate-string	default-
+///<br/><br/>
+///Specify markers for shape layer.
+///<br/>markers-Array&lt;any&gt;	default-
 ///<br/><br/>
 ///Specifies the map marker template for map layer.
 ///<br/>markerTemplate-string	default-null
@@ -15225,7 +16372,7 @@ remove:function(target){
 /// <summary>
 /// Remove Menu item.
 /// </summary>
-/// <param name="target"	type="any|Array&lt;any&gt;">Selector of target node or Object of target node.</param>
+/// <param name="target"	type="any|any[]">Selector of target node or Object of target node.</param>
 /// </signature>
 },
 show:function(locationX, locationY, targetElement, event){
@@ -15280,6 +16427,9 @@ ejMenu :function (options) {
 ///<br/><br/>
 ///Specifies the target id of context menu. On right clicking the specified contextTarget element, context menu gets shown.
 ///<br/>contextMenuTarget-string	default-null
+///<br/><br/>
+///Specifies the container element selectors for submenuâ€™s collision. The submenu gets displayed based on spacing available with respect to container element.
+///<br/>container-string	default-null
 ///<br/><br/>
 ///Specify the CSS class to achieve custom theme.
 ///<br/>cssClass-string	default-
@@ -15653,6 +16803,9 @@ ejPager :function (options) {
 ///Gets or sets a value that indicates whether to define the number of records displayed per page.
 ///<br/>pageSize-number	default-12
 ///<br/><br/>
+///It allows to have multiple choices of pageSize values for Pager control. The "pageSize" API value of the pager will be updated depending upon the value being selected from the dropdown.
+///<br/>pageSizeList-Array&lt;any&gt;	default-null
+///<br/><br/>
 ///Get or sets a value of total number of pages in the pager. The totalPages value is calculated based on page size and total records.
 ///<br/>totalPages-number	default-null
 ///<br/><br/>
@@ -15739,6 +16892,30 @@ showPageNavigationTools:function(show){
 /// <param name="show"	type="boolean">shows/hides navigation tools in the toolbar</param>
 /// </signature>
 },
+showTextMarkupAnnotationTools:function(show){
+/// <signature>
+/// <summary>
+/// Shows/hides the text markup annotation tools in the toolbar.
+/// </summary>
+/// <param name="show"	type="boolean">shows/hides text markup annotation tools in the toolbar</param>
+/// </signature>
+},
+showSignatureTool:function(show){
+/// <signature>
+/// <summary>
+/// Shows/hides the signature tool in the toolbar.
+/// </summary>
+/// <param name="show"	type="boolean">shows/hides signature tool in the toolbar</param>
+/// </signature>
+},
+showSelectionTool:function(show){
+/// <signature>
+/// <summary>
+/// Shows/hides the selection tool in the toolbar.
+/// </summary>
+/// <param name="show"	type="boolean">shows/hides selection tool in the toolbar</param>
+/// </signature>
+},
 goToPage:function(pageNumber){
 /// <signature>
 /// <summary>
@@ -15811,6 +16988,26 @@ zoomTo:function(zoomValue){
 /// <param name="zoomValue"	type="number">zoom value for scaling the pages in the PDF Viewer</param>
 /// </signature>
 },
+addAnnotation:function(annotationType){
+/// <signature>
+/// <summary>
+/// Adds annotations to the PDF document.
+/// </summary>
+/// <param name="annotationType"	type="ej.PdfViewer.AnnotationType">type of the annotation to be added in the PDF document.</param>
+/// </signature>
+},
+undo:function(){
+/// <signature>
+/// <summary>
+/// Performs undo function for the included annotations in the PDF document.
+/// </summary>
+},
+redo:function(){
+/// <signature>
+/// <summary>
+/// Performs redo function for the included annotations in the PDF document.
+/// </summary>
+},
 unload:function(){
 /// <signature>
 /// <summary>
@@ -15865,6 +17062,96 @@ ejPdfViewer :function (options) {
 ///Sets the PDF document path for initial loading.
 ///<br/>documentPath-string	default-
 ///<br/><br/>
+///Enables or disables the text markup annotations.
+///<br/>enableTextMarkupAnnotations-boolean	default-
+///<br/><br/>
+///Enables or disables the highlight annotation.
+///<br/>enableHighlightAnnotation-boolean	default-
+///<br/><br/>
+///Enables or disables the underline annotation.
+///<br/>enableUnderlineAnnotation-boolean	default-
+///<br/><br/>
+///Enables or disables the strikethrough annotation.
+///<br/>enableStrikethroughAnnotation-boolean	default-
+///<br/><br/>
+///Enables or disables the adding of handwritten signature over the PDF document.
+///<br/>enableSignature-boolean	default-
+///<br/><br/>
+///Gets/sets the settings of the strikethrough annotation.
+///<br/>strikethroughSettings-StrikethroughSettings	default-
+///<br/><br/>
+///Gets/sets the color of the strikethrough annotation.
+///<br/>color-string	default-
+///<br/><br/>
+///Gets/sets the author of the strikethrough annotation.
+///<br/>author-string	default-
+///<br/><br/>
+///Gets/sets the opacity of the strikethrough annotation.
+///<br/>opacity-number	default-
+///<br/><br/>
+///Gets/sets the subject of the strikethrough annotation.
+///<br/>subject-string	default-
+///<br/><br/>
+///Gets/sets the modified Date of the strikethrough annotation.
+///<br/>modifiedDate-string	default-
+///<br/><br/>
+///Gets/sets the locked property of the strikethrough annotation.
+///<br/>isLocked-boolean	default-
+///<br/><br/>
+///Gets/sets the settings of the underline annotation.
+///<br/>underlineSettings-UnderlineSettings	default-
+///<br/><br/>
+///Gets/sets the color of the underline annotation.
+///<br/>color-string	default-
+///<br/><br/>
+///Gets/sets the author of the underline annotation.
+///<br/>author-string	default-
+///<br/><br/>
+///Gets/sets the opacity of the underline annotation.
+///<br/>opacity-number	default-
+///<br/><br/>
+///Gets/sets the subject of the underline annotation.
+///<br/>subject-string	default-
+///<br/><br/>
+///Gets/sets the modified Date of the underline annotation.
+///<br/>modifiedDate-string	default-
+///<br/><br/>
+///Gets/sets the locked property of the underline annotation.
+///<br/>isLocked-boolean	default-
+///<br/><br/>
+///Gets/sets the settings of the highlight annotation.
+///<br/>highlightSettings-HighlightSettings	default-
+///<br/><br/>
+///Gets/sets the color of the highlight  annotation.
+///<br/>color-string	default-
+///<br/><br/>
+///Gets/sets the author of the highlight annotation.
+///<br/>author-string	default-
+///<br/><br/>
+///Gets/sets the opacity of the highlight annotation.
+///<br/>opacity-number	default-
+///<br/><br/>
+///Gets/sets the subject of the highlight annotation.
+///<br/>subject-string	default-
+///<br/><br/>
+///Gets/sets the modified Date of the highlight annotation.
+///<br/>modifiedDate-string	default-
+///<br/><br/>
+///Gets/sets the locked property of the highlight annotation.
+///<br/>isLocked-boolean	default-
+///<br/><br/>
+///Gets/sets the settings of the handwritten signature.
+///<br/>signatureSettings-SignatureSettings	default-
+///<br/><br/>
+///Gets/sets the color of the handwritten signature.
+///<br/>color-string	default-
+///<br/><br/>
+///Gets/sets the opacity of the handwritten signature.
+///<br/>opacity-number	default-
+///<br/><br/>
+///Specifies the type of the annotations.
+///<br/>annotationType-ej.PdfViewer.AnnotationType|string	default-
+///<br/><br/>
 ///Gets the total number of pages in PDF document.
 ///<br/>pageCount-number	default-
 ///<br/><br/>
@@ -15876,6 +17163,9 @@ ejPdfViewer :function (options) {
 ///<br/><br/>
 ///Specifies the location of the supporting PDF service
 ///<br/>pdfService-ej.PdfViewer.PdfService|string	default-
+///<br/><br/>
+///Specifies the viewer interaction mode.
+///<br/>interactionMode-ej.PdfViewer.InteractionMode|string	default-
 ///<br/><br/>
 ///Specifies the open state of the hyperlink in the PDF document.
 ///<br/>hyperlinkOpenState-ej.PdfViewer.LinkTarget|string	default-
@@ -16047,6 +17337,12 @@ refreshControl:function(){
 /// Re-renders the control with the data source at the instant.
 /// </summary>
 },
+destroy:function(){
+/// <signature>
+/// <summary>
+/// This function Destroy the PivotChart widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+/// </summary>
+},
 generateJSON:function(){
 /// <signature>
 /// <summary>
@@ -16097,6 +17393,12 @@ ejPivotChart :function (options) {
 ///<br/><br/>
 ///Contains the respective cube name from OLAP database as string type.
 ///<br/>cube-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///To set the data source name to fetch data from that.
+///<br/>sourceInfo-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///Set the provider name for PivotChart to identify whether the provider is SSAS or Mondrian.
+///<br/>providerName-string	default-ssas
 ///<br/><br/>
 ///Provides the raw data source for the PivotChart.
 ///<br/>data-any	default-null
@@ -16200,6 +17502,9 @@ ejPivotChart :function (options) {
 ///Allows the user to view PivotChart from right to left.
 ///<br/>enableRTL-boolean	default-false
 ///<br/><br/>
+///Allows user to render complete PivotChart on drill operation, that is, when expanding and collapsing members which are shown in multi-level labels.
+///<br/>enableMultiLevelLabels-boolean	default-false
+///<br/><br/>
 ///Allows the user to enable PivotChartâ€™s responsiveness in the browser layout.
 ///<br/>isResponsive-boolean	default-false
 ///<br/><br/>
@@ -16220,6 +17525,9 @@ ejPivotChart :function (options) {
 ///<br/><br/>
 ///Allows the user to rotate the angle of PivotChart in 3D view.
 ///<br/>rotation-number	default-0
+///<br/><br/>
+///Allows the user to enable/disable the control options of PivotChart.
+///<br/>enableContextMenu-boolean	default-false
 ///<br/><br/>
 ///Allows the user to set custom name for the methods at service-end, communicated on AJAX post.
 ///<br/>serviceMethodSettings-ServiceMethodSettings	default-{}
@@ -16295,6 +17603,18 @@ refreshControl:function(){
 /// <signature>
 /// <summary>
 /// Re-renders the control with the report at that instant.
+/// </summary>
+},
+getActiveTab:function(){
+/// <signature>
+/// <summary>
+/// Returns the control tab string that displays currently in PivotClient.
+/// </summary>
+},
+destroy:function(){
+/// <signature>
+/// <summary>
+/// This function Destroy the PivotClient widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 /// </summary>
 },
 getOlapReport:function(){
@@ -16390,6 +17710,15 @@ ejPivotClient :function (options) {
 ///Shows/Hides the sub-total of the field in PivotGrid.
 ///<br/>showSubTotal-boolean	default-true
 ///<br/><br/>
+///Allows to set the format for the column headers.
+///<br/>format-string	default-
+///<br/><br/>
+///This property sets type of display of date.
+///<br/>formatString-string	default-
+///<br/><br/>
+///Allows to set the custom theme for the column headers.
+///<br/>cssClass-string	default-
+///<br/><br/>
 ///Allows the user to set the sorting order of the members of the field.
 ///<br/>sortOrder-ej.PivotAnalysis.SortOrder|string	default-ej.PivotAnalysis.SortOrder.Ascending
 ///<br/><br/>
@@ -16441,6 +17770,15 @@ ejPivotClient :function (options) {
 ///Shows/Hides the sub-total of the field.
 ///<br/>showSubTotal-boolean	default-true
 ///<br/><br/>
+///Allows to set the format for the row headers.
+///<br/>format-string	default-
+///<br/><br/>
+///This property sets type of display of date.
+///<br/>formatString-string	default-
+///<br/><br/>
+///Allows to set the custom theme for the row headers.
+///<br/>cssClass-string	default-
+///<br/><br/>
 ///Allows the user to set the sorting order of the members of the field.
 ///<br/>sortOrder-ej.PivotAnalysis.SortOrder|string	default-ej.PivotAnalysis.SortOrder.Ascending
 ///<br/><br/>
@@ -16486,6 +17824,9 @@ ejPivotClient :function (options) {
 ///This property sets type of display of date.
 ///<br/>formatString-string	default-
 ///<br/><br/>
+///Allows to set the custom theme for the values.
+///<br/>cssClass-string	default-
+///<br/><br/>
 ///Allows to set the formula for calculation of values for calculated members in Relational datasource.
 ///<br/>formula-string	default-
 ///<br/><br/>
@@ -16510,13 +17851,19 @@ ejPivotClient :function (options) {
 ///Contains the respective cube name from OLAP database as string type.
 ///<br/>cube-string	default-&#226;€œ&#226;€
 ///<br/><br/>
+///To set the data source name to fetch data from that.
+///<br/>sourceInfo-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///Set the provider name for PivotClient to identify whether the provider is SSAS or Mondrian.
+///<br/>providerName-string	default-ssas
+///<br/><br/>
 ///Provides the raw data source for the PivotClient.
 ///<br/>data-any	default-null
 ///<br/><br/>
 ///In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
 ///<br/>catalog-string	default-&#226;€œ&#226;€
 ///<br/><br/>
-///Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option for OLAP data source in client-mode.
+///Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option in client-mode.
 ///<br/>enableAdvancedFilter-boolean	default-false
 ///<br/><br/>
 ///Sets a name to the report bound to the control.
@@ -16537,6 +17884,9 @@ ejPivotClient :function (options) {
 ///Allows to set the page number in series axis to be loaded by default.
 ///<br/>seriesCurrentPage-number	default-1
 ///<br/><br/>
+///Enables the Drill-Through feature which retrieves the raw items that are used to create the specific cell in PivotGrid.
+///<br/>enableDrillThrough-boolean	default-false
+///<br/><br/>
 ///Allows the user to customize the widget's layout and appearance.
 ///<br/>displaySettings-DisplaySettings	default-{}
 ///<br/><br/>
@@ -16552,11 +17902,62 @@ ejPivotClient :function (options) {
 ///Enables an option to enhance the space for PivotGrid and PivotChart by hiding Cube Browser and Axis Element Builder.
 ///<br/>enableTogglePanel-boolean	default-false
 ///<br/><br/>
-///Allows the user to enable PivotClientâ€™s responsiveness in the browser layout.
-///<br/>isResponsive-boolean	default-false
-///<br/><br/>
 ///Sets the display mode (Only Chart/Only Grid/Both) in PivotClient.
 ///<br/>mode-ej.PivotClient.DisplayMode|string	default-ej.PivotClient.DisplayMode.ChartAndGrid
+///<br/><br/>
+///Allows user to set visibility of icons in toolbar panel.
+///<br/>toolbarIconSettings-ToolbarIconSettings	default-{}
+///<br/><br/>
+///Allows user to set the visibility of Add Report icon in toolbar panel.
+///<br/>enableAddReport-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of New Report icon in toolbar panel.
+///<br/>enableNewReport-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Rename Report icon in toolbar panel.
+///<br/>enableRenameReport-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of DB Manipulation icon in toolbar panel.
+///<br/>enableDBManipulation-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Word Export icon in toolbar panel.
+///<br/>enableWordExport-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Excel Export icon in toolbar panel.
+///<br/>enableExcelExport-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of PDF Export icon in toolbar panel.
+///<br/>enablePdfExport-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of MDX Query icon in toolbar panel.
+///<br/>enableMDXQuery-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Defer Update icon in toolbar panel.
+///<br/>enableDeferUpdate-boolean	default-false
+///<br/><br/>
+///Allows user to set the visibility of Full Screen icon in toolbar panel.
+///<br/>enableFullScreen-boolean	default-false
+///<br/><br/>
+///Allows user to set the visibility of Sort/Filter Column icon in toolbar panel.
+///<br/>enableSortOrFilterColumn-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Sort/Filter Row icon in toolbar panel.
+///<br/>enableSortOrFilterRow-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Toggle Axis icon in toolbar panel.
+///<br/>enableToggleAxis-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Chart Types icon in toolbar panel.
+///<br/>enableChartTypes-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Remove Report icon in toolbar panel.
+///<br/>enableRemoveReport-boolean	default-true
+///<br/><br/>
+///Allows user to set the visibility of Calculated Member icon in toolbar panel.
+///<br/>enableCalculatedMember-boolean	default-false
+///<br/><br/>
+///Allows user to show unique name on pivot button.
+///<br/>showUniqueNameOnPivotButton-boolean	default-false
 ///<br/><br/>
 ///Enables the splitter option for resizing the elements inside the control.
 ///<br/>enableSplitter-boolean	default-false
@@ -16594,6 +17995,18 @@ ejPivotClient :function (options) {
 ///Sets the summary layout for PivotGrid. Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary and excel-like summary.
 ///<br/>gridLayout-ej.PivotGrid.Layout|string	default-ej.PivotGrid.Layout.Normal
 ///<br/><br/>
+///Allows the user to hide PivotClient's Cube Browser and Axis Element Builder while initiate the widget.
+///<br/>collapseCubeBrowserByDefault-boolean	default-false
+///<br/><br/>
+///Allows the user to view the KPI elements in tree-view inside PivotClient's Cube Browser.
+///<br/>enableKPI-boolean	default-false
+///<br/><br/>
+///Allows the user to enable PivotClientâ€™s responsiveness in the browser layout.
+///<br/>isResponsive-boolean	default-false
+///<br/><br/>
+///Options to customize the size of the PivotClient control.
+///<br/>size-any	default-Example:
+///<br/><br/>
 ///Allows the user to set the localized language for the widget.
 ///<br/>locale-string	default-en-US
 ///<br/><br/>
@@ -16624,6 +18037,12 @@ ejPivotClient :function (options) {
 ///Allows the user to set the custom name for the service method responsible for loading a report collection from the database.
 ///<br/>loadReport-string	default-LoadReportFromDB
 ///<br/><br/>
+///Allows the user to set the custom name for the service method responsible for remove a report collection from the database.
+///<br/>removeDBReport-string	default-RemoveReportFromDB
+///<br/><br/>
+///Allows the user to set the custom name for the service method responsible for rename the report collection in the database.
+///<br/>renameDBReport-string	default-RenameReportInDB
+///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for retrieving the MDX query for the current report.
 ///<br/>mdxQuery-string	default-GetMDXQuery
 ///<br/><br/>
@@ -16653,6 +18072,15 @@ ejPivotClient :function (options) {
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible on navigating between pages in paged PivotClient.
 ///<br/>paging-string	default-Paging
+///<br/><br/>
+///Allows the user to set the custom name for the service method responsible for updating report with calculated member.
+///<br/>calculatedMember-string	default-CalculatedMember
+///<br/><br/>
+///Allows the user to set the custom name for the service method responsible for performing drill through operation.
+///<br/>drillThroughHierarchies-string	default-DrillThroughHierarchies
+///<br/><br/>
+///Allows the user to set the custom name for the service method responsible for performing drill through operation in data table.
+///<br/>drillThroughDataTable-string	default-DrillThroughDataTable
 ///<br/><br/>
 ///Sets the title for PivotClient widget.
 ///<br/>title-string	default-
@@ -16773,6 +18201,12 @@ renderControlFromJSON:function(){
 /// This function receives the JSON formatted datasource and renders the PivotGauge control.
 /// </summary>
 },
+destroy:function(){
+/// <signature>
+/// <summary>
+/// This function Destroy the PivotGauge widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+/// </summary>
+},
 getOlapReport:function(){
 /// <signature>
 /// <summary>
@@ -16832,6 +18266,12 @@ ejPivotGauge :function (options) {
 ///<br/><br/>
 ///Contains the respective cube name from OLAP database as string type.
 ///<br/>cube-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///To set the data source name to fetch data from that.
+///<br/>sourceInfo-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///Set the provider name for PivotGauge to identify whether the provider is SSAS or Mondrian.
+///<br/>providerName-string	default-ssas
 ///<br/><br/>
 ///Provides the raw data source for the PivotGauge.
 ///<br/>data-any	default-null
@@ -17017,13 +18457,19 @@ refreshControl:function(){
 /// This function re-renders the control with the report available at that instant.
 /// </summary>
 },
+destroy:function(){
+/// <signature>
+/// <summary>
+/// This function Destroy the PivotGrid widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+/// </summary>
+},
 calculateCellWidths:function(){
 /// <signature>
 /// <summary>
 /// This function returns the height of all rows and width each and every column.
 /// </summary>
 },
-createConditionalDialog:function(){
+openConditionalFormattingDialog:function(){
 /// <signature>
 /// <summary>
 /// This function creates the conditional formatting dialog to apply conditional formatting for PivotGrid control.
@@ -17146,6 +18592,18 @@ ejPivotGrid :function (options) {
 ///Shows/Hides the sub-total of the field in PivotGrid.
 ///<br/>showSubTotal-boolean	default-true
 ///<br/><br/>
+///Allows to set the format for the column headers.
+///<br/>format-string	default-
+///<br/><br/>
+///This property sets type of display of date.
+///<br/>formatString-string	default-
+///<br/><br/>
+///Allows to set the custom theme for the column headers.
+///<br/>cssClass-string	default-
+///<br/><br/>
+///Allows the user to set delimiter for date type format in formatString. This is applicable for groupByDate option for row/column headers.
+///<br/>delimiter-string	default-
+///<br/><br/>
 ///Allows the user to set the sorting order of the members of the field.
 ///<br/>sortOrder-ej.PivotAnalysis.SortOrder|string	default-ej.PivotAnalysis.SortOrder.Ascending
 ///<br/><br/>
@@ -17160,6 +18618,12 @@ ejPivotGrid :function (options) {
 ///<br/><br/>
 ///Contains the collection of items to be included/excluded among the field members.
 ///<br/>values-Array&lt;any&gt;	default-[]
+///<br/><br/>
+///Allows the user to group the field by date. This is applicable only when the format is set as "date".
+///<br/>groupByDate-any	default-{}
+///<br/><br/>
+///Contains the collection of formatString to group item from the field.
+///<br/>interval-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Lists out the items to be arranged in rows section of PivotGrid.
 ///<br/>rows-Array&lt;any&gt;	default-[]
@@ -17197,6 +18661,18 @@ ejPivotGrid :function (options) {
 ///Shows/Hides the sub-total of the field.
 ///<br/>showSubTotal-boolean	default-true
 ///<br/><br/>
+///Allows to set the format for the row headers.
+///<br/>format-string	default-
+///<br/><br/>
+///This property sets type of display of date.
+///<br/>formatString-string	default-
+///<br/><br/>
+///Allows to set the custom theme for the row headers.
+///<br/>cssClass-string	default-
+///<br/><br/>
+///Allows the user to set delimiter for date type format in formatString. This is applicable for groupByDate option for row/column headers.
+///<br/>delimiter-string	default-
+///<br/><br/>
 ///Allows the user to set the sorting order of the members of the field.
 ///<br/>sortOrder-ej.PivotAnalysis.SortOrder|string	default-ej.PivotAnalysis.SortOrder.Ascending
 ///<br/><br/>
@@ -17211,6 +18687,12 @@ ejPivotGrid :function (options) {
 ///<br/><br/>
 ///Contains the collection of items to be included/excluded among the field members.
 ///<br/>values-Array&lt;any&gt;	default-[]
+///<br/><br/>
+///Allows the user to group the field by date. This is applicable only when the format is set as "date".
+///<br/>groupByDate-any	default-{}
+///<br/><br/>
+///Contains the collection of formatString to group item from the field.
+///<br/>interval-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Lists out the items which supports calculation in PivotGrid.
 ///<br/>values-Array&lt;any&gt;	default-[]
@@ -17236,7 +18718,7 @@ ejPivotGrid :function (options) {
 ///Allows to set the type of PivotGrid summary calculation for the value field with Relational datasource.
 ///<br/>summaryType-ej.PivotAnalysis.SummaryType|string	default-ej.PivotAnalysis.SummaryType.Sum
 ///<br/><br/>
-///Allows to set the format of the values.
+///Allows to set the format for the values.
 ///<br/>format-string	default-
 ///<br/><br/>
 ///This property sets type of display of date.
@@ -17244,6 +18726,9 @@ ejPivotGrid :function (options) {
 ///<br/><br/>
 ///Allows to set the formula for calculation of values for calculated members in Relational datasource.
 ///<br/>formula-string	default-
+///<br/><br/>
+///Allows to set the custom theme for the values.
+///<br/>cssClass-string	default-
 ///<br/><br/>
 ///Lists out the items which supports filtering of values without displaying the members in UI in PivotGrid.
 ///<br/>filters-Array&lt;any&gt;	default-[]
@@ -17265,6 +18750,12 @@ ejPivotGrid :function (options) {
 ///<br/><br/>
 ///Contains the respective cube name from OLAP database as string type.
 ///<br/>cube-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///To set the data source name to fetch data from that.
+///<br/>sourceInfo-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///Set the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian.
+///<br/>providerName-string	default-ssas
 ///<br/><br/>
 ///Provides the raw data source for the PivotGrid.
 ///<br/>data-any	default-null
@@ -17293,7 +18784,7 @@ ejPivotGrid :function (options) {
 ///Allows to set the page number in series axis to be loaded by default.
 ///<br/>seriesCurrentPage-number	default-1
 ///<br/><br/>
-///Holds the neccessary properties for value sorting.
+///Holds the necessary properties for value sorting.
 ///<br/>valueSortSettings-ValueSortSettings	default-{}
 ///<br/><br/>
 ///Contains the headers of the specific column to which value sorting is applied.
@@ -17316,6 +18807,21 @@ ejPivotGrid :function (options) {
 ///<br/><br/>
 ///Allows the user to freeze both the row headers and column headers on scrolling.
 ///<br/>enableFrozenHeaders-boolean	default-false
+///<br/><br/>
+///Allows user to set the size of the scrollbar (horizontal and vertical) visible in PivotGrid.
+///<br/>scrollerSize-number	default-18
+///<br/><br/>
+///Allows user to display header name in PivotGrid control.
+///<br/>headerSettings-HeaderSettings	default-{}
+///<br/><br/>
+///Allows user to enable/disable row header names in PivotGrid control.
+///<br/>showRowItems-boolean	default-false
+///<br/><br/>
+///Allows user to enable/disable column header names in PivotGrid control.
+///<br/>showColumnItems-boolean	default-false
+///<br/><br/>
+///Allows user to show appropriate unique name on Pivot button.
+///<br/>showUniqueNameOnPivotButton-boolean	default-false
 ///<br/><br/>
 ///Object utilized to pass additional information between client-end and service-end on operating the control in server mode.
 ///<br/>customObject-any	default-null
@@ -17347,11 +18853,20 @@ ejPivotGrid :function (options) {
 ///Allows the user to format a specific set of cells based on the condition.
 ///<br/>enableConditionalFormatting-boolean	default-false
 ///<br/><br/>
+///Enables the advanced filtering options Value Filtering, Label Filtering and Sorting for each fields in server mode.
+///<br/>enableAdvancedFilter-boolean	default-false
+///<br/><br/>
 ///Allows the user to refresh the control on-demand and not during every UI operation.
 ///<br/>enableDeferUpdate-boolean	default-false
 ///<br/><br/>
 ///Enables the display of GroupingBar allowing you to filter, sort and remove fields obtained from datasource.
 ///<br/>enableGroupingBar-boolean	default-false
+///<br/><br/>
+///Enables/Disables paging in Member Editor for viewing the large count of members in pages.
+///<br/>enableMemberEditorPaging-boolean	default-false
+///<br/><br/>
+///Allows the user to set the number of members to be displayed in each page of Member Editor on applying paging in it.
+///<br/>memberEditorPageSize-number	default-100
 ///<br/><br/>
 ///Enables/Disables the display of grand total for rows and columns.
 ///<br/>enableGrandTotal-boolean	default-true
@@ -17374,8 +18889,14 @@ ejPivotGrid :function (options) {
 ///Allows the user to enable the animation effects in tooltip.
 ///<br/>enableToolTipAnimation-boolean	default-false
 ///<br/><br/>
-///Allows the user to adjust the width of the columns dynamically.
+///Allows the user to adjust the width of the columns dynamically within given widget size.
 ///<br/>enableColumnResizing-boolean	default-false
+///<br/><br/>
+///Allows the user to fit the width of the column based on its maximum text width.
+///<br/>resizeColumnsToFit-boolean	default-false
+///<br/><br/>
+///Allows the user to enable/disable the context menu of Pivot buttons in the PivotGrid.
+///<br/>enableContextMenu-boolean	default-false
 ///<br/><br/>
 ///Allows the user to view large amount of data through virtual scrolling.
 ///<br/>enableVirtualScrolling-boolean	default-false
@@ -17466,6 +18987,12 @@ ejPivotGrid :function (options) {
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for performing drill through operation in data table.
 ///<br/>drillThroughDataTable-string	default-DrillThroughDataTable
+///<br/><br/>
+///Allows the user to set the custom name for the service method responsible for performing value sorting operation in PivotGrid.
+///<br/>valueSorting-string	default-ValueSorting
+///<br/><br/>
+///Allows the user to set the custom name for the service method responsible for removing pivot button from GroupingBar/Field List.
+///<br/>removeButton-string	default-RemoveButton
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for write-back operation in OLAP Cube. This is only applicable in server-side component.
 ///<br/>writeBack-string	default-WriteBack
@@ -17565,6 +19092,12 @@ refreshControl:function(){
 /// Re-renders the control with the data source bound to the pivot control at that instant.
 /// </summary>
 },
+destroy:function(){
+/// <signature>
+/// <summary>
+/// This function Destroy the PivotSchemaDesigner widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+/// </summary>
+},
 });
 return instance;
 };
@@ -17614,25 +19147,25 @@ ejPivotSchemaDesigner :function (options) {
 ///<br/>pivotControl-any	default-null
 ///<br/><br/>
 ///Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
-///<br/>serviceMethod-ServiceMethod	default-{}
+///<br/>serviceMethods-any	default-{}
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for getting the values for the tree-view inside filter dialog.
-///<br/>fetchMembers-string	default-FetchMembers
+///<br/>serviceMethod.fetchMembers-string	default-FetchMembers
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for filtering operation in Field List.
-///<br/>filtering-string	default-Filtering
+///<br/>serviceMethod.filtering-string	default-Filtering
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for the server-side action, on expanding members in Field List.
-///<br/>memberExpand-string	default-MemberExpanded
+///<br/>serviceMethod.memberExpand-string	default-MemberExpanded
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for the server-side action, on dropping a node into Field List.
-///<br/>nodeDropped-string	default-NodeDropped
+///<br/>serviceMethod.nodeDropped-string	default-NodeDropped
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for the server-side action on changing the checked state of a node in Field List.
-///<br/>nodeStateModified-string	default-NodeStateModified
+///<br/>serviceMethod.nodeStateModified-string	default-NodeStateModified
 ///<br/><br/>
 ///Allows the user to set the custom name for the service method responsible for button removing operation in Field List.
-///<br/>removeButton-string	default-RemoveButton
+///<br/>serviceMethod.removeButton-string	default-RemoveButton
 ///<br/><br/>
 ///Connects the service using the specified URL for any server updates.
 ///<br/>url-string	default-&#226;€œ&#226;€
@@ -17666,6 +19199,12 @@ doAjaxPost:function(){
 /// <signature>
 /// <summary>
 /// Performs an asynchronous HTTP (AJAX) request.
+/// </summary>
+},
+doPostBack:function(){
+/// <signature>
+/// <summary>
+/// Performs an asynchronous HTTP (FullPost) submit.
 /// </summary>
 },
 getOlapReport:function(){
@@ -17710,6 +19249,12 @@ renderControlSuccess:function(){
 /// This function receives the update from service-end, which would be utilized for rendering the widget.
 /// </summary>
 },
+destroy:function(){
+/// <signature>
+/// <summary>
+/// This function Destroy the PivotTreemap widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+/// </summary>
+},
 });
 return instance;
 };
@@ -17736,6 +19281,12 @@ ejPivotTreeMap :function (options) {
 ///<br/><br/>
 ///Contains the respective cube name from OLAP database as string type.
 ///<br/>cube-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///To set the data source name to fetch data from that.
+///<br/>sourceInfo-string	default-&#226;€œ&#226;€
+///<br/><br/>
+///Set the provider name for PivotTreeMap to identify whether the provider is SSAS or Mondrian.
+///<br/>providerName-string	default-ssas
 ///<br/><br/>
 ///In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
 ///<br/>catalog-string	default-&#226;€œ&#226;€
@@ -17817,6 +19368,79 @@ ejPivotTreeMap :function (options) {
 ///<br/><br/>
 ///Connects the service using the specified URL for any server updates.
 ///<br/>url-string	default-&#226;€œ&#226;€
+///</summary>
+///<param name="options" type="Object">
+///The widget configuration options
+///</param>
+///</signature>
+}
+});
+intellisense.annotate(ej,{
+Print:function(){
+ /// <signature>
+ /// <summary>Constructor of ej.Print</summary>
+ /// </signature>
+}
+});
+ej.Print=(function(){
+var original=ej.Print
+var wrapper=function(){
+var instance = new original();
+intellisense.annotate(instance, {
+
+print:function(){
+/// <signature>
+/// <summary>
+/// Print the specific page or an element.
+/// </summary>
+},
+});
+return instance;
+};
+intellisense.redirectDefinition(wrapper, original);
+return wrapper;
+})();
+jQuery.fn.ejPrint=function(){
+this.data("ejPrint",new	ej.Print());
+return this;
+};
+intellisense.annotate(jQuery.fn,{
+ejPrint :function (options) {
+/// <signature>
+/// <summary><br/>
+///A flexible widget that allows the user to print a complete page or a particular element in it with the required customizations.<br/><br/>
+///Append the custom HTML after the selected content.
+///<br/>append-string	default-null
+///<br/><br/>
+///A selector that specifies a particular element to be excluded from printing.
+///<br/>excludeSelector-string	default-null
+///<br/><br/>
+///Specifies whether the URL of an external stylesheet can be included to customize and print that page.
+///<br/>externalStyles-string	default-null
+///<br/><br/>
+///Prepend a doctype to the document frame.
+///<br/>docType-string	default-&amp;lt;!doctype html&amp;gt;
+///<br/><br/>
+///Specifies whether the global styles can be applied to the element to be printed.
+///<br/>globalStyles-boolean	default-true
+///<br/><br/>
+///Sets the height of the print window.
+///<br/>height-number	default-454
+///<br/><br/>
+///Prepends the custom HTML before the selected content.
+///<br/>prepend-string	default-null
+///<br/><br/>
+///Allows printing the content in a new window.
+///<br/>printInNewWindow-boolean	default-false
+///<br/><br/>
+///Sets the period of time to wait before printing the content.
+///<br/>timeOutPeriod-number	default-1000
+///<br/><br/>
+///Sets the title of the print document.
+///<br/>title-string	default-null
+///<br/><br/>
+///Defines the width of the print window.
+///<br/>width-number	default-1024
 ///</summary>
 ///<param name="options" type="Object">
 ///The widget configuration options
@@ -18221,7 +19845,7 @@ enableItemsByIndices:function(itemIndices){
 /// <summary>
 /// To enable menu items using indices
 /// </summary>
-/// <param name="itemIndices"	type="Array&lt;any&gt;">Index of the Radialmenu to be enabled.</param>
+/// <param name="itemIndices"	type="any[]">Index of the Radialmenu to be enabled.</param>
 /// </signature>
 },
 disableItemByIndex:function(itemIndex){
@@ -18237,7 +19861,7 @@ disableItemsByIndices:function(itemIndices){
 /// <summary>
 /// To disable menu items using indices
 /// </summary>
-/// <param name="itemIndices"	type="Array&lt;any&gt;">items of the Radialmenu to disable.</param>
+/// <param name="itemIndices"	type="any[]">items of the Radialmenu to disable.</param>
 /// </signature>
 },
 enableItem:function(item){
@@ -18261,7 +19885,7 @@ enableItems:function(items){
 /// <summary>
 /// To enable menu items using item texts
 /// </summary>
-/// <param name="items"	type="Array&lt;any&gt;">items of the Radialmenu item to enable.</param>
+/// <param name="items"	type="any[]">items of the Radialmenu item to enable.</param>
 /// </signature>
 },
 disableItems:function(items){
@@ -18269,7 +19893,7 @@ disableItems:function(items){
 /// <summary>
 /// To disable menu items using item texts
 /// </summary>
-/// <param name="items"	type="Array&lt;any&gt;">items of the Radialmenu item to disable.</param>
+/// <param name="items"	type="any[]">items of the Radialmenu item to disable.</param>
 /// </signature>
 },
 updateBadgeValue:function(index, value){
@@ -18316,7 +19940,7 @@ intellisense.annotate(jQuery.fn,{
 ejRadialMenu :function (options) {
 /// <signature>
 /// <summary><br/>
-///$(element).ejRadialMenu()<br/><br/>
+///The RadialMenu control is a context that represents the menu items are arranged in a circular order with a centric button element in it. By default, only the center button is visible. The Radial Menu displays the root level menu item with rotational animation effects on clicking the center menu button.<br/><br/>
 ///To show the Radial in initial render.
 ///<br/>autoOpen-boolean	default-
 ///<br/><br/>
@@ -18337,6 +19961,9 @@ ejRadialMenu :function (options) {
 ///<br/><br/>
 ///Specify the URL of the frame background image for radial menu item.
 ///<br/>imageUrl-string	default-
+///<br/><br/>
+///Specifies the template property of RadialMenu for SVG icon.
+///<br/>prependTo-string	default-
 ///<br/><br/>
 ///Specifies the text of RadialMenu item.
 ///<br/>text-string	default-
@@ -18455,6 +20082,9 @@ ejRadialSlider :function (options) {
 ///<br/><br/>
 ///Specifies the Space between the radial slider element and the label.
 ///<br/>labelSpace-number	default-30
+///<br/><br/>
+///Change the Radial Slider ticks value based on the given culture.
+///<br/>locale-string	default-en-US
 ///<br/><br/>
 ///Specifies the radius of radial slider
 ///<br/>radius-number	default-200
@@ -18641,11 +20271,35 @@ ejRangeNavigator :function (options) {
 ///Fill color of the series.
 ///<br/>fill-string	default-null
 ///<br/><br/>
+///Specifies the  properties used for customizing all the range series.
+///<br/>seriesSettings-Array&lt;SeriesSettings&gt;	default-
+///<br/><br/>
+///Name of the property in the datasource that contains x value for the series.
+///<br/>xName-string	default-null
+///<br/><br/>
+///Name of the property in the datasource that contains y value for the series.
+///<br/>yName-string	default-null
+///<br/><br/>
+///Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
+///<br/>dataSource-any	default-null
+///<br/><br/>
+///Specifies the type of the series to render in chart.
+///<br/>type-ej.datavisualization.RangeNavigator.Type|string	default-column. see Type
+///<br/><br/>
+///Enable/disable the animation of series.
+///<br/>enableAnimation-boolean	default-false
+///<br/><br/>
+///Fill color of the series.
+///<br/>fill-string	default-null
+///<br/><br/>
 ///Toggles the redrawing of chart on moving the sliders.
 ///<br/>enableDeferredUpdate-boolean	default-true
 ///<br/><br/>
 ///Enable the scrollbar option in the rangenavigator.
 ///<br/>enableScrollbar-boolean	default-false
+///<br/><br/>
+///Enable the resize option in the rangenavigator.
+///<br/>enableAutoResizing-boolean	default-false
 ///<br/><br/>
 ///Toggles the direction of rendering the range navigator control.
 ///<br/>enableRTL-boolean	default-false
@@ -18683,7 +20337,7 @@ ejRangeNavigator :function (options) {
 ///Specifies the width of grid lines in higher level.
 ///<br/>width-string	default-#B5B5B5
 ///<br/><br/>
-///Specifies the intervalType for higher level labels. See IntervalType
+///Specifies the intervalType for higher level labels. See 
 ///<br/>intervalType-ej.datavisualization.RangeNavigator.IntervalType|string	default-auto
 ///<br/><br/>
 ///Specifies the position of the labels to render either inside or outside of plot area
@@ -18795,7 +20449,7 @@ ejRangeNavigator :function (options) {
 ///<br/>font-any	default-
 ///<br/><br/>
 ///Specifies the label color. This color is applied to the labels in range navigator.
-///<br/>color-string	default-#FFFFFF
+///<br/>color-string	default-#333333
 ///<br/><br/>
 ///Specifies the label font family. Labels render with the specified font family.
 ///<br/>family-string	default-Segoe UI
@@ -19042,6 +20696,18 @@ ejRangeNavigator :function (options) {
 ///<br/><br/>
 ///Specifies width of the major tick lines.
 ///<br/>width-number	default-0
+///<br/><br/>
+///You can customize the range of the axis by setting minimum , maximum and interval.
+///<br/>range-any	default-
+///<br/><br/>
+///Default Value
+///<br/>min-number	default-null
+///<br/><br/>
+///Default Value
+///<br/>max-number	default-null
+///<br/><br/>
+///Default Value
+///<br/>interval-number	default-null
 ///<br/><br/>
 ///If the range is not given explicitly, range will be calculated automatically. You can customize the automatic range calculation using rangePadding.
 ///<br/>rangePadding-string	default-none
@@ -19416,13 +21082,13 @@ ejReportViewer :function (options) {
 ///<br/>dataSources-Array&lt;DataSources&gt;	default-[]
 ///<br/><br/>
 ///Gets or sets the name of the data source.
-///<br/>name-String	default-empty
+///<br/>name-string	default-empty
 ///<br/><br/>
 ///Gets or sets the values of data source.
 ///<br/>values-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Enables or disables the page cache of report.
-///<br/>enablePageCache-Boolean	default-false
+///<br/>enablePageCache-boolean	default-false
 ///<br/><br/>
 ///Specifies the export settings.
 ///<br/>exportSettings-ExportSettings	default-
@@ -19437,10 +21103,10 @@ ejReportViewer :function (options) {
 ///<br/>wordFormat-ej.ReportViewer.WordFormats|string	default-ej.ReportViewer.WordFormats.Doc
 ///<br/><br/>
 ///When set to true, adapts the report layout to fit the screen size of devices on which it renders.
-///<br/>isResponsive-Boolean	default-true
+///<br/>isResponsive-boolean	default-true
 ///<br/><br/>
 ///Specifies the locale for report viewer.
-///<br/>locale-String	default-en-US
+///<br/>locale-string	default-en-US
 ///<br/><br/>
 ///Specifies the page settings.
 ///<br/>pageSettings-PageSettings	default-
@@ -19458,19 +21124,19 @@ ejReportViewer :function (options) {
 ///<br/>labels-Array&lt;any&gt;	default-null
 ///<br/><br/>
 ///Gets or sets the name of the parameter.
-///<br/>name-String	default-empty
+///<br/>name-string	default-empty
 ///<br/><br/>
 ///Gets or sets whether the parameter allows nullable value or not.
-///<br/>nullable-Boolean	default-false
+///<br/>nullable-boolean	default-false
 ///<br/><br/>
 ///Gets or sets the prompt message associated with the specified parameter.
-///<br/>prompt-String	default-empty
+///<br/>prompt-string	default-empty
 ///<br/><br/>
 ///Gets or sets the parameter values.
 ///<br/>values-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Enables and disables the print mode.
-///<br/>printMode-Boolean	default-false
+///<br/>printMode-boolean	default-false
 ///<br/><br/>
 ///Specifies the print option of the report.
 ///<br/>printOptions-ej.ReportViewer.PrintOptions|string	default-ej.ReportViewer.PrintOptions.Default
@@ -19482,34 +21148,34 @@ ejReportViewer :function (options) {
 ///<br/>renderMode-ej.ReportViewer.RenderMode|string	default-ej.ReportViewer.RenderMode.Default
 ///<br/><br/>
 ///Gets or sets the path of the report file.
-///<br/>reportPath-String	default-empty
+///<br/>reportPath-string	default-empty
 ///<br/><br/>
 ///Gets or sets the reports server URL.
-///<br/>reportServerUrl-String	default-empty
+///<br/>reportServerUrl-string	default-empty
 ///<br/><br/>
 ///Specifies the report Web API service URL.
-///<br/>reportServiceUrl-String	default-empty
+///<br/>reportServiceUrl-string	default-empty
 ///<br/><br/>
 ///Specifies the toolbar settings.
 ///<br/>toolbarSettings-ToolbarSettings	default-
 ///<br/><br/>
 ///Fires when user click on toolbar item in the toolbar.
-///<br/>click-String	default-empty
+///<br/>click-string	default-empty
 ///<br/><br/>
 ///Specifies the toolbar items.
 ///<br/>items-ej.ReportViewer.ToolbarItems|string	default-ej.ReportViewer.ToolbarItems.All
 ///<br/><br/>
 ///Shows or hides the toolbar.
-///<br/>showToolbar-Boolean	default-true
+///<br/>showToolbar-boolean	default-true
 ///<br/><br/>
 ///Shows or hides the tooltip of toolbar items.
-///<br/>showTooltip-Boolean	default-true
+///<br/>showTooltip-boolean	default-true
 ///<br/><br/>
 ///Specifies the toolbar template ID.
-///<br/>templateId-String	default-empty
+///<br/>templateId-string	default-empty
 ///<br/><br/>
 ///Gets or sets the zoom factor for report viewer.
-///<br/>zoomFactor-Number	default-1
+///<br/>zoomFactor-number	default-1
 ///</summary>
 ///<param name="options" type="Object">
 ///The widget configuration options
@@ -19530,7 +21196,7 @@ var wrapper=function(){
 var instance = new original();
 intellisense.annotate(instance, {
 
-_destroy:function(){
+destroy:function(){
 /// <signature>
 /// <summary>
 /// destroy in the Resizable.
@@ -19560,16 +21226,16 @@ ejResizable :function (options) {
 ///If specified, restricts resize start click to the specified element(s).
 ///<br/>handle-string	default-null
 ///<br/><br/>
-///Sets the max height for resizing
+///Sets the max height till which an element has to be resized.
 ///<br/>maxHeight-number	default-null
 ///<br/><br/>
-///Sets the max width for resizing
+///Sets the max width till which an element has to be resized.
 ///<br/>maxWidth-number	default-null
 ///<br/><br/>
-///Sets the min Height for resizing
+///Sets the min Height below which an element cannot be resized.
 ///<br/>minHeight-number	default-10
 ///<br/><br/>
-///Sets the min Width for resizing
+///Sets the min Width below which an element cannot be resized.
 ///<br/>minWidth-number	default-10
 ///<br/><br/>
 ///Used to group sets of resizable items.
@@ -19633,7 +21299,7 @@ addTab:function(tabText, ribbonGroups, index){
 /// <summary>
 /// Adds tab dynamically in the ribbon control with given name, tab group array and index position. When index is null, ribbon tab is added at the last index.
 /// </summary>
-/// <param name="ribbonGroups"	type="Array&lt;any&gt;">groups to be displayed in ribbon tab .</param>
+/// <param name="ribbonGroups"	type="any[]">groups to be displayed in ribbon tab .</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -19662,36 +21328,36 @@ addTabGroup:function(tabIndex, tabGroup, groupIndex){
 /// <param name="groupIndex"	type="number">index of the ribbon group,this is optional.</param>
 /// </signature>
 },
-addTabGroupContent:function(tabIndex, groupIndex, subGroupIndex, content, contentIndex){
+addTabGroupContent:function(tabIndex, groupIndex, content, contentIndex, subGroupIndex){
 /// <signature>
 /// <summary>
-/// Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
+/// Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is added at the last index.
 /// </summary>
 /// <param name="tabIndex"	type="number">ribbon tab index.</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
+/// Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is added at the last index.
 /// </summary>
 /// <param name="groupIndex"	type="number">ribbon group index.</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
-/// </summary>
-/// <param name="subGroupIndex"	type="number">sub group index in the ribbon group,</param>
-/// </signature>
-/// <signature>
-/// <summary>
-/// Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
+/// Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is added at the last index.
 /// </summary>
 /// <param name="content"	type="any">content to be displayed in the ribbon group.</param>
 /// </signature>
 /// <signature>
 /// <summary>
-/// Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
+/// Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is added at the last index.
 /// </summary>
-/// <param name="contentIndex"	type="number">ribbon content index .this is optional.</param>
+/// <param name="contentIndex"	type="number">ribbon content index. This is optional. If the value is not given, then by default contentIndex will be considered as 0.</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is added at the last index.
+/// </summary>
+/// <param name="subGroupIndex"	type="number">sub group index in the ribbon group. This is optional. If the value is not given, then by default contentIndex will be considered as 0.</param>
 /// </signature>
 },
 hideBackstage:function(){
@@ -19820,7 +21486,7 @@ updateBackStageItem:function(index, item){
 /// <param name="item"	type="any">select the object to add the backstage item</param>
 /// </signature>
 },
-removeTabGroupContent:function(tabIndex, groupText, subGroupIndex){
+removeTabGroupContent:function(tabIndex, groupText, contentIndex, subGroupIndex){
 /// <signature>
 /// <summary>
 /// To customize whole content from Tab Group.
@@ -19837,7 +21503,13 @@ removeTabGroupContent:function(tabIndex, groupText, subGroupIndex){
 /// <summary>
 /// To customize whole content from Tab Group.
 /// </summary>
-/// <param name="subGroupIndex"	type="number">sub group index in the ribbon group,</param>
+/// <param name="contentIndex"	type="number">ribbon content index. This is optional. If the value is not given, all content groups will be removed.</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// To customize whole content from Tab Group.
+/// </summary>
+/// <param name="subGroupIndex"	type="number">sub group index in the ribbon group. This is optional. If the value is not given, all content groups will be removed.</param>
 /// </signature>
 },
 removeBackStageItem:function(index){
@@ -19874,6 +21546,9 @@ ejRibbon :function (options) {
 ///<br/><br/>
 ///Property to enable the ribbon quick access toolbar.
 ///<br/>showQAT-boolean	default-false
+///<br/><br/>
+///Sets the root CSS class for Ribbon which allow us to customize the appearance.
+///<br/>cssClass-string	default-
 ///<br/><br/>
 ///Sets custom setting to the collapsible pin in the ribbon.
 ///<br/>collapsePinSettings-CollapsePinSettings	default-Object
@@ -20394,11 +22069,25 @@ enableToolbarItem:function(){
 /// Enables the corresponding tool in the toolbar when the tool is disabled.
 /// </summary>
 },
-executeCommand:function(){
+executeCommand:function(cmdName, args, textnodeType){
 /// <signature>
 /// <summary>
 /// Performs the action value based on the given command.
 /// </summary>
+/// <param name="cmdName"	type="string">Command Name.</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Performs the action value based on the given command.
+/// </summary>
+/// <param name="args"	type="any">Content to be inserted as argument.</param>
+/// </signature>
+/// <signature>
+/// <summary>
+/// Performs the action value based on the given command.
+/// </summary>
+/// <param name="textnodeType"	type="boolean">Boolean value to specify whether the argument is textnode or not, this is optional.</param>
+/// </signature>
 },
 focus:function(){
 /// <signature>
@@ -20580,6 +22269,21 @@ ejRTE :function (options) {
 ///<br/><br/>
 ///Based on the content size, its height is adjusted instead of adding the scrollbar.
 ///<br/>autoHeight-boolean	default-false
+///<br/><br/>
+///This API holds configuration setting for paste clenaup behavior.
+///<br/>pasteCleanupSettings-PasteCleanupSettings	default-{ listConversion: false, cleanCSS: false,	removeStyles: false, cleanElements: false }
+///<br/><br/>
+///This API is used to convert the list elements pasted from word document to editor.
+///<br/>listConversion-boolean	default-false
+///<br/><br/>
+///This API is used to clean the unwanted css in the elements pasted from word document to editor.
+///<br/>cleanCSS-boolean	default-false
+///<br/><br/>
+///This API is used to remove all styles in the elements pasted from word document to editor.
+///<br/>removeStyles-boolean	default-false
+///<br/><br/>
+///This API is used to clean the unwanted elements pasted from word document to editor.
+///<br/>cleanElements-boolean	default-false
 ///<br/><br/>
 ///Sets the colorCode to display the color of the fontColor and backgroundColor in the font tools of the RTE.
 ///<br/>colorCode-any	default-[000000, FFFFFF, C4C4C4, ADADAD, 595959, 262626, 4f81bd, dbe5f1, b8cce4, 95b3d7, 366092, 244061, c0504d, f2dcdb, e5b9b7, d99694, 953734,632423, 9bbb59, ebf1dd, d7e3bc, c3d69b, 76923c, 4f6128, 8064a2, e5e0ec, ccc1d9, b2a2c7, 5f497a, 3f3151, f79646, fdeada, fbd5b5, fac08f,e36c09, 974806]
@@ -20857,6 +22561,9 @@ ejRTE :function (options) {
 ///Specifies the list of groups and order of those groups displayed in the RTE toolbar.  The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed. When the value is not specified, it gets its default display order and tools.
 ///<br/>toolsList-Array&lt;any&gt;	default-[formatStyle, font, style, effects, alignment, lists, indenting, clipboard, doAction, clear, links, images, media, tables, casing,view, customTools,print,edit]
 ///<br/><br/>
+///Specifies the overflow mode for RTE responsive toolbar
+///<br/>toolbarOverflowMode-ej.RTE.ToolbarOverflowMode|string	default-Popup
+///<br/><br/>
 ///Display the hints for the tools in the Toolbar.
 ///<br/>tooltipSettings-any	default-{ associate: mouseenter, showShadow: true, position: { stem: { horizontal: left, vertical: top }  }, tip: { size: { width: 5, height: 5 }, isBalloon: false }
 ///<br/><br/>
@@ -20936,7 +22643,7 @@ filterAppointments:function(filterConditions){
 /// <summary>
 /// Searches and filters the appointments from appointment list of Schedule control.
 /// </summary>
-/// <param name="filterConditions"	type="Array&lt;any&gt;">Holds array of one or more conditional objects for filtering the appointments based on it.</param>
+/// <param name="filterConditions"	type="any[]">Holds array of one or more conditional objects for filtering the appointments based on it.</param>
 /// </signature>
 },
 getAppointments:function(){
@@ -21043,6 +22750,9 @@ ejSchedule :function (options) {
 ///When set to true, Schedule allows the appointments to be dragged and dropped at required time.
 ///<br/>allowDragAndDrop-boolean	default-true
 ///<br/><br/>
+///When set to true, allows the user to create/edit appointments inline - simply through a single click made either on the Scheduler cells or on the existing appointmentâ€™s Subject text respectively. Pressing enter key after the new Subject text   typed onto the inline created text box, will save/update the appointments appropriately.
+///<br/>allowInline-boolean	default-false
+///<br/><br/>
 ///When set to true, Scheduler allows interaction through keyboard shortcut keys.
 ///<br/>allowKeyboardNavigation-boolean	default-true
 ///<br/><br/>
@@ -21060,6 +22770,9 @@ ejSchedule :function (options) {
 ///<br/><br/>
 ///When set to false, doesn't consider the time difference offset calculation on appointment time.
 ///<br/>applyTimeOffset-boolean	default-true
+///<br/><br/>
+///When set to true, introduces a new option to edit only the future occurrences of the appointments in a recurrence series from the currently selected appointment's date.
+///<br/>editFutureEventsOnly-boolean	default-false
 ///<br/><br/>
 ///Binds the id field name in dataSource to the id of Schedule appointments. It denotes the unique id assigned to appointments.
 ///<br/>id-string	default-null
@@ -21310,6 +23023,9 @@ ejSchedule :function (options) {
 ///When set to true, displays the all-day row cells on the Schedule.
 ///<br/>showAllDayRow-boolean	default-true
 ///<br/><br/>
+///When set to false, hides the weekend days on all the Scheduler views.
+///<br/>showWeekend-boolean	default-true
+///<br/><br/>
 ///When set to true, displays the current time indicator on the Schedule.
 ///<br/>showCurrentTimeIndicator-boolean	default-true
 ///<br/><br/>
@@ -21462,6 +23178,9 @@ ejSchedule :function (options) {
 ///<br/><br/>
 ///Binds the name of resourceId field in dataSource. Specifies the id of the resources, to which the time intervals are needed to be blocked.
 ///<br/>resourceId-string	default-null
+///<br/><br/>
+///Binds the name of groupId field in dataSource. Specifies the id of the resource group, to which the time intervals are needed to be blocked.
+///<br/>groupId-string	default-null
 ///<br/><br/>
 ///Binds the name of customStyle field in dataSource. It applies the custom CSS to the block intervals.
 ///<br/>customStyle-string	default-null
@@ -21673,11 +23392,13 @@ redo:function(){
 /// redo the last drawn stroke of the signature
 /// </summary>
 },
-save:function(){
+save:function(Filename){
 /// <signature>
 /// <summary>
 /// used to save the drawn image.
 /// </summary>
+/// <param name="Filename"	type="string">The file name of the signature to be downloaded.</param>
+/// </signature>
 },
 show:function(){
 /// <signature>
@@ -21963,6 +23684,9 @@ ejSparkline :function (options) {
 ///Range band color of the series.
 ///<br/>color-string	default-transparent
 ///<br/><br/>
+///Name of the culture based on which sparkline should be localized.
+///<br/>locale-string	default-en-US
+///<br/><br/>
 ///Name of a field in data source, where the fill color for all the data points is generated.
 ///<br/>palette-string	default-
 ///<br/><br/>
@@ -21971,6 +23695,9 @@ ejSparkline :function (options) {
 ///<br/><br/>
 ///Controls whether Sparkline has to be rendered as Canvas or SVG.Canvas rendering supports all functionalities in SVG rendering.
 ///<br/>enableCanvasRendering-boolean	default-false
+///<br/><br/>
+///Specify to convert the date object to string, using locale settings.
+///<br/>enableGroupSeparator-boolean	default-false
 ///<br/><br/>
 ///Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
 ///<br/>dataSource-any	default-null
@@ -22285,6 +24012,9 @@ ejSpellCheck :function (options) {
 ///When set to true, allows the spellcheck to render based upon screen size.
 ///<br/>isResponsive-boolean	default-true
 ///<br/><br/>
+///Gets or sets a value that indicates whether to enable the spellcheck operation on Enter/Space key-press.
+///<br/>enableValidateOnType-boolean	default-false
+///<br/><br/>
 ///It allows to spell check the multiple target HTML element's texts and correct its error words.
 ///<br/>controlsToValidate-string	default-null
 ///</summary>
@@ -22393,6 +24123,9 @@ ejSplitButton :function (options) {
 ///<br/><br/>
 ///Specifies the list content for Split Button while initialization
 ///<br/>targetID-string	default-
+///<br/><br/>
+///Specifies the target of splitbutton menu while initialization with ID or class as a selector.
+///<br/>target-string	default-
 ///<br/><br/>
 ///Specifies the text content for Split Button while initialization.
 ///<br/>text-string	default-
@@ -22561,7 +24294,7 @@ clearAll:function(range){
 /// <summary>
 /// It is used to clear all the data and format in the specified range of cells in Spreadsheet.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Optional. If range is specified, then it will clear all content in the specified range else it will use the current selected range. </param>
+/// <param name="range"	type="string|any[]">Optional. If range is specified, then it will clear all content in the specified range else it will use the current selected range. </param>
 /// </signature>
 },
 clearAllFormat:function(range){
@@ -22569,7 +24302,7 @@ clearAllFormat:function(range){
 /// <summary>
 /// This property is used to clear all the formats applied in the specified range in Spreadsheet.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Optional. If range is specified, then it will clear all format in the specified range else it will use the current selected range. </param>
+/// <param name="range"	type="string|any[]">Optional. If range is specified, then it will clear all format in the specified range else it will use the current selected range. </param>
 /// </signature>
 },
 clearBorder:function(range){
@@ -22577,7 +24310,7 @@ clearBorder:function(range){
 /// <summary>
 /// Used to clear the applied border in the specified range in Spreadsheet.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Optional. If range is specified, then it will clear border in the specified range else it will use the current selected range.</param>
+/// <param name="range"	type="string|any[]">Optional. If range is specified, then it will clear border in the specified range else it will use the current selected range.</param>
 /// </signature>
 },
 clearContents:function(range){
@@ -22585,7 +24318,7 @@ clearContents:function(range){
 /// <summary>
 /// This property is used to clear the contents in the specified range in Spreadsheet.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Optional. If the range is specified, then it will clear the content in the specified range else it will use the current selected range. </param>
+/// <param name="range"	type="string|any[]">Optional. If the range is specified, then it will clear the content in the specified range else it will use the current selected range. </param>
 /// </signature>
 },
 clearRange:function(rangeName){
@@ -22601,7 +24334,7 @@ clearRangeData:function(range, property, cells, skipHiddenRow, status, skipCell)
 /// <summary>
 /// It is used to remove data in the specified range of cells based on the defined property.
 /// </summary>
-/// <param name="range"	type="Array&lt;any&gt;|string">Optional. If range is specified, it will clear data for the specified range else it will use the current selected range. </param>
+/// <param name="range"	type="any[]|string">Optional. If range is specified, it will clear data for the specified range else it will use the current selected range. </param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -22735,7 +24468,7 @@ editRange:function(rangeName, fn){
 /// <summary>
 /// This method is used to edit data in the specified range of cells based on its corresponding rangeSettings.
 /// </summary>
-/// <param name="fn"	type="Function">Pass the function that you want to perform range edit.</param>
+/// <param name="fn"	type="() =&gt; void">Pass the function that you want to perform range edit.</param>
 /// </signature>
 },
 getActivationPanel:function(){
@@ -22896,6 +24629,12 @@ gotoPage:function(sheetIdx, newSheet){
 /// <param name="newSheet"	type="boolean">Pass {{'`true`' | markdownify}} to create a new sheet. If the specified sheet index is already exist, it navigate to that sheet else it create a new sheet.</param>
 /// </signature>
 },
+hideActivationPanel:function(){
+/// <signature>
+/// <summary>
+/// This method is used to hide the pivot table activationPanel in the Spreadsheet.
+/// </summary>
+},
 hideColumn:function(startCol, endCol){
 /// <signature>
 /// <summary>
@@ -23027,7 +24766,7 @@ lockCells:function(range, isLocked){
 /// <summary>
 /// This method is used to lock/unlock the range of cells in active sheet. Lock cells are activated only after the sheet is protected. Once the sheet is protected it is unable to lock/unlock cells.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Pass the alpha range cells or array range of cells.</param>
+/// <param name="range"	type="string|any[]">Pass the alpha range cells or array range of cells.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -23055,7 +24794,7 @@ mergeCells:function(range, alertStatus){
 /// <summary>
 /// This method is used to merge the selected cells in the Spreadsheet.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Optional. To pass the cell range or selected cells are process.</param>
+/// <param name="range"	type="string|any[]">Optional. To pass the cell range or selected cells are process.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -23083,7 +24822,7 @@ protectSheet:function(isProtected){
 /// <summary>
 /// This method is used to protect or unprotect active sheet.
 /// </summary>
-/// <param name="isProtected"	type="boolean">Optional. By default is `true`. If it is `false` active sheet is unprotected.</param>
+/// <param name="isProtected"	type="boolean">Optional. By default is {{'`true`' | markdownify}}. If it is {{'`false`' | markdownify}} active sheet is unprotected.</param>
 /// </signature>
 },
 refreshContent:function(sheetIdx){
@@ -23159,7 +24898,7 @@ removeReadOnly:function(range){
 /// <summary>
 /// This method is used to remove the readonly option for the specified range.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Pass the range.</param>
+/// <param name="range"	type="string|any[]">Pass the range.</param>
 /// </signature>
 },
 saveAsJSON:function(){
@@ -23223,7 +24962,7 @@ setHeightToRows:function(heightColl){
 /// <summary>
 /// This method is used to set the height for the rows in the Spreadsheet.
 /// </summary>
-/// <param name="heightColl"	type="Array&lt;any&gt;|any">Pass the row index and height of the rows.</param>
+/// <param name="heightColl"	type="any[]|any">Pass the row index and height of the rows.</param>
 /// </signature>
 },
 setHyperlink:function(range, link, sheetIdx){
@@ -23231,7 +24970,7 @@ setHyperlink:function(range, link, sheetIdx){
 /// <summary>
 /// This method is used to set the hyperlink in selected cells of the current sheet.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">If range is specified, it will set the hyperlink in range of the cells.</param>
+/// <param name="range"	type="string|any[]">If range is specified, it will set the hyperlink in range of the cells.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -23251,7 +24990,7 @@ setReadOnly:function(range){
 /// <summary>
 /// This method is used to set the readonly option for the specified range.
 /// </summary>
-/// <param name="range"	type="string|Array&lt;any&gt;">Pass the range.</param>
+/// <param name="range"	type="string|any[]">Pass the range.</param>
 /// </signature>
 },
 setSheetFocus:function(){
@@ -23265,7 +25004,7 @@ setWidthToColumns:function(widthColl){
 /// <summary>
 /// This method is used to set the width for the columns in the Spreadsheet.
 /// </summary>
-/// <param name="widthColl"	type="Array&lt;any&gt;|any">Pass the column index and width of the columns.</param>
+/// <param name="widthColl"	type="any[]|any">Pass the column index and width of the columns.</param>
 /// </signature>
 },
 sheetRename:function(sheetName){
@@ -23348,12 +25087,6 @@ showWaitingPopUp:function(){
 /// This method is used to show waiting pop-up in Spreadsheet.
 /// </summary>
 },
-unfreezePanes:function(){
-/// <signature>
-/// <summary>
-/// This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
-/// </summary>
-},
 unhideSheet:function(sheetInfo){
 /// <signature>
 /// <summary>
@@ -23375,7 +25108,7 @@ unWrapText:function(range){
 /// <summary>
 /// This method is used to unwrap the selected range of cells in the Spreadsheet.
 /// </summary>
-/// <param name="range"	type="Array&lt;any&gt;|string">Optional. If the range is specified, then it will update unwrap in the specified range else it will use the current selected range.</param>
+/// <param name="range"	type="any[]|string">Optional. If the range is specified, then it will update unwrap in the specified range else it will use the current selected range.</param>
 /// </signature>
 },
 updateData:function(data, range){
@@ -23389,7 +25122,7 @@ updateData:function(data, range){
 /// <summary>
 /// This method is used to update the data for the specified range of cells in the Spreadsheet.
 /// </summary>
-/// <param name="range"	type="Array&lt;any&gt;|string">Optional. If range is specified, it will update data for the specified range  else it will use the current selected range. </param>
+/// <param name="range"	type="any[]|string">Optional. If range is specified, it will update data for the specified range  else it will use the current selected range. </param>
 /// </signature>
 },
 updateFormulaBar:function(){
@@ -23431,7 +25164,7 @@ updateUniqueData:function(data, range, skipCell){
 /// <summary>
 /// This method is used to update the unique data for the specified range of cells in Spreadsheet.
 /// </summary>
-/// <param name="range"	type="Array&lt;any&gt;|string">Optional. If range is specified, it will update data for the specified range else it will use the current selected range.</param>
+/// <param name="range"	type="any[]|string">Optional. If range is specified, it will update data for the specified range else it will use the current selected range.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -23445,13 +25178,19 @@ wrapText:function(range){
 /// <summary>
 /// This method is used to wrap the selected range of cells in the Spreadsheet.
 /// </summary>
-/// <param name="range"	type="Array&lt;any&gt;|string">Optional. If the range is specified, then it will update wrap in the specified  range else it will use the current selected range.</param>
+/// <param name="range"	type="any[]|string">Optional. If the range is specified, then it will update wrap in the specified  range else it will use the current selected range.</param>
 /// </signature>
 },
 getExportProps:function(){
 /// <signature>
 /// <summary>
 /// This method is used to get the export properties in the Spreadsheet.
+/// </summary>
+},
+unfreezePanes:function(){
+/// <signature>
+/// <summary>
+/// This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
 /// </summary>
 },
 });
@@ -23526,8 +25265,8 @@ ejSpreadsheet :function (options) {
 ///Gets or sets a value that indicates whether to enable or disable formula bar in the Spreadsheet.
 ///<br/>allowFormulaBar-boolean	default-true
 ///<br/><br/>
-///Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. After enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
-///<br/>allowFreezing-boolean	default-false
+///Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. By enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
+///<br/>allowFreezing-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily navigate to the cell reference from one sheet to another or a web page.
 ///<br/>allowHyperlink-boolean	default-true
@@ -23661,6 +25400,15 @@ ejSpreadsheet :function (options) {
 ///Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data (i.e.) in a language and culture specific to a particular country or region.
 ///<br/>locale-string	default-en-US
 ///<br/><br/>
+///Gets or sets a value that indicates name manager in Spreadsheet.
+///<br/>nameManager-Array&lt;NameManager&gt;	default-
+///<br/><br/>
+///Specifies the name for the cell or a range.
+///<br/>name-string	default-
+///<br/><br/>
+///Specifies the address for the cell or a range.
+///<br/>refersto-string	default-
+///<br/><br/>
 ///Gets or sets an object that indicates to customize the picture behavior in the Spreadsheet.
 ///<br/>pictureSettings-PictureSettings	default-
 ///<br/><br/>
@@ -23760,7 +25508,7 @@ ejSpreadsheet :function (options) {
 ///Specifies the border for the cell in the Spreadsheet.
 ///<br/>border-Array&lt;any&gt;	default-[]
 ///<br/><br/>
-/// 
+///Specifies border type in the Spreadsheet.
 ///<br/>type-ej.Spreadsheet.BorderType|string	default-
 ///<br/><br/>
 ///Specifies border color for range of cells in Spreadsheet.
@@ -23768,6 +25516,9 @@ ejSpreadsheet :function (options) {
 ///<br/><br/>
 ///To apply border for the specified range of cell.
 ///<br/>range-string	default-
+///<br/><br/>
+///Specifies the cell types for a cell or range in Spreadsheet.
+///<br/>cellTypes-Array&lt;any&gt;	default-[]
 ///<br/><br/>
 ///Specifies the conditional formatting for the range of cell in Spreadsheet.
 ///<br/>cFormatRule-Array&lt;any&gt;	default-[]
@@ -23795,6 +25546,12 @@ ejSpreadsheet :function (options) {
 ///<br/><br/>
 ///Gets or sets a value that indicates whether to enable or disable field as column header in the Spreadsheet.
 ///<br/>fieldAsColumnHeader-boolean	default-false
+///<br/><br/>
+///Gets or sets a value to freeze rows in the Spreadsheet.
+///<br/>frozenRows-number	default-0
+///<br/><br/>
+///Gets or sets a value to freeze columns in the Spreadsheet.
+///<br/>frozenColumns-number	default-0
 ///<br/><br/>
 ///Specifies the header styles for the headers in datasource range.
 ///<br/>headerStyles-any	default-null
@@ -23916,6 +25673,9 @@ ejSpreadsheet :function (options) {
 ///Gets or sets a value that indicates whether to show or hide headings in the Spreadsheet.
 ///<br/>showHeadings-boolean	default-true
 ///<br/><br/>
+///Specifies the name for sheet in the Spreadsheet.
+///<br/>sheetName-string	default-string
+///<br/><br/>
 ///Specifies the start cell for the datasource range in Spreadsheet.
 ///<br/>startCell-string	default-A1
 ///<br/><br/>
@@ -23956,7 +25716,7 @@ redraw:function(){
 /// Redraws the entire sunburst. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
 /// </summary>
 },
-_destroy:function(){
+destroy:function(){
 /// <signature>
 /// <summary>
 /// destroy the sunburst
@@ -24016,7 +25776,7 @@ ejSunburstChart :function (options) {
 ///Name of the property in the datasource that contains y values.
 ///<br/>yName-string	default-null
 ///<br/><br/>
-///Controls wheather sunburst has to be responsive or not.
+///Controls whether sunburst has to be responsive or not.
 ///<br/>isResponsive-boolean	default-true
 ///<br/><br/>
 ///Options to customize the Sunburst size.
@@ -24073,6 +25833,12 @@ ejSunburstChart :function (options) {
 ///Custom template to the tooltip.
 ///<br/>template-string	default-null
 ///<br/><br/>
+///Setting the format for the data displayed in the tooltip
+///<br/>format-string	default-#point.x# : #point.y#
+///<br/><br/>
+///Sets the opacity of the dispalyed tooltip
+///<br/>opacity-number	default-0.95
+///<br/><br/>
 ///Options for customizing sunburst points.
 ///<br/>points-Points	default-
 ///<br/><br/>
@@ -24106,7 +25872,7 @@ ejSunburstChart :function (options) {
 ///Datalabel visibility of the Sunburst.
 ///<br/>visible-boolean	default-false
 ///<br/><br/>
-///Alginment of sunburst datalabel
+///Alignment of sunburst datalabel
 ///<br/>labelRotationMode-ej.datavisualization.Sunburst.SunburstLabelRotationMode|string	default-Angle. See DatalabelAlignment
 ///<br/><br/>
 ///Options for customizing the data label font.
@@ -24130,10 +25896,10 @@ ejSunburstChart :function (options) {
 ///Font size of the data label.
 ///<br/>size-string	default-12px
 ///<br/><br/>
-///Custome template for datalabel
+///Custom template for datalabel
 ///<br/>template-string	default-null
 ///<br/><br/>
-///Fill color for the datalable
+///Fill color for the datalabel
 ///<br/>fill-string	default-null
 ///<br/><br/>
 ///Datalabel overflow mode
@@ -24304,10 +26070,10 @@ ejSunburstChart :function (options) {
 ///Y value or vertical offset to position the legend.
 ///<br/>y-number	default-0
 ///<br/><br/>
-///Places the legend at specified position. Legend can be placed at left, right, top or bottom of the chart area.To manually specify the location of legend, set custom as value to this property.
+///Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. To manually specify the location of legend, set **custom** as value to this property.
 ///<br/>position-ej.datavisualization.Sunburst.SunburstLegendPosition|string	default-Bottom. See Position
 ///<br/><br/>
-///Shape of the legend items.
+///Shape of the legend items. 
 ///<br/>shape-ej.datavisualization.Sunburst.SunburstLegendShape|string	default-None. See Shape
 ///<br/><br/>
 ///Options to customize the size of the legend.
@@ -24892,6 +26658,9 @@ ejEditor :function (options) {
 /// <signature>
 /// <summary><br/>
 ///NumericTextBox is used to display only numeric values. It has Spin buttons to increase or decrease the values in the Text Box.<br/><br/>
+///Specifies the currency symbol of currency textbox, used when the user wants to overwrite the currency symbol commonly instead of the current culture symbol.
+///<br/>currencySymbol-string	default-Based on the culture
+///<br/><br/>
 ///Sets the root CSS class for Editors which allow us to customize the appearance.
 ///<br/>cssClass-string	default-
 ///<br/><br/>
@@ -25064,7 +26833,7 @@ ejTile :function (options) {
 ///<br/>enablePersistence-boolean	default-false
 ///<br/><br/>
 ///Customize the tile size height.
-///<br/>height-number	default-null
+///<br/>height-string|number	default-null
 ///<br/><br/>
 ///Specifies Tile imageClass, using this property we can give images for each tile through CSS classes.
 ///<br/>imageClass-string	default-null
@@ -25079,7 +26848,7 @@ ejTile :function (options) {
 ///<br/>imageUrl-string	default-null
 ///<br/><br/>
 ///Set the localization culture for Tile Widget.
-///<br/>locale-String	default-
+///<br/>locale-string	default-
 ///<br/><br/>
 ///Section for liveTile specific functionalities.
 ///<br/>liveTile-LiveTile	default-
@@ -25109,7 +26878,7 @@ ejTile :function (options) {
 ///<br/>tileSize-ej.Tile.TileSize|string	default-small
 ///<br/><br/>
 ///Customize the tile size width.
-///<br/>width-number	default-null
+///<br/>width-string|number	default-null
 ///<br/><br/>
 ///Sets the rounded corner to  tile.
 ///<br/>showRoundedCorner-boolean	default-false
@@ -25241,7 +27010,7 @@ ejTimePicker :function (options) {
 ///Defines the width of the TimePicker popup.
 ///<br/>popupWidth-string|number	default-auto
 ///<br/><br/>
-///Toggles the readonly state of the TimePicker
+///Toggles the readonly state of the TimePicker. When the widget is readOnly, it doesnâ€™t allow your input.
 ///<br/>readOnly-boolean	default-false
 ///<br/><br/>
 ///Sets the step value for increment the seconds value through arrow keys or mouse scroll.
@@ -25674,7 +27443,7 @@ hide:function(effect, func){
 /// <summary>
 /// Hide the Tooltip popup.
 /// </summary>
-/// <param name="func"	type="Function"> optional custom effect takes place when hiding the tooltip.</param>
+/// <param name="func"	type="() =&gt; void"> optional custom effect takes place when hiding the tooltip.</param>
 /// </signature>
 },
 show:function(effect, func, target){
@@ -25688,7 +27457,7 @@ show:function(effect, func, target){
 /// <summary>
 /// Shows the Tooltip popup for the given target element with the specified effect.
 /// </summary>
-/// <param name="func"	type="Function">optional custom effect takes place when showing the tooltip.</param>
+/// <param name="func"	type="() =&gt; void">optional custom effect takes place when showing the tooltip.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -25787,6 +27556,27 @@ ejTooltip :function (options) {
 ///Specified a selector for elements, within the container.
 ///<br/>target-string	default-null
 ///<br/><br/>
+///defines Tooltip size and gap between tooltip against the target element.
+///<br/>tip-Tip	default-
+///<br/><br/>
+///Sets the Tooltip size.
+///<br/>size-any	default-
+///<br/><br/>
+///Sets the Tooltip width.
+///<br/>width-number	default-20
+///<br/><br/>
+///Sets the Tooltip height.
+///<br/>height-number	default-10
+///<br/><br/>
+///Sets gap between tooltip against the target element.
+///<br/>adjust-any	default-
+///<br/><br/>
+///Sets horizontal gap between Tooltip and target element.
+///<br/>xValue-number	default-0
+///<br/><br/>
+///Sets vertical gap between Tooltip and target element.
+///<br/>yValue-number	default-0
+///<br/><br/>
 ///The title text to be displayed in the Tooltip header.
 ///<br/>title-string	default-null
 ///<br/><br/>
@@ -25842,7 +27632,7 @@ selectCells:function(Indexes, preservePreviousSelectedCell){
 /// <summary>
 /// To select cell based on the cell and row index dynamically.
 /// </summary>
-/// <param name="Indexes"	type="Array&lt;any&gt;">array of cell indexes to be select</param>
+/// <param name="Indexes"	type="any[]">array of cell indexes to be select</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -25908,7 +27698,7 @@ refresh:function(dataSource, query){
 /// <summary>
 /// To refresh the changes in tree grid
 /// </summary>
-/// <param name="dataSource"	type="Array&lt;any&gt;">Pass which data source you want to show in tree grid</param>
+/// <param name="dataSource"	type="any[]">Pass which data source you want to show in tree grid</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -25945,14 +27735,6 @@ saveCell:function(){
 /// To save the edited cell in TreeGrid
 /// </summary>
 },
-search:function(searchString){
-/// <signature>
-/// <summary>
-/// To search an item with search string provided at the run time
-/// </summary>
-/// <param name="searchString"	type="string">you can pass a searchString to search the tree grid</param>
-/// </signature>
-},
 showColumn:function(headerText){
 /// <signature>
 /// <summary>
@@ -25961,12 +27743,12 @@ showColumn:function(headerText){
 /// <param name="headerText"	type="string">you can pass a header text of a column to show.</param>
 /// </signature>
 },
-sortColumn:function(columnName, columnSortDirection){
+sortColumn:function(fieldName, columnSortDirection){
 /// <signature>
 /// <summary>
 /// To sorting the data based on the particular fields
 /// </summary>
-/// <param name="columnName"	type="string">you can pass a name of column to sort.</param>
+/// <param name="fieldName"	type="string">you can pass a name of column to sort.</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -26031,8 +27813,14 @@ ejTreeGrid :function (options) {
 ///Enables/disables pagination of rows in TreeGrid
 ///<br/>allowPaging-boolean	default-false
 ///<br/><br/>
+///Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
+///<br/>allowTextWrap-boolean	default-false
+///<br/><br/>
 ///Specifies the id of the template that has to be applied for alternate rows.
 ///<br/>altRowTemplateID-string	default-
+///<br/><br/>
+///Specifies the mapping property path for the expand status of a record in data source.
+///<br/>expandStateMapping-string	default-
 ///<br/><br/>
 ///Specifies the mapping property path for sub tasks in datasource
 ///<br/>childMapping-string	default-
@@ -26043,17 +27831,38 @@ ejTreeGrid :function (options) {
 ///Enables or disables the ability to filter the rows based on this column.
 ///<br/>allowFiltering-boolean	default-false
 ///<br/><br/>
+///Enables the blanks option in ejDropDownList mapped in TreeGrid column
+///<br/>allowFilteringBlankContent-boolean	default-true
+///<br/><br/>
 ///Enables or disables the ability to sort the rows based on this column/field.
 ///<br/>allowSorting-boolean	default-false
 ///<br/><br/>
 ///Enables/disables cell selection.
 ///<br/>allowCellSelection-boolean	default-false
 ///<br/><br/>
+///To customize the ej controls defined in TreeGrid column with their native property.
+///<br/>editParams-any	default-
+///<br/><br/>
+///Gets or sets a template that displays a custom editor for editing the column values.
+///<br/>editTemplate-any	default-null
+///<br/><br/>
 ///Specifies the edit type of the column.
 ///<br/>editType-ej.TreeGrid.EditingType|string	default-ej.TreeGrid.EditingType.String
 ///<br/><br/>
+///To bind the dropdown data for TreeGrid column mapped with ejDropDownList
+///<br/>dropdownData-string	default-
+///<br/><br/>
 ///Specifies the name of the field from the dataSource to bind with this column.
 ///<br/>field-string	default-
+///<br/><br/>
+///Specifies the template string of the script element to enable column template for a column.
+///<br/>template-string	default-
+///<br/><br/>
+///Specifies the template ID of the script element to enable column template for a column.
+///<br/>templateID-string	default-
+///<br/><br/>
+///Specifies the template ID or the template string of the AngularJS script element to enable column template for a column.
+///<br/>angularTemplate-string	default-
 ///<br/><br/>
 ///Specifies the type of the editor control to be used to filter the rows.
 ///<br/>filterEditType-ej.TreeGrid.EditingType|string	default-ej.TreeGrid.EditingType.String
@@ -26061,17 +27870,20 @@ ejTreeGrid :function (options) {
 ///Header text of the column.
 ///<br/>headerText-string	default-null
 ///<br/><br/>
-///Enables or disables the checkbox visibility in a column to make it as a checkbox column
+///Gets or sets a value that indicates to display a column value as checkbox or string
+///<br/>displayAsCheckbox-boolean	default-false
+///<br/><br/>
+///Enables or disables the checkbox visibility in a column for checkbox selection.
 ///<br/>showCheckbox-boolean	default-false
 ///<br/><br/>
 ///Controls the visibility of the column.
 ///<br/>visible-boolean	default-true
 ///<br/><br/>
 ///Gets or sets a value for treegrid column width
-///<br/>width-Number	default-
+///<br/>width-number	default-
 ///<br/><br/>
 ///Specifies the header template value for the column header
-///<br/>headerTemplateID-String	default-
+///<br/>headerTemplateID-string	default-
 ///<br/><br/>
 ///Specifies the display format of a column
 ///<br/>format-any	default-null
@@ -26088,11 +27900,35 @@ ejTreeGrid :function (options) {
 ///Specifies the text alignment for the column
 ///<br/>textAlign-ej.TextAlign|string	default-ej.TextAlign.Left
 ///<br/><br/>
-///Specifies the template for the TreeGrid column
-///<br/>templateID-String	default-
-///<br/><br/>
 ///Enables or disables the ability to edit a row or cell.
 ///<br/>allowEditing-boolean	default-false
+///<br/><br/>
+///Gets or sets an object to define a command column in TreeGrid.
+///<br/>commands-Array&lt;any&gt;	default-[]
+///<br/><br/>
+///Gets or sets an object to customize command button with available ejButton properties.
+///<br/>buttonOptions-any	default-
+///<br/><br/>
+///Gets or sets a value that define the command column buttons to be displayed.
+///<br/>type-ej.TreeGrid.UnboundType|string	default-
+///<br/><br/>
+///We can include or exclude particular column from column visibility list in column menu.
+///<br/>showInColumnChooser-boolean	default-true
+///<br/><br/>
+///Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header and content)
+///<br/>clipMode-ej.TreeGrid.ClipMode|string	default-ej.TreeGrid.ClipMode.Clip
+///<br/><br/>
+///Sets the tooltip template for the specific column.
+///<br/>tooltip-string	default-null
+///<br/><br/>
+///Sets the tooltip template for the column header
+///<br/>headerTooltip-string	default-null
+///<br/><br/>
+///specifies the conditions for saving data to the database while adding or editing the fields.
+///<br/>validationRules-any	default-
+///<br/><br/>
+///Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
+///<br/>priority-number	default--1
 ///<br/><br/>
 ///To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
 ///<br/>columnDialogFields-Array&lt;any&gt;	default-[]
@@ -26116,7 +27952,7 @@ ejTreeGrid :function (options) {
 ///<br/>dataSource-Array&lt;any&gt;	default-null
 ///<br/><br/>
 ///Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
-///<br/>headerTextOverflow-string	default-none
+///<br/>headerTextOverflow-ej.TreeGrid.HeaderTextOverflow|string	default-ej.TreeGrid.HeaderTextOverflow.None
 ///<br/><br/>
 ///Options for displaying and customizing the tooltip. This tooltip will show the preview of the row that is being dragged.
 ///<br/>dragTooltip-DragTooltip	default-
@@ -26151,6 +27987,9 @@ ejTreeGrid :function (options) {
 ///Specifies the position where the new row has to be added.
 ///<br/>rowPosition-ej.TreeGrid.RowPosition|string	default-top
 ///<br/><br/>
+///Specifies the template ID for the custom dialog.
+///<br/>dialogEditorTemplateID-string	default-null
+///<br/><br/>
 ///Specifies whether to render alternate rows in different background colors.
 ///<br/>enableAltRow-boolean	default-true
 ///<br/><br/>
@@ -26163,11 +28002,17 @@ ejTreeGrid :function (options) {
 ///Specifies whether to render only the visual elements that are visible in the UI. When you enable this property, it will reduce the loading time for loading large number of records.
 ///<br/>enableVirtualization-boolean	default-false
 ///<br/><br/>
+///Gets or sets a value that indicates whether to enable load on demand approach, for rendering child records and page records.
+///<br/>enableLoadOnDemand-boolean	default-false
+///<br/><br/>
 ///Specifies the settings for column resize
 ///<br/>columnResizeSettings-ColumnResizeSettings	default-
 ///<br/><br/>
 ///Specifies the mode for column resizing
-///<br/>columnResizeMode-string	default-normal
+///<br/>columnResizeMode-ej.TreeGrid.ColumnResizeMode|string	default-ej.TreeGrid.ColumnResizeMode.Normal
+///<br/><br/>
+///Defines the common width for all the columns in TreeGrid
+///<br/>commonWidth-number	default-150
 ///<br/><br/>
 ///Options for filtering and customizing filter actions.
 ///<br/>filterSettings-FilterSettings	default-
@@ -26176,15 +28021,27 @@ ejTreeGrid :function (options) {
 ///<br/>filterBarMode-string	default-immediate
 ///<br/><br/>
 ///Specifies the type of column filtering.
-///<br/>filterType-string	default-filterbar
+///<br/>filterType-ej.TreeGrid.FilterType|string	default-ej.TreeGrid.FilterType.FilterBar
 ///<br/><br/>
 ///Specifies the column collection for filtering the TreeGrid content on initial load
 ///<br/>filteredColumns-Array&lt;any&gt;	default-[]
 ///<br/><br/>
+///Specifies the value to be filtered in TreeGrid.
+///<br/>value-string	default-
+///<br/><br/>
+///Specifies the field where filtering has to be performed.
+///<br/>field-string	default-
+///<br/><br/>
+///Specifies the predicate(and/or) value to perform filtering.
+///<br/>predicate-string	default-
+///<br/><br/>
+///Specifies the filter condition to filtered column. See operator
+///<br/>operator-string	default-
+///<br/><br/>
 ///Specifies the localization information to customize the User Interface (UI) to support regional language and culture
 ///<br/>locale-string	default-en-US
 ///<br/><br/>
-///Enables or disables internal parsing of a row. When disbaled this property, row will be displayed using the defined template without any internal event bindings.
+///Enables or disables internal parsing of a row. When disabled this property, row will be displayed using the defined template without any internal event bindings.
 ///<br/>parseRowTemplate-boolean	default-true
 ///<br/><br/>
 ///Specifies the name of the field in the dataSource, which contains the id of that row.
@@ -26214,6 +28071,9 @@ ejTreeGrid :function (options) {
 ///Specifies the mode of record count in a page, whether it should count all the records or the root to count zero level parent records.
 ///<br/>pageSizeMode-ej.TreeGrid.PageSizeMode|string	default-ej.TreeGrid.PageSizeMode.All
 ///<br/><br/>
+///Specifies the mode of printing the control, whether it should print the all the records or the current page content.
+///<br/>printMode-ej.TreeGrid.PrintMode|string	default-ej.TreeGrid.PrintMode.AllPages
+///<br/><br/>
 ///Specifies the Custom template for Pager control.
 ///<br/>template-string	default-null
 ///<br/><br/>
@@ -26231,6 +28091,15 @@ ejTreeGrid :function (options) {
 ///<br/><br/>
 ///Specifies the index of the selected row.
 ///<br/>selectedRowIndex-number	default--1
+///<br/><br/>
+///Specifies the selected cell information on rendering TreeGrid.
+///<br/>selectedCellIndexes-Array&lt;SelectedCellIndexes&gt;	default-
+///<br/><br/>
+///Specifies the row index of the cell to be selected in TreeGrid control
+///<br/>rowIndex-number	default-
+///<br/><br/>
+///Specifies the cell index to be selected in the row.
+///<br/>cellIndex-number	default- 
 ///<br/><br/>
 ///Specifies the settings for row and cell selection.
 ///<br/>selectionSettings-SelectionSettings	default-
@@ -26272,7 +28141,31 @@ ejTreeGrid :function (options) {
 ///<br/>showTotalSummary-boolean	default-false
 ///<br/><br/>
 ///Specifies the summary row collection object to be displayed
-///<br/>summaryRows-Array&lt;any&gt;	default-[]
+///<br/>summaryRows-Array&lt;SummaryRows&gt;	default-[]
+///<br/><br/>
+///Specifies the title for summary row collection in TreeGrid
+///<br/>title-string	default-
+///<br/><br/>
+///Specifies the summary columns in the summary rows.
+///<br/>summaryColumns-Array&lt;any&gt;	default-
+///<br/><br/>
+///Specifies the summary type to perform calculations in a corresponding summary column. See summaryType.
+///<br/>summaryType-ej.TreeGrid.SummaryType|string	default-
+///<br/><br/>
+///Specifies summary column used to perform the summary calculation.
+///<br/>dataMember-string	default-
+///<br/><br/>
+///Specifies the required column to display the summary.
+///<br/>displayColumn-string	default-
+///<br/><br/>
+///Specifies the text to be displayed before the summary column value.
+///<br/>prefix-string	default-
+///<br/><br/>
+///Specifies the text to be displayed after the summary column value.
+///<br/>suffix-string	default-
+///<br/><br/>
+///Specifies the format to be applied on the summary column value.
+///<br/>format-string	default-
 ///<br/><br/>
 ///Specifies whether to show tooltip when mouse is hovered on the cell.
 ///<br/>showGridCellTooltip-boolean	default-true
@@ -26295,6 +28188,12 @@ ejTreeGrid :function (options) {
 ///Option to add columns based on which the rows have to be sorted recursively.
 ///<br/>sortedColumns-Array&lt;any&gt;	default-[]
 ///<br/><br/>
+///Specifies the field to be sorted in TreeGrid
+///<br/>field-string	default-
+///<br/><br/>
+///Specifies the sort direction in TreeGrid
+///<br/>direction-string	default-
+///<br/><br/>
 ///Options for displaying and customizing the toolbar items.
 ///<br/>toolbarSettings-ToolbarSettings	default-
 ///<br/><br/>
@@ -26303,6 +28202,18 @@ ejTreeGrid :function (options) {
 ///<br/><br/>
 ///Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 ///<br/>toolbarItems-Array&lt;any&gt;	default-[]
+///<br/><br/>
+///Allows the user to insert custom toolbar items.
+///<br/>customToolbarItems-Array&lt;any&gt;	default-
+///<br/><br/>
+///Allows the user to insert the custom icons in toolbar using CSS class name selector.
+///<br/>text-string	default-
+///<br/><br/>
+///Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
+///<br/>templateID-string	default-
+///<br/><br/>
+///Allows the user to display custom tooltip text for TreeGrid custom toolbar items.
+///<br/>tooltipText-string	default-
 ///<br/><br/>
 ///Specifies the index of the column that needs to have the expander button. By default, cells in the first column contain the expander button.
 ///<br/>treeColumnIndex-number	default-0
@@ -26485,6 +28396,12 @@ ejTreeMap :function (options) {
 ///Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values are Squarified, SliceAndDiceHorizontal, SliceAndDiceVertical and SliceAndDiceAuto
 ///<br/>itemsLayoutMode-ej.datavisualization.TreeMap.ItemsLayoutMode|string	default-Squarified
 ///<br/><br/>
+///Specify to convert the date object to string, using locale settings.
+///<br/>enableGroupSeparator-boolean	default-false
+///<br/><br/>
+///Name of the culture based on which Tree Map should be localized.
+///<br/>locale-string	default-en-US
+///<br/><br/>
 ///Specifies the leaf settings of the treemap
 ///<br/>leafItemSettings-LeafItemSettings	default-
 ///<br/><br/>
@@ -26494,6 +28411,9 @@ ejTreeMap :function (options) {
 ///Specifies the border thickness of the leaf item.
 ///<br/>borderThickness-number	default-1
 ///<br/><br/>
+///Specifies the space between the leaf items.
+///<br/>gap-number	default-0
+///<br/><br/>
 ///Specifies the label template of the leaf item.
 ///<br/>itemTemplate-string	default-null
 ///<br/><br/>
@@ -26502,6 +28422,9 @@ ejTreeMap :function (options) {
 ///<br/><br/>
 ///Specifies the position of the leaf labels.
 ///<br/>labelPosition-ej.datavisualization.TreeMap.Position|string	default-center
+///<br/><br/>
+///Specifies the overflow options for leaf labels.
+///<br/>textOverflow-ej.datavisualization.TreeMap.TextOverflow|string	default-none
 ///<br/><br/>
 ///Specifies the mode of label visibility
 ///<br/>labelVisibilityMode-ej.datavisualization.TreeMap.VisibilityMode|string	default-visible
@@ -26581,6 +28504,9 @@ ejTreeMap :function (options) {
 ///Specifies the position of the labels.
 ///<br/>labelPosition-ej.datavisualization.TreeMap.Position|string	default-center
 ///<br/><br/>
+///Specifies the overflow options for leaf labels.
+///<br/>textOverflow-ej.datavisualization.TreeMap.TextOverflow|string	default-none
+///<br/><br/>
 ///Specifies the label template for tree map level.
 ///<br/>labelTemplate-string	default-null
 ///<br/><br/>
@@ -26634,7 +28560,7 @@ addNodes:function(collection, target){
 /// <summary>
 /// To add a collection of nodes in TreeView. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in TreeView.
 /// </summary>
-/// <param name="collection"	type="any|Array&lt;any&gt;">New node details in JSON object</param>
+/// <param name="collection"	type="any|any[]">New node details in JSON object</param>
 /// </signature>
 /// <signature>
 /// <summary>
@@ -26654,7 +28580,7 @@ checkNode:function(element){
 /// <summary>
 /// To check a node in TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 collapseAll:function(levelUntil, excludeHiddenNodes){
@@ -26676,7 +28602,7 @@ collapseNode:function(element){
 /// <summary>
 /// To collapse a particular node in TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node|object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node|object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 disableNode:function(element){
@@ -26684,7 +28610,7 @@ disableNode:function(element){
 /// <summary>
 /// To disable the node in the TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 enableNode:function(element){
@@ -26692,7 +28618,7 @@ enableNode:function(element){
 /// <summary>
 /// To enable the node in the TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 ensureVisible:function(element){
@@ -26722,7 +28648,7 @@ expandNode:function(element){
 /// <summary>
 /// To expandNode particular node in TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 getCheckedNodes:function(){
@@ -26866,7 +28792,7 @@ hideNode:function(element){
 /// <summary>
 /// To hide particular node in TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 insertAfter:function(newNodeText, target){
@@ -27004,7 +28930,7 @@ removeNode:function(element){
 /// <summary>
 /// To remove a node in TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 selectAll:function(){
@@ -27018,7 +28944,7 @@ selectNode:function(element){
 /// <summary>
 /// This method is used to select a node in TreeView control. If you want to select the collection of nodes in TreeView control then we need to enable allowMultiSelection property.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/ collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/ collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 show:function(){
@@ -27032,7 +28958,7 @@ showNode:function(element){
 /// <summary>
 /// To show a node in TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 unCheckAll:function(){
@@ -27046,7 +28972,7 @@ uncheckNode:function(element){
 /// <summary>
 /// To uncheck a node in TreeView.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 unselectAll:function(){
@@ -27060,7 +28986,7 @@ unselectNode:function(element){
 /// <summary>
 /// This method is used to unselect a node in TreeView control. If you want to unselect the collection of nodes in TreeView control then we need to enable allowMultiSelection property.
 /// </summary>
-/// <param name="element"	type="string|any|Array&lt;any&gt;">ID of TreeView node/object of TreeView node/ collection of ID/object of TreeView nodes</param>
+/// <param name="element"	type="string|any|any[]">ID of TreeView node/object of TreeView node/ collection of ID/object of TreeView nodes</param>
 /// </signature>
 },
 updateText:function(target, newText){
@@ -27274,6 +29200,12 @@ refresh:function(){
 /// <signature>
 /// <summary>
 /// Refresh the Uploadbox control
+/// </summary>
+},
+upload:function(){
+/// <signature>
+/// <summary>
+/// Upload the selected files.
 /// </summary>
 },
 });
