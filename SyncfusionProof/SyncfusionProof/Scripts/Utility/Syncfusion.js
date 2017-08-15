@@ -204,7 +204,13 @@ extend(window.Utility, "Syncfusion", {
     InlineEditingGrid: {
       textAreaCreate: function () {
         //return the textarea
-        return $("<div class='e-field'><textarea rows='5'></textarea></div>");
+        var $textArea = $("<textarea>", {
+          "class": "e-field",
+          "rows": "5",
+          "style": "width: 100%;"
+        });
+        
+        return $textArea;
       },
       textAreaRead: function (args) {
         //get the edited text value
@@ -212,7 +218,7 @@ extend(window.Utility, "Syncfusion", {
       },
       textAreaWrite: function (args) {
         //write the edited text value
-        args.element.find("textarea").val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
+        args.element.val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
       },
       actionBegin: function (args) {
         var self = this;
