@@ -48,7 +48,7 @@
 
     x.Field("FreightDetails.Freight2").HeaderText("Freight2").EditType(EditingType.Numeric).Format("{0:C}").Add();
 
-    x.Field("MyBooleanEditor")
+    x.Field("IsTrue")
       .HeaderText("True or False")
       .EditType(EditingType.Boolean)
       .Add();
@@ -70,7 +70,7 @@
           .Write("Utility.Syncfusion.Grid.InlineEditingGrid.textAreaWrite");
       })
       .Add();
-    
+
     x.Field("ShipState").HeaderText("Ship State").EditType(EditingType.String).Add();
   })
   .ClientSideEvents(x =>
