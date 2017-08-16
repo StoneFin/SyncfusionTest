@@ -206,8 +206,7 @@ extend(window.Utility, "Syncfusion", {
         //return the textarea
         var $textArea = $("<textarea>", {
           "class": "e-field",
-          "rows": "5",
-          "style": "width: 100%;"
+          "rows": "5"
         });
         
         return $textArea;
@@ -218,7 +217,9 @@ extend(window.Utility, "Syncfusion", {
       },
       textAreaWrite: function (args) {
         //write the edited text value
-        args.element.val(args.rowdata["ShipCity"]).attr("name", "ShipCity");
+        args.element.val(args.rowdata["ShipCity"])
+          .attr("name", "ShipCity")
+          .addClass("col-xs-12");
       },
       actionBegin: function (args) {
         var self = this;

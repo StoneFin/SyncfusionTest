@@ -19,9 +19,10 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-input, select, textarea {
+/* Took this out since it was causing confusion with layouts inside syncfusion editable grids. */
+/*input, select, textarea {
     max-width: 280px;
-}
+}*/
 
 /* Allow 100% width for text areas inside of syncfusion grids */
 div.e-field > textarea {
